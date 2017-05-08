@@ -1,0 +1,21 @@
+<rdf:RDF
+    xmlns:wibi="http://wibitaxonomy.org/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cinvestav="http://www.cinvestav.com.mx/#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:being="http://contextus.net/ontology/ontomedia/ext/common/being#">
+  <rdf:Description rdf:about="http://www.cinvestav.com.mx/#OrgSentence">
+    <rdfs:comment>Cows in at least 8 herds have caught salmonella this season, twice as many as last year [2010]</rdfs:comment>
+    <rdfs:comment>Nintendo announces new details on Mario Kart 8</rdfs:comment>
+  </rdf:Description>
+  <wibi:Company rdf:about="http://dbpedia.org/resource/Nintendo">
+    <cinvestav:announces rdf:resource="http://dbpedia.org/resource/Mario_Kart_8"/>
+    <cinvestav:announces rdf:resource="http://dbpedia.org/resource/Mario_Kart"/>
+  </wibi:Company>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Cattle">
+    <being:have-done>
+      <wibi:Bacteria rdf:about="http://dbpedia.org/resource/Salmonella"/>
+    </being:have-done>
+  </rdf:Description>
+</rdf:RDF>

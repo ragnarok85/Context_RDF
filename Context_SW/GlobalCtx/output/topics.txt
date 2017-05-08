@@ -1,0 +1,26 @@
+Document	Topic	#Times
+Alchemy
+1961.txt	/society/unrest and war	0
+1961.txt	/law, govt and politics/government	3
+1961.txt	/law, govt and politics/government/embassies and consulates	0
+1961.txt	/travel	1
+1961.txt	/travel/tourist destinations/japan	6
+1961.txt	/law, govt and politics/politics/political parties	0
+1961.txt	/travel/tourist destinations/united kingdom	0
+1961.txt	/shopping/resources/warranties and service contracts	0
+1961.txt	/travel/tourist destinations/africa	0
+1961.txt	/finance/personal finance/insurance/life insurance	0
+1961.txt	/art and entertainment/visual art and design/architecture	0
+1961.txt	/education/school	0
+1961.txt	/art and entertainment/movies and tv/independent	0
+1961.txt	/science/social science/linguistics/translation	0
+1961.txt	/science/social science/history	0
+1961.txt	/travel/tourist destinations/caribbean	0
+1961.txt	/travel/transports/air travel/airlines	0
+1961.txt	/travel/tourist destinations/europe	1
+1961.txt	/law, govt and politics/politics/elections	0
+OpenCalais
+1961.txt	Weather	0
+1961.txt	Health_Medical_Pharma	2
+1961.txt	Environment	5
+1961.txt	Politics	4

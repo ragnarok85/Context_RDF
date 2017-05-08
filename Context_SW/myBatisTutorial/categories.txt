@@ -1,0 +1,37 @@
+Category	Subcategories
+video_discs	dvd	
+optical_discs	compact_disc	video_discs	
+apple_hardware	ipod
+ipod	
+storage_devices	hard_drives	optical_discs	
+programming_languages	javascript	markup_languages	query_languages	
+internet_relay_chat	internet_relay_chat_daemons	irc_clients	î¤
+internet_relay_chat_templates	
+internet_protocols	application_layer_protocols	internet_relay_chat	
+british_computer_scientists	english_computer_scientists	
+kde	koffice
+koffice	
+mac_os_x	os_x_games	
+debian-based_linux_distributions	knoppix	ubuntu_(operating_system)_derivatives	
+debian	debian-based_linux_distributions	
+kde	koffice
+koffice	
+linux_distributions	debian	live_cd	ubuntu_(operating_system)_derivatives	x86-64_linux_distributions	
+linux_software	kde	
+debian-based_linux_distributions	knoppix	ubuntu_(operating_system)_derivatives	
+debian	debian-based_linux_distributions	
+mac_os_x	os_x_games	
+bsd	mac_os_x	
+linux_distributions	debian	live_cd	ubuntu_(operating_system)_derivatives	x86-64_linux_distributions	
+mac_os_x	os_x_games	
+linux	linux_distributions	linux_software	red_hat	
+unix	mac_os_x	
+algorithms	greedy_algorithms	randomised_algorithms	
+operating_systems	bsd	linux	linux_distributions	mac_os_x	microsoft_operating_systems	unix	
+desktop_environments	gnome	kde	
+computer_scientists	american_computer_scientists	british_computer_scientists	
+computer_protocols	internet_protocols	
+output_devices	display_technology	printers	
+theoretical_computer_science	algorithms	cryptography	graph_theory	
+computer_hardware	apple_hardware	computer_memory	display_technology	microprocessor_design	motherboard	printers	storage_devices	
+computer_programming	programming_languages	

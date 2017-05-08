@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:view="org.eclipse.jwt/view">
+  <describesModel href="workflow.workflow#/"/>
+  <layoutData viewid="PTE-Workflow" x="112" y="196" initialized="true">
+    <describesElement href="workflow.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="PTE-Workflow" width="71" height="43" x="196" y="186" initialized="true">
+    <describesElement href="workflow.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="PTE-Workflow" x="322" y="196" initialized="true">
+    <describesElement href="workflow.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="PTE-Workflow" width="100" height="43" x="431" y="238" initialized="true">
+    <describesElement href="workflow.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData viewid="PTE-Workflow" width="100" height="56" x="431" y="112" initialized="true">
+    <describesElement href="workflow.workflow#//@elements.0/@nodes.4"/>
+  </layoutData>
+</view:Diagram>

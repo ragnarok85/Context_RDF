@@ -1,0 +1,27 @@
+Document	Sentence	Topic
+Alchemy
+1961.txt	Mainland China
+
+Mainland China is the part of China not including the Republic of China controlling Taiwan, Kinmen, Matsu, and the Pescadores.	/law, govt and politics/government - 0.0213258 , /travel/tourist destinations/japan - 0.999559 , /travel/tourist destinations/europe - 0.00633742 , 
+1961.txt	The term also excludes Hong Kong and Macau.	/travel - 0.374026 , /finance/personal finance/insurance/life insurance - 0.218366 , /shopping/resources/warranties and service contracts - 0.661387 , 
+1961.txt	In the Qing Dynasty, all of Mainland China, Hong Kong, Macau, Taiwan, Kinmen, Matsu, the Pescadores, and Mongolia were part of the Chinese Empire.	/art and entertainment/visual art and design/architecture - 0.0647931 , /travel/tourist destinations/japan - 0.923363 , /science/social science/history - 0.171582 , 
+1961.txt	Taiwan, Hong Kong, and Macau were given to foreigners for some years (Taiwan to the Japanese, Hong Kong to the British, and Macau to the Portuguese).	/law, govt and politics/government/embassies and consulates - 0.66814 , /travel/tourist destinations/japan - 0.404907 , /science/social science/linguistics/translation - 0.173621 , 
+1961.txt	By the end the Qing Empire, China became Nationalist China (the Republic of China) and it got Taiwan back in 1945.	/society/unrest and war - 0.452702 , /law, govt and politics/government - 0.11302 , /travel/tourist destinations/japan - 0.8612 , 
+1961.txt	After the Communists (the People's Republic of China) took over most of China, the Nationalists kept only Taiwan, Kinmen, Matsu, and the Pescadores.	/law, govt and politics/government - 0.938405 , /travel/tourist destinations/japan - 0.286398 , /law, govt and politics/politics/elections - 0.0878507 , 
+1961.txt	Mongolia became an independent state later.	/education/school - 0.173164 , /art and entertainment/movies and tv/independent - 0.590007 , /law, govt and politics/politics/political parties - 0.164062 , 
+1961.txt	Since then, Communist China only includes the part on the continent (mainland) and some small islands that are very near (the largest communist island is Hainan).	/travel/tourist destinations/africa - 0.177278 , /travel/tourist destinations/caribbean - 0.348644 , /travel/transports/air travel/airlines - 0.25935 , 
+1961.txt	This region is Mainland China.	/travel/tourist destinations/japan - 0.999918 , /travel/tourist destinations/united kingdom - 0.00573516 , /travel/tourist destinations/europe - 0.00746151 , 
+1961.txt	Later Hong Kong and Macau returned to the government of China, but sometimes they are still not thought of as part of Mainland China.	/law, govt and politics/government - 0.495759 , /travel - 0.109237 , /travel/tourist destinations/japan - 0.794848 , 
+OpenCalais
+1961.txt	Mainland China
+
+Mainland China is the part of China not including the Republic of China controlling Taiwan, Kinmen, Matsu, and the Pescadores.	Environment - 0.991 , 
+1961.txt	The term also excludes Hong Kong and Macau.	Weather - 0.924 , 
+1961.txt	In the Qing Dynasty, all of Mainland China, Hong Kong, Macau, Taiwan, Kinmen, Matsu, the Pescadores, and Mongolia were part of the Chinese Empire.	
+1961.txt	Taiwan, Hong Kong, and Macau were given to foreigners for some years (Taiwan to the Japanese, Hong Kong to the British, and Macau to the Portuguese).	
+1961.txt	By the end the Qing Empire, China became Nationalist China (the Republic of China) and it got Taiwan back in 1945.	Environment - 0.916 , Politics - 0.933 , 
+1961.txt	After the Communists (the People's Republic of China) took over most of China, the Nationalists kept only Taiwan, Kinmen, Matsu, and the Pescadores.	Environment - 0.958 , Politics - 0.604 , 
+1961.txt	Mongolia became an independent state later.	Health_Medical_Pharma - 0.932 , Politics - 0.966 , 
+1961.txt	Since then, Communist China only includes the part on the continent (mainland) and some small islands that are very near (the largest communist island is Hainan).	Health_Medical_Pharma - 0.939 , Environment - 0.991 , Politics - 0.911 , 
+1961.txt	This region is Mainland China.	Health_Medical_Pharma - 0.994 , Environment - 1.0 , 
+1961.txt	Later Hong Kong and Macau returned to the government of China, but sometimes they are still not thought of as part of Mainland China.	Environment - 0.502 , Politics - 0.997 , 
