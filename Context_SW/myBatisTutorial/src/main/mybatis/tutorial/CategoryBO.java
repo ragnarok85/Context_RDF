@@ -13,6 +13,7 @@ import org.apache.ibatis.session.SqlSession;
 public class CategoryBO {
 	
 	static List<Map<String,List<CategoryVO>>> listCategories = new ArrayList<Map<String,List<CategoryVO>>>();
+	static List<SubCategory> subCats = new ArrayList<SubCategory>();
 	
 	public List<CategoryVO> getInformation(CategoryVO cat) throws Exception{
 		SqlSession session = ConnectionFactory.getSession().openSession();
@@ -42,17 +43,28 @@ public class CategoryBO {
 //			System.out.println("cat_subcats: " + cats.getCat_subcats());
 //			System.out.println("cl_type: " + cats.getCl_type());
 //		}
-		
+		SubCategory subCat = new SubCategory();
+		subCat.setParent("root");
+		subCat.setSubcategory("computer_science");
+		subCat.setChilden(catVO);
+		subCats.add(subCat);
 		bo.retrieveCats("computer_science",catVO);
-		bo.printListCategories();
-		bo.printCategoriesToFile();
+		bo.printListCategory();
+//		bo.printListCategories();
+//		bo.printCategoriesToFile();
 	}
 	
 	public void retrieveCats(String category,List<CategoryVO> categories){
 		Map<String,List<CategoryVO>> mapCats = new HashMap<String,List<CategoryVO>>();
 		CategoryBO bo = new CategoryBO();
-
+		System.out.println("All subcategories of " + category + " are:");
+		for(CategoryVO cat:categories){
+			System.out.print(cat.getCl_sortkey() + " - ");
+		}
+		System.out.println();
+		
 		for(CategoryVO cats : categories){
+			SubCategory subCat = new SubCategory();
 			System.out.println("processing category: " + cats.getCl_sortkey());
 			CategoryVO cat = new CategoryVO();
 			cat.setCat_title(cats.getCl_sortkey());
@@ -64,6 +76,10 @@ public class CategoryBO {
 				System.out.println("=======Printing results========");
 				printResults(listCats);
 				if(!listCats.isEmpty()){
+					subCat.setChilden(listCats);
+					subCat.setParent(category);
+					subCat.setSubcategory(cats.getCl_sortkey());
+					subCats.add(subCat);
 					if(mapCats.containsKey(cats.getCl_sortkey())){
 						System.out.println("sending category to be precessed: " + cats.getCl_sortkey());
 						mapCats.get(cats.getCl_sortkey()).addAll(listCats);
@@ -124,6 +140,18 @@ public class CategoryBO {
 			}
 		}catch(IOException e){
 			e.printStackTrace();
+		}
+	}
+	
+	public void printListCategory(){
+		for(SubCategory subCat : subCats){
+			System.out.println("category: " + subCat.getSubcategory());
+			System.out.println("Parent: "  + subCat.getParent());
+			for(CategoryVO cat : subCat.getChilden()){
+				System.out.print(cat.getCl_sortkey() + " - ");
+			}
+			System.out.println();
+			System.out.println();
 		}
 	}
 
