@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SubCategory {
-	
+	int level;
 	String parent;
 	String subcategory;
 	List<CategoryVO> childen;
@@ -30,6 +30,14 @@ public class SubCategory {
 	}
 	public void setChilden(List<CategoryVO> childen) {
 		this.childen.addAll(childen);
+	}
+	
+	public void setLevel(int level){
+		this.level = level;
+	}
+	
+	public int getLevel(){
+		return level;
 	}
 	
 	 
