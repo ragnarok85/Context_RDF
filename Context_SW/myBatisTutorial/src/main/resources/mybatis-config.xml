@@ -17,5 +17,6 @@
   </environments>
   <mappers>
     <mapper resource="categoryMapper.xml"/>
+    <mapper resource="pagesMapper.xml"/>
   </mappers>
 </configuration>

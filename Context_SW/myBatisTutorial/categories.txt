@@ -1,38 +1,32 @@
-Category	Subcategories
-0-(root)	artificial_intelligence	computer_hardware	computer_programming	computer_protocols	computer_scientists	computer_security	data_structures	desktop_environments	digital_signal_processing	ides	logic_gates	operating_systems	output_devices	robots	theoretical_computer_science	
-0-(computer_science)	apple_hardware	computer_memory	display_technology	microprocessor_design	motherboard	printers	storage_devices	
-1-(computer_hardware)	ipod
-ipod	
-1-(computer_hardware)	hard_drives	optical_discs	
-2-(storage_devices)	compact_disc	video_discs	
-3-(optical_discs)	dvd	
-0-(computer_science)	programming_languages	
-1-(computer_programming)	javascript	markup_languages	query_languages	
-0-(computer_science)	internet_protocols	
-1-(computer_protocols)	application_layer_protocols	internet_relay_chat	
-2-(internet_protocols)	internet_relay_chat_daemons	irc_clients	î¤
-internet_relay_chat_templates	
-0-(computer_science)	american_computer_scientists	british_computer_scientists	
-1-(computer_scientists)	english_computer_scientists	
-0-(computer_science)	gnome	kde	
-1-(desktop_environments)	koffice
-koffice	
-0-(computer_science)	bsd	linux	linux_distributions	mac_os_x	microsoft_operating_systems	unix	
-1-(operating_systems)	mac_os_x	
-2-(bsd)	os_x_games	
-1-(operating_systems)	linux_distributions	linux_software	red_hat	
-2-(linux)	debian	live_cd	ubuntu_(operating_system)_derivatives	x86-64_linux_distributions	
-3-(linux_distributions)	debian-based_linux_distributions	
-4-(debian)	knoppix	ubuntu_(operating_system)_derivatives	
-2-(linux)	kde	
-3-(linux_software)	koffice
-koffice	
-1-(operating_systems)	debian	live_cd	ubuntu_(operating_system)_derivatives	x86-64_linux_distributions	
-2-(linux_distributions)	debian-based_linux_distributions	
-3-(debian)	knoppix	ubuntu_(operating_system)_derivatives	
-1-(operating_systems)	os_x_games	
-1-(operating_systems)	mac_os_x	
-2-(unix)	os_x_games	
-0-(computer_science)	display_technology	printers	
-0-(computer_science)	algorithms	cryptography	graph_theory	
-1-(theoretical_computer_science)	greedy_algorithms	randomised_algorithms	
+0 - (computer_science) - artificial_intelligence - computer_hardware - computer_programming - computer_protocols - computer_scientists - computer_security - data_structures - desktop_environments - digital_signal_processing - ides - logic_gates - operating_systems - output_devices - robots - theoretical_computer_science - 
+1 - (computer_hardware) - apple_hardware - computer_memory - display_technology - microprocessor_design - motherboard - printers - storage_devices - 
+1 - (computer_programming) - programming_languages - 
+1 - (computer_protocols) - internet_protocols - 
+1 - (computer_scientists) - american_computer_scientists - british_computer_scientists - 
+1 - (desktop_environments) - gnome - kde - 
+1 - (operating_systems) - bsd - linux - linux_distributions - mac_os_x - microsoft_operating_systems - unix - 
+1 - (output_devices) - display_technology - printers - 
+1 - (theoretical_computer_science) - algorithms - cryptography - graph_theory - 
+2 - (apple_hardware) - ipod - 
+2 - (storage_devices) - hard_drives - optical_discs - 
+2 - (programming_languages) - javascript - markup_languages - query_languages - 
+2 - (internet_protocols) - application_layer_protocols - internet_relay_chat - 
+2 - (british_computer_scientists) - english_computer_scientists - 
+2 - (kde) - koffice - 
+2 - (bsd) - mac_os_x - 
+2 - (linux) - linux_distributions - linux_software - red_hat - 
+2 - (linux_distributions) - debian - live_cd - ubuntu_(operating_system)_derivatives - x86-64_linux_distributions - 
+2 - (mac_os_x) - os_x_games - 
+2 - (unix) - mac_os_x - 
+2 - (algorithms) - greedy_algorithms - randomised_algorithms - 
+3 - (optical_discs) - compact_disc - video_discs - 
+3 - (internet_relay_chat) - internet_relay_chat_daemons - irc_clients - î¤ - 
+3 - (mac_os_x) - os_x_games - 
+3 - (linux_distributions) - debian - live_cd - ubuntu_(operating_system)_derivatives - x86-64_linux_distributions - 
+3 - (linux_software) - kde - 
+3 - (debian) - debian-based_linux_distributions - 
+4 - (video_discs) - dvd - 
+4 - (debian) - debian-based_linux_distributions - 
+4 - (kde) - koffice - 
+4 - (debian-based_linux_distributions) - knoppix - ubuntu_(operating_system)_derivatives - 
+5 - (debian-based_linux_distributions) - knoppix - ubuntu_(operating_system)_derivatives - 

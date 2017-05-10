@@ -38,6 +38,8 @@ public class CategoryVO implements Serializable{
 
 
 	public void setCl_sortkey(String cl_sortkey) {
+		String[] splitSortKey = cl_sortkey.split("\n");
+		cl_sortkey = splitSortKey[0];
 		this.cl_sortkey = cl_sortkey.toLowerCase().replace(" ", "_");
 	}
 

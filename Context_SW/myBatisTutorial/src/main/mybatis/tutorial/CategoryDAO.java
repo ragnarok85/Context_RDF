@@ -11,6 +11,8 @@ public interface CategoryDAO {
 						+ "lower(convert(cl_to using utf8)) LIKE lower(convert(cat_title using utf8)) AND "
 						+ "cl_type like #{cl_type}";
 		
+		
 		@Select(GET_ALL_SUBCATEGORIES)
 		public List<CategoryVO> getInformation(CategoryVO cat) throws Exception;
+		
 }
