@@ -286,10 +286,10 @@ public class Utils {
 			for (int j = 0; j < corpus.getGeneralFrequentWIndex().size(); j++) {
 				System.out.println("Calculating MI for " + i + "/" + corpus.getGeneralIndex().size() + " "+corpus.getGeneralIndex().get(i).getWord() + " - " + j + ".-" +corpus.getGeneralFrequentWIndex().get(j).getWord());
 				
-				double counter = 0d;
+//				double counter = 0d;
 				
 				double probCond = 0d;
-				double probCondResult = 0d;
+//				double probCondResult = 0d;
 				
 				double probN2 = 0d;
 				double division = 0d;
@@ -721,6 +721,7 @@ public class Utils {
 			while((line = br.readLine()) != null){
 				fileContent += line + "\n";
 			}
+			br.close();
 		}catch(IOException e){
 			e.printStackTrace();
 		}
@@ -1088,6 +1089,7 @@ public class Utils {
 					}
 				}
 			}
+			pw.close();
 		}catch(IOException e){
 			e.printStackTrace();
 		}

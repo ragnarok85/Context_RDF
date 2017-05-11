@@ -11,11 +11,11 @@ public class TFIDF {
 	
 	public void tf(String idDoc, List<Word> words, Word term){
 		double frequency = 0;
-		int counter = 0;
+//		int counter = 0;
 		for(Word word : words){
 			if(term.getWord().equalsIgnoreCase(word.getWord())){
 				frequency++;
-				counter++;
+//				counter++;
 			}
 		}
 		frequency = frequency/words.size();

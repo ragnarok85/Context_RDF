@@ -76,10 +76,11 @@ public class Main {
 	public static void main(String... args) {
 		
 		logger.trace("============Multiprototype module=============");
+		//TODO inserted by lti [May 11, 2017,1:22:35 PM] Check why all seed's variables are comment
 		
 		String OrigCorpusPath  = "";
-		String seedWordsPath = "";
-		String seedWordsContent = "";
+//		String seedWordsPath = "";
+//		String seedWordsContent = "";
 		Main main = new Main();
 		/*
 		 * args[0] - Input = Corpus path
@@ -87,8 +88,8 @@ public class Main {
 		 * args[2] - output folders
 		 * args[3] - output final result
 		 **/
-		File seedWordsFile = null;
-		String outputFinalResult = "";
+//		File seedWordsFile = null;
+//		String outputFinalResult = "";
 		
 		main.initialSettings(args);
 		
@@ -97,12 +98,12 @@ public class Main {
 		}else{
 			OrigCorpusPath = args[0];
 			if(args[1] != null){
-				seedWordsPath = args[1];
-				seedWordsFile = new File(seedWordsPath);
-				seedWordsContent = Utils.getFileContentAsString(seedWordsPath);
+//				seedWordsPath = args[1];
+//				seedWordsFile = new File(seedWordsPath);
+//				seedWordsContent = Utils.getFileContentAsString(seedWordsPath);
 			}
 			outputFolder = args[2];
-			outputFinalResult = args[3];
+//			outputFinalResult = args[3];
 		}
 		
 		//Setting folders****************
@@ -160,7 +161,7 @@ public class Main {
 			corpus.put(file.getName(), documentWords);
 		}
 		prep.printLemmaWord(outputFolder+outputLemmaWord+"Lemma-Words.txt");
-		List<String> seedWords = prep.preProcessingSeeds(seedWordsContent,stopWords);
+//		List<String> seedWords = prep.preProcessingSeeds(seedWordsContent,stopWords);
 		corp.setDocuments(documents);
 		corp.setNumberWordsCorpus(numberWords);
 		corp.setIdDocList(idDocList);

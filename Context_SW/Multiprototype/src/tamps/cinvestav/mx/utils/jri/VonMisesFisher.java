@@ -204,7 +204,7 @@ public class VonMisesFisher {
 			for (int i = 1; i <= numRow; i++) {
 				//System.out.println("clusters_names[," + i + "]");
 				String clusterCol[] = re.eval("clusters_names["+i+",]").asStringArray();
-				int k = 0;
+//				int k = 0;
 				for (int j = 0; j < clusterCol.length; j++) {
 					if(cluster_vals[i-1][j] > 0d){
 						//System.out.println("cluster_vals["+(i-1)+"]"+"["+j+"]"+" = " + cluster_vals[i-1][j]);

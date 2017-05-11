@@ -54,7 +54,6 @@ public class Word implements Comparable<Word>{
 	}
 	
 	public int compareTo(Word o) {
-		// TODO Auto-generated method stub
 		int returnValue = 0;
 		if(this.getFrequencyAsNeighbour() > o.getFrequencyAsNeighbour()){
 			returnValue = -1;

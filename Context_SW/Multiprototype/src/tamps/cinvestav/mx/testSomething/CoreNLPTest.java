@@ -1,9 +1,7 @@
 package tamps.cinvestav.mx.testSomething;
 
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
