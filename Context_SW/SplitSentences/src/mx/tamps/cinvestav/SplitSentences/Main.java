@@ -138,7 +138,7 @@ public class Main {
 		try(PrintWriter pw = new PrintWriter(new FileWriter(statisticsFile))){
 			pw.write("File\tSentence\tnumWords\n");
 			for(String statistic : statistics.keySet()){
-				int totalNumWords = 0;
+//				int totalNumWords = 0;
 				for(String sentence : statistics.get(statistic).keySet()){
 					logger.info("statistic: " + statistic + "\t sentence: " + sentence + "\t #Words: " + statistics.get(statistic).get(sentence));
 					pw.write(statistic + "\t" + sentence + "\t" + statistics.get(statistic).get(sentence));
