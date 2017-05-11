@@ -1,0 +1,19 @@
+Quadrature mirror filter
+
+The quadrature mirror filters (QMF) are two filters with frequency characteristics symmetric about formula_1 of sampling frequency (i.e. formula_2). They are used especially in process of orthogonal discrete wavelet transform design.
+
+In notation of Z-transform, we can create the quadrature mirror filter formula_3 to (original) filter formula_4 by substitution formula_5 with formula_6 in the transfer function of formula_4.
+
+By doing it, the transfer characteristic of formula_3 is shifted to formula_4 by formula_11.
+
+Impulse characteristic is therefore
+
+According to the picture above, the signal split and passed into these filters can be downsampled by a factor of two. Nevertheless, original signal can be still reconstructed by using reconstruction filters formula_16 and formula_17. Reconstruction filters are given by time reversal analysis filters.
+
+For orthogonal discrete wavelet transform formula_3 is given by
+
+Impulse characteristic is
+
+Reconstruction filters are still given by same equations.
+
+

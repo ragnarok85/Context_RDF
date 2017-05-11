@@ -1,0 +1,29 @@
+IOS 7
+
+iOS 7 is the seventh major version of Apple's mobile operating system, iOS. It replaced the last major version, iOS 6. The new version was announced at the company's Worldwide Developers Conference (WWDC) on June 10, 2013, and it was released on September 18, 2013. iOS 7 includes a new, redesigned look and has a number of changes. The latest update (or minor version), iOS 7.1.2, was released on June 30, 2014.
+
+iOS 7 Beta 1 was released to developers on June 10, 2013. It supported the iPhone 4 and later, as well as the iPod Touch (5th generation). iOS 7 Beta 2 was released on June 24, 2013, two weeks after the first beta was released. It added support for the iPad 2 and later, as well as the iPad Mini. Two weeks later, iOS 7 Beta 3 was released on July 8, 2013. Until iOS 7 Beta 4, a new beta was being released every two weeks. iOS 7 Beta 4 was released on July 29. 2013, three weeks after the third beta was released. The fifth beta, iOS 7 Beta 5, was released on August 15, 2013, and brought many fixes and improvements.
+
+At their iPhone event on September 10, 2013, Apple announced that iOS 7 would be officially released to everyone on September 18, 2013, for iPhone, iPad, and iPod Touch.
+
+Apple released iOS 7.1 on March 10, 2014 and it is the first major update to the operating system since it was first released in September 2013. It was released almost 5 months after the first beta of iOS 7.1 was released to developers. It made several improvements to the operating system including performance improvements and Siri enhancements. It also adds support for a new feature called CarPlay, which works by connecting an iPhone to a car that has a touchscreen. It is currently available for the iPhone 5, iPhone 5C, and iPhone 5S.
+
+iOS 7 was announced during the first keynote of the Apple Worldwide Developers Conference (WWDC) on June 10, 2013. It was the "biggest change to iOS since the introduction of the iPhone", because the most noticeable change was a change to the entire operating system. In a video that was shown during the keynote, the update had many changes to the app icons, adding layers, and using translucent effects throughout the operating system. iOS 7's design departs from elements like green felt in Game Center, wood in Newsstand, and leather in Calendar, in favor of a flat, colorful design.
+
+A new feature called AirDrop is introduced in iOS 7. It supports the iPhone 5 and later, the iPod Touch (5th generation), the iPad (4th generation) and later, and the iPad mini (1st generation) and later. With AirDrop, you can share files, photos, videos, and more by turning on Wi-Fi and Bluetooth and choose the person you want to share with. You can make yourself discoverable to your contacts or everyone.
+
+The App Store introduces a new feature called Popular Near Me, which allows the user to find apps that are popular in their area. The App Store also supports automatic updates, meaning that apps will update by themselves and that the user does not have to update the apps.
+
+The Camera app has a new look and supports video recording, camera, and panorama mode (on some iPhone and iPod touch models), as well as a new square photo mode. iOS 7 also includes photo filters, a new Burst mode, and 120 fps video recording (on devices that support it).
+
+A new feature, Control Center, can be seen by swiping up from the bottom of the screen. It provides quick access to features such as Airplane Mode, brightness, music controls, AirPlay, AirDrop, and shortcuts to camera, calculator, clock, and a built-in flashlight. You can also turn Bluetooth on/off, Do Not Disturb on/off, lock the screen's orientation, and play, skip, or pause a song.
+
+iTunes Radio is an ad-supported service that is available to all iTunes users and includes integration with Siri. Users are able to skip songs, create stations, and buy songs from the iTunes Store. They can also search through their history of songs that they have played. The number of songs that they can skip is limited, just like Pandora Radio.
+
+Currently, iTunes Radio is only available in the U.S. and Australia, but it will be rolled out to other countries in the future. It is only available on iTunes, iOS, and Apple TV.
+
+iOS 7 provides full multitasking for all apps. That means that apps will update their content by themselves and instead of showing the app icon, it shows a screenshot of what the app looks like.
+
+CarPlay is a new feature that was released as part of iOS 7.1. It uses Siri to answer phone calls, respond to text messages, give directions, and play music while keeping your eyes on the road. It uses the car's screen to do this. It works by connecting an iPhone to the car. CarPlay currently supports the iPhone 5, iPhone 5C, and iPhone 5S.
+
+

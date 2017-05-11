@@ -1,0 +1,18 @@
+MAX Linux
+
+MAX: Madrid_Linux is an operating system of the Ministry of Education and Employment of the Community of Madrid, specially adapted for using it in primary and secondary schools, due to its simplicity, robustness and included data collection software.
+
+Even the second version was based on Knoppix, a distribution based on Debian GNU/Linux. The current version of MAX is specially designed for using it in the educational environment as a system for teacher or student. However, it can also be used by the users of personal computers. In addition, it comes ready to be installed and used, and is equipped with multimedia and variety of programs on three desktops: GNOME, KDE and Xfce. In any case, it can be fully used in "live" mode, that is to say, directly from the DVD without having it installed on the hard disk.
+
+Its explicit are:
+
+The installation disc is a DVD that can be used "en vivo" (live) before installing MAX on the hard disk, that is to say, from the DVD drive. Besides, even if the opposite is claimed, these programs can be installed if the computer has the access to the Internet, so that you can test the applications that do not come installed on the live system. There is yet another way to use live MAX version installed accessibility. In the guide mentioned before installation you can find a lot of useful information about the facilities.
+
+On the other hand, the installation for desktop MAX is even easier than Ubuntu, because a username is needed. All versions of MAX always have two users incorporated: "student" and "Madrid". The first is intended, of course, for students, and has fewer privileges on the system that the user "Madrid has", but this is not the root user or system administrator. In short, when entering the "Madrid" system,the user has to type his or her username and "cmadrid" (the letter ce + "madrid") and password. This has always been so in MAX, but you can change passwords once inside the system, and can also create new users, for those who have to choose the privileges they have. What I have done from the beginning was to stay as the user "madrid", and whenever you need to get access as an administrator, click "cmadrid" password, which is also the root.
+
+MAX desktop is highlighted with a bright blue background and a rounded image resembling the terrestrial sphere. This is the "GNOME" desktop, which MAX used as principal, but you can login with the other two desktops: "KDE" and "XFace". This requires logout (not restart) and re-enter after choosing another desk in the "Session menu", which is done in seconds. But the three desks maintain the same background and the panel bar at the bottom of the screen. In addition, programs are the same in all three desks, with some changes that depend on the chosen desktop. Actually, it could be using a desk with other programs.
+
+The programs that MAX Linux contains are distributed as follows:
+
+
+

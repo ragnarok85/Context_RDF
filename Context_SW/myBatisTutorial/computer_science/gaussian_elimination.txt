@@ -1,0 +1,17 @@
+Gaussian elimination
+
+In mathematics, Gaussian elimination (also called row reduction) is a method used to solve systems of linear equations. It is named after Carl Friedrich Gauss, a famous German mathematician who wrote about this method, but did not invent it.
+
+To perform Gaussian elimination, the coefficients of the terms in the system of linear equations are used to create a type of matrix called an augmented matrix. Then, elementary row operations are used to simplify the matrix. The three types of row operations used are:
+
+The goal of Gaussian elimination is to get the matrix in "row-echelon form". If a matrix is in row-echelon form, that means that reading from left to right, each row will start with at least one more zero term than the row above it. Some definitions of Gaussian elimination say that the matrix result has to be in "reduced row-echelon form". That means that the matrix is in row-echelon form and the only non-zero term in each row is 1. Gaussian elimination that creates a reduced row-echelon matrix result is sometimes called Gauss-Jordan elimination.
+
+Suppose the goal is to find the answers to this system of linear equations.
+First, the system needs to be turned into an augmented matrix. In an augmented matrix, each linear equation becomes a row. On one side of the augmented matrix, the coefficients of each term in the linear equation become numbers in the matrix. On the other side of the augmented matrix are the constant terms each linear equation is equal to. For this system, the augmented matrix is:
+
+Then, row operations can be done on the augmented matrix to simplify it. The table below shows the row reduction process on the system of equations and on the augmented matrix.
+
+The matrix is now in row-echelon form. This is also called "triangular form".
+The matrix is now in reduced row-echelon form. Reading this matrix tells us that the solutions for this system of equations occur when x = 2, y = 3, and z = -1.
+
+

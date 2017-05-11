@@ -1,0 +1,12 @@
+Pseudocode
+
+Pseudocode (sometimes written as pseudo-code) is a form of source code that is written for humans, not machines, to read. 
+It is often written to show how an algorithm completes the needed/given task.
+
+Reads the for loop and prints all the integers from 1 to 50.
+
+This pseudocode outputs powers of two.
+
+The above pseudocode sample computes a logical and function.
+
+

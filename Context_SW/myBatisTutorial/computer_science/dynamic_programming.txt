@@ -1,0 +1,10 @@
+Dynamic programming
+
+Dynamic programming is a method of solving problems, which is used in computer science, mathematics and economics. Using this method, a complex problem is split into simpler problems, which are then solved. At the end, the solutions of the simpler problems are used to find the solution of the original complex problem. 
+
+Dynamic programming can be used in cases where it is possible to split a problem into smaller problems, which are all quite similar. 
+
+Richard Bellman, an US mathematician first used the term in the 1940s, when he wanted to solve problems in the field of Control theory. He also stated what is now known as :
+
+
+

@@ -1,0 +1,7 @@
+Theoretical computer science
+
+Theoretical Computer Science is domain of Computer Science that looks at the notion of information and about how information can be processed. It also looks at the way models are built in computer science. Common divisions of theoretical computer sciences include:
+
+Other domains, such as Logic and Statistics used as well, but in most cases, they are not the primary focus of theoretical computer science.
+
+

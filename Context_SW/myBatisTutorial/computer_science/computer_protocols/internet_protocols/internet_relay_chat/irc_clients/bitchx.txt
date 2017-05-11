@@ -1,0 +1,8 @@
+BitchX
+
+BitchX is an IRC client. The first public release was in 1996. The latest stable version is 1.1 and was updated in 2004. It is free of charge and was written in C. It's last version has lots of security software bugs and it's use is generally discouraged.
+
+In 2010, people started working on BitchX again under the name of 'BitchX2'
+
+
+

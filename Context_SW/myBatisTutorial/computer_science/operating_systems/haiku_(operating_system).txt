@@ -1,0 +1,10 @@
+Haiku (operating system)
+
+Haiku (initially OpenBeOS) is an open source operating system in development aimed at personal desktop computing and inspired by Be Inc.'s BeOS. It is designed to be fast and easy to use. Haiku is written in C++ and uses a kernel based on the NewOS kernel. Haiku is licensed under the MIT License.
+
+Haiku uses the Be File System (BFS). Features of this filesystem include a 64-bit address space, journaling, and extensible attributes. Haiku's version of the BFS is optimized for speed and performance.
+
+Michael Phipps started the Haiku project in 2001 as Palm, Inc. was purchasing Be, Inc.. In 2003, Phipps founded the non-profit Haiku, Inc. in order to support Haiku and its development.
+
+
+

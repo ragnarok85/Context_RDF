@@ -1,0 +1,15 @@
+ 
+internet relay chat
+commands
+list of internet relay chat commands
+freenode
+freenode
+infobot
+irc bot
+k-line
+netsplit
+operator
+internet relay chat operator
+takeover
+internet relay chat takeover
+undernet

@@ -1,0 +1,11 @@
+Lego Mindstorms NXT
+
+Lego Mindstorms NXT is a new robotic kit. It is made to build and program first robot in 30 minutes. The new kit replaces system called Robotics Invention System. The available versions are: "Lego Mindstorms NXT 1.0" (set #8527), "Lego Mindstorm NXT 2.0" (set #8547) and "Lego Mindstorms Education NXT" (set #9797). It comes with the NXT-G programming software. It is possible to use unofficial programming languages, such as NXC, NBC, leJOS NXJ, and RobotC using software that is not included with the kit.
+
+The main component in the kit is computer that controls the robot's movements and actions called the "NXT Intelligent Brick". It has 32-bit microprocessor, four inputs, three outputs, Bluetooth communications, a speaker, 1 USB 2.0 port, and a 100×64 LCD display. Also, the NXT includes three powerful servo motors with rotation sensors. Very simple programs can be created in the menu on the "NXT Intelligent Brick "without a computer. More complicated programs can be downloaded via Bluetooth or USB from the computer to the robot. The graphical, drag-and-drop programming language NXT-G is simple, but complete enough to be usable.
+
+The NXT comes with five types of sensors: Touch, Light, Sound, Ultrasonic, and Rotation. The sond sensor is not included in the Lego Mindstorms NXT 2.0 kit. 
+
+In the "Lego Mindstorms NXT 2.0" is new Colour sensor. It can detects different colours and measure the amount of reflected light and ambient light.
+
+

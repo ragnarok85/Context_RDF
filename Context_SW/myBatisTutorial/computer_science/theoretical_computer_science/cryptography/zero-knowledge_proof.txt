@@ -1,0 +1,15 @@
+Zero-knowledge proof
+
+A zero-knowledge proof or zero-knowledge protocol is a protocol used in cryptography. In such a protocol, two parties are communicating. The task of one party is to convince the other that it knows some secret, but without revealing the secret.
+
+There is a well-known story showing some of the ideas of zero-knowledge proofs. Usually, the two parties in a zero-knowledge proof are called Peggy (the prover of the statement) and Victor (the verifier of the statement).
+
+In this story, Peggy has uncovered the secret word used to open a magic door in a cave. The cave is shaped like a circle, with the entrance on one side and the magic door blocking the opposite side. Victor says he'll pay her for the secret, but not until he's sure that she really knows it. Peggy says she'll tell him the secret, but not until she receives the money. They devise a scheme by which Peggy can prove that she knows the word without telling it to Victor.
+
+First, Victor waits outside the cave as Peggy goes in. They label the left and right paths from the entrance A and B. Peggy randomly takes either path A or B. Then, Victor enters the cave and shouts the name of the path he wants her to use to return, either A or B, chosen at random. Providing she really does know the magic word, this is easy: she opens the door, if necessary, and returns along the desired path. Note that Victor does not know which path she has gone down.
+
+However, suppose she did not know the word. Then, she would only be able to return by the named path if Victor were to give the name of the same path that she had entered by. Since Victor would choose A or B at random, he would have a 50% chance of guessing correctly. If they were to repeat this trick many times, say 20 times in a row, her chance of successfully anticipating all of Victor's requests would become very small. 
+
+For this reason, if Peggy reliably appears at the exit Victor names, he can conclude that she is very likely to know the secret word.
+
+

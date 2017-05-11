@@ -1,0 +1,19 @@
+Haskell (programming language)
+
+Haskell is a purely functional programming language. It is named after Haskell Brooks Curry, a U.S. mathematician who contributed a lot to logic. Haskell is based on lambda calculus and uses the Greek letter lambda as its logo. The main implementations are the Glasgow Haskell Compiler (GHC), and Hugs, a Haskell interpreter. 
+
+The following is an example Hello World program in Haskell:
+
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, World!"
+One way to create an infinite list of Fibonacci numbers is this:
+
+fib n = fibs !! n
+
+Haskel was influenced by many earlier programming languages. These were Clean, FP, Gofer, Hope and Hope, Id, ISWIM, KRC, Lisp, Miranda, ML and Standard ML, Orwell, SASL, SISAL, and Scheme.
+
+Haskell itself has influenced many later programming languages, such as Agda, Bluespec, C++11/Concepts, C#/LINQ, Cayenne, Clean, Clojure, CoffeeScript, Curry, F#, Isabelle, Java/Generics, Mercury, Perl 6, Python, Scala, Visual Basic 9.0.
+
+

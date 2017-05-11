@@ -1,0 +1,7 @@
+MIPS architecture
+
+The MIPS architecture is an instruction set for computers that was developed at Stanford University in 1981. At the start, MIPS was an acronym for Microprocessor without Interlocked Pipeline Stages. Most of it is done in RISC. In a full RISC architecture, all commands have the same length. This simplifies the design of the microchip and allows to use fast clock cycles. At the start, the architecture used a 32 bit bus, but from 1991, a 64 bit architecture was used.
+
+In 2015, MIPS implementations are primarily used in embedded systems such as Windows CE devices, routers, residential gateways, and video game consoles such as the Sony Playstation, PlayStation 2 and PlayStation Portable. Until late 2006, they were also used in many of SGI's computer products. MIPS implementations were also used by Digital Equipment Corporation, NEC, Pyramid Technology, Siemens Nixdorf, Tandem Computers and others during the late 1980s and 1990s. In the mid to late 1990s, it was estimated that one in three RISC microprocessors produced was a MIPS implementation.
+
+

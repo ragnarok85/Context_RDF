@@ -1,0 +1,9 @@
+Netsplit
+
+In computer networking, mainly Internet Relay Chat (IRC), netsplit is the event when two servers disconnect. Because how IRC networks are built, a disconnection between two servers splits the entire network into two parts. This makes it look like people on the other half of the network have quit from IRC.
+
+Below is an example of typical netsplit. When two servers split, a user sees this as large number of users quitting. After the servers are reconnected, a user sees the other users rejoining.
+
+
+
+

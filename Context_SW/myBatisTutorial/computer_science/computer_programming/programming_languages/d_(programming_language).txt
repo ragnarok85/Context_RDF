@@ -1,0 +1,21 @@
+D (programming language)
+
+The D programming language is an object-oriented, imperative, multi-paradigm system programming language. D language originated as a re-engineering of C++, and D's design goals try combining the performance of compiled languages with the safety and expressive power of modern dynamic languages. Native D code is commonly as fast as equivalent C++ code, while being shorter and memory-safe.
+
+This example program prints its command line arguments. The codice_1 function is the entry point of a D program, and codice_2 is an array of strings representing the command line arguments. A codice_3 in D is an array of characters, represented by codice_4 in D1, or codice_5 in D2.
+import std.stdio: writefln;
+
+void main(string[] args)
+
+The codice_6 statement can iterate over any collection. In this case, it is producing a sequence of indexes (codice_7) and values (codice_8) from the array codice_2. The index codice_7 and the value codice_8 have their types inferred from the type of the array codice_2.
+
+The following shows several D capabilities and D design trade-offs in a very short program. It iterates the lines of a text file named codice_13 that contains a different word on each line, and prints all the words that are anagrams of other words.
+
+import std.stdio, std.algorithm, std.range, std.string;
+
+void main()
+
+
+
+
+

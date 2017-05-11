@@ -1,0 +1,9 @@
+Graphics Interchange Format
+
+The Graphics Interchange Format (often shortened to GIF) is a file format for images. 
+
+It is a raster graphics format; that is the image has a fixed size. CompuServe developed and introduced the format in 1987. Today, it is widely used on the World Wide Web.The format supports up to 8 bits per pixel, or 256 colors. It also supports animations. Each frame of an animation can have its own set of 256 colors. GIF is not used to show photographs very much, because having only 256 colors is limiting for such a task. 
+
+To reduce their size, images are compressed using Lempel–Ziv–Welch compression. Lempel-Ziv-Welch, or LZW is a lossless compression. No information is lost when compressing or uncompressing. There were some problems with the patent of the LZW compression. That patent was not held by CompuServe, but by Unisys. These issues led to the development of another format, called PNG. This is no longer a problem, because the patents have expired.
+
+

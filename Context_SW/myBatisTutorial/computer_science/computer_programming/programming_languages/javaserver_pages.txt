@@ -1,0 +1,5 @@
+JavaServer Pages
+
+JavaServer Pages (JSP java) is a programming language used by server applications. It was created by Sun Microsystems. A software server such as Apache is needed to run it.
+
+

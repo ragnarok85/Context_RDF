@@ -1,0 +1,10 @@
+Random forest
+
+Random Forest is a statistical algorithm that is used to cluster points of data in functional groups. When the data set is large and/or there are many variables it becomes difficult to cluster the data because not all variables can be taken into account, therefore the algorithm can also give a certain chance that a data point belongs in a certain group.
+
+This is how the clustering takes place.
+
+
+In a random forest algorithm the number of trees grown (ntree) and the number of variables that are used at each split (mtry) can be chosen by hand; example settings are 500 trees, 71 variables.
+
+

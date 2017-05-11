@@ -1,0 +1,8 @@
+Protocol 41
+
+Protocol 41 is a communication protocol which embeds internet protocol version 6 (IPv6) packets inside Internet protocol version 4 (IPv4) packets. It is usually used to allow a computer or router with only an IPv4 address to obtain an IPv6 address (or possibly more than one address, to serve multiple computers). Most IPv6 tunnel providers support Protocol 41, including Hurricane Electric and SixXS. 6to4, 6rd, and 6in4 are all different methods of using Protocol 41. Protocol 41 does not use TCP or UDP (although the IPv6 packets inside can carry TCP and UDP traffic). Is not to be confused with TCP or UDP port number 41.
+
+6to4 is a special usage of protocol 41. A 6to4 address starts with the digits 2002, followed by the IPv4 address of its router. A 6to4 address might look like: 2002:CB00:71FF:0:fe64:3486:d398:3346
+
+
+

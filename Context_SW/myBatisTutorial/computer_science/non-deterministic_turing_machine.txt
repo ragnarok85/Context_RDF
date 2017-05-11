@@ -1,0 +1,5 @@
+Non-deterministic turing machine
+
+A Turing machine is an idea from computer science that tries to describe how some computers work. Deterministic Turing machines use a function. Given the current state of the Turing machine, it selects another state the Turing machine should have. In other words, from each state there is one other state the machine can have. A non-deterministic Turing machine uses a relation. This means that from some states there are several other states that are possible.
+
+

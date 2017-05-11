@@ -1,0 +1,6 @@
+Standard ML
+
+Standard ML is a functional programming language which is a dialect of ML (programming language). It is sometimes used for writing compilers and in theorem provers.
+Here is an example of a factorial function written in a simple, non-tail recursive, style.
+
+

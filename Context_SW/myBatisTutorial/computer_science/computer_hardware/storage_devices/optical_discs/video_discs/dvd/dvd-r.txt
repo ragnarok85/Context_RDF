@@ -1,0 +1,7 @@
+DVD-R
+
+DVD-R is a recordable DVD format. It uses a thin organic dye layer which is recorded by a high-power laser. The laser bleaches the recorded areas, creating reflective areas that can then be played back with a low-power laser. A DVD-R can be recorded with DVD-Video, DVD-Audio, or DVD-ROM content.A DVD-R typically has a storage capacity of 4.7 GB. Pioneer has also developed an 8.5 GB dual layer version, DVD-R DL, which appeared on the market in 2005.
+
+DVD-R(W) is one of three competing industry standard DVD recordable formats; the others are DVD+R(W) and DVD-RAM. A DVD-R can be written only once, in contrast with a rewritable DVD formats such as DVD-RW or DVD+RW which can be rewritten multiple (1000+) times.
+
+

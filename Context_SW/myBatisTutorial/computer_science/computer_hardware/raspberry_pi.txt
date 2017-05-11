@@ -1,0 +1,9 @@
+Raspberry Pi
+
+The Raspberry Pi is a low-cost credit-card sized single-board computer. The Raspberry Pi was created in the UK by the Raspberry Pi Foundation. The Raspberry Pi Foundation's goal is to "advance the education of adults and children, particularly in the field of computers, computer science and related subjects." Many people have used the Raspberry Pi to make things like cameras, gaming machines, robots, web servers and media centres.
+There are a few different versions of the Raspberry Pi, each made for different uses. All of the current versions use a microSD card for the operating system and file storage, are powered by a micro-USB port and have one HDMI port, one audio/video jack socket and a 40-pin GPIO connector
+This is a list of the current versions of the Raspberry Pi and their features.
+
+
+
+

@@ -1,0 +1,14 @@
+Hello world program
+
+A Hello world program is usually a program made by computer programmers that are new to a programming language, or to test if the compiler for this language is working correctly. It will simply put the text Hello, World! on the screen. This program is available in all programming languages.
+One way to do the Hello World program is shown below, in the C programming language.
+
+int main(int argc, char* argv[])
+
+And on Pascal programming language
+
+program helloworld;
+begin
+end.
+
+

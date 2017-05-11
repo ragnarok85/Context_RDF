@@ -1,0 +1,5 @@
+Adaptive replacement cache
+
+Adaptive replacement cache (often abbreviates "ARC") is a page replacement algorithm which was developed by IBM. It has a better performance than the frequently used LRU cache algorithm.
+
+

@@ -1,0 +1,9 @@
+Network card
+
+A Network interface card, NIC, or Network card is an electronic device that connects a computer to a computer network, usually a LAN. It is considered a piece of computer hardware. Today, most computers have network cards. 
+
+Network cards let a computer exchange data with the network. To achieve the connection, network cards use a suitable protocol, for example CSMA/CD. Network cards usually implement the first two layers of the OSI model, that is the physical layer, and the data link layer. Today, most network cards use Ethernet. Other network types are ARCNET, introduced in 1977, LocalTalk or Token Ring. There are many network cards which are compatible to only respective software. depending on your computer architecture you have to find a compatible network card.They are needed to access the Internet and local networks, and they can function with custom networks types
+
+Some network cards do not use a cable to connect to the network, but an antenna. Network cards commonly use a number of protocols called IEEE 802.11, popularly known as Wireless LAN or Wi-Fi. Bluetooth is another method of wireless communication, usually over a short distance.
+
+

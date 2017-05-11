@@ -1,0 +1,18 @@
+Array data structure
+
+In programming languages, an array is a way of storing several items (such as integers). These items must have the same type (only integers, only strings, ...) because an array can not store different kinds of items. Every item in an array has a number so the programmer can get the item by using that number. This number is called the "index". In some programming languages, the first item has index 0, the second item has index 1 and so on. But in other languages, the first item has index 1 (and then 2, 3, ...).
+
+When the programmer creates an array, they must give the size of the array. This is the number of items that can be stored in the array. If the programmer wants to store more items, then they must create a new array. This is because the size of an array can not be changed.
+
+In the programming language C, arrays can be created like this:
+
+This creates an array of integers and it can store 5 integers. The programmer can now store integers in the array by doing:
+
+The programmer can use a value in the array like this:
+
+In the programming language Java, arrays can be created like this:
+
+This creates an array of integers and it can store 5 integers. The programmer can now store integers in the array by doing:
+
+The programmer can use a value in the array like this:
+

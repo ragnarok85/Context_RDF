@@ -1,0 +1,26 @@
+Python (programming language)
+
+Python is an open source programming language made to both look good and be easy to read. A programmer named Guido van Rossum made it in 1991. Python is named after the television show Monty Python's Flying Circus. Many examples and tutorials include jokes from the show.
+
+Python is an interpreted language. Interpreted languages do not need to be compiled to run. A program called an interpreter will run python code on any kind of computer it can run on itself. This means if the programmer needs to change the code they can quickly see the results. This also means Python is slower than a compiled language like C, because it is not running machine code directly.
+
+Python is a good programming language for beginners. It is a high-level language, which means a programmer can focus on what to do instead of how to do it. Writing programs in Python takes less time than in another language.
+
+Python drew inspiration from other programming languages like C, C++, Java, Perl, and Lisp.
+
+Python has a very easy to read syntax. Some of it comes from C, because that is the language that Python was written in. One big change with Python is the use of whitespace to delimit code: spaces or tabs are used to organize code by the amount of spaces or tabs. This means at the end of each line, a semicolon is not needed and curly braces ({}) are not used to group code, which are both common in C. The combined effect makes Python a very easy to read language.
+
+Python is used by hundreds of thousands of programmers and is used in many places. Sometimes only Python code is used for a program, but most of the time it is used to do simple jobs while another programming language is used to do more complicated tasks.
+
+Its standard library is made up of many functions that come with Python when it is installed. On the Internet there are many other libraries available that make it possible for the Python language to do more things. These libraries make it a powerful language; it can do many different things.
+
+Some things that Python is often used for are:
+
+This is a small example of a Python program. It shows "Hello World!" on the screen. 
+
+Python also does something called "dynamic variable assignment". This means that when a number or word is made in a program, the user does not have to say what type it is. This makes it easier to reuse variable names, making fast changes simpler. An example of this is shown below. This code will make both a number and a word, and show them both, using only one variable.
+
+In a "statically typed" language like C, a programmer would have to say whether codice_1 was a number or a word before C would let the programmer set up codice_1 and the type of it cannot change from a number to a word.
+
+
+

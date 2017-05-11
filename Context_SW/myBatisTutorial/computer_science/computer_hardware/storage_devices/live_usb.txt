@@ -1,0 +1,6 @@
+Live USB
+
+A Live USB is a USB flash drive that contains a full operating system so it can serve as a boot device.
+
+
+

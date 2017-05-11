@@ -1,0 +1,30 @@
+anonymous function
+batch file
+class (programming)
+compiler
+computer programming
+goto
+goto
+header file
+interpreter (computing)
+iteration
+jit
+logic error
+method (computer science)
+microsoft visual studio
+modular programming
+object (computer science)
+parser
+pointer (computer programming)
+pointer aliasing (computer programming)
+program specification
+programming paradigm
+quine
+return statement
+semantic resolution tree
+service oriented architecture
+structured program theorem
+tacit programming
+trait (computer programming)
+unreachable code
+yabasic

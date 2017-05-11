@@ -1,0 +1,11 @@
+IRCd
+
+An IRCd, meaning Internet Relay Chat server program, is a program, server software that uses the IRC protocol. This allows people to talk to each other on the Internet. They exchange textual messages in real time.
+
+The server accepts connections from IRC clients on a group of TCP ports. When the server is part of an IRC network, it also keeps one or more connections with other servers/daemons.
+
+The word "ircd" once referred to only one piece of software.
+
+
+
+

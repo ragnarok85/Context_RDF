@@ -1,0 +1,9 @@
+Batch file
+
+A batch file is a special kind of computer file that tells a computer a list of instructions to do in order. Batch files were used a lot when DOS was used by many people. They are good for automating many small pieces of work. Some people still use batch files today.
+
+This is an example of a batch file. It is called a "Hello World" example because it prints the text "Hello World!" to the screen.
+
+When that text is put into a file with an extension of ".bat", saved, and run, it will put this on the screen:
+
+

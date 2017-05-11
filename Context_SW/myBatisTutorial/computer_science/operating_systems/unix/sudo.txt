@@ -1,0 +1,16 @@
+Sudo
+
+The sudo command is a program for Unix-like operating systems like Linux distibutions which allows a user to run a program as the root (the administator). It is an abbreviation for "super user do".
+"Superuser" means "administrator".
+
+It is important to have a sudo command as it keeps normal users from making changes to the computer's files that can seriously mess up the system, making it unusable.
+
+The sudo command must be used from the command line, but it can run together with any other commands and software that use the command line. For example, to delete a file(Example.php in this example) that require permissions that normal users do not typically have, the user can type:
+
+Typing the above would show up like this:
+
+After that, the program would ask for the password. When the password is entered correctly, the computer would then run the command.
+Programs with a graphical user interface can also be run with sudo, but it may mess them up.
+Various desktops for Unix-like systems usually have their own version of sudo for such programs.
+
+

@@ -1,0 +1,17 @@
+Schulze method
+
+The Schulze method is a way of voting that is used to fill a single position in an election. It was developed in 1997 by Markus Schulze. It is also known as Schwartz Sequential Dropping (SSD), Cloneproof Schwartz Sequential Dropping (CSSD), Beatpath Method, Beatpath Winner, Path Voting, and Path Winner. It is used by several organizations including Wikimedia, Debian, Gentoo, and the KDE.
+
+Voters rank the candidates in the order from the one that they most want to win to the one they least want to win. The same preference (how much the voters want the candidate to win or lose) can be given to more than one candidate, and candidates can be given no number (they are interpreted as the worst).
+
+Next, for every pair of two candidates, the two are compared: ignoring all other candidates, which of the two in the pair is preferred by most voters? How many voters agree with the majority decision is noted.
+
+More calculations take place. Given two candidates A and K, A is said to beat K with strength "t" if "t" voters prefer A to B, "t" voters prefer B to C, and so on, and "t" voters prefer J to K. The winner W is the one such that for every other candidate X, there is a "t" so that W beats X with strength "t", but X does not beat W with strength "t".
+
+Markus Schulze, A new monotonic, clone-independent, reversal symmetric, and condorcet-consistent single-winner election method, Social Choice and Welfare, volume 36, number 2, page 267–303, 2011. Preliminary version in "Voting Matters", 17:9-19, 2003.
+
+
+
+
+
+

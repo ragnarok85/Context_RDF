@@ -1,0 +1,31 @@
+HTML
+
+HyperText Markup Language (HTML) is a markup language for creating webpages. Webpages are usually viewed in a web browser. They can include writing, links, pictures, and even sound and video. HTML is used to mark and describe each of these kinds of content so the web browser can show them correctly.
+
+HTML can also be used to add meta information to a webpage. Meta information is information "about" the web page. For example, the name of the person who made it. Meta information is not usually shown by web browsers.
+
+Cascading Style Sheets (CSS) and JavaScript can be included in HTML code. CSS is used to change how a webpage looks. JavaScript is used to add features to webpages and make them more interactive.
+
+HTML was made by the World Wide Web Consortium (W3C). There are many versions of HTML. The current standard is HTML 4.01. So, it is the version the W3C recommends. A newer version, called HTML5, will become standard within the next few years. The W3C also develops XHTML. This is another markup language which is very similar to HTML, but more strict.
+
+HTML uses special bits of programming language called "tags" to let the browser know how a webpage should look. The tags usually come in pairs: an "opening" tag to tell the browser when to start doing something, and an "ending" tag to tell the browser when to stop doing something. There are many different kinds of tags, and each one has a different purpose.
+
+Opening tags have a keyword, such as "p," surrounded by angle brackets (< and >). For example, the tag codice_1 tells the browser the start a new paragraph. Ending tags look almost exactly the same, only they have a forward slash (/) added just before the keyword. For example, the tag codice_1 tells the browser to end a paragraph. A small number of tags, like codice_3 and codice_4, can be used without an ending tag.
+
+Some tags only work in certain browsers. For example, the codice_5 tag, which is used to make a bit of writing slide across the page, only works in the Internet Explorer and Mozilla Firefox browsers. Other browsers simply ignore this tag and display the writing normally. Many web page creators avoid using these "non-standard" tags because they want their pages to look the same with all browsers.
+
+Here is an example page in HTML:
+
+The W3C is making a new version of HTML, called HTML5, with more features and better support for things like online video. HTML5 is expected to become the standard version of HTML within the next few years.
+
+Some of the new features in HTML5 are:
+
+
+In addition, some features of HTML4 have been left out of HTML5. For example, the codice_1 tag, which is used to change how text looks on a page, is not available in HTML5. The W3C recommends doing this with CSS instead.
+
+One of the aims of HTML5 is to remove the need to use third-party software like Adobe Flash, because it is often slow on mobile devices like phones and can be used to infect your computer with viruses. Another aim is to reduce the amount of program code (JavaScript) running in each webpage, thus making the web faster.
+
+Currently, no browsers completely support all of HTML5's new features. However, some of the features are supported by Mozilla Firefox, Google Chrome and Apple Safari.
+
+
+

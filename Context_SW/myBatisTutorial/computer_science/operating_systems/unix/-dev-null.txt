@@ -1,0 +1,5 @@
+/dev/null
+
+In UNIX operating systems, /dev/null is a special file that removes everything written to it.
+
+

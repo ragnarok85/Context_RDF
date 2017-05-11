@@ -1,0 +1,23 @@
+Pascal
+
+Pascal is a programming language. It was created in 1970 by Niklaus Wirth, to help people learn how to make computer programs.
+
+Now, there are many different dialects of the language, so a Pascal program written for one compiler can not easily be used with another one.
+
+This code prints "Hello world" at console window
+
+program helloworld;
+begin
+end.
+This code calculate factorial of positive integer, using recursion.
+
+program fac;
+var j:integer;
+function fact(i:integer):integer ;
+begin
+end ;
+
+begin
+end.
+
+

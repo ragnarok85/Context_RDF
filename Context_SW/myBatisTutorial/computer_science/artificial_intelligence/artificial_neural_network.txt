@@ -1,0 +1,19 @@
+Artificial neural network
+
+A neural network (also called an ANN or an artificial neural network) is a computer simulation of the way a biological brain works. The brain solves problems with large clusters of biological neurons connected by axons. During a computation computing cells work in parallel to produce a result. This is one of the possible ways artificial intelligence may work. Most neural networks can still operate if one or more of the processing cells fail. 
+
+Neural networks can learn by themselves, an ability which sets them apart from normal computers. Today's computers cannot do anything they are not programmed to do.
+
+There are three ways a neural network can learn: supervised learning, unsupervised learning and reinforcement learning. These methods all work by either minimizing or maximizing a cost function, but each one is better at certain tasks.
+
+In supervised learning, the neural network is trained using example inputs and the correct output. The network can then work out the relationship between the input and output. For example, a network could be trained by showing it details about houses and the sale price. Once it has finished training it could estimate the sale price of another house by analyzing information like the number of bedrooms and local crime rate.
+
+Another example is the ALV (autonomous land vehicle). DARPA funded this project in the 1980s. In a demonstration in 1987 it travelled 600 metres at 3 km/h over difficult land, with sharp rocks, vegetation and steep ravines. This vehicle could drive itself as fast as 30 km/h. This network watched a 'teacher' drive, and saw the road using laser radar. The learning process was repeated for different road types. ALV used a kind of neural network called a multi-layer perceptron in which multiple layers of neurons are connected in series.
+
+Unsupervised learning only trains using inputs, and the network has to figure out how they relate to each other. This method is used to solve clustering problems, estimation problems, and self organising maps. For example, a self organizing map can be used to categorize iris flowers by stem size and colour.
+
+A reinforcement learning neural network learns by watching a teacher's actions. It works out the smallest cost and tries to use this to work out how to make the smallest cost in the future. It can be thought of as a Markov decision process. Another simple way to think of this is as "carrot and stick" learning (learning that rewards good behaviour and punishes bad behaviour).
+
+Recently, a research team from the University of Hertfordshire, UK used reinforcement learning to make an iCub humanoid robot learn to say simple words by babbling.
+
+

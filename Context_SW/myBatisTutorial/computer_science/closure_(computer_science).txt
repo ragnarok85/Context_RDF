@@ -1,0 +1,39 @@
+Closure (computer science)
+
+In computer science, a closure is a function that has an environment of its own. Inside this environment, there is at least one bound variable. Closures were first used in programming languages such as ML and Lisp.
+
+When a closure is used more than once, the bound variables stay the same in between.
+
+Anonymous functions are sometimes wrongly called closures. This is probably because most languages that have anonymous functions also have closures and it's common for programmers to learn about both at the same time. Closures and anonymous functions are similar but have important differences.
+
+Computer scientists worked out how closures should work in the 1960s and programmers were first able to use them in the Scheme programming language. Since then, many languages have been designed to support closures.
+
+Function objects are sometimes also called closures.
+
+Closures are normal in languages where functions are first-class values, meaning they can be moved around in the program like other variable types: returned by functions, bound to a variable name, etc. For example, take a look at the following Scheme function:
+In this example, the lambda expression codice_1 is part of the function codice_2. When the function is run, Scheme needs to determine the value of the lambda. It does this by creating a closure with the code for the lambda and a reference to the codice_3 variable, which is a free variable inside the lambda.
+
+The closure is then passed to the codice_4 function and the function runs it on each book in the list to determine which books to add. Because the closure itself has a reference to codice_3, it can use that variable each time codice_4 calls it. The function codice_4 itself might be defined in a completely separate file.
+
+Here is the same example rewritten in ECMAScript (JavaScript), another popular language with support for closures:
+The codice_8 keyword is used here instead of codice_9, and an codice_10 method instead of a global codice_4 function, but otherwise the code does the same thing in the same way.
+
+A function may create a closure and return it. The following example is a function that returns a function.
+
+In Scheme:
+In ECMAScript:
+Because the closure in this case outlives the scope of the function that creates it, the variables codice_12 and codice_13 live on after the function codice_14 returns. In languages without closures, the lifetime of a local variable coincides with the execution of the scope where that variable is declared. In languages with closures, variables must continue to exist as long as any existing closures have references to them.
+This is most commonly implemented using some form of garbage collection.
+
+While this is not always clarified, a closure need not be formed using an anonymous function. The Python programming language, for example, has very limited support for anonymous functions but fully supports closures. For example, one way the above ECMAScript example could be implemented in Python is:
+
+In this example, the function named "gradient" forms a closure together with the variables "f" and "dx". This closure is then returned by the outer function named "derivative". In fact, closures in Python must often be formed using named functions, where an anonymous function might be equally appropriate in other languages, because of the restrictions on lambda forms.
+
+Closures have many uses:
+
+In Scheme
+
+
+Note: Some speakers call any data structure that binds a lexical environment a closure, but the term usually refers specifically to functions.
+
+

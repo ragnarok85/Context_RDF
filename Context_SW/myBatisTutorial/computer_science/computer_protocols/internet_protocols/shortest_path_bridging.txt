@@ -1,0 +1,6 @@
+Shortest Path Bridging
+
+Shortest Path Bridging also known as IEEE 802.1aq is a computer protocol used to simplify the creation and configuration of networks, supports faster restore times, increased bandwidth, redundancy, and security.
+
+
+

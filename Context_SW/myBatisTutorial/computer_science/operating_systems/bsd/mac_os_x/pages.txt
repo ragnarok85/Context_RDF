@@ -1,0 +1,13 @@
+ical
+ical
+mac os
+mac os x leopard
+mac os x tiger
+mac os x v10.6
+mac os x lion
+os x
+os x mavericks
+os x mountain lion
+os x yosemite
+quicktime
+xquartz

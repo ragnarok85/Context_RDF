@@ -1,0 +1,5 @@
+AMOLED
+
+AMOLED (Active Matrix Organic Light Emitting Diode) displays are used for mobile phones, televisions and other electronic devices. An AMOLED display uses an active matrix of organic light-emitting diodes (OLED) that emit light when an electrical signal is present. OLEDs work just like a regular LED except it is only a few nanometers thick. Unlike LCDs, AMOLEDs do not require backlighting.
+
+

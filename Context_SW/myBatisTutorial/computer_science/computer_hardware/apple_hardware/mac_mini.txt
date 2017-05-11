@@ -1,0 +1,9 @@
+Mac Mini
+
+The Mac Mini is a personal computer made by Apple Inc. It is small for a desktop computer, at 6.5 inches (16.5 cm) square and 2 inches (5.1 cm) tall. It was introduced on January 22, 2005. The newest model came out on October 20, 2009. It weighs 2.9 pounds (1.31 kg). The Mac Mini's power supply is outside of the machine. It is about one third of the size of the computer itself.
+
+The Mac Mini is the first Macintosh desktop to not ship with a keyboard or mouse. Also, it does not come with a display. The Mac Mini is mainly intended for buyers who are "switchers" (users moving from PC/Windows to Mac) who already own a display, USB keyboard and a mouse. Others could easily buy these if needed.
+
+A special version of the computer is also intended for use as a server in a smaller system (like a home network). It comes with Snow Leopard Server and two 500GB hard drives. The server does not have a built-in optical disc drive like other Mac Minis.
+
+

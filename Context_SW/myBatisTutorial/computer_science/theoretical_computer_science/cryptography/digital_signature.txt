@@ -1,0 +1,73 @@
+Digital signature
+
+A digital signature or digital signature scheme is a type of asymmetric cryptography. For messages sent through an insecure channel, a good implementation of digital signature algorithm is the one that makes the receiver believe that the message was sent by the claimed sender, and trust the message.
+
+Digital signatures are equivalent to traditional handwritten signatures in many respects; properly implemented digital signatures are more difficult to copy than the handwritten type. Digital signature are implemented using cryptography. Digital signatures can also provide acknowledgement, meaning that the signer cannot successfully claim they did not sign a message, while also claiming their private key remains secret;
+
+Digital signatures are often used to implement electronic signatures, a broader term that refers to any electronic data that holds a meaning of a signature, but not all electronic signatures use digital signatures. In some countries, including the United States, and in the European Union, electronic signatures may have legal significance.
+
+A digital signature system typically consists of three algorithms:
+
+
+Two main properties are required by the digital signature system:
+
+The GMR signature scheme:
+
+In 1984, Shafi Goldwasser, Silvio Micali, and Ronald Rivest became the first to strictly define the security requirements of digital signature schemes. They described a hierarchy of attack models for signature schemes, they also present the GMR signature scheme. GMR scheme was proven to be secure against adaptive chosen-message attacks — even when an attacker receives signatures for messages of his choice, this does not allow him to copy a signature for a single additional message.
+
+In their foundational paper, Goldwasser, Micali, and Rivest lay out a hierarchy of attack models against digital signatures:
+
+
+They also describe a hierarchy of attack results:
+
+
+The strongest notion of security, therefore, is security against existential forgery under an adaptive chosen message attack.
+
+DIGITAL SIGNATURES
+
+A digital signature is an electronic signature.
+
+It can be used to authenticate the identity of the sender of a message.
+
+It ensures that the original content of the message or document that has been sent is unchanged.
+
+Digital signatures cannot be imitated by someone else.
+
+It can be automatically time-stamped.
+
+The sender too cannot deny sending the message whether it is encrypted or not.
+
+It ensures the receiver of the sender's identity.
+
+It demonstrates the authencity of a digital message or document.
+
+These are commonly used for software distribution, financial transactions etc.
+
+Digital signatures are equivalent to hand written signatures but are more difficult to forge than handwritten signatures.
+
+USES OF DIGITAL SIGNATURES:
+
+a) Authentication
+
+b) Integrity
+
+c) Non-repudition
+
+a) Authentication:
+
+Digital signatures can be used to authenticate the source of messages.
+
+b) Integrity:
+
+If a message is digitally signed, any change in the message after signature will invalidate the signature .
+
+The message cannot be modified, and if modified a new message with a valid signature cannot be produced.
+
+c) Non - repudation :
+
+It is an important aspect of digital signatures.
+
+A sender cannot deny having sent the document after signing it.
+
+
+

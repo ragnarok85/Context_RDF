@@ -1,0 +1,7 @@
+Logic error
+
+In Computer programming a logic error is a bug in a program, which causes it to work incorrectly. A logic error produces unintended behaviour or output. In many cases, the syntax of the program is corrrect. This means that the environment used to make the program will not show an error. This makes logic errors difficult to find. 
+
+This example function in C to calculate the average of two numbers contains a logic error. It is missing brackets in the calculation, so it compiles and runs but does not give the right answer.
+
+

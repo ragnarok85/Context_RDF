@@ -1,0 +1,14 @@
+Raj Reddy
+
+Dabbala Rajagopal (Raj) Reddy (born Kattoor, India 19 June 1937) is an Indian computer scientist and Carnegie Mellon University professor. He is noted for his contributions to artificial intelligence, robotics and speech recognition. 
+
+Reddy developed Hearsay I, the first speech recognition system, which is the foundation for all commercial speech recognition programs today. He received his Master’s degree in computer science at the University of New South Wales in 1961 and his PhD from Stanford University in 1966. 
+
+Reddy served on the faculty of Stanford and Carnegie Mellon University for over 40 years. He has won many international awards for his work, including the Turing Award (which is computer science’s greatest honor), membership in the National Academy of Engineering and the American Academy of Arts and Sciences, the Legion of Honour, the IBM Research Ralph Gomory Fellow Award, the Padma Bhushan, the Okawa Prize, the Honda Prize, the IJCAI Donald E. Walker Distinguished Service Award, and the Vannevar Bush Award.
+
+"Raj Reddy." World of Computer Science. Gale, 2006. Biography in Context. Web. 8 May 2015. 
+"Dr Raj Reddy makes PCs talk the masses language." Businessline. 21 Dec. 2004 eLibrary. Web. 29 May. 2015. 
+http://amturing.acm.org/award_winners/reddy_9634208.cfm 
+http://www.britannica.com/EBchecked/topic/1533587/Raj-Reddy
+
+

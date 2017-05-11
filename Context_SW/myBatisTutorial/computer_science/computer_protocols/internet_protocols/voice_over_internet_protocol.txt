@@ -1,0 +1,8 @@
+Voice over Internet Protocol
+
+Voice over Internet protocol (or VoIP) is a term used for a number of protocols that are used to carry "voice data" over packet switched networks. Beforehand, telephony used a dedicated line, that was allocated to a call, during the time of that call. This was known as PSTN (or "public switched telephony network"). Using VOIP will reduce costs, as the "dedicated line" for telephony (and fax) is no longer needed.
+
+There are a number of technical problems that must be solved first, though:
+You can talk to your friends, seeing their faces. One example is Skype.
+
+

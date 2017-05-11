@@ -1,0 +1,7 @@
+HydraIRC
+
+HydraIRC is a proprietary IRC client that first came out in 2002. The newest stable, or good version of HydraIRC is 0.3.165 that was made in 2008. HydraIRC is free to use, which means it does not cost any money to use. The programming language HydraIRC is made in is C++. HydraIRC is licensed as proprietary software.
+
+
+
+

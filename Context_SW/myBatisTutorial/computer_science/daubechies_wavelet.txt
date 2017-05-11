@@ -1,0 +1,17 @@
+Daubechies wavelet
+
+Daubechies wavelets are a family of orthogonal wavelets named after Belgian physicist and mathematician Ingrid Daubechies. They are used in discrete wavelet transform.
+
+Scale function coefficients (low pass filter in orthogonal filter banks) must satisfy following conditions (formula_1 is length of filter).
+
+which implies
+
+
+There is more than one solution (except case of formula_12). However, it is necessary to distinguish between low pass and high pass filter.
+
+Wavelets are denoted like D"x", where "x" is either number of coefficients (formula_1) or number of vanishing moments (formula_14). First case of notation (number of coefficients) is more recent and more frequented (e.g. D8 is wavelet with 8 coefficients).
+
+MATLAB code for enumeration of wavelet with 4 coefficients (denoted as D4).
+Solutions (low pass filters only):
+
+

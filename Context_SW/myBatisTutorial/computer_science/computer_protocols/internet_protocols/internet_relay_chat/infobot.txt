@@ -1,0 +1,7 @@
+Infobot
+
+Infobot is a Perl IRC bot, first written in 1995 by Kevin Lenzo. The bot's main goal was to remember URLs and associate them with a name, so if someone needed a specific web address they could ask the bot. For this reason, the first Infobot, in the #macintosh channel in the EFnet IRC network, had the nickname 'url'.
+
+The main project is now inactive, many forks from the original program were made, some of which are still active. Many of these forks carry extra features.
+
+

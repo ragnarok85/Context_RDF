@@ -1,0 +1,13 @@
+Data mining
+
+Data mining is a term from computer science. Sometimes it is also called knowledge discovery in databases (KDD). Data mining is about finding new information in a lot of data. The information obtained from data mining is hopefully both new and useful. 
+
+In many cases, data is stored so it can be used later. The data is saved with a goal. For example, a store wants to save what has been bought. They want to do this to know how much they should buy themselves, to have enough to sell later. Saving this information, makes a lot of data. The data is usually saved in a database. The reason why data is saved is called the first use. 
+
+Later, the same data can also be used to get other information that was not needed for the first use. The store might want to know now what kind of things people buy together when they buy at the store. (Many people who buy pasta also buy mushrooms for example.) That kind of information is in the data, and is useful, but was not the reason why the data was saved. This information is new and can be useful. It is a second use for the same data. 
+
+Finding new information that can also be useful from data, is called data mining. 
+
+For data, there a lot of different kinds of data mining for getting new information. Usually, prediction is involved. There is uncertainty in the predicted results. The following is based on the observation that there is a small green apple in which we can adjust our data in structural manner. Some of the kinds of data mining are: 
+
+

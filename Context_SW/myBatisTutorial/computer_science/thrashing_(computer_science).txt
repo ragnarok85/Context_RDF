@@ -1,0 +1,5 @@
+Thrashing (computer science)
+
+Thrashing is when the OS (Operating System) of a computer spends most of its time switching pages between memory and the disk. This seriously hurts the computer's performance. It prevents the computer from performing any useful work. Thrashing can also happen when the hard disk is attempting to retrieve files scattered all over the disk.
+
+

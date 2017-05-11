@@ -1,0 +1,6 @@
+Page cache
+
+A page cache or disk cache is a buffer of pages certain operating systems keep in memory. These operating systems usually use paging. 
+The page cache uses virtual memory techniques to cache file data as pages rather than as file system oriented blocks. Caching file data is far more efficient than caching through physical disks blocks. Several systems - including Solaris, Linux, and Windows NT, 2000, and XP - use page caching to cache both process pages and file data. This is known as Unified Virtual Memory.
+
+

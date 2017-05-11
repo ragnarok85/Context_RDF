@@ -1,0 +1,6 @@
+ReactOS
+
+ReactOS is a project to develop an operating system that is compatible with software for Microsoft Windows 2000 and its successors. In 2012, the project is still in its first stage of development. ReactOS is not based on Linux or Unix. ReactOS uses some code from the Wine project.
+
+
+

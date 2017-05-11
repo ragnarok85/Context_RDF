@@ -1,0 +1,15 @@
+POST
+
+The POST, in most computers, is a self-test that checks the OS(s) available and boots from the OS selected. POST stands for "Power On Self Test".
+
+A POST usually checks the crucial, files, folders, and components. Once the POST is completed, a selected OS will take control and finish the startup process.
+
+If the POST fails, usually a BSOD displays (Blue Screen of Death, most commonly) and offers recovery options such as safe mode.
+
+LKGC(Last Known Good Configuration) reverts to the last non-problematic, successful bootup. It is similar to System Restore, but its primary function is to allow the user to use the computer normally, unlike System Restore, which does not guarantee a fix. Also, LKGC is unrevertable, unless you successfully bootup again.
+
+System Restore works by allowing the user to open a wizard, then select a "restore point". The user must restart for the point to take effect, but the system will start as normal.
+
+System Repair is typically found on the hard disk of your computer and contains options that can be used to fix the system. However, in serious cases, the OS may need to be reinstalled.
+
+

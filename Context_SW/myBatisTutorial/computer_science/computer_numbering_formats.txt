@@ -1,0 +1,9 @@
+Computer numbering formats
+
+Computer numbering formats are the ways that computers and calculators represent numbers. Most computers use a system of binary which is composed of ones and zeros.
+
+Other systems in use are the octal (0,1-7) or the hexadecimal (0,1-9,A,B,C,D,E,F) systems.
+
+So we can use codes, which the computer understands only, as well as other number systems.
+
+

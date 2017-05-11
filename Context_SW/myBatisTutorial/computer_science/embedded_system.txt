@@ -1,0 +1,64 @@
+Embedded system
+
+An embedded system is a computer that has been built to solve only a few very specific problems and is not easily changed. In contrast, a general-purpose computer can do many different jobs, and can be changed at any time with new programs for new jobs. 
+
+An embedded system usually does not look like a computer, often there is no keyboard or monitor or mouse. But like any computer it has a processor and software, input and output. The word "embedded" means it is built into the system. It is a permanent part in a bigger system. 
+
+For example, the controller embedded in an elevator tells the motor to move the elevator to different floors, based on buttons that are pushed. A decoder is embedded in a satellite television set-top box to read a signal from the dish and send something that a TV understands. Often this type of system must do its work in a specific amount of time. This is called real-time computing. If a set-top box got interrupted to do another task, you would see a bad picture on the TV, for example. A general purpose computer will often have short pauses while it does something else, it is not real-time.
+
+Embedded systems control many of the common devices in use today, from card readers in hotel door locks to many controls in a car. They can be small like an MP3 player or a digital camera, to large systems like traffic lights, airplane controls, or assembly line controllers in a factory. 
+
+Embedded systems are used in many kinds of electrical devices, including:
+
+
+
+Embedded systems are not always standalone devices. Sometimes they are built as a set, like the various parts of a car - the radio, the throttle control, the pollution control, etc. Sometimes they can communicate to the internet or a cell-phone network and they may have a USB reader or other connections.
+
+Embedded systems range from no user interface at all — only sending and receiving electric signals — to a full graphical user interface like on a modern computer. Quite often they will have a few push-buttons and a small display and some LEDs. A more complex system may have a touch screen, allowing the meaning of the buttons to change with each screen as in smart phones.
+
+Hardware includes the chips, wires, circuit boards, buttons and displays. 
+
+The most important chip is the central processing unit or CPU. This runs the software instructions. It can be a standard microprocessor or a microcontroller. Microcontrollers include the microprocessor as well as simple peripheral equipment so the system can be smaller and cheaper. They have less flexibility because those parts cannot be changed. Usually these parts include Flash memory and support for serial ports, USB, etc.
+
+Unlike a microprocessor for a general-purpose computer, bigger and faster is not always better. Many embedded processors are very small. Sometimes this is to use less space or less power, sometimes it is to be cheaper. General-purpose computers will use microprocessors that read 32-bit or 64-bit words and run at speeds measured in GHz, but embedded processors are usually 4 to 32 bits and run at speeds usually measured in tens of MHz (a hundred times slower). (But the programs are also smaller and do not check for things that are not used).
+
+There are ""ready-made"" computer boards that can be used in some embedded systems. These often use Windows CE, Linux, NetBSD, or an embedded real-time operating system.
+
+Sometimes it may be easier to use a circuit board that is already made. These usually share many components with general purpose computers, but are smaller than one in a general purpose computer. Boards such as the VIA EPIA can run Microsoft Windows. The advantage is that it saves some electrical engineering time and can use the same software development tools used for PC-type software development. Examples of such embedded devices are the ATMs or displays in casinos. This works well if the real-time requirements are not real strict (it doesn't matter much if a job takes eight seconds instead of five, for example).
+
+If the device needs to be very small or will be sold in very big numbers (""high-volume""), it makes sense to make a custom or specialized chip that does exactly what is needed. This is a system on a chip (SoC) which holds a complete system - processor, floating point unit, memory cache and interfaces on a single integrated circuit. SoCs can be made as a special-order application-specific integrated circuit (ASIC) or by using a field-programmable gate array (FPGA) which is programmed by the people building the embedded system.
+
+Embedded systems talk with the outside world or other components using peripherals such as:
+
+Embedded systems often do not need a full operating system. Some use specially-built small and simple operating systems that start very quickly, others do not need one at all. Embedded systems are not adapted as easily, but they are built to perform their tasks much more reliably. Because the hardware is simpler, it is also often cheaper to build and runs faster. 
+
+In contrast to this, a general-purpose computer needs to be ready for new device drivers and software to run hardware it doesn't know about yet, like new printers or hard drives. It needs to run different application programs.
+
+As embedded systems get bigger, things that used to be only on general-purpose computers or even mainframes are now becoming common on embedded systems. This includes protected memory space, and open programming environment including Linux, NetBSD, etc.
+
+Some examples of operating systems, from simple to complex:
+
+Real-time operating systems include products like MicroC/OS-II, Green Hills INTEGRITY, QNX or VxWorks. Unlike MacOS or Windows 7, these operating systems are not known very well by most people. But they are used in many places where time and safety is very important. People use them every day and do not realize it.
+
+Common examples of larger kernels are Embedded Linux and Windows CE. Although these do not have the tight time limits needed for a strict real-time system, they are becoming more common, especially for more powerful devices such as Wireless Routers and GPSs. They allow re-use of code in the public domain for Device Drivers, Web Servers, Firewalls, and other code. Software developers that are more comfortable writing applications for PCs will find this more familiar as well. If needed, an FPGA or other special hardware can be used for things that do need tight time limits.
+
+Like other software, embedded system designers use compilers, assemblers, and debuggers to develop embedded system software. However, they may also use some more specific tools:
+
+
+Debugging tools:
+
+Unless restricted to external debugging, the programmer can typically load and run software through the tools, view the code running in the processor, and start or stop its operation. The view of the code may be as assembly code or source-code. Some integrated systems (like VxWorks or Green Hills) have special features, like keeping track of how much space the software takes as it runs, what tasks are running, and when things happen.
+
+Depending on what kind of embedded system is being made will affect how it can be debugged. For instance, debugging a single microprocessor system is different from debugging a system where processing is also done on a peripheral (DSP, FPGA, co-processor).
+
+Embedded systems are often in machines that are expected to run for years without errors, and in some cases recover by themselves if an error occurs. This means the software is usually developed and tested more carefully than that for personal computers, and unreliable mechanical moving parts such as disk drives and fans are avoided.
+
+Places where safety and reliability are important: 
+
+Ways to recover from errors — both software bugs such as memory leaks, and also soft errors in the hardware:
+
+
+
+
+
+

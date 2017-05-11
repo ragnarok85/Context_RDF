@@ -1,0 +1,11 @@
+Dreamlinux
+
+Dreamlinux was a Linux distribution, a collection of computer programs that is designed for the use of the Linux operating system on a computer. The Dreamlinux distribution was made in Brazil, and is based on Debian, another commonly-used Linux distribution. Dreamlinux can be used in Portuguese.
+
+There are several ways to use Dreamlinux to run the Linux operating system on a computer.
+
+Most operating systems have a graphical user interface, or GUI, which allows the user to interact with the programs using a graphical display. The GUI which Dreamlinux uses looks similar to the one used by Apple's Mac OS X operating system, with a toolbar in the center. The user can also download the "Engage" theme, which gives the toolbar some animated aspects.
+
+
+
+

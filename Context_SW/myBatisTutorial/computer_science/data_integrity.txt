@@ -1,0 +1,7 @@
+Data integrity
+
+Data integrity is a term used in computer science and telecommunications that can mean:
+
+Simply, data integrity is to make sure that data is "consistent" and "correct".
+
+

@@ -1,0 +1,7 @@
+Bit
+
+In Computer science and information science, the word bit can have different meanings:
+
+When talking about storage space, 8 bits are usually called a byte. 
+
+

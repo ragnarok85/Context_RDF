@@ -1,0 +1,19 @@
+ITunes
+
+iTunes is a media player made by Apple. It came out on January 10, 2001, at the Macworld Expo in San Francisco. iTunes is used for playing and sorting music and video files. It also lets users see and change what is on their iPod or iPhone. 
+iTunes is a free download for Mac OS X and Microsoft Windows from Apple's website. The download is also included with QuickTime, a program used to play videos. It also comes with all Apple Macintosh computers, and some HP and Dell computers.
+
+The iTunes Store is an online store built into iTunes. iTunes can connect to the iTunes Store if there is an internet connection to buy and download music, music videos, television shows, iPod games, audiobooks, podcasts, and movies. The files from the iTunes Store used to use Digital Rights Management (DRM) to prevent piracy. However, iTunes now sells music and videos called iTunes Plus, which are higher quality and have no DRM.
+
+Some singers and bands do not have most of their music on iTunes yet: The KLF, Garth Brooks, Bob Seger, Def Leppard, King Crimson and Tool.
+
+For a long time, you could not get music by The Beatles on iTunes due to a legal conflict between Apple Inc. and Apple Records. Starting in November 2010, you can now get music by the Beatles. It is very popular nowadays. There is a lot of advertisement by Apple for Beatles music.
+
+Bill Kincaid had developed SoundJamMP which was released later in the year of 1999. It was later renamed iTunes which was then purchased by Apple in 2000.
+
+As SoundJam was being worked on throughout the years, the interface of the site was changed to make it easier for people to understand how to use it. And added the ability to burn CDs, and removed its recording feature and skin support.
+
+On January 9, 2001, iTunes 1.0 was released at Macworld San Francisco. Macintosh users immediately began to dig through iTunes’s resource fork where they discovered that there were so many other strings and other resources that indicated iTunes was a re-engineered SoundJam MP. Casady & Greene ceased distribution of SoundJam MP on June 1, 2001 at the request of the developers.
+
+
+

@@ -1,0 +1,16 @@
+Off-by-one error
+
+An Off-by-one errror is a logic error that often occurs in Computer programming and that often involve the checking of boundary conditions.
+A fencepost error (occasionally called a telegraph pole or lamp-post error) is a specific type of off-by-one error. The following problem illustrates the error:
+
+The intuitive answer 10 is wrong. The fence has 10 sections, but 11 posts.
+
+The reverse error occurs when the number of posts is known and the number of sections is assumed to be the same. The actual number of sections is one less than the number of posts. 
+
+More generally, the problem can be stated as follows:
+
+The correct answer may be "n" − 1, "n", or "n" + 1, depending on the conditions. The precise problem definition must be carefully considered, as the setup for one situation may give the wrong answer for other situations. Fencepost errors come from counting things rather than the spaces between them, or vice versa, or by neglecting to consider whether one should count one or both ends of a row.
+
+Off by one errors often occur with loops. If there are a number of fields, eg. in an array, and there is a loop over the array, an off-by-one error means that either there is one iteration too few to cover all elements, or one too many. In the first case, one element of the array is left out, in the second the index of the array will be outside its dimensions. The second error usually leads to an runtime error, because the program checks the size of the data structure, and sees that there are too few elements for the iteration. The first error is more problematic, because it usually is not detected. All that may point to the error is that one element is not initialized or does not have the expected value. 
+
+

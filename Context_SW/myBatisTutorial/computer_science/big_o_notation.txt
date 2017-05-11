@@ -1,0 +1,17 @@
+Big O notation
+
+Big O Notation is a way of saying how much time it takes for a mathematical algorithm to run or how much memory it uses.
+
+The Big O Notation is often used in identifying how complex a problem is (also known as the problem's complexity class).
+
+It is an expression that is meant to give a person a feel for the worst case time and/or space requirements of a program without them having to actually code and run the program on a real computer. This is also advantageous since different computers may have different hardware specifications and may produce the answer in different amounts of time should any program be run on them. The Big O notation, on the other hand, remains the same even if you're running a program on your desktop, a server or a supercomputer.
+
+Let us see how big O is used in practice. Consider for example that we're trying to find the maximum number from a given set of numbers. To find it, we have to look at each and every number in the set. If we were given twice the numbers, we would take twice as long to find the maximum number. Thus, finding the maximum in a set is formula_1 - the time or number of steps required to find an answer increases or decreases directly with increase or decrease in the size of the input. On the other hand, if an algorithm were said to be formula_2, then the time taken to produce the output would take a time that would square in magnitude with change in size of the input - for e.g. if someone gave an input that was twice as large as an initial input, the time taken would be formula_3 times as large.
+
+Notice that when we're talking about Big O, we mean the big picture. We're not talking about how the time changes when we're given a set of 10 or 20 numbers (in fact the big O, due to its mathematical definition, may even give wrong bounds at these small scales). Instead, we're considering a huge bulk of data - talk about analyzing data from the Hubble Telescope, for example - where you have 120GB of data pouring in every week. In such situations, it becomes unnecessary to give the "exact" relation between the input and the size of growth. Thus you won't find expressions like formula_4 or formula_5 - the formula_6 in the first case and the formula_7 in the second case are trivial when compared to formula_8 and the formula_9 terms respectively. So, you simply write them as formula_1 and formula_2. Expressions like formula_12 and formula_13 are avoided as well, because what we need is a gist of how the time for the output changes with the input. So again the expressions are written as formula_1 and formula_2 (actually speaking, the provision for this coefficient is contained in the mathematical definition of the Big O). 
+
+Little-o Notation: 
+
+A stricter version of the big O is the little-o. The difference between big O and little-o is that little-o is a strict upper bound. While the big O says that "the requirement may get as worse as this but not more", the little-o says that the "requirement will definitely not get worse than this". As an example, if I say that a program is formula_1, then it means that the time requirement may grow directly with the size of the input, but if I say that a program is formula_17, i.e. little-o of n, then I'm saying that the time requirement will definitely not grow directly in proportion to the size of the input, the growth rate is somewhere less than it. So in a way, formula_17 is better than formula_1, if we're seeking to reduce the time.
+
+

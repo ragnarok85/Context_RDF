@@ -1,0 +1,8 @@
+Border Gateway Protocol
+
+The Border Gateway Protocol (BGP) is the main routing protocol of the Internet. It decides how data gets from one place to another on the Internet. It was made to get rid of the EGP routing protocol to make the Internet more independent.
+
+Most Internet users don't use BGP. It is the ISPs who use it to talk to other ISPs so they can send and get data from each other. It is one of the most important protocols of the Internet.
+
+
+

@@ -1,0 +1,7 @@
+DVD-Audio
+
+DVD-Audio is an audio format similar to the CD. It is commonly claimed to have higher audio quality than the CD. DVD-Audio has not become popular due to the cost and rarity of the players, and because the traditional CD is considered good enough. Tests have shown that the traditional CD already has the highest possible audio quality; it is not possible to go any higher because the traditional CD can reproduce the entire audible frequency range. DVD-Audio does, however, support surround sound, and many DVD-Audio releases are available with surround sound. The traditional CD theoretically supports surround sound too, but, with the exception of DTS and Dolby Surround-encoded CDs, no surround-capable CD player has ever been made, and no surround-formatted CD has ever been released.
+
+DVD-audio supports multiple sample rates, including 44.1 (same as CD), 48 (same as DAT and DVD-Video), 88.2, 96, 176.4, and 192 kHz, with either 16, 20, or 24-bit encoding. Surround sound is supported up to the 96 kHz sample rate; higher sample rates can only be in mono or stereo. DVD-Audio also uses 56-bit encryption on the audio data (DVD-Video uses 40-bit CSS encryption and CD does not use encryption). The 56-bit encryption algorithm is a modified version of DES. DVD-Video content may be present on a DVD-Audio disc to enable compatibility with video-only players. Unlike Super Audio CD, there is no mechanism for compatibility with standard CD players.
+
+

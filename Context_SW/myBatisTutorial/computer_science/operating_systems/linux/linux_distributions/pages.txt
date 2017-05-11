@@ -1,0 +1,48 @@
+*
+list of linux distributions
+abuledu
+abulãdu
+android (operating system)
+arch linux
+baltix
+bandideux/sandbox
+bandideux/wikiproject linux/sandbox
+beatrix
+centos
+debian
+deepin
+demudi
+dslinux
+elive
+feather linux
+fedora core
+fedora (operating system)
+finnix
+fluxbuntu
+freespire
+gentoo linux
+gibraltar (linux distribution)
+jeos
+kanotix
+linspire
+linux distribution
+mandriva linux
+mepis
+nepalinux
+nubuntu
+nubuntu
+opensuse
+opensuse
+openzaurus
+parsix gnu/linux
+pclinuxos
+pingoo
+puppy linux
+red hat linux
+slackware
+slitaz
+super os
+suse linux
+ubuntu
+xebian
+zenwalk linux

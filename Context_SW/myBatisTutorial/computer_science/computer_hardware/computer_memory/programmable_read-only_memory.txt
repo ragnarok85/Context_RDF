@@ -1,0 +1,5 @@
+Programmable read-only memory
+
+Programmable Read Only Memory (PROM) is a read-only memory that can be programmed directly by the user using a special PROM programmer. It is also sometimes called a fusible-link PROM.
+
+

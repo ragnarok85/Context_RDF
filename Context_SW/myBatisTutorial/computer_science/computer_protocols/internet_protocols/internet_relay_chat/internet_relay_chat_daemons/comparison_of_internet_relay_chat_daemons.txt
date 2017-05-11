@@ -1,0 +1,14 @@
+Comparison of Internet Relay Chat daemons
+
+The following tables compare general and technical data. This article does not have current or all the data available.
+
+The following servers are no longer maintained, but basic details are maintained for posterity. They will not be listed in feature comparison tables.
+
+The operating systems, the server can run.
+Various networking and IRC technology used to date.
+IRC server features, mostly extensions to RFC 1459. Probably also implementations of RFC 2810, RFC 2811, RFC 2812, RFC 2813, and possibly IRCX.
+
+
+
+
+

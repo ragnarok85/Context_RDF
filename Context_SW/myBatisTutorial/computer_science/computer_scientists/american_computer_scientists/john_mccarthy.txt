@@ -1,0 +1,5 @@
+John McCarthy
+
+John McCarthy (1927-2011) was an American scientist. Today, he is mostly known for the work he did in the field of logic. He was the first to use the term artificial intelligence, in an article he wrote in 1955. He invented LISP to be able to do logic programming, in 1958. This makes LISP the second-oldest high-level programming language that is still in use; FORTRAN is older. McCarthy studied mathematics. He invented Garbage collection to solve some of the problems LISP had. McCarthy's work received many awards, the Turing Award for his work on Artificial Intelligence, in 1971, or the National Medal of Science in 2003 are among them.
+
+

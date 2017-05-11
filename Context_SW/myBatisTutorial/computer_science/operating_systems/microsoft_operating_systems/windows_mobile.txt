@@ -1,0 +1,23 @@
+Windows Mobile
+
+Windows Mobile is a compact operating system that comes with basic applications for mobile devices.
+
+It is designed to look like desktop versions of Microsoft Windows.
+
+The first version was Pocket PC 2000, released in April 2000. It was based on the kernel of Windows CE 3.0 (Handheld PC 2000).
+Then came Pocket PC 2002, released about two weeks before Windows XP. It was similar to 2000, having full compatibility
+with Windows CE.
+Windows Mobile 2003, released in April 2003, was the first version called Windows Mobile. It was software-compatible with Windows
+CE 3.x and 4.x.
+
+Windows Mobile 5 was released around July/August 2005. It was similar to WM2003, except for a few new additions.
+
+Next...
+Windows Mobile 6.0 was released in February 2007 and had a kernel powered by Windows CE 6.x.
+6.1 in 2008 was much the same, and 6.5, released in 2009/2010, was the last version.
+It was discontinued in March 2010 and replaced by Windows Phone.
+
+Microsoft ended sale of Windows Mobile devices on June 13, 2010 and ended all support of it on August 21, 2010.
+Two months later, Windows Phone was released.
+
+

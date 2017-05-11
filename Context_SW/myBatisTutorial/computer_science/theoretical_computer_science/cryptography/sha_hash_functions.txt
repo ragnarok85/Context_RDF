@@ -1,0 +1,5 @@
+SHA hash functions
+
+The SHA hash functions are cryptographic hash functions made by the National Security Agency (NSA) and the NIST. SHA stands for Secure Hash Algorithm. The three SHA algorithms are different and are called "SHA-0", "SHA-1", and "SHA-2". "SHA-2" uses one algorithm with different sized digests. The number of bits in the digest are put after 'SHA' in their names, like "SHA-224", "SHA-256", "SHA-384", and "SHA-512". 
+
+

@@ -1,0 +1,27 @@
+Giant magnetoresistance
+
+Giant magnetoresistance (GMR) is a very small magnetic effect found in thin layers of iron and other materials. It is used to read and write information in hard drives.
+
+The GMR effect can be measured when a magnet is used to change the flow of electricity. The 2007 Nobel Prize in physics was awarded to Albert Fert and Peter Grünberg for the discovery of GMR.
+
+GMR was discovered in layers iron, chrome and ferrite by Peter Grünbergs research team of the Jülich Research Centre (Germany) in 1988. Peter Grünberg owns a patent for the technology. It was also discovered by Albert Ferts research group of the University of Paris-Sud (France) in layers ferrite and chrome. The Fert group were first to see what they thought of as a "large" effect which is why they gave the name "Giant". The Fert group were also first to explain the correct physics of GMR. The discovery was the beginning of the science spintronics. Grünberg and Fert have been given prizes and awards, including the 2007 Nobel Prize in Physics, for this discovery and other spintronics work.
+
+In multilayer GMR, two or more magnetic layers are separated by a very thin (about 1 nm) non-magnetic (insulating) layer. Ferrite, a form of iron, is a magnetic layer and chrome is an insulating layer. At certain thickness, the strength of magnetism between the layers becomes easy to measure and adjust. The strength of electrical current between the layers can change by up to 10%.
+
+The GMR effect was first observed in stacks of 10 or more layers.
+
+In spin valve GMR, two magnetic layers are separated by a thin (~3 nm) non-magnetic (insulating) layer. It is possible to measure and adjust the strength of magnetism between these layers.
+
+It is hoped that research into spinning electrons will improve spin valves. 
+
+Materials used in spin valves are copper and an alloy of nickel and iron. 
+
+Spin valve GMR is the most useful sort for hard drives and is tested carefully to meet industry standards.
+
+Granular GMR is an effect found in copper containing grains of cobalt. It is not possible to control the strength of granular GMR in the same manner as Multilayer GMR.
+
+GMR is used in modern hard drives and magnetic sensors. Another use of the GMR effect is in magnetoresistive random access memory (MRAM). GMR has begun a new science of electronics called spintronics.
+
+
+
+

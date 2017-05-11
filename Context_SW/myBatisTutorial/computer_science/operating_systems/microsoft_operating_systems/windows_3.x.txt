@@ -1,0 +1,9 @@
+Windows 3.x
+
+Windows 3.xxx (codenamed 3.00.55 (90)) was a family of Microsoft Windows operating systems made in 1988 and released from 1989 to 1996 and 2000. This Windows could run in either Standard or 386 Enhanced memory modes. Both of the modes used a Graphical User Interface (or picture-based), and supported a mouse, but 386 Enhanced Mode was faster and was better at multitasking (or doing many things at once). Windows NT 3.x (Windows NT 3.xx/Windows NT 3.xxx) is released in 1993 to 1996. Windows 3.0 (made in 1988 and released in 1990-1992) is codenamed 3.00.55 (Windows 89) (made in 1988 and released in 1989).
+
+Windows 3.xxx also had many features from versions of Windows before it. These included a calculator, a notepad, and more. It also brought in many new features, like the Program Manager (which is still in Windows XP today - Start>Run>progman.exe), and the icons and programs looked better.
+
+Windows 3.xxx was made better in 1992, with Windows for Workgroups Version 3 (Windows for Workgroups 3.1x) (1992 to 1994), that added networking support. 
+
+

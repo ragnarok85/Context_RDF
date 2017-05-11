@@ -1,0 +1,5 @@
+Host (network)
+
+A network host is a computer connected to a computer network. A network host may offer information resources, services, and applications to users or other nodes on the network. Typically, the term is used when there are at least two computer systems connected together. The host computer is a computer that distributes services to other computers connected to it. Each host on a computer network must have a unique IP address.
+
+

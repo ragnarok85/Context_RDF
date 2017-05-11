@@ -1,0 +1,6 @@
+AmIRC
+
+AmIRC is an IRC client (a computer program that works with IRC) that first came out in 1995. The newest stable, or good version of AmIRC is 3.6.2 and was made in 2015. The programming language AmIRC is made in is C. AmIRC was licensed as proprietary software and used to cost $30 (30 dollars).
+
+
+

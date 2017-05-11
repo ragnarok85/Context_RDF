@@ -1,0 +1,11 @@
+IPv4 address shortage
+
+Internet Protocol version 4 (IPv4) has roughly 4 billion IP addresses. This is a problem because there are more than 4 billion Internet-connected computers in the world. This has led to a shortage of IPv4 addresses.
+
+The long term solution is to switch to Internet Protocol version 6 (IPv6). IPv6 has trillions of trillions of addresses, enough to give every computer in the world a unique IP address. Unfortunately, IPv6 is mostly incompatible with IPv4, and implementing it often requires replacing equipment such as routers. Not all ISPs currently offer IPv6. There are several backward compatibility protocols such as Protocol 41 and Teredo that allow a computer with only an IPv4 address to obtain an IPv6 address.
+
+Network Address Translation (NAT) splits a single public IPv4 address into multiple private IPv4 addresses. It is considered a short term solution because it does not usually allow incoming connections without manual configuration of port forwarding.
+
+Carrier-grade Network Address Translation (CGN or CGNAT) is Network Address Translation done by the Internet Service Provider (ISP). It is a short-term solution to provide IPv4 access where the ISP has more customers than public IP addresses. In this setup, multiple customers share a single public IPv4 address. CGN has the major drawback that it does not allow incoming connections at all, because the address translator does not know which customer an incoming connection was intended for. This makes it impossible or very difficult to host services such as websites or file servers. It also causes problems with some online games, online security cameras, and BitTorrent. Most land-line ISPs don't use CGN yet, but mobile providers often do. The address block 100.64.0.0/10 is reserved for CGN, although many ISPs improperly use 10.0.0.0/8 instead. ISPs that use CGN usually offer a public IPv4 address to customers that request one. They may offer this for free, charge a one-time fee, or charge a monthly or yearly fee. In the future they might not offer public IPv4 addresses or might charge a large fee for them, due to supply and demand.
+
+

@@ -1,0 +1,19 @@
+Quine
+
+A quine is a special kind of computer program, which accepts no inputs and outputs its own source code. They are named after the philosopher Willard Van Orman Quine.
+
+Quine was very interested in the "liar paradox", "this statement is false", which can't be either true or false. This paradox appears in lots of other places. In the mathematics of set theory it is called Russell's paradox, it is a set which contains sets which don't contain themselves. 
+
+All of those examples before Quine were 'self-referential'. This means that they define an object in terms of itself, like the liar paradox starting with the words "this statement". Lots of people thought that you could ignore the liar paradox if you just decided to ignore all self-referential statements. Quine saw that you would also have to ignore "quotation", which is the process that happens when you put a phrase in quote marks. When you "say" a phrase, you are talking about its meaning; but when you "quote" a phrase, you are talking about that phrase, and not what it means.
+
+Quine's paradox was, '"Yields falsehood when preceded by its quotation" yields falsehood when preceded by its quotation.' This is a more complicated liar paradox which is not self-referential. It is a simple statement about some phrase, telling you what happens when you write a statement where you write the phrase in quote marks and then write the phrase again outside of them.
+
+Most programming languages have quotation too: you can put quotes around some code and then the computer does not "run" that code, but instead just "stores" it as a string.
+
+The trick to writing a quine involves writing a string which somehow has a "hole" in it, then outputting that string, with the "hole" filled in with its own quotation. For example in Python the function which quotes a string is called codice_1, and the codice_2 operator fills in a hole which is written as codice_3 in the string, while converting codice_4 to codice_2:
+
+Or in JavaScript, we can use codice_6 to quote an array, and the "hole" can be the space between the two array elements:
+
+In CoffeeScript you can write a quine as a phrase followed by its own quotation, which looks a lot like Quine's paradox:
+
+

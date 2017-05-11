@@ -1,0 +1,9 @@
+Locality of reference
+
+Locality of reference is a phenomenon that can be seen in Computer science. It says that the same value, or the place where it is stored is accessed often. There are two different kinds of locality of reference:
+
+There are many reasons why locality of reference occurs:
+
+Programs can be optimised in certain ways, to make them run faster:
+
+

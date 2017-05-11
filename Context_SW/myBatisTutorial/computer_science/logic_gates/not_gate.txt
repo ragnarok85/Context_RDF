@@ -1,0 +1,12 @@
+NOT gate
+
+A NOT gate (also often called Inverter) is a logic gate. Each NOT gate has only one input signal. Logically with NOT gates, the input and the output swap, so if you input "1" it outputs as "0"; likewise if you input "0" it outputs as "1".
+
+Generally, actual NOT gates with a voltage below 0.5V is "0", and a voltage of 4–5V is "1".
+
+The inverter can be made of a discrete transistor with other components, or several inverters may be packaged in an integrated circuit.
+
+There are three symbols for the NOT gate:
+
+
+

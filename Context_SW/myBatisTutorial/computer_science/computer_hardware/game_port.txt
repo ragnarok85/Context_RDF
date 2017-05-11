@@ -1,0 +1,40 @@
+Game port
+
+The Game port is a port that is present on some PC hardware, and hardware similar to it. This port lets the connection of analog devices used to control computer games, such as joysticks. In most relevant hardware designs for personal computers in 2010, the port is an integrated component on the sound card, another I/O card, or the motherboard itself. Starting with Windows Vista Microsoft no longer supports this port with drivers from the Operating System, but third party drivers are still available. There are also drivers that allow to map the game port to an USB device.
+
+Unlike most other ports present on the PC, the Game port is an analog port. This means that signal first needs to be changed to digital form, a task which is usually done by an analog-to-digital converter. In the early days, most joystick designs were digital, which made them easier to build and cheaper. The game port has a 15-pin DSUB interface, most home computers that used digital joysticks had a 9-pin one. This made existing joysticks incompatible with the new interface.
+
+Digital joysticks are easy for programmers to access. The signal is already digital, and only gets transferred to the PC. Analog signals are much harder to use, they need careful software interrupt driven programming (to get a useful signal). Interrupts use the main CPU of the system. Digital circuits can use Transistor–transistor logic, which does not use the CPU.
+
+The usual implementation of a game port uses a capacitor and a simple voltage comparator. Both together form a sort of simple ramp-compare ADC. This system is polled periodically and reset at precise moments to read an input. This must be done more than 30 times every second to provide a responsive game input. The actual acquisition frequency and value usually depend on the joystick's resistance inside, noise, CPU speed and the total joystick-capacitor's RC time constant.
+
+Its analog nature has also been the cause of a great number of problems. One problem was that all kinds of joysticks needed "calibration". This was true even for arcade-style ones. The reason for this was that no game controller and no joystick produced the same measurements each time. These depended on the exact way acquisition was made. Some of the worse designs even depended on the speed of the CPU. Also, all kinds of PC game ports suffer from electrical noise.
+
+The calibration procedure is still needed at some point, even under modern operating systems such as Windows XP. Usually, it consists of moving the joystick around all of its axes to measure the maximum axis excursion values, no matter if the joystick uses analog signals (from potentiometers) or digital signals (using microswitches or contacts). USB joysticks, on the other hand, do not need calibration. This is because USB sends digital signals.
+
+In the days of DOS, every game using the game port(s) had to do its own calibration, often each time the game started, and some poorly coded calibration routines even failed to work consistently and properly, rendering some joysticks unusable with some games. With Windows XP, only one calibration per joystick is enough, which is thought "valid" until the joystick is unplugged.
+
+Certain applications and games are able to use some analog joysticks even without explicit calibration, under certain restricted conditions. A system of a joystic and game port that is not calibrated can give a "direction", at best. It can not give an intensity. For this setup, an analog joystick can be "self calibrated" just by leaving the joystick in the middle position and taking a measurement, and then using some arbitrary or adaptive threshold to detect movement and excursion from the middle position. The limitation of this method is that the reading of the same joystick over the same game port can change over time, and some joysticks cannot work at all with this method. Also, the joystick must be in the middle position at least once when the implicit "self calibration" takes place, even if this is not directly stated.
+
+Microsoft declared it would no longer include support for game ports in operating systems beginning with MS-Windows XP Professional x64 edition, reasoning that USB-based gaming equipment had become more common. This leaves game port support up to the manufacturer of the device (i.e. Sound card or USB converters) the game port ships on.
+
+Some advanced game port joysticks supports more than 4 buttons (e.g. 6 or 8) but typically require a special device driver for the additional buttons to work properly, since the game port does not have actual hardware support for more than 4 distinct buttons.
+
+This can be overcome by using pins and input meant for the second joystick (i.e. button 5 through 8 are mapped to the signals to the axis pins meant for the second joystick - resulting in the issue of the two buttons mapped to the same axis being not simultaneously usable), using some normally "unused" pins, or changing the joystick's circuits (and related software) to read a 4-bit state code from the four button inputs, thus giving up to 16 button combinations (albeit with some limitations e.g. some buttons may not be held down) or a combination of both techniques.
+
+High-end game port joysticks such as the Microsoft SideWinder rely on multiplexing a proprietary data stream through the 4 standard button inputs and sometimes through the "unused" pins, achieving full support for a rather high number of buttons (e.g. 16 or 20) while special features such as daisy-chaining multiple joysticks, force feedback or joystick programming become possible in some cases.
+
+The obvious drawback is the need for a special device driver to interpret the joystick input, and making its use time consuming and operating system-dependent, while the joystick is usually unusable without a special driver (unless multiple operating modes are supported).
+
+Some hardware and DIY enthusiasts have found ways to connect a wide array of input devices to the game port and even found other applications for it, such as voltage or current measurement or simple interfacing and data acquisition.
+
+The original game port design by IBM (released in 1981 as a separate expansion card for the first IBM PC) initially allowed four analog axes and four buttons on one port, allowing two joysticks or four paddles to be connected, although this required a special "Y-splitter" cable and is not fully supported by some combined midi/game ports usually found on sound cards.
+
+Some poorly implemented game ports (usually built-in on old motherboards and I/O cards) did not fully support either 4 axes or 4 buttons, making only the use of a single 2-axis and 2-button joystick possible.
+
+The 15-pin game port is no longer provided on presently manufactured PCs, though adapters exist that allow older joysticks and controllers to connect via USB. However, Microsoft's Vista operating system natively lacks all game port support, even for USB adapters.
+
+Game ports use DA-15 connectors (also incorrectly called DB-15). Since the game port moved from dedicated expansion cards to sound cards about 1990, these connectors usually double as connectors for MIDI instruments; two of the redundant +5V and GND pins of the original standard were rededicated to MIDI input and output to make this possible. To use a game port with MIDI instruments, one requires a cable with a male and a female DA-15 and two male 5-pin DIN connectors. The drivers and hardware for the game port midi capabilities are based around the now standard Roland MPU-401 MIDI interface (in UART mode only), and support most MPU-401 standard applications for Windows and DOS. The official "proper design" for a game port-MIDI adapter can be found at this MIDI page.
+
+
+

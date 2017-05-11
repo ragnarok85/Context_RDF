@@ -1,0 +1,13 @@
+Comma-separated values
+
+In computing, a comma-separated values (CSV) file stores information you might find in a spreadsheet, such as a table of text, numbers, and dates, in a plain text file.
+
+Typically, the first line in a plain text file would contain header information, which are labels for table information organized vertically. Starting with the second line, each line would represent a row. Each cell in a row is separated by a comma, hence its name.
+
+Text in a cell may be surrounded by quotation character (<nowiki>"</nowiki>), to note the start and end of a cell in a table. Quotation characters in a cell value in turn can be denoted by doubling the quotation character (<nowiki>""</nowiki>).
+
+CSV is a way to describe table data. However, various applications may require different types of tables. Having a file in CSV format may not be enough for a file to be compatible with a particular application.
+
+Furthermore, CSV is stored in plain text. An application may have problems reading a CSV file because of incompatibility with the plain text format, either because of the character encoding or line break format.
+
+

@@ -1,0 +1,5 @@
+Windowing system
+
+A windowing system is a computing term. It refers to a way a computer operating system (OS) displays computer programs on a computer screen. It is a type of graphical user interface (GUI) using windows, menus, and a pointer. Microsoft Windows is a popular OS that uses a windowing system. Each window is an independent part of the screen and typically holds a program or dialog box. 
+
+

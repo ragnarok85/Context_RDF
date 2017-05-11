@@ -1,0 +1,7 @@
+MATE (software)
+
+MATE is a desktop environment for Linux. It is based on an older version of the desktop environment GNOME, called GNOME 2. Many people in the Linux community did not like the way GNOME 3 (or GNOME Shell) looked, and wanted GNOME 2. This called for someone to fork from part of an existing program) of GNOME based on GNOME 2. An Arch Linux user created MATE, it is named after a South American plant called Yerba Mate and the tea made from the plant, "mate."
+
+MATE comes with programs that are forked from GNOME's classic programs, and they have not changed much from when they were in GNOME. Some of them were made from scratch, not based on a GNOME program. The forked programs were named in spanish, like MATE itself.
+
+

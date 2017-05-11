@@ -1,0 +1,11 @@
+Disk buffer
+
+A disk buffer is a small amount of memory on a hard drive. Sometimes it is also called cache buffer, or disk cache, but these words should not be used, a disk buffer is not a cache. In early 2015, hard disks usually have between 16 and 128 megabytes of such memory.
+
+When writing data to the disk, the data needs to be written to a certain position on the disk. This is done by a component called disk read/write head. This head needs to be moved to (or near) the correct track. After some settling time the read head begins to pick up bits. Usually, the first sectors to be read are not the ones that have been requested by the operating system. The disk's embedded computer typically saves these unrequested sectors in the disk buffer, in case the operating system requests them later.
+
+The disk is attached to the computer by what is called an I/O interface. This interface almost always works at a different speed than that of the hard disk platter. In such a case, the disk buffer is used to store the data that comes from the disk, before it sent to the computer, or to store the data that comes from the computer before it can be written to the disk.
+
+Modern disks often have a feature called "command queuing" (This is called TCQ in SCSI disks, and NCQ in SATA disks). This means that many commands can be sent at the same time, and the hard disk will put them into the best order. To store the commands and re-order them, the hard disk needs the disk buffer
+
+

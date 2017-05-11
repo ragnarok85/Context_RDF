@@ -1,0 +1,11 @@
+Attack model
+
+Attack models or attack types specify how much information a cryptanalyst has access to when "breaking" or "cracking" an encrypted message, commonly known as codebreaking or cracking the code. Some common attack models are:
+
+The ciphertext-only attack model is the weakest because it implies that the cryptanalyst has just the encoded message.
+
+Different attack models are used for other cryptographic systems, or more generally for all kind of security systems. Examples for such attack models are:
+
+
+
+

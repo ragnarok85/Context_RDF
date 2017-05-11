@@ -1,0 +1,15 @@
+Windows NT
+
+Windows NT is a series of Microsoft's Windows operating systems written in the C and C++ programming languages. They were the first to use their new 'NT' (New Technology) core. That meant it had a brand new core to do more things than the MS-DOS-based one that they used in older versions of Windows. Also, it was more secure and crashed less. Windows NT 3.1 was released as alpha versions in 1991-1992 and beta versions in 1993.
+
+Microsoft decided to create a portable operating system, compatible with OS/2 and POSIX and supporting multiprocessing, in October 1988. When development started in November 1989, Windows NT was to be known as OS/2 3.0, the third version of the operating system developed jointly by Microsoft and IBM. To ensure portability, initial development was targeted at the Intel i860XR RISC processor, switching to the MIPS R3000 in late 1989, and then the Intel i386 in 1990.
+
+It is well believed that Dave Cutler intended the initialism 'WNT' as a pun on VMS, incrementing each letter by one. However, the project was named NT OS/2 before receiving the Windows brand. One of the original OS/2 3.0 creators, Mark Lucovsky, claims that the name was taken from the original target processor—the Intel i860, code-named N10 ('N-Ten'). Various Microsoft publications, including a 1998 question-and-answer session with Bill Gates, reveal that the letters were expanded to 'New Technology' for marketing purposes but no longer carry any specific meaning. The letters were dropped from the name of Windows 2000, though Microsoft described the product as 'Built on NT technology.'
+
+Versions of Windows NT are Windows NT 3.1, NT 3.5, NT 3.51, NT 4, Windows 2000, Windows XP, Windows Vista and Windows 7. Windows NT 3.1 was the first release of the Windows NT line. The version number 3.1 was from the fact that it looked very much like Windows 3.1. It was released in 1993. Next was Windows NT 3.5 and then 3.51. 3.5 was released in 1994 and 3.51 just a few months before Windows 95. The version after that was NT 4.0, released in 1996. It was advertised as 'power of Windows NT and look of Windows 95' and included Internet Explorer version 2. It's final releases are currently Windows 2000 (NT 5.0), Windows XP (NT 5.1), Vista (NT 6.0), Windows 7 (NT 6.1), and the newest version, Windows 8 (NT 6.2).
+
+The NT version number was not generally used for marketing purposes, but is still used internally, and said to reflect the degree of changes to the core of the operating system. Windows 10 changes the internal version number to 10.0, which is the first time since 1996 that the internal version number has matched the marketing number.
+
+Windows NT can refer either an individual or following versions of Microsoft Windows:
+
+

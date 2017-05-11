@@ -1,0 +1,14 @@
+SliTaz
+
+y
+
+SliTaz GNU/Linux is a software project started by Christophe Lincoln in 2006. It is one of the smallest desktop Linux distributions available a - a root filesystem takes up about 80 MB and an ISO image of around 25 MB. It boots from either a CD or a USB flash drive, into a JWM (now LXDE in cooking version) desktop running on top of Xvesa, and uses BusyBox for all of its main functions. It has a good range of desktop and rescue software and can be loaded entirely into RAM or be installed to a hard drive.
+
+After two years of development, SliTaz 1.0 was released on 22nd of March 2008. SliTaz shares many common goals with Damn Small Linux, but is smaller and based on the more recent Linux 2.6 kernel.
+
+
+SliTaz boots from:
+
+
+
+

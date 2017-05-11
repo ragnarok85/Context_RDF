@@ -1,0 +1,10 @@
+Puppy Linux
+
+Puppy Linux is an operating system for computers. It is based on GNU/Linux and it is completely free and is open source software. Puppy Linux is sometimes called a mini distribution because of its size (approximately 100MB) when compared to other GNU/Linux operating systems such as Ubuntu.
+
+Puppy Linux, which was started by Barry Kauler in June 2003, runs well on low-end personal computers (some of which have less than 32MB RAM.)
+
+Currently (May 2009) the latest version of this Linux distibution is Puppy Linux 4.2 "Deep Thought."
+
+
+

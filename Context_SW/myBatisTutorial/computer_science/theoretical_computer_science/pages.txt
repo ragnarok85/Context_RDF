@@ -1,0 +1,24 @@
+ 
+theoretical computer science
+automata theory
+automaton
+boolean satisfiability problem
+church-turing thesis
+coding theory
+computability theory
+computable function
+computation
+computational complexity theory
+cook-levin theorem
+cookâlevin theorem
+cyclomatic complexity
+decidability theory
+information
+information entropy
+np-complete
+np-hardness
+quantum teleportation
+regular expression
+structured program theorem
+travelling salesman problem
+turing complete

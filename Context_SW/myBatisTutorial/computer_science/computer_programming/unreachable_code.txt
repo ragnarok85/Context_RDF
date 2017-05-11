@@ -1,0 +1,11 @@
+Unreachable code
+
+Unreachable code is a section of code in a program that can never be executed. 
+
+Having unreachable code is bad because it wastes space on the disk, memory, and CPU cache.
+
+Luckily, many modern compilers alert the programmer with a warning or error whenever it detects unreachable code.
+
+In this example, ":'(" will never be printed because the loop never exits.
+
+

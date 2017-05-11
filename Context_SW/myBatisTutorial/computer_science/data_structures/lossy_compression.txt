@@ -1,0 +1,5 @@
+Lossy compression
+
+Lossy compression is a form of data compression where parts of the data are lost in the process. When a compressed data is returned to normal some data is lost. Lossy compression is used to greatly reduce the size of a computer file when it is stored, handled, or transmitted. As an example, JPEG is a lossy compression format. GIF and PNG are lossless compression systems. Other lossy compression systems are MP3 for sound files and WMV for video. If the compression were to be taken too far, it would cause a noticeable change in the file.
+
+

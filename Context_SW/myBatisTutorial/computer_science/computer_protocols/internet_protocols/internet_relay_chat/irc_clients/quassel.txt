@@ -1,0 +1,5 @@
+Quassel
+
+Quassel IRC, or Quassel, is an IRC client, introduced in 2008. It is released under the GNU General Public License for GNU and Unix-like operating systems, OS X, and Microsoft Windows. Since the release of Kubuntu 9.04 (Jaunty Jackalope) Quassel is Kubuntu's default IRC client. Quassel uses the Qt application framework.
+
+

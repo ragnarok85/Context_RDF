@@ -1,0 +1,8 @@
+A record
+
+In the Domain Name System, an A record is something that changes a domain name into a 32-bit IP address (or "IPv4 address"). A domain can have many A records, for example, the domain "example.com" could have an A record for "www.example.com" that points to the IP "127.0.0.1", and another A record for "mail.example.com" that points to the IP "127.0.0.2".
+
+
+The domain name RFC
+
+

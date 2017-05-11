@@ -1,0 +1,7 @@
+Inferno (operating system)
+
+Inferno is a distributed operating system made by Bells Labs and Vita Nuova Holdings based on ideas and technology from Plan 9 from Bell Labs. The three main principles behind Inferno's design are:
+As a distributed operating system (i.e. an operating system working across and connecting multiple machines and devises together), Inferno is also designed to be able to operated on a variety of computer architectures. It can also be operated on top of other operating systems, such as Unix, Microsoft Windows, or Google's Android operating system. In order to make Inferno applications as portable to other computer architectures as the Inferno operating system, Inferno applications are written in a programing language called Limbo and run inside Inferno's Dis virtual machine.
+
+
+

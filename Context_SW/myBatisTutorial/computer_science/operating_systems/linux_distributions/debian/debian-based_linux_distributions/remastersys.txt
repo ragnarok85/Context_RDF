@@ -1,0 +1,13 @@
+Remastersys
+
+Remastersys is a free software/open source (GPL) script for Linux distributions that allows a person to:
+
+It is a very useful and easy way to create a customized Live CD/DVD version of Ubuntu, once the system is installed and configured with programs, updates, etc... the user just has to:
+The resulting iso can also be installed on a USB pendrive, creating a Live USB distro, using either a command-line approach or a graphical tool such as UNetbootin.
+
+It has a command line version and a GUI version. It currently works with Ubuntu, and possibly more Ubuntu-based distributions. <br>
+The latest version of Ubuntu (8.04) is already supported 
+
+
+
+

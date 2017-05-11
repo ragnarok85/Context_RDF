@@ -1,0 +1,5 @@
+Clock rate
+
+The clock rate is the frequency at which a CPU is running. It is the rate in cycles per second (measured in hertz) or the frequency of the clock in any synchronous circuit.
+
+

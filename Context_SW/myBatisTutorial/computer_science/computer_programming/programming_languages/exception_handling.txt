@@ -1,0 +1,12 @@
+Exception handling
+
+In computing, an exception is a special situation where the program cannot do things the way it usually would and is forced to do something else instead. One layer of the system uses an exception to give another layer information about special states the system is currently in. The different layers of software or hardware have contracts, that tell what can be expected; this is generally known as Programming by Contract. In the context of exception handling, a program is said to be exception-safe, if exceptions that occur will not produce side-effects (such as memory leaks), will not change stored data so that it becomes unreadable, or generate output that is invalid. There are different levels of exception safety:
+
+Usually, a programmer will try to "catch" the exception early so that problems don't get worse over time.
+
+Suppose a program tries to add something to an "array", or group of "objects" that doesn't exist. This is called a "null reference". Look at the following code from the Java programming language:
+
+This code throws what programmers call a "null-pointer exception". This is fixed by adding "codice_1" in front of the code that might throw the exception, like is done with the code shown below:
+
+
+

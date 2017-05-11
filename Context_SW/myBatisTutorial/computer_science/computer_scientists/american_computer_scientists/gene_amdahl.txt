@@ -1,0 +1,10 @@
+Gene Amdahl
+
+Gene Myron Amdahl (November 16, 1922 – November 10, 2015) was an American computer architect and high-tech entrepreneur. He was known for his work on mainframe computers at IBM and later his own companies, especially Amdahl Corporation. He formulated Amdahl's law, which states a fundamental limitation of parallel computing.
+
+In 1998, he was made a Fellow of the Computer History Museum "for his fundamental work in computer architecture and design, project management, and leadership."
+
+Amdahl died of pneumonia after suffering from Alzheimer's disease during the last years of his life in Palo Alto, California, aged 92.
+
+
+

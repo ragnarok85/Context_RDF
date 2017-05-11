@@ -1,0 +1,7 @@
+SPIHT
+
+SPIHT (set partitioning in hierarchical trees) is a compression algorithm intended for compression of wavelet transform coefficients. It was introduced by Amir Said and William A. Pearlman in 1996. Its predecessor was EZW coding algorithm.
+
+More practically, SPIHT progressively transforms these coefficients into a bit stream. This stream can be anywhere cut off. During decoding coefficients are increasingly refined.
+
+

@@ -1,0 +1,13 @@
+Formal language
+
+Language
+
+Some examples of formal languages:
+
+
+A formal language can be specified in a great variety of ways, such as:
+
+
+
+
+

@@ -1,0 +1,9 @@
+EJB QL
+
+EJB QL or EJB-QL is a portable database query language for Enterprise Java Beans. It can run on any database. It is used in J2EE applications. It is more complex but less powerful than SQL.
+
+The language has been inspired by the native Hibernate Query Language HQL.
+EJB QL is a database query language similar like SQL. The used queries are somewhat different from relational SQL. It uses a so-called "abstract schema" of the enterprise beans, not the relational model. In other words, EJB QL queries do not use tables and their components. They use enterprise beans, their persistent state, and their relationships. The result of an SQL query is a set of rows with a fixed number of columns. The result of an EJB QL query is either a single object, a collection of entity objects of a given type, or a collection of values retrieved from CMP fields. One has to understand the data model of enterprise beans in order to write effective queries.
+
+
+

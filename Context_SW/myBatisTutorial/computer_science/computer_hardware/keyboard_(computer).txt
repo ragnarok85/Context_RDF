@@ -1,0 +1,18 @@
+Keyboard (computer)
+
+A computer keyboard is an input device that allows a person to enter letters, numbers, and other symbols (these are called characters) into a computer. It is one of the most used input devices for computers. Using a keyboard to enter lots of data is called typing.
+
+A keyboard contains many mechanical switches or push-buttons called "keys". When one of these are pushed, an electrical circuit is closed, and the keyboard sends a signal to the computer that tells it what letter, number or symbol it would like to be shown on the screen. The computer's CPU then shows the character on the screen, usually at the place where the cursor is. Besides entering characters, computer keyboards also have keys that change the symbol (such as shift or caps lock) or gives the computer special commands (such as the arrow keys, CTRL and ALT). These keys depend on the operating system which the keyboard is being used on.
+
+A keyboard can be joined to a computer using a wire, but can also be wireless (like those that use Bluetooth). Today, most keyboards that use wires connect to a USB port on the computer, but older ones use a type of port called PS/2, which is slower than USB.
+
+There are different . They can be based on the way the keys work; for example, laptops have keys that don't move a lot, because the keyboard has to be very thin in order to fit inside the laptop. On the other hand, video gamers like keyboards with keys that move a lot, so that they feel if the key works and the game is working. In between, an ergonomic keyboard is made to be easier for people to use, without hurting their hands or arms. Most computer keyboards have the keys in six rows, but some laptops use only five or even four rows to save space.
+
+There are also different ways the keys on a keyboard are laid out, usually to deal with different regions and languages of the world. The most popular layout is called QWERTY, which is based on the first six letters on typewriter keyboards. The QWERTY design was made so the most common letters would not make a mechanical typewriter "jam", or stop working. Now, even though most people don't use typewriters anymore, the design stayed because people were used to it. Other layous have been developed, including the Dvorak keyboard, which puts the most common letters in the places that are easiest to reach.
+
+Keystroke logging is capturing a record of each key that is pressed. Keystroke logging can be used to measure employee activity. Hackers can also use keystroke logging. Scientists discovered that most keyboards give off electromagnetic radiation that can be used to tell which keys have been pressed. Spies could determine what has been typed by remotely sensing such signals.
+
+Researchers are studying if keyboards can spread diseases. Some keyboards were found to contain five times more germs than a toilet seat.
+
+
+

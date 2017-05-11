@@ -1,0 +1,7 @@
+One-time pad
+
+A One-time pad is a method of encryption. It is a 'symmetrical encryption', which means the same key is needed for encryption and decryption. A one time pad uses a key that is either as long or longer than the message it encrypts. If this method is used correctly, it is impossible to decrypt or break the encryption without the key.
+
+One-time pads were created all the way in 1882 by Frank Miller. After the invention in 1917, Gilbert Vernam invented and patented an electronic version based on teleprinter technologies. 
+
+

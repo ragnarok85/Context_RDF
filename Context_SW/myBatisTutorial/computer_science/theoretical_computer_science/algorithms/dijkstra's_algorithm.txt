@@ -1,0 +1,10 @@
+Dijkstra's algorithm
+
+Dijkstra's algorithm is an algorithm that works on groups of things connected by distances. It finds the shortest ways to move from one first thing to each other thing in the graph. It is faster than many other ways to do this, but it needs all of the distances connecting the things to be zero or more.
+
+When you have done all of these steps you can use the list to find the shortest way from the first thing to any other thing. First write down the other thing. Then keep doing these steps:
+The connections between the things you have written down are the shortest way from the first thing to the other thing.
+
+
+
+

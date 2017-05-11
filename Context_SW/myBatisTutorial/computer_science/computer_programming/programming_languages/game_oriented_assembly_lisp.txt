@@ -1,0 +1,7 @@
+Game Oriented Assembly Lisp
+
+Game Oriented Assembly Lisp (or GOAL) is a video game programming language developed by Andy Gavin and Naughty Dog. It was written using Allegro Common Lisp and used in the development of "Jak and Daxter" series of games.
+
+GOAL's first use was for the "" game. Earlier, the Game Oriented Object Lisp (GOOL) was also developed by Andy Gavin for "Crash Bandicoot" game.
+
+

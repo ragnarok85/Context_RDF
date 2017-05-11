@@ -23,7 +23,7 @@ public class CollectPages {
 		
 		File mainDirectory = new File(args[0]);
 		String simpleWikiFilesPath = args[1];
-		String mainOutpuWikiFiles = args[2];
+//		String mainOutpuWikiFiles = args[2];
 		
 		CollectPages cp = new CollectPages();
 		

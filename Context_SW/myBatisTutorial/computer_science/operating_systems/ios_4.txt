@@ -1,0 +1,13 @@
+IOS 4
+
+iOS 4 is the fourth version of the mobile software iOS, made by Apple Inc.. It was released on June 21, 2010. It was the first big change that was only called iOS, instead of iPhone OS. Some devices could not use iOS 4. This was also the first change that iPod Touch owners could have for free.
+
+The iPhone 3G and iPod Touch 2 cannot use many apps at the same time. They also cannot set a home screen wallpaper. The iPhone 4, iPhone 3GS, and iPod Touch 3 & 4 have them. The first iPhone and the first iPod Touch cannot run iOS 4 or newer.
+
+iOS 4.2.1 was released on November 22, 2010. It added iPad support. It was the last to allow iPhone 3G and iPod Touch 2nd generation usage.
+
+iOS 4.0 only supported the iPhone and iPod Touch. iOS 4.0 was said to have more than 1500 new APIs for app creators. It also supported the multitasking feature for the first time. The final iOS version for the 2nd generation iPod Touch, and iPhone 3G is iOS 4.2.1. iOS 4.2.1 was the first version to make iPhones and iPads use the same operating system.
+
+iOS 4.1 was the first version of iOS for the Apple TV 2. It also had Apple TV Software 4.0.
+
+

@@ -1,0 +1,23 @@
+MicroSD
+
+microSD is a type of removable flash memory card used for storing information. SD is an abbreviation of Secure Digital, and microSD cards are sometimes referred to as µSD or uSD . The cards are used in mobile phones. They are also used in newer types of handheld GPS devices, portable media players, digital audio players, expandable USB flash drives, Nintendo DS flashcards, and digital cameras.
+
+It is the smallest memory card that can be bought; at 15 mm × 11 mm × 1 mm (about the size of a fingernail), it is about a quarter of the size of a normal-sized SD card. There are adapters that make the small microSD able to fit in devices that have slots for standard SD, miniSD, Memory Stick Duo card, and even USB. But, not all of the different cards can work together. Many microSD cards are sold with a standard SD adapter, so that people can use them in devices that take standard SD but not microSD cards.
+
+TransFlash and microSD cards are the same (they can be used in place of each other), but microSD has support for SDIO mode. This lets microSD cards do non-memory jobs like Bluetooth, GPS, and Near Field Communication.
+
+Some people have a hard time knowing the difference between the microSD and the newer microSDHC format. The SD and SDHC act the same, but some devices are unable use the newer format. This is even true with devices that have been made by SanDisk like their e200 series of MP3 players. Using 3rd party firmware, SDHC reading can sometimes be done.
+
+TransFlash cards are sold in 16MB and 32MB sizes. microSD cards are sold in many sizes, from 64 MB to 32 GB, while microSDHC cards are sold in sizes between 4 GB to 64 GB. Larger ones are microSDXC memory cards, sold in sizes between 8 GB and 256 GB. 
+
+The microSD format was made by the company SanDisk. It was first called T-Flash, and then TransFlash, before being named microSD when it started to be used by the SD Card Association (SDA). Other flash card formats approved by the SDA include miniSD and standard SD card.
+
+The SDA announced the microSD format at CTIA Wireless 2005 on March 14, 2005, and the final microSD details were announced on July 13, 2005. When they were first sold, the microSD format was sold in sizes of 32, 64, and 128 MB. SanDisk made a 4 GB microSD card on July 2006, at first costing $99 (USD). Since then, the prices for flash memory devices have become much lower. At the time of April 2009, the same 4 GB card could be bought for as low as $12 (USD) at department stores, and by May 2009, for as low as $6 (USD) at online electronics stores. In January 2010, a 16 GB micro SD card class 2 cost about $40 (USD), and a 4 GB class 2 micro SD card about $8 (USD).
+
+In February 2014, SanDisk announced a new microSD card, the MicroSDXC. At the time, the cards held up to 128GB. To enable this amount of storage capacity on a removable microSD card, SanDisk developed a proprietary technique that allows for 16 memory die to be vertically stacked, each shaved to be thinner than a strand of hair. At the time of their release, these cards had capacities ranging from 8GB to 128GB, with the prices ranging from $29.99 to $199.99. 
+
+Several manufacturers make microSD cards and they consume different amounts of electrical power. Most are in the range of 0-100 mA at a supply voltage of 3.3 V. TwinMos technologies says that the cards carry a maximum of 45 mA during transfer. Toshiba lists 80-100 mA.
+
+
+
+

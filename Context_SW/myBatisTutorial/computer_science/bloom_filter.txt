@@ -1,0 +1,9 @@
+Bloom filter
+
+A Bloom filter is a data structure that allows computers to see if a given element occurs in a set. Bloom filters use hash functions to do this. For each element that is added, a hash value is calculated. When a new element is added, its hash value is compared to that of the other elements in the set. A Bloom filter is a probabilistic data structure. It is possible to get a false positive, but not to get a false negative. In other words, a query returns either "possibly in set" or "definitely not in set". Elements can be added to the set, but not removed. For each added element, the probability of getting a false positive grows. 
+
+Edward Bloom proposed the Bloom filter in 1970. In the article, Bloom supposes there is an algorithm to hyphenate words at the end of a line. According to the example, most words have simple hyphenation patterns. But about 10% of the words require time-consuming lookups to fetch the correct rule. His case was that of hyphenating about 500,000 words. He saw that using the "normal" error-free hashing techniques, storing the hyphenation patterns, would require a lot of memory. He found that using his technique, he could eliminate most lookups. For example, a hash area only 15% of the size needed by an ideal error-free hash still eliminates 85% of the disk accesses.
+
+More generally, fewer than 10 bits per element are required for a 1% false positive probability, independent of the size or number of elements in the set.
+
+

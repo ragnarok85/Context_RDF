@@ -1,0 +1,7 @@
+Dither
+
+Dithering is the intentional use of noise (random sounds) to reduce the error of compression. 
+
+Example below: 
+
+

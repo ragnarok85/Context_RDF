@@ -1,0 +1,17 @@
+Unicode
+
+Unicode is a digital code for computers that lets them show text in different languages. Unicode standards are promoted by the Unicode Consortium and based on ISO standards. Their goal is to replace current and previous character encoding standards with a single worldwide standard for all languages. There are almost 100,000 characters in the latest definition of Unicode.
+
+Unicode was developed in the 1990s and integrated earlier codes used on computer systems.
+
+Unicode provides many printable characters, such as letters, digits, diacritics (things that attach to letters), and punctuation marks. It also provides characters which do not actually print, but instead control how text is processed. For example, a Newline and a character that makes text go from right to left are both characters that do not print.
+
+Unicode considers a graphical character (for instance é) as a code point (alone or in sequence [e+ ‘] ). Each code point is a number with many digits which can be encoded in one or several code units. Code units are 8, 16, or 32 bits. This allows Unicode to represent characters in binary.
+
+There are different ways to encode Unicode, the most common ones are:
+
+
+UTF8 is the most common of these for exchange. It is used for internet, electronic mail, Java also uses a variant of it.
+
+
+

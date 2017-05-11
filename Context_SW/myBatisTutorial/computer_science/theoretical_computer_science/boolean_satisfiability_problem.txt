@@ -1,0 +1,15 @@
+Boolean satisfiability problem
+
+The Boolean satisfiability problem is a kind of problem. It is from math-based logic. In propositional logic, a formula is "satisfiable" if the variables it uses can be given values so that it becomes true. It is important to know that for a given formula, no numbers exist so that the formula becomes true. In other words, the formula will always be false no matter what values its variables have. The formula is called "satisfiable" in the first case. It is called "unsatisfiable" in the second case. 
+
+This problem is also known as "Boolean or propositional satisfiability". Computer scientists usually call it SAT. Complexity theory believes that the formula should be in a special form, known as conjunctive normal form. A formula that is in this form has clauses. Clauses are joined by a "logical and". Each clause has several literals. They are joined by a "logical or". A literal and its complement cannot appear in the same clause. The problem may also have other names. The names depend on what the logical formula looks like. The names also depend on how many variables are used per clause.
+
+A formula that satisfies 3SAT looks like the following:
+
+In this case "("A" OR "B" OR "C")" is an example for a clause, and "B" is one of the literals of this clause.
+
+At the beginning of the 1970s, Stephen Cook and Leonid Levin showed that the problem is NP-complete. This is known as the Cook–Levin theorem. 
+
+The problem 3SAT uses three variables per clause. It is one of the 21 NP-complete problems. They were defined by Richard Karp in 1972.
+
+

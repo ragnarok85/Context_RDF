@@ -1,0 +1,6 @@
+Deb Creator
+
+Deb Creator is a program to compile programs from source code to create .deb packages.
+
+
+

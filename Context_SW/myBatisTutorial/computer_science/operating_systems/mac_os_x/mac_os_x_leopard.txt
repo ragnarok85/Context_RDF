@@ -1,0 +1,5 @@
+Mac OS X Leopard
+
+Mac OS X v10.5 "Leopard" is an operating system made by Apple Inc. for its Macintosh line of computers. It is a version of Mac OS X, and carries the release number 10.5. It was released on October 27, 2007, and came in one release for both Intel Mac's, and PowerPC processors. According to Apple, Leopard contains over 300 changes and improvements since Mac OS X v10.4 "Tiger". Leopard was the last release for the PowerPC processor.
+
+

@@ -1,0 +1,59 @@
+X64
+
+x86-64 is the general name of a series of 64-bit processors and their associated instruction set architecture. These processors are compatible with legacy x86 software. 
+
+AMD and Intel are the major manufacturers, and VIA also supported it with VIA Nano processors. They call their own 64-bit processors AMD64, Intel64 and VIA x86-64 processors, respectively. Game consoles such as Microsoft Xbox One and Sony PlayStation 4 use their own semi-customized AMD64-based APU as main processors.
+
+x64 is another name used to refer to 64-bit extended systems based on this kind of processors. People often use "x64" to refer to its associated instruction set architecture and processor. 
+
+AMD Athlon 64
+
+AMD Athlon X2
+
+AMD Athlon II
+
+AMD Sempron
+
+AMD Sempron X2
+
+AMD Phenom 
+
+AMD Phenom II
+
+AMD FX
+
+AMD APU A4/A6/A8/A10
+
+AMD APU Athlon
+
+AMD APU Sempron
+
+Intel Pentium 4 
+
+Intel Pentium D
+
+Intel Celeron D
+
+Intel Pentium Dual Core
+
+Intel Celeron
+
+Intel Core 2
+
+Intel Core i3/i5/i7
+
+Intel ATOM
+
+VIA Nano
+
+Windows XP Professional x64
+
+Windows Vista/7/8/8.1/10 x64
+
+Mac OS X 10.4.7 and later
+
+Solaris 10 and later
+
+Linux 2.4.x and later
+
+

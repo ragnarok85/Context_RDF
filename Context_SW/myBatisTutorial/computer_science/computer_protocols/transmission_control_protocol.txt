@@ -1,0 +1,11 @@
+Transmission Control Protocol
+
+The Transmission Control Protocol (TCP) is one of the main protocols of the Internet Protocol Suite. TCP is part of the popular "TCP/IP" combination used by the Internet. The Internet Protocol, or IP, makes sure data on the internet gets to the right place. Then TCP makes sure the data is put in the right order, and none of it is missing. TCP also helps to control traffic on the internet so it does not get overloaded. These protocols, which are kind of like languages that computers use, are designed so that any computer, and any program (such as a Web browser or e-mail client), can use them.
+
+TCP makes it easier for computer programs to communicate with each other, typically over a computer network. When a program wants to send a lot of data, TCP is in charge of dividing the data, sending it through the network, and putting it back together correctly on a different computer. In the process, IP chooses which wires and "intersections" get used to send all the data pieces in the fastest way. It does this using packets.
+
+If there are a lot of people using the network, it can get overloaded. Also sometimes weather, power outages, and other problems can make communication hard. Routers on the Internet use something called "load balancing" to try to fix some of these problems. But still, information can be delivered out of order, get lost, or even duplicated. TCP is designed to notice all of these problems and try to fix them. This can take a while, which is why the Internet sometimes seems slow. Once the TCP receiver has finally reassembled a perfect copy of the data originally transmitted, it passes that data to the computer program that asked for it. In this way, the program does not have to know about the network, and TCP does not have to know about the program's data.
+
+
+
+

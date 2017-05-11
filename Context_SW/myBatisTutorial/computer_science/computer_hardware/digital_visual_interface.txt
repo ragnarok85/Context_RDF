@@ -1,0 +1,9 @@
+Digital Visual Interface
+
+The Digital Video Interface (DVI) is a video interface standard. It is used to send video between a source (such as a personal computer) and a display (such as a monitor). This interface cannot be used to transmit audio unless it is connected to a High-Definition Multimedia Interface (HDMI) converter. Both HDMI and DVI use the same protocol for signalling, named Transition-minimized differential signaling. 
+
+The DVI standard has is widely used in the personal computer industry. Many desktop personal computers and monitors can use it. Most desktop personal computers and liquid crystal display (LCD) monitors sold in stores today have a DVI interface. Many other devices (such as projectors and televisions) can use DVI as part of HDMI. HDMI is another video interface standard. Many laptops still have legacy VGA ports. Many newer models have HDMI ports. Fewer laptops have DVI.
+
+DVI was created by the Digital Display Working Group (DDWG). It was created to replace the "legacy analog technology" VGA connector standard. DVI is designed to carry uncompressed digital video data to a display. It works very well with the HDMI standard in digital mode (DVI-D), and VGA in analog mode (DVI-A). It is also found in some television sets even though it has been widely replaced by HDMI.
+
+

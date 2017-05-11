@@ -1,0 +1,9 @@
+Ambient intelligence
+
+Ambient intelligence is an idea from computer science to create an environment of machines that meaningfully interact with people. The idea is that these machines help people solve the problems they have, and that people can interact with the machines in a natural way. An example would be a camera that recognizes the owner of a house or apartment, and that is able to turn off the alarm, and unlock the door. The systems that control the camera, the alarm system and the door lock are all connected to each other. When the camera sees the person, it works with the other systems to make the person's life easier. 
+
+In order for the idea to work well:
+
+Ambient intelligence has also be shown in fiction. The movie "Minority Report" shows how advertising changes for each user. the book "The Hitchiker's Guide to the Galaxy" by Douglas Adams shows intelligent doors that have emotions, which they show when people use them. 
+
+

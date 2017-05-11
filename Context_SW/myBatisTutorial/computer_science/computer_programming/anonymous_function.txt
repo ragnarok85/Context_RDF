@@ -1,0 +1,20 @@
+Anonymous function
+
+In computer science and mathematics, an anonymous function is a function that has no name. Usually, a function is written like: formula_1. It can be written anonymously as formula_2 These are used in functional programming languages and other programming languages with support for anonymous functions (those which support 1st class functions).
+
+The above code can be executed as a function:
+The above code can be executed as a function:
+
+The function can also be written in point-free (tacit) style:
+Not curried:
+Curried:
+Not curried:
+
+Curried:
+
+Note: What you need to write boost lambda is to include <boost/lambda/lambda.hpp> header file, and using namespace boost::lambda, i.e.
+You can call it as: codice_1 to get codice_2.
+
+
+
+

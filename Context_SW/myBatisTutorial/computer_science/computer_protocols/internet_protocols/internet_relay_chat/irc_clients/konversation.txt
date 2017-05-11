@@ -1,0 +1,5 @@
+Konversation
+
+Konversation is an Internet Relay Chat (IRC) client. It is built on the KDE Platform. It is free software released under the terms of the GNU General Public License. It is the default IRC client in many Linux distributions, such as openSUSE, the KDE spin of Fedora, and Kubuntu.
+
+

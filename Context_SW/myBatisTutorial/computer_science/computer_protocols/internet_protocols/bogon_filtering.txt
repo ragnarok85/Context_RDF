@@ -1,0 +1,9 @@
+Bogon filtering
+
+"Bogon" is an informal name for an IP packet on the public Internet that claims to be from an area of the IP address space that is not used. The space not yet assigned by the Internet Assigned Numbers Authority (IANA) or a delegated Regional Internet Registry (RIR). The areas of unallocated address space are called "bogon space".
+
+For example, addresses from 100.x.x.x - 107.x.x.x have not yet been allocated (set aside) (as of September 2009, see for a complete current list)
+
+Bogons are not the same as reserved private address ranges:
+
+

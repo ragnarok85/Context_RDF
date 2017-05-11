@@ -1,0 +1,7 @@
+LISP
+
+Lisp (used to be called LISP) is a programming language. It is among the oldest programming languages that are still used today. Only Fortran is one year older. Lisp was designed by John McCarthy in 1958. The best-known versions of LISP are Common Lisp, Scheme and Clojure. Many concepts that are used in modern programming languages were first created in Lisp.
+Linked lists are a very important data structure in Lisp. 
+The basic concepts behind Lisp are easy to learn. Logo is another version of Lisp that was made for children. Logo can help young children develop skills and become efficient within the programming language.
+
+

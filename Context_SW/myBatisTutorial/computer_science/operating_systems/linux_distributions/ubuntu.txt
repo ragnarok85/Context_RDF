@@ -1,0 +1,34 @@
+Ubuntu
+
+Ubuntu is a free operating system that uses the Linux kernel. The word "ubuntu" is an old African word meaning "humanity." It is pronounced "oo-boon-too".
+
+It is one of the most popular Linux distributions and it is based on Debian Linux. The goal with Ubuntu is to make it easy to use and install onto a computer. Ubuntu can be used on all types of personal computers. Ubuntu is downloaded as a DVD, which is free to download on the Ubuntu website. It can be installed or tested by running the DVD.
+
+Started in 2004, Ubuntu has been developed very fast by Canonical Ltd., a company owned by a rich South African man named Mark Shuttleworth.
+
+Ubuntu splits all software into four different categories to show differences in licensing and the amount of support available. They are:
+
+Free software here includes only software that meets the Ubuntu licensing requirements, which almost are the same as the Debian Free Software Guidelines. There is one difference for the Main category, however — it has firmware and fonts which cannot be changed, but are included if Ubuntu will not work right.
+
+Non-free software is usually unsupported (Multiverse), but some exceptions (Restricted) are given for very important non-free software. Supported non-free software include device drivers that are needed to run Ubuntu on current hardware. The level of support in the Restricted category is less than that of Main, since the developers may not be able to get to the source code. It is wanted that Main and Restricted should contain all the software needed for a general-use Linux system.
+
+Besides the official repositories is "Ubuntu Backports", which is an officially known project to backport newer software from later versions of Ubuntu. The repository is not comprehensive (meaning that it has parts missing from it); it is mostly made up of user-requested packages, which are accepted if they meet quality guidelines.
+
+Two new releases of Ubuntu are released each year, normally in April and October.
+
+The number of the Ubuntu release is 'X.YY', with 'X' being the year of release (minus 2000) and 'Y' being the month of release. For example, Ubuntu 4.10 was released in October (the tenth month of the year), 2004. The name of the release (for example, Breezy Badger) is an adjective (a describing word) followed by the name of an animal.
+
+"LTS indicates Long Term Support."
+
+Ubuntu's official software package repository includes, for example, UNetbootin.
+
+Because there are several options for which desktop environment to use, Ubuntu is available in many different variants.
+
+The official sister distributions which are fully supported by Canonical are:
+
+
+Derivatives that are recognized but not supported by Canonical are:
+
+
+
+

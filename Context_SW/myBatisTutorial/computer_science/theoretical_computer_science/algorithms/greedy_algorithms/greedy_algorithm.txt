@@ -1,0 +1,6 @@
+Greedy algorithm
+
+A greedy algorithm is an algorithm that uses many iterations to compute the result. Such algorithms assume that this result will be obtained by selecting the best result at the current iteration. In other words: the global optimum is obtained by selecting the local optimum at the current time. Examples of such algorithms:
+There are some problems where greedy algorithms do not produce the best possible solution. In such cases, they often produce the worst possible one. Again look at the coin-changing example above, and imagine that there are coins for 25 cent, 10 cent and 4 cent. Now imagine that the sum of 41 cent needs to be changed. A greedy algorithm would pick 25 cent, 10 cent, and 4 cent, for a total of 39 cent. The algorithm is then stuck, because the remaining 2 cent cannot be changed. One possible way of solving the is to use the 25 cent coin, and four coins of 4 cent. 
+
+

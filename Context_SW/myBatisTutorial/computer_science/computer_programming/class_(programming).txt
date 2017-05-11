@@ -1,0 +1,20 @@
+Class (programming)
+
+A class is a part of a computer program that a programmer creates to represent a thing in a way that a computer can understand. A class is written in a programming language and a programming language that can be used to write classes is called an Object-oriented programming language. Classes have fields, which represent a quality the thing has, and classes have methods, which represent what a thing can do. 
+
+For example, a class could be a car, which could have a color field, four tire fields, and a drive method.
+Another related class could be a truck, which would have similar fields, but not be exactly the same as a car.
+Both a car and a truck could be a kind of a third class which could be called a vehicle class. In this way, the programmer could create the parts of the program that are the same for both the car and the truck in programming the vehicle class, yet the programmer would be free to program how a car is different from a truck without duplicating all of the programming.
+
+In this example, there are three classes: 1) a class called "car", 2) a class called "pick-up truck", and 3) a class called "vehicle". These classes would be used to make object. Although there is only one class called "car", there could be many objects that are created from the class called "car". And, although there is only one class that is called "truck", many objects of type truck could be created from this class. The class, vehicle, is actually general and there would probably not be any objects that were only of the class "vehicle". But a car would be a kind of vehicle and a truck would also be a kind of vehicle. So, you could say that both cars and trucks are from the same class, vehicle.
+
+Inside of classes are two kinds of things: methods and fields (or properties). Methods can store the code for doing actions; in this example you could have a drive method and a brake method, and maybe a turnRight and turnLeft method. Fields store data; you could have a color field, a speed field and a size field. You can call methods by first making an object of the Car or Truck class, and call it for example ferrari, and doing ferrari.methodName(). In this case, if we wanted to make the vehicle move, we could do ferrari.drive().
+
+Here is an example realized with Java. Please notice that all unnecessary aspects are left.
+public class vehicle { // base class for all vehicles
+
+public class car extends vehicle {
+
+public class truck extends vehicle {
+
+

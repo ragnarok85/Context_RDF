@@ -1,0 +1,5 @@
+desktop environment
+fluxbox
+gnome
+mate (software)
+xfce

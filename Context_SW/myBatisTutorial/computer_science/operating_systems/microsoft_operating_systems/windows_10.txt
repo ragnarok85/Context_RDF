@@ -1,0 +1,21 @@
+Windows 10
+
+Windows 10 is a computer operating system by Microsoft as part of its Windows family of operating systems. It was known as Threshold when it was being developed and announced at a press event on 30 September 2014. It came out for PCs on July 29, 2015. Beginning on that day, Windows 10 was available as a free upgrade for users running Windows 7 and Windows 8.1 for one year.
+
+Windows 10 is designed to provide a common, "universal" user experience between desktop, laptop, and all-in-one PCs, tablet computers, smartphones, and embedded systems such as its Xbox game console. Many of its features have been added based upon feedback from users, who are testing the software before it is released. It is being designed under the software as a service principle, in which the software will receive updates on a frequent basis throughout its life span.
+
+
+
+Windows 10 has many versions for different uses, that have different features.
+
+Windows 10 Home is meant for use in the home. It can be used on desktop, laptop, tablet, and 2-in-1 (mix of tablet and laptop) computers.
+
+Windows 10 Pro is meant more for businesses. It adds features on top of Windows 10 Home.
+
+Windows 10 Enterprise is meant for use in IT. It adds features on top of Windows 10 Pro.
+
+Windows 10 Education is meant for use in schools, colleges, and universities. It is the same as Windows 10 Enterprise, but without Cortana.
+
+"See Windows 10 Mobile."
+
+

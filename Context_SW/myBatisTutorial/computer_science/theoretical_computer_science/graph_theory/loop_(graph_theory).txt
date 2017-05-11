@@ -1,0 +1,5 @@
+Loop (graph theory)
+
+In graph theory a loop is an edge that connects a vertex to itself.
+
+

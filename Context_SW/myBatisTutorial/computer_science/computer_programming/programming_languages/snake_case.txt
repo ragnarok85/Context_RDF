@@ -1,0 +1,9 @@
+Snake case
+
+Snake case (or snake_case) is the process of writing compound words so that the words are separated with an underscore symbol (_) instead of a space. The first letter is usually changed to lowercase. Some examples of Snake case would be "foo_bar" or "hello_world". It is commonly used in computer code. At least one study found that readers can recognize snake case faster than CamelCase.
+
+If the first letter of each word is uppercase, this is known as Train-Case.
+
+
+
+

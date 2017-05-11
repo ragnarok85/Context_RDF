@@ -1,0 +1,15 @@
+JavaScript
+
+JavaScript is a scripting language for computers. It is often run in web browser applications to create dynamic content like a popup message or a live clock. It is not related to the programming language Java.
+
+This script writes "Example" on the screen. The lines that start with codice_1 are comments; they show what the code does.
+
+The JavaScript is enclosed by codice_2 tags, to tell that it is a script and not text to be put onto the web page the JavaScript is running on.
+This script inserts the numbers 1 through 10 at the bottom of a webpage:
+The codice_3 loop makes whatever code is between the codice_4 and the codice_5 happen more than one time. In this case, it keeps looping until codice_6 is equal to 10, then it stops.
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+High-Definition Multimedia Interface
+
+The High-Definition Multimedia Interface (HDMI) is an audio/video interface for transmitting uncompressed digital data. The main use of an HDMI cable is to connect components such as a DVD player to a High-definition television (HDTV). HDMI is the uncompressed, all-digital standard used for High-Definition (HD) quality for consumer electronics and PC products using a single cable. It transmits digital video, multi-channel surround sound, and control data through a single cable. It replaces up to eleven older cables with a single connection. It uses the same technology as DVI.
+
+

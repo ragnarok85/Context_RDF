@@ -1,0 +1,26 @@
+C Sharp (programming language)
+
+C# (pronounced "see sharp") is a computer programming language. It is developed by Microsoft. It was created to use all capacities of .NET platform. The first version was released in 2001. The most recent version is C# 6.0, which was released in July 2015. C# is a modern language. C#'s development team is led by Anders Hejlsberg, the creator of Delphi.
+
+
+Today, C# can be run on most platforms (Windows, Linux, etc.) without changing the source code. C# can be run on the Xbox 360 platform with a special framework.
+
+C# code rather like C++ and Java code. The CLR (Common Language Runtime) is needed in order to run a C# program.
+
+/* This is a simple program in C#. 
+using System;
+namespace HelloWorld
+
+ * This program asks for input from the user, i.e. a name. It then prints "Hello [name]", replacing [name] with whatever the person typed in.
+using System;
+namespace HelloWorld
+
+C# can be edited in a number of IDEs (Integrated Development Environments), some of which are listed below:
+
+Windows:
+Mac OS X:
+Unix/Linux:
+
+
+
+

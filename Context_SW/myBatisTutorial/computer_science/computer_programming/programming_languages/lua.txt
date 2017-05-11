@@ -1,0 +1,9 @@
+Lua
+
+Lua is an open source programming language. It was created in 1993 by Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes. Lua is used for many different things and is widely used in video games such as World of Warcraft. In June 2010, Apple Inc. changed the terms of use for the software development kit of its iOS operating system to allow the use of Lua. This led to Lua being used to make iPhone applications such as Angry Birds. In June 2011, Lua was ranked the tenth most popular programming language by the TIOBE Index.
+
+An example Hello World program in Lua:
+
+An example of setting a value, then printing it:
+
+

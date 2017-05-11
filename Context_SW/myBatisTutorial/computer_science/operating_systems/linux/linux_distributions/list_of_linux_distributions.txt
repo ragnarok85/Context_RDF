@@ -1,0 +1,19 @@
+List of Linux distributions
+
+Linux can be changed, so there are many versions and distributions of Linux, each containing different software or made for different purposes. A list of distributions can be found below:
+
+Debian is a distribution that only accepts free software. It is supported on many hardware platforms.
+
+Knoppix is itself based on Debian.
+
+Ubuntu is based on Debian.
+Gentoo is a distribution designed to have highly optimized and frequently updated software.
+
+Red Hat Linux and SUSE Linux were the original major distributions that used the RPM file format, which is today used in several package management systems. Both of these later divided into commercial and community-supported distributions.
+
+Slackware is known as a highly customizable distribution,generally considered a distribution for expert users.
+SLAX's distributions are known for be really good in branch of quality.
+
+The following distributions either use another packaging system, do not use any, or are simply not categorized.
+
+

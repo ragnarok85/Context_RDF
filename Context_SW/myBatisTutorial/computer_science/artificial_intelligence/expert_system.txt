@@ -1,0 +1,12 @@
+Expert system
+
+An expert system is a program running on a computer. Like a human expert, it knows a lot about a subject. People can ask the expert system a question. The expert system will then use a set of rules and give answers to the question. This method of automated reasoning belongs to a field of computer science called artificial intelligence.
+
+Different groups of people can have different kinds of access to an expert system. The people managing the network of computers have different needs than the office worker or secretary.
+
+Expert systems are made of
+
+When they are asked a question, they will filter the data with the rules they have. They might give back a result, or ask an additional question.
+
+
+

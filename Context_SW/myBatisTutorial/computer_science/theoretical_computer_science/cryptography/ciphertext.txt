@@ -1,0 +1,7 @@
+Ciphertext
+
+In cryptography, ciphertext (or cyphertext) refers to the output of the encryption process. Plaintext is turned into ciphertext using an algorithm (cipher). This makes it unreadable to anyone except those who own unique information about it, usually referred to as a key. 
+
+Decryption is the reverse process of encryption. It takes the unreadable ciphertext as an input and makes it readable again in the form of plaintext.
+
+

@@ -1,0 +1,9 @@
+Wiki markup
+
+Wikitext language, or wiki markup, is a markup language used to write pages in wiki websites, such as Wikipedia. It is a simplified alternative to HTML. It is converted by wiki software (like MediaWiki) into regular HTML, which the user's web browser will render.
+
+The main purpose of having Wikitext in wikis instead of HTML is because HTML is more complicated and not many people know how to use it. Therefore, it is easier to use Wikitext rather than HTML and thus makes editors contributing to a wiki easier to create content.
+
+
+
+

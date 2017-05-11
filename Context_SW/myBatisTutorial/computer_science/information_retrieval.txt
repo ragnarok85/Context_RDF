@@ -1,0 +1,16 @@
+Information retrieval
+
+Information retrievial is a field of Computer science that looks at how non-trivial data can be optained from a collection of information resources. Commonly, either a full-text search is done, or the metadata which describes the resources is searched. Depending on the content, there may also be other indices. Information retrieval is about finding existing information; it is different from knowledge discovery in databases which is about finding new relationships between different datasets, which were unknown. 
+
+Techniques from information retrieval are commonly used in internet search engines, but also when looking for informaion on a subject in a library, or when searching complex content such as images in a database. This kind of content is usualy described using metadata. 
+
+When looking for information, the following problems are commonly enocountered: 
+A system for information retrival will attach a score to each document returned. This score reflects how well the document matches the query of the user. The documents with the best scores are shown to the user, who has the possbility to refine the query. 
+
+There are different kinds of models that are used in information retrieval
+
+
+
+In addition, each model has parameters, which influence its performance. Some of the models make a number of assumption about the data; they were developed for a very special purpose. Using such a model for a different purpose may not yield good results.
+
+

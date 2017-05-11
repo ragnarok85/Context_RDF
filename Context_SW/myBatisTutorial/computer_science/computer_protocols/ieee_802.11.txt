@@ -1,0 +1,11 @@
+IEEE 802.11
+
+IEEE 802.11 is the name for a series of protocols for wireless networking. Often. these are referred to as Wireless LAN, "WLAN", or Wi-Fi. Such a protocol allows computers that have the needed radio parts to communicate with each other, without a cable.
+
+The first Wi-fi standard was made in 1997. It is called IEEE 802.11. It allows communication with 1-2 MBit per second. Today it is outdated, and rare. Later standards add a letter to the name. They are labelled IEEE 802.11a to IEEE 802.11g. There are plans for ones labeled h, i, j, n, p and s. They are all compatible with each other.
+
+Newer standards have a bandwidth of 54 MBit/s. About 40-50% of this is usable in real-life situations. As of 2007, the standards most widely used are IEEE 802.11g, and IEEE 802.11b.
+
+Data communication is either done in the 2.4 GHz band or in the 5 GHz band. The 2.4 GHz band is a general use band. Microwave ovens and Bluetooth are examples of other things that emit radio waves in this band. The 2.4 GHz band has the problem that there are only only very few channels that can be used at the same time, without the signals interfering. There are three usable channels there. When more than three networks operate in the same place, interference slows them. The 5 GHz band can solve some of these problems, but it introduces others. That band has 19 usable channels. Overall the band is less used. However there are more regulations. Most devices need to be able to choose their channel to minimize interference. Some channels require that those participating can do Transmitter Power Control. This means they adapt the strength of the signal to what is actually needed. This helps reduce the amount of interference between different networks.
+
+

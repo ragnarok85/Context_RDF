@@ -1,0 +1,11 @@
+NetBSD
+
+NetBSD is an open source version of the Unix-derivative BSD computer operating system.
+
+NetBSD is known for being very portable (able to work with a many kinds of computers), such as a small ARM or big amd64 Opteron computers. It is also seen as being fast (does things quickly), secure (hard for people to do bad things to) and stable (does not break often).
+
+When people use NetBSD, like most software, they must agree to a license. The BSD license, which NetBSD uses, allows everyone to use, change, give away or sell NetBSD, as long as they do not take away the copyright notice and license text. This means people can make new things from NetBSD without having to give people the source code (information for the computer to make the program run).
+
+
+
+

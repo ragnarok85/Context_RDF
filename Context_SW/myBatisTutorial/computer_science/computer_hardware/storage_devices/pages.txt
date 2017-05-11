@@ -1,0 +1,27 @@
+ 
+data storage device
+compactflash
+floppy disk
+gramophone record
+head crash
+icloud
+live usb
+live usb
+list of tools to create live usb systems
+magneto-optical drive
+memory card
+microform
+microsd
+microsd
+multimediacard
+native command queuing
+raid
+self-monitoring, analysis and reporting technology
+serial ata
+serial attached scsi
+serial storage architecture
+superdisk
+tape drive
+usb flash drive
+write once read many
+zip drive

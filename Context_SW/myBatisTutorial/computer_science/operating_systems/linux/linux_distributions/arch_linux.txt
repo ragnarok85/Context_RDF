@@ -1,0 +1,7 @@
+Arch Linux
+
+Arch Linux (usually just called Arch) is a Linux-based operating system for 32-bit and 64-bit computers. It mostly has free software included with it, and supports community involvement.
+
+Arch Linux focuses on elegance, code correctness, minimalism, and simplicity, and to use it, the user needs to have a motive to learn about it. A package manager made only for Arch Linux named "pacman" can be used to install, remove and update packages of software on the computer.
+
+

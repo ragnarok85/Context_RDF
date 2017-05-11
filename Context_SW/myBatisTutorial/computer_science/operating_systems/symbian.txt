@@ -1,0 +1,9 @@
+Symbian
+
+Symbian OS is an operating system for mobile devices. It is designed for smartphones. 
+
+Nokia, Motorola, Ericsson, Psion and others joined to create Symbian association. This let them promote using EPOC designed for mobile phones. Symbian is a follower of EPOC system. It is used in pocket PC Psion, running on the ARM processors. This operating system has had many changes since it was first created. Nokia smartphones are the major users of Symbian OS.
+
+A new version came out every year after 2005. Because of fast technology research, mobile phones and operation systems made very large improvement quickly. The most recent Symbian OS is designed for touch phones and the newest technologies.
+
+

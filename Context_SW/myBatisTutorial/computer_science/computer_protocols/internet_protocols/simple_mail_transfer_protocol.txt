@@ -1,0 +1,6 @@
+Simple Mail Transfer Protocol
+
+Simple Mail Transfer Protocol (SMTP) is an Internet communication protocol used to send and relay an email message between email servers. It is not used to retrieve email messages from a server. Instead either IMAP or POP is used to retrieve email messages.
+
+
+

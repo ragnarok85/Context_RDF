@@ -1,0 +1,9 @@
+Computer bus
+
+A computer bus (often simply called bus) is part of most computers. Its role is to transfer data, signals, or power between some of the components that make up a computer. 
+
+The "size" or "width" of a bus is how many bits it carries in parallel. Common bus sizes are: 4 bits, 8 bits, 12 bits, 16 bits, 24 bits, 32 bits, 64 bits, 80 bits, 96 bits, and 128 bits.
+Such buses are in wide use, to
+Serial ATA, ATAPI, USB and Firewire connections are types of bus.
+
+

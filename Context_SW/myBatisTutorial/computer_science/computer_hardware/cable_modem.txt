@@ -1,0 +1,7 @@
+Cable modem
+
+A cable modem is a modem that can be used to deliver (usually digital) data over Cable television infrastructure. Most of the time, cable modems are used to get access to the internet using the cable television network. To do this, cable modems use some channels of the Cable TV network. A cable modem usually translates the signals it receives from Ethernet or USB into Radio frequency channels. With Voice over IP (VoIP) technology, most cable modems can now also provide telephone lines. 
+
+In terms of network technology, a cable modem is a network bridge. It operates at layer 2 of the OSI model.
+
+

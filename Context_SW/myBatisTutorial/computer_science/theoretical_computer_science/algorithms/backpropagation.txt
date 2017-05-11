@@ -1,0 +1,7 @@
+Backpropagation
+
+Backpropagation is a method of training neural networks to perform tasks more accurately. The algorithm was first used for this purpose in 1974 in papers published by Werbos, Rumelhart, Hinton, and Williams. The term backpropagation is short for "backward propagation of errors".
+
+It works especially well for feed forward neural networks (networks without any loops) and problems that require supervised learning.
+
+

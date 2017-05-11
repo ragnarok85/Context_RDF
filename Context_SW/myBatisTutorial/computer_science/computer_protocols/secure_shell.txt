@@ -1,0 +1,11 @@
+Secure Shell
+
+Secure Shell (SSH) is an Internet communication protocol used mostly to allow users to log into other computers and run commands. It lets people exchange data using a secure channel between two computers. It is used mainly on Linux, Macintosh and Unix computers. It is a lot like Telnet, but is safer. It is less likely to be hacked than Telnet is. 
+
+A person can make a key out of numbers. This key has two parts, a private part that should not be shared and a public part that should be. These parts are mathematically related to each. To send a message to a computer, the message is encrypted with the sender's private key and the receiver's public key. This is done in such a way that the message can only be read if the receiver has their private key and the sender's public key. This means that an attacker cannot read the messages without both keys. 
+
+SSH was designed by Tatu Ylönen in 1995 to replace the less secure protocols rlogin, Telnet and rsh, which were used to access shell accounts on remote computers. 
+
+
+
+

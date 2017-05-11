@@ -1,0 +1,23 @@
+Internet protocol suite
+
+When computers connect and transmit data between each other on the Internet, they follow a set of rules to do so. These rules are universal; all computers throughout the Internet must follow them. Otherwise, the Internet would not function as computers would not be able to transmit data in a meaningful and useful way. These rules are called protocols. There are many different protocols, each for different purposes, and they all together are called the Internet protocol suite. The two most important protocols are the Transmission Control Protocol (TCP) and the Internet Protocol (IP), which ensure data is delivered at the right place, and without errors, and is what computers use when they access servers (computers that have the data that is accessed on the Internet) on the World Wide Web, as well as for email, and the like. Other protocols include the Network Time Protocol, which ensures clock synchronisation in computers, and there are many others. 
+
+The TCP/IP model and other related protocols are maintained by the Internet Engineering Task Force, whose parent organisation is the Internet Society, and which also cooperates closely with other standards bodies such as the W3C (World Wide Web Consortium) and ISO/IEC.
+
+• Internet Society: http://www.internetsociety.org
+
+• Internet Engineering Task Force: http://www.ietf.org/
+
+• World Wide Web Consortium: http://www.w3.org/
+
+• HowStuffWorks-How Internet Infrastructure Works: http://computer.howstuffworks.com/internet/basics/internet-infrastructure.htm
+
+• HowStuffWorks-How Web Servers Work-Protocols: http://computer.howstuffworks.com/web-server9.htm
+
+• HowStuffWorks-How the Internet works: http://computer.howstuffworks.com/internet/basics/internet.htm
+
+• Internet Protocol Suite: https://www.princeton.edu/~achaney/tmve/wiki100k/docs/Internet_Protocol_Suite.html
+
+• About.com Networking-TCP/IP: http://compnetworking.about.com/cs/basictcpip/g/bldef_tcpip.htm
+
+

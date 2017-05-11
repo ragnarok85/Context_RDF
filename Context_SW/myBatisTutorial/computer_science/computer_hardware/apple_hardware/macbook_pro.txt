@@ -1,0 +1,32 @@
+MacBook Pro
+
+A MacBook Pro is a type of laptop computer made by "Apple Inc." It replaced the PowerBook G4 and was the second Intel model to be released. It runs Mac OS X and comes with a built in webcam and microphone and a power adapter that is attached by magnets. MacBook Pros are housed in aluminum metal and are currently available in 13" and 15" models.
+
+The Macbook Pro was first introduced on January 2006 at the Macworld Expo.
+
+The first MacBook Pro was the 15" model, but a 17" inch model was released later that year. New models were released in late 2006, late 2007, early 2008, late 2008, and early 2009. In June 2009, a 13" model was added and the other sizes were also updated. The next updates happened in April 2010 and February 2011. Another update was released in June 2012, in which a new 15" model was introduced with a much higher screen resolution (dubbed the Retina Display, meaning that it can display more pixels, creating a smoother image). However, Apple stopped making the 17" model.
+
+The new MacBook Pro has several features:
+
+The aluminum unibody case makes the MacBook Pro lighter, polished, and stronger. On the left side of the computer, there is a button next to many indicator lights. This button will turn on the lights. They say how much battery power the computer has left. More lights on means more battery.
+
+A built-in battery gives around seven hours of power to all models of the computer. This battery can be recharged up to 1,000 times, whereas typical notebooks can only be recharged 200 to 300 times.
+
+The keyboard has curved and backlit keys.
+
+The trackpad is the part of the laptop that is touch-sensitive. It allows the use to move the cursor on the screen by using their finger. The entire trackpad is also the trackpad button, adding more space to the trackpad. Right-click can be done with two fingers or using a right-click area. Some gestures (involving 2 or more fingers at once) are:
+
+
+Hard drive sizes range from 320 to 750 GB. One can use a Solid State Drive with a capacity of 128GB, 256GB, or 512GB to help improve battery life and performance, though they cost more.
+
+The CPUs in the computers are either dual-core or quad-core Intel "Ivy Bridge" core i5 or i7 chips. An SD card slot in the 13" and 15" MacBook Pros can be used to quickly import photos from a camera or camcorder.
+
+The GPU is part of the CPU and is called Intel HD Graphics 4000. The 15" model also has a separate nVidia GeForce GT 650M graphics card, which does the same thing as the Intel HD 4000, but faster and smoother. If the user feels like it, he/she can switch between the two.
+
+There is nothing in this summary about what PORTS are included, what level of USB is supported, etc. This is as basic or more basic than what's on this page. 
+
+The MacBook Pros have the following environmentally-friendly features:
+
+
+
+

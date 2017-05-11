@@ -1,0 +1,10 @@
+SuSE Linux
+
+SUSE is a main version of a Linux distribution, produced in Germany and owned by Attachmate Group. SUSE is also a founding member of the Desktop Linux Consortium. Starting from version "10.2 Alpha 3" its official name is openSUSE. The current mascot of SUSE is a chameleon called "Geeko".
+
+The SUSE Linux distribution was originally a German translation of Slackware Linux. The Slackware distribution was founded by Peter MacDonald, and was the first distribution to contain X and TCP/IP. S.u.S.E was founded in 1992 as a UNIX speaking group, which among other things regularly released software packages that included SLS and Slackware, and printed UNIX/Linux manuals. In 1994 the group released the first CD version of SLS/Slackware, under the name "S.u.S.E Linux 1.0." Then in 1996, SuSE Linux gained many aspects from Red Hat Linux. The name "SUSE Linux" came in September 2003.
+
+On 4 November 2003, Novell announced it would buy SuSE. They planned to release the administration program YaST2 under the GPL license and add a community project, openSUSE. The openSUSE desktop environment can be GNOME or KDE. Most parts of the program were "open"—not completely, but more than before. The version "10.0" was the first version that had public beta testing. The philosophy changed from before. There were multiple versions of the "10.0" Linux distribution for download. They are "OSS" (completely open source), with all programs "free" and without proprietary softwares, and "eval" (has both open source and proprietary applications).
+
+
+

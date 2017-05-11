@@ -1,0 +1,7 @@
+XChat
+
+XChat is a popular IRC client. It is open source, but its Windows port is shareware.
+
+
+
+

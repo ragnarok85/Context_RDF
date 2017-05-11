@@ -1,0 +1,6 @@
+Stellar (payment protocol)
+
+Stellar is a system for sending money through the internet. It is based on the Ripple communication protocol and software.
+
+
+

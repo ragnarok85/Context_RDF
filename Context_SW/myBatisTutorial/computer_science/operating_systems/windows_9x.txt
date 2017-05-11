@@ -1,0 +1,7 @@
+Windows 9x
+
+Windows 9x is a general term referring to a series (or family) of Microsoft Windows computer operating systems. These were produced from 1995 to 2000. These were based on the Windows 95 kernel and its underlying foundation of MS-DOS. Both were updated in following versions. This includes all versions of Windows 95, Windows 98, and Windows ME. In common usage, the term "Windows 9x" itself often includes Windows ME. However, this is not always the case and it is more often expressed as "Windows 9x/ME". 
+
+Windows 9x can refer to either an individual or all of the following versions of Microsoft Windows:
+
+

@@ -1,0 +1,10 @@
+Paul Baran
+
+Paul Baran (1926–2011) was an American engineer. He was one of the first people to work in developing computer networks. He invented packet switching networks. Later, he started several companies that made important parts of the Internet and other modern digital communication.
+Paul Baran was born in Grodno, Poland (which is now in Belarus) on April 29, 1926. His family moved to the United States in 1928. He graduated from Drexel University in 1949 with a degree in electrical engineering. He did technical work on the first commercial computers in the United States. He got a Masters degree in engineering from UCLA. His thesis was on character recognition.
+In 1959, Baran joined RAND Corporation. He designed a "survivable" communications system that could keep working across long distances even if hit by nuclear weapons. Baran proved that by dividing communication into short packages, the packages could be easily rerouted when a part of the network was lost. Special computers (called "routers") would steer the packages around the network toward their final destinations. This later became the basic design of the internet.
+In 1968, Baran was a founder of the Institute for the Future, and then involved in other networking technologies developed in Silicon Valley. He founded a number of high technology companies.
+Baran died in Palo Alto, California at the age of 84 on March 26, 2011, from lung cancer.
+ 
+
+

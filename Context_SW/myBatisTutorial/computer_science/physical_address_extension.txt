@@ -1,0 +1,7 @@
+Physical Address Extension
+
+In computing, Physical Address Extension (PAE) is a processor feature to enable 32-bit IA-32 central processing units (CPUs) to access physical address space larger than 4 gigabytes by extending the paging schema . It allows up to 64 gigabytes of system memory to be addressed by a 32-bit processor. 
+
+PAE was first introduced with the Intel 32-bit processor Pentium Pro. Since then it has been a feature on all Intel processors except some Pentium M mobile processors. Athlon or K7 is the first processor from AMD supported PAE. Now all AMD processors support PAE. In addition to processor support, PAE requires the operating system (OS) to support it. Windows 2000 was the first OS to support PAE.
+
+

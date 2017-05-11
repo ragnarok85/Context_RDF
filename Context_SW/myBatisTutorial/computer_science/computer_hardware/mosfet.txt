@@ -1,0 +1,12 @@
+MOSFET
+
+MOSFET stands for metal-oxide-semiconductor field-effect transistor. Transistors are small electrical devices that are used in, amongst other things, alarm clocks, calculators, and, perhaps most famously, computers; they are some of the most basic building blocks of modern electronics. A few MOSFETs amplify or process analog signals. Most are used in digital electronics. 
+
+MOSFETs act like valves for electricity. They have one input connection (the "gate") which is used to control the flow of electricity between two other connections (the "source" and "drain"). Said another way, the gate acts as a switch that controls the two outputs. Think of a dimmable light switch: the knob itself selects 'ON', 'OFF', or somewhere in between, controlling the brightness of the light. Think of a MOSFET in place of the light switch: the switch itself is the "gate", the "source" is the power coming into the house, and the "drain" is the light bulb.
+
+The name MOSFET describes the structure and the function of the transistor. MOS refers to the fact that a MOSFET is built by layering metal (the "gate") on oxide (an insulator which prevents the flow of electricity) on semiconductor (the "source" and "drain"). FET describes the action of the gate on the semiconductor. An electric signal is sent to the gate, which creates an electric field that alters the connection between the "source" and "drain".
+
+Almost all MOSFETs are used in integrated circuits. As of 2008, it is possible to fit 2,000,000,000 transistors on a single integrated circuit. In 1970, that number was around 2,000.
+
+
+

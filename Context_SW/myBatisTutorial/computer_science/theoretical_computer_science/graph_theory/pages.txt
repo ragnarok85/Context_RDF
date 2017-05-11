@@ -1,0 +1,13 @@
+ 
+graph theory
+chinese postman problem
+eulerian path
+five color theorem
+graph (mathematics)
+hamiltonian path
+kruskal's algorithm
+loop (graph theory)
+nearest neighbour algorithm
+ramsey theory
+seven bridges of konigsberg
+seven bridges of kãnigsberg

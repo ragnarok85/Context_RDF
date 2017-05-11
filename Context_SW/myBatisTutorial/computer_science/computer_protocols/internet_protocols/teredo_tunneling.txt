@@ -1,0 +1,7 @@
+Teredo tunneling
+
+In computer networking, Teredo is a tunneling protocol used to give IPv6 connectivity to a computer with only an IPv4 connection. The IPv6 address block 2001:0::/32 is used with Teredo. Unlike similar protocols such as Protocol 41, Teredo works correctly only if the IPv4 network has a network address translator (NAT). Teredo is available on Windows XP and later, and is enabled by default on Windows Vista and later. It is also available on Linux and Unix, with a program called Miredo. Teredo was named after "Teredo navalis", commonly called a shipworm, which creates holes or tunnels in wooden ships.
+
+A Teredo address might look like: 2001:0:4136:e378:8000:63bf:3fff:fdd2. This address has the Teredo server 65.54.227.120, the client IPv4 address 192.0.2.45, and the UDP port number 40000.
+
+

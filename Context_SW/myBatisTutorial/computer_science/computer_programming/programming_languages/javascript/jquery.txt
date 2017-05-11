@@ -1,0 +1,13 @@
+JQuery
+
+jQuery is a JavaScript library. It was created to make it easier and simpler to write JavaScript and HTML. JQuery works on most web browsers. It was invented by John Resig. The first release was in January 2006 at BarCamp NYC. Today there is a team of developers working on jQuery. The team is led by Dave Methvin.
+
+Today, more than 55% of the 10,000 most-visited websites use jQuery. It is the most popular JavaScript library being used today. It is free and open source software. It is licensed under the MIT License.
+
+jQuery's syntax is designed to make it easier to write complicated JavaScript. Some things that are easier to do using jQuery are:
+It also allows developers to make their own jQuery plug-ins. 
+
+Companies like Microsoft and Nokia have said that they are going to include jQuery on their mobile platforms. In addition, Microsoft is including jQuery in its Visual Studio software to use with the ASP.NET AJAX framework and ASP.NET MVC Framework. Nokia has included it in their Web Run-Time widget development platform. jQuery has also been used in MediaWiki since version 1.16.
+
+
+

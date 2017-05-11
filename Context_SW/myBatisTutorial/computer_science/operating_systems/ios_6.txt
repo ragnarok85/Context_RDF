@@ -1,0 +1,21 @@
+IOS 6
+
+iOS 6 is the sixth major version of Apple's mobile operating system, iOS. It was released on September 19, 2012, and the latest version is iOS 6.1.6.
+
+Until now, it is still running on about 11% of devices (the percentage including devices that are not supported) besides iOS 7's 87% (including non-supported devices) and the last 2% (including non-supported devices) are for older iOS versions.
+
+iOS 6 was shown during Apple Worldwide Developers Conference (WWDC) 2012 on June 11, 2012. This software dropped support for older devices such as the third generation iPod Touch and the first generation iPad following the cycle of past iOS versions. It is supported on the iPhone 3GS and later, the fourth generation iPod Touch and later, the iPad 2 and later, and the iPad Mini.
+
+On September 12, 2012, at San Francisco's Yerba Buena Center for the Arts, the iPhone 5, the fifth generation iPod Touch, and the final release of iOS 6.0 were revealed at the event. It was announced that iOS 6 would be released on September 19, 2012.
+
+The iPhone 5 had iOS 6 already installed, but other devices will need to get it installed as an over-the-air update or through iTunes. An iTunes update, version 10.7, was released on September 12, 2012, and it was needed in order to install iOS 6 on a device.
+
+Unlike past iOS versions, two apps that were removed as part of iOS 6 were Google Maps and YouTube. These apps can be downloaded for free in the App Store.
+
+The all-new Maps application uses a different engine that helps to get rid of lag and make for smoother zooming. It also adds turn-by-turn directions and 3D views in some cites.
+
+In iOS 6, the Google Maps application was replaced with Apple's own maps. It caused many poor reviews, with information that is not complete, maps that are not correct, no support for transit maps, and low-quality satellite images.
+
+The iOS 6.1 update released on January 28, 2013 had reports of reduced battery life and issues with signal strength.
+
+

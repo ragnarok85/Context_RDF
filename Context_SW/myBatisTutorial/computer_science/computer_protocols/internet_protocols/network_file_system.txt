@@ -1,0 +1,8 @@
+Network File System
+
+Network File System (NFS) is a file system protocol. It was originally developed by Sun Microsystems in 1984. Using NFS, a user on a client computer can access files over a network in the same way as if they were attached to its local disks. NFS uses the Open Network Computing Remote Procedure Call (ONC RPC) system. The Network File System is an open standard defined in RFCs. That way, anyone can implement the protocol.
+
+NFS became the first widely used network file system. Other notable network file systems are Andrew File System (AFS), NetWare Core Protocol (NCP), and Server Message Block (SMB) which is also known as Common Internet File System (CIFS).
+
+
+

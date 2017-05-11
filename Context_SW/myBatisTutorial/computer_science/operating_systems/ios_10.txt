@@ -1,0 +1,7 @@
+IOS 10
+
+iOS 10 is a version of iOS released on September 13, 2016, preceded by iOS 9. iOS 10 includes new features such as 3D touch improvements, the lock screen, Emojis in Messages, Siri's compatibility to third-party apps, and many others. This is the first time Apple has dropped support for devices since iOS 8. Apple since then have a limited support for the iPhone 5, iPhone 5C, and the fourth-generation iPad.
+
+The user now has the option of downloading applications from a app store in Messages.
+
+

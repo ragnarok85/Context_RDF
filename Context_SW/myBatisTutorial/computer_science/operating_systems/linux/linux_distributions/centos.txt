@@ -1,0 +1,6 @@
+CentOS
+
+CentOS is a distribution (or "distro") of Linux that is made to be similar to Red Hat. It was first made because the company that made Red Hat stopped making it free. Now, many people work on CentOS, and many more people use it on their computers. Often, CentOS is used on servers (computers which provide services to people or other computers) because it is stable (does not break often) and can be installed (put on a computer) in not much time, compared to other distributions such as Gentoo.
+
+
+

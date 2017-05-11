@@ -1,0 +1,5 @@
+Crash Test Dummy
+
+A crash test dummy is a test device ( commonly abbreviated 'ATD') that is made to be close to the same shape, size, heaviness, proportions and articulation of the human body. They sometimes have equipment embedded in them that measures data about how hard things are hitting it and how fast the ATD is moving around. ATDs have many applications but are commonly used in simulated (test) car crashes to see how safe the cars are for people when they crash.
+
+

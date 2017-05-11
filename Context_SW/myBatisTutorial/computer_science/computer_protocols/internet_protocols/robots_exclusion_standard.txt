@@ -1,0 +1,8 @@
+Robots exclusion standard
+
+The robots exclusion standard (also called the robots exclusion protocol or robots.txt protocol) is a way of telling Web crawlers and other Web robots which parts of a Web site they can see.
+
+To give robots instructions about which pages of a Web site they can access, site owners put a text file called robots.txt in the main directory of their Web site, e.g. <nowiki>http://www.example.com/robots.txt</nowiki>. This text file tells robots which parts of the site they can and cannot access. However, robots can ignore robots.txt files, especially malicious (bad) robots. If the robots.txt file does not exist, Web robots assume that they can see all parts of the site.
+
+
+

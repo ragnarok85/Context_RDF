@@ -91,7 +91,6 @@ public class CategoryBO {
 					createDirectoryTreeRoot(categ,cats.getCl_sortkey(),listCats);
 				}
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} 
 		}
@@ -139,7 +138,6 @@ public class CategoryBO {
 					retrieveCats(level+1,cats.getCl_sortkey(),listCats);
 				}
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} 
 		}

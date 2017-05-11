@@ -1,0 +1,12 @@
+Maurice Wilkes
+
+Professor Sir Maurice Vincent Wilkes (26 June 1913, Dudley, Worcestershire — 29 November 2010) was a British computer scientist, called the "father of Brish computing". 
+
+He invented the first usable stored program computer called EDSAC (Electronic Delay Storage Automatic Calculator) at Cambridge University in 1949. 
+
+He also developed the idea of using software to program a computer, instead of a fixed electronic circuit. He was knighted for his achievements in 2000.
+
+Wilkes was the first President of the British Computing Society.
+
+
+

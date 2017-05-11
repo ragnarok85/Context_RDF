@@ -1,0 +1,13 @@
+Toner
+
+Toner is a powder commonly used in photocopiers and Laser printers to draw images and text onto paper. The early forms of toner were just carbon powder.
+In early machines, the user had to pour the toner into a reservoir on the machine itself. Current machines feed from a sealed cartridge which is normally a proprietary design. Although manufacturers try to make the process complicated, empty cartridges are sometimes refilled by third-party vendors.
+Toner particles are melted by the heat of the fuser, and bind to the paper.
+
+Since toner is a fine dust, it can remain in the air for a long time, and is considered to have health effects similar to inert dust.
+It can be very painful to people with respiratory conditions such as asthma or bronchitis.
+
+Many companies selling laser printers will also provide a way to return empty toner cartridges. These are commonly re-used, with new toner. Today, many toners have chilps which tell the printer how much toner is left. These chips also need to be re-programmed, when the toner is re-filled. 
+
+
+

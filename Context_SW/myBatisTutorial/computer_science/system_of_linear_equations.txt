@@ -1,0 +1,37 @@
+System of linear equations
+
+In mathematics, a system of linear equations (or linear system) is a collection of linear equations involving the same set of variables. 
+
+Mathematicians show the relationship between different factors in the form of equations. "Linear equations" mean the variable appears only once in each equation without being raised to a power. A "system" of linear equations means that all of the equations are true at the same time. So, the person solving the system of equations is looking for the values of each variable that will make all of the equations true at the same time. If no such values can satisfy all of the equations in the system, then the equations are called "inconsistent."
+
+For example,
+is a system of three equations in the three variables formula_2, formula_3, formula_4. A "solution" to a linear system is an assignment of numbers to the variables such that all the equations are simultaneously satisfied. A solution to the system above is given by
+since it makes all three equations valid:
+
+In mathematics, the theory of linear systems is a branch of linear algebra, a subject which is fundamental to modern mathematics. Computer algorithms for finding the solutions are an important part of numerical linear algebra, and such methods play a prominent role in engineering, physics, chemistry, computer science, and economics. A system of non-linear equations can often be approximated by a linear system (see linearization), a helpful technique when making a mathematical model, computer model, or computer simulation of a relatively complex system. For complex systems, there are many equations and many variables, not just two or three. In many cases, the number of equations and variables in the system are the same. In some cases, there are more variables than equations, and the solution will be a range of different values rather than one exact solution.
+
+The simplest kind of linear system involves two equations and two variables:
+One method for solving such a system is as follows. First, solve the top equation for formula_2 in terms of formula_3:
+Now substitute this expression for "x" into the bottom equation:
+This results in a single equation involving only the variable formula_3. Solving gives formula_13, and substituting this back into the equation for formula_2 yields formula_15:
+This method generalizes to systems with additional variables.
+
+Very often, all the coefficients are written in the form of a matrix A, which is called a coefficient matrix.
+In much the same way, the variables can be written in the form of a vector:
+This makes it possible to write 
+Mathematically, the vector defined above is a 1-by-n matrix. The system of equations can then be solved using the multiplication operation defined on matrices. A, x and b are all part of the same algebraic field.
+
+There a three cases when looking for solutions to a system of linear equations:
+
+There are two categories of methods for solving a system of linear equations. Iterative methods use many steps to get a solution, direct methods only need one step:
+Examples for iterative methods are:
+
+There are examples such as geodesy where there many more measurements than unknowns. Such a system is almost always overdetermined and has no exact solution. Each measurement is usually inaccurate and includes some amount of error. Since the measurements are not exact, it is not possible to obtain an exact solution to the system of linear equations; methods such as Least squares can be used to compute a solution that best fits the overdetermined system. This least squares solution can often be used as a stand-in for an exact solution. 
+
+Solving a system of linear equations has a complexity of at most O (n). At least n operations are needed to solve a general system of n linear equations. The best algorithm known to date was developed by Don Coppersmith and Shmuel Winograd and dates from 1990. It has a complexity of n Unfortunately, it is of little practical use.
+
+Using computers to solve systems of linear equations is used every day. For example, it is used in weather forecasting models. Hot dog factories use it to make small changes in the receipe as food ingredient prices change. College cafeterias use it to figure out how much food to cook based on past experience when the cafeteria gives students the choice between multiple entrees.
+
+
+
+

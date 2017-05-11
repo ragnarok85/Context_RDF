@@ -1,0 +1,5 @@
+EMV
+
+EMV is a standard protocol for credit cards and debit cards. Beforehand, such cards used a magnetic stripe to store information. This approach has two main problems: first, the amount of data that can be stored is relatively small. Such a card can store about 1024 Bits, or 128 bytes. The second problem is bigger: the data stored is not encrypted. Using a chip card can solve both problems: it can store much more data, and the data can be encrypted. Payment cards that use chips have been in use since the early 1990s. Beforehand, each card issuer had their own protocol. With EMV, the protocol has been standardised. The first version of EMV as published in 1995, there have been different versions since then. 
+
+

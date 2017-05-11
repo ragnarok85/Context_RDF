@@ -20,8 +20,8 @@ public class PagesBO {
 	
 	public static void main(String[] args) {
 		PagesBO bo = new PagesBO();
-		PagesVO vo = new PagesVO();
-		List<PagesVO> listPages = null;
+//		PagesVO vo = new PagesVO();
+//		List<PagesVO> listPages = null;
 		
 		File rootDir = new File(args[0]);
 		System.out.println(args[0]);

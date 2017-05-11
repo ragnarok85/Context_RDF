@@ -1,0 +1,9 @@
+Windows Product Activation
+
+Windows Product Activation is a service built into all versions of Windows from Windows XP and Windows Server 2003 above to stop people downloading pirated copies. The user has 30 days to activate Windows and after 30 days, the computer will not run properly until it is activated.
+
+When Windows is first installed, there will be a little icon on the screen with a message asking for Windows to be activated.
+
+Then an activation wizard will appear and the user has 2 options on activating Windows. Activation could be done on the Internet, or on the telephone. The quickest way to activate is by the Internet, but if that fails, then the user would need to call Microsoft for the activation ID. The activation ID would be read by the representative and then the user would type in the key on the activation Wizard screen.
+
+

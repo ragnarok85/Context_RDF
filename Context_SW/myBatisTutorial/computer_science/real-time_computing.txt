@@ -1,0 +1,7 @@
+Real-time computing
+
+Real-time computing is a field of Computer science. The idea is to design systems that have a "real-time constraint". Real time systems will guarantee to give a result within a specified time. There are two kinds of real-time systems:
+
+
+
+

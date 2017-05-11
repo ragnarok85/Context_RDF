@@ -1,0 +1,6 @@
+Church-Turing thesis
+
+The Church-Turing thesis (also known as Church's thesis, Church's conjecture and Turing's thesis) is a statement about computers. It says that a very simple kind of computer now named a “Turing machine” is able to compute all computable functions. The Church-Turing thesis is linked to Gödel's incompleteness theorems. 
+When a programming language is able to do what a Turing machine can do, that language is called Turing complete. If a problem is solvable in one such language then it is solvable in all of those. 
+
+

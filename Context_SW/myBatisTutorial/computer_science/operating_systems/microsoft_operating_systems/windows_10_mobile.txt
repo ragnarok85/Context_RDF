@@ -1,0 +1,11 @@
+Windows 10 Mobile
+
+Windows 10 Mobile is a version of Microsoft's Windows 10 operating system. Unlike the regular Windows 10, Windows 10 Mobile is meant to run on smartphones and tablet computers with screen sizes of 8 inches or smaller. These mobile devices could be using the ARM or IA-32 processor architectures.
+
+Windows 10 Mobile works closely together with Windows 10 for personal computers in a number of ways. Content can be synchronized on all devices, mobile apps made for Windows 10 on PCs, Android, and iOS can be made to work on Windows 10 Mobile, and some phones will allow the user to plug in their device to a computer monitor and use a "PC-like" interface with a mouse and keyboard.
+
+Most smartphones that run on Windows Phone 8.1 are able to get an upgrade to Windows 10 Mobile, which is up to the phone manufacturer and mobile carrier to decide. Not all features will work on every device.
+
+Windows 10 Mobile came out on March 17, 2016. Due to how the OS is being made, it was not be released at the same time as Windows 10 for PCs, which came out on July 29, 2015.
+
+

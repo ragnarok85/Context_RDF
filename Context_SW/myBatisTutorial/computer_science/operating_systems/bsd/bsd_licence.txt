@@ -1,0 +1,10 @@
+BSD licence
+
+The BSD licence is named after the group that first used the licence, the University of California, Berkeley, where the BSD operating system was first made. Since they are in the United States, BSD uses the U.S. spelling "BSD license".
+
+The words of the BSD licence are public domain and can be changed however people want. To be useful for people or groups, people need to change 'Regents of the University of California', 'University of California, Berkeley', and 'Regents' to their name. A basic BSD licence looks like this:
+
+This means that people who use the licensed software can do anything with it, except say it is all their work or say that the people who made it first support the new software in any way. It also stops people from suing the first makers if something goes wrong with it.
+
+
+

@@ -1,0 +1,28 @@
+Genetic algorithm
+
+A genetic algorithm is an algorithm that imitates the process of natural selection. Natural selection is a central concept of evolution: some organisms have traits that will make it more likely that the organism survives long enough to reproduce. That way, it is likely that these traits will be passed on to the next generation. This has also been called survival of the fittest.
+
+Genetic algorithms are often used to find solutions for optimization and search problems. Genetic algorithms are part of the broader class of evolutionary algorithms. Genetic algorithms imitate the same mechanisms as those found in nature, that is to say inheritance, mutation, selection and crossover. 
+
+The concept of genetic algorithms is a search technique often used in computer science to find complex, non-obvious solutions to algorithmic optimisation and search problems. Genetic algorithms are categorised as global search heuristics, and can be used in many ways, particularly in generating useful Artificial Intelligence agents in computer games.
+
+For decades, games and the field of game theory have provided competitive, dynamic, often unpredictable environments that make ideal test beds for computational intelligence theories, architectures, and algorithms. Natural evolution can be modelled as a game, in which the rewards for an organism that plays a good game of life are the propagation of its genetic material to its successors and its continued survival. In natural evolution, how well an individual performs depends on its competitors and collaborators, as well as the environment. More simply described, genetic algorithms are a simulation in which a population of abstract representations (called chromosomes or the genotype of the genome, after their biological counterparts) of candidate solutions (called individuals, creatures, or phenotypes) to an optimisation problem.
+
+Candidates are evaluated and crossbred in an attempt to generate high quality solutions which are extremely time consuming and may not be obvious to a human programmer. An evolutionary phase is initialised with a population of randomly generated entities (or human specified instances of high quality). The process is subdivided into different generations. In each generation, the fitness of every individual in the population is evaluated, and multiple individuals are stochastically selected from the current population (based on their fitness), and modified (recombined and possibly randomly mutated) to form a new population. The new population is then used in the next iteration of the algorithm. The algorithm terminates when either a maximum number of generations has been produced, or a satisfactory fitness level has been reached for the population. If the algorithm has terminated due to a maximum number of generations, a satisfactory will not necessarily have been obtained.
+
+Finding a solution is a process that is repeated. Very often, a number of steps are run in a loop, until some stop condition is met:
+
+Genetic algorithms have been successfully used in many fields of computer science, such as the optimisation of complex algorithms, the training of text classification systems, and the evolution of intelligent artificial agents in stochastic environments.
+
+Board games are a very relevant part of the area of genetic algorithms as applied to game theory problems. Much of the early work on computational intelligence and games was directed toward classic board games, such as tic-tac-toe, chess, and checkers. Board games can now, in most cases, be played by a computer at a higher level than the best humans, even with blind exhaustive
+search techniques. Go is a noted exception to this tendency, and has so far resisted machine attack. The best Go computer players now play at the level of a good novice. Go strategy is said to rely heavily on pattern recognition, and not just logical analysis as with chess and other more piece-independent games. The huge effective branching factor required for finding high quality solutions heavily restricts the look-ahead that can be used within a move sequence search.
+
+The genetic algorithm can be used in computer games. This allows for a more realistic game experience; if a human player can find a sequence of steps which, repeated in different games always lead to success, there can be no challenge left. Conversely if a learning technique such as a genetic algorithm for a strategist can avoid repeating past mistakes, the game will have increased playability.
+
+Genetic algorithms require the following components:
+
+
+The fitness function accepts a mutated instantiation of an entity and measures its quality. This function is customised to the problem domain. In many cases, particularly those involving code optimisation, the fitness function may simply be a system timing function. Once a genetic representation and fitness function are defined, a genetic algorithm will instantiate initial candidates as described previously, and then improve through repetitive application of mutation, crossover, inversion and selection operators (as defined according to the problem domain).
+
+
+

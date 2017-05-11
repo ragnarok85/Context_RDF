@@ -1,0 +1,7 @@
+Immunity Aware Programming
+
+Immunity aware programming is a set of programming techniques used while writing firmware for an embedded system. It is used mainly to overcome random errors that can occur in the CPU program counter or register set, RAM or any other that can cause failure of the "victim" device. Such random errors may be caused by single event upsets, not enough power, or by strong electromagnetic signals transmitted by some other "source" device.
+
+Most of these techniques apply to the software in the "victim" device to make it more reliable while few of these techniques apply to software in the "source" device to make it send out less unwanted noise. For these reasons Immunity aware programming is one kind of:
+
+

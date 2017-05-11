@@ -1,0 +1,9 @@
+Redundancy
+
+In information theory, redundancy means that a message is encoded and tramsmitted using more bits that are necessary to emcode the message. If a piece of information is redundant, it can be left out, without loss of information. Redudant information such as checksums can be used to detect and correct errors in transmission or storage. 
+
+Operations like data compression reduce redundancy. This can be good, as the data can be sent more quickly and take less space. It can also be bad, if an error can no longer be corrected automatically.
+
+When using databases, redundancies must be avoided, as they can lead to inconsistencies. In this case, the process is called normalisation. 
+
+

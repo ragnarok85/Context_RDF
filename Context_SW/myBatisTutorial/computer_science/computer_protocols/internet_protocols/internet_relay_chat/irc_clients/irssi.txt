@@ -1,0 +1,6 @@
+Irssi
+
+irssi is an command-line IRC client. It is commonly used on Unix machines, but is also available for Windows.
+
+
+

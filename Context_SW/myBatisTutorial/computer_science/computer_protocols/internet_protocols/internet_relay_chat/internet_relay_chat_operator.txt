@@ -1,0 +1,11 @@
+Internet Relay Chat operator
+
+An Internet Relay Chat operator known also as IRCop or oper, is one who controls the server. There are many types of operators.
+
+IRC operators are separated into local and global operators. The local operators are only in control of the server they connect to. Global operators can do things to all users on the network. In order to do what they have to do, IRC operators usually have the right to:
+
+
+In many IRC networks, operators have many types of access on a network. These types often depend upon the IRCd software used, though a few access rights remain about the same across the different servers. Access rights can also be set per operator.
+
+
+

@@ -1,0 +1,17 @@
+Defense in depth (computing)
+
+Defense in Depth (also known as layered security and layered defense) is an information assurance (IA) concept. It uses multiple layers of security controls (defenses) placed throughout an information technology (IT) system. The multiple layers re not of the same security tool. It uses several several different kinds of security with each protecting against a different security attack.
+
+Defense in depth is originally a military strategy. It seeks to delay rather than prevent the advance of an attacker by yielding space to buy time. The National Security Agency (NSA) changed the concept to be a approach to information and electronic security.
+
+The placement of protection mechanisms, procedures and policies is intended to increase the dependability of an IT system. Multiple layers of defense can prevent espionage. They also prevent direct attacks against critical systems. In terms of computer network defense, defense in depth measures should not only prevent security breaches but also buy an organization time to detect and respond to an attack. This is to reduce and the consequences of a .
+
+Defense in depth has long been explained by using the onion as an example of the various layers of security. The outer layer contains the firewall. Middle layers contain various controls. The data is in the center protected by the other defenses.
+
+A newer concept is the kill chain. Borrowed from the military it is a method of detecting and breaking an opponent's kill chain. Lockheed Martin adapted this concept to information security, using it as a method for modeling intrusions on a computer network. 
+
+Using more than one of the following layers constitutes defense in depth.
+
+
+
+

@@ -1,0 +1,13 @@
+Edubuntu
+
+Edubuntu is the version of Linux distribution Ubuntu. It is used for education. It uses GNOME and is designed for use in classrooms.
+
+Edubuntu has been created in collaboration with teachers and technologists in multiple nations. Edubuntu is built on top of the Ubuntu base, and incorporates education-specific applications, designed for the 6–18 years age group.
+
+Included with Edubuntu is the Linux Terminal Server Project, a large number of educational applications including GCompris, KDE Edutainment Suite, The first Edubuntu release coincided with the release of Ubuntu 5.10, which was called "Breezy Badger" on 2005. Edubuntu CDs can be ordered for free through the official website service.
+
+The principal design goals of Edubuntu are easier configuration, users and processes, together with ways for working together in classrooms. Equally important is the gathering together of the best available free software and digital materials for education.
+
+
+
+

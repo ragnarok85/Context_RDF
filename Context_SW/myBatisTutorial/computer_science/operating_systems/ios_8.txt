@@ -1,0 +1,37 @@
+IOS 8
+
+iOS 8 is the eighth major version of Apple's mobile operating system, iOS. It was announced at the company's Worldwide Developers Conference (WWDC) on June 2, 2014. It contains several new features, such as an app named Health, and a framework called HealthKit. 
+Siri is able to be activated hands-free when it is plugged into power and can also tell users what song is playing using Shazam integration.
+
+The Golden Master of iOS 8 was released to developers on September 9, 2014, and the final release of iOS 8 was released to the public on September 17, 2014.
+
+The Photos app now has more options to edit the user's pictures. The cropping feature now allows the user to turn the image clockwise and counter-clockwise. The user can also set the brightness and colors you want for the user's pictures. The Camera app now has a shot timer that can be set for 3 or 10 seconds.
+
+Users can send audio and video messages by holding down the record button.
+
+The design of iOS 8 is the same as iOS 7 or iOS 7.1. There are some small changes such as added transparency and faster animation effects. The multitasking screen now shows a list of contacts that the user has talked with recently, as well as the user's favorite contacts.
+
+iOS 8 also includes a new predictive typing feature called QuickType. It displays word selections above the keyboard as the user types. The feature can be turned off in Settings, or hidden using a swipe gesture. In addition, iOS 8 will allow users to install third-party keyboards. 
+
+In iOS 8, a user can add six other people as family members. Family members can share purchased apps, music, and books using the same credit card. iOS 8 can also set up photo streams for every family member. The calendar can also sync between all family members. 
+
+iCloud Drive allows users to save photos, videos, documents, music, and other data on iCloud. A user can start their work on one device and continue their work on another device. Users will get 5 GB of storage for free, but they can buy more storage.
+
+HealthKit is a service that allows developers to make software that will be included in the new Health app. This app tracks user's steps, oxygen, sleep and other data. Users can also make an emergency card to help them in case of an emergency. HealthKit is only on iOS 8.4 or later/Higher.
+
+Continuity allows users to share e-mails and websites over Wi-Fi. It also allows users to answer phone calls and respond to text messages on their Mac or iPad. This feature works on devices that have OS X Yosemite or iOS 8.
+
+Spotlight now gives the user suggestions from Wikipedia entries, places nearby, trending news, and more. It’s even smart enough to recognize context and location to offer users the most relevant information.
+
+In iOS 8, Apple integrated Wi-Fi calling. This service allows mobile phone calls over Wi-Fi. It is planned to be available for customers of T-Mobile in the US.Apple developers have removed many errors in IOS 8 Beta 5 like Wi-Fi sync but many other problems are still there
+
+A study by Crittercism found that the rate at which applications crashed in their tests was 3.56% on iOS 8, higher than the 2% found on iOS 7.1.
+
+Although the update is officially available for the iPhone 4S, it is recommended that users of the iPhone 4S do not upgrade, due to problems such as the battery draining quickly and the phone hanging up whenever a user makes a call.
+
+On September 24, 2014, the iOS 8.0.1 release caused problems for iPhone 6 devices by turning off Touch ID and not allowing the phone to make calls. The update was released at 12:00 PM EST, and at around 2:00 PM EST, Apple removed the update due to these problems, as well as other small problems. A day later, Apple released iOS 8.0.2 which has all the fixes included with iOS 8.0.1 and also fixes the problems that iOS 8.0.1 brought.
+
+
+
+
+

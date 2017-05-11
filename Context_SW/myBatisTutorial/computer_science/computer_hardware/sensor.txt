@@ -1,0 +1,17 @@
+Sensor
+
+A sensor is a device that measures a physical quantity and converts it into a 'signal' which can be read by an observer or by an instrument. For example, a mercury thermometer converts the measured temperature into the expansion and contraction of a liquid which can be read on a calibrated glass tube. Video cameras and a digital cameras have an image sensor.
+
+There are many different types of sensors. Some are used in everyday objects, and some are separate.
+
+A sensor that detects temperature. Thermal sensors are in many laptops and computers in order to sound an alarm when a certain temperature has been exceeded. 
+
+An electronic device used to measure a physical quantity such as pressure or loudness and convert it into an electronic signal of some kind (e.g. a voltage).
+
+This is any thing that can be used to find things like photons, electrons, etc. It can be as simple as a white wall, a sheet of white paper, etc., or as new as a charge-coupled device. When a laser is aimed at a detection screen, a bright spot can be seen on the screen, or when an electron hits the phosphors on another kind of screen, it makes that screen glow.
+
+
+A motion sensor detects physical movement in a given area.
+
+
+

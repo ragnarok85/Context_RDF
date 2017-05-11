@@ -1,0 +1,10 @@
+Dye-sublimation printer
+
+A dye-sublimation printer (or dye-sub printer) is a high quality computer printer that uses heat to make coloured images.
+The ink is held on cellophane sheets that are the same size as the paper. A 6" x 4" printer would use 6" x 4" ink sheets. Each image uses 4 sheets - 3 ink sheets Cyan, Magenta and Yellow and a clear sheet.
+
+Each sheet of ink is printed one at a time. So making an image takes a long time.
+
+The images are very high quality. They waste a lot of ink. This means that the prints are very expensive.
+
+

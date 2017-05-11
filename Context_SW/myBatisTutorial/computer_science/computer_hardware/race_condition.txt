@@ -1,0 +1,11 @@
+Race condition
+
+A Race condition (also called race hazard) is a problem with the design of a system. With a race condition, the result of a calculation or the behaviour of the system as a whole is dependent on how long a certain calculation takes, or when it is started. Race conditions occur in logic circuits and computer software, especially with multi-threaded or distributed systems.
+
+It is often difficult to explain what a race condition is, but the metaphor of a horse race can be used as an explanation.
+
+A computer program is like a horse race. The computer program does several things at the same time, similarly to how several horses run at the same time in a horse race. Each horse represents what is usually called a "thread of execution". That way, one such thread may handle network communication, another one may be responsible for redrawing the user interface. In the case of a race condition, the application works properly if a given horse "wins the race". For example, the application may work if horse number five wins, but it will crash if any other horse wins the race. One solution to the problem is to use synchronization. This is like several jockeys teaming up, to make sure horse number five is ahead. 
+
+On different computers, or in different situations, computers programs can run at different speeds. Sometimes, they will be faster, other times slower. This may mean that on some systems, the race condition will never show up, even though it may be easy to show it on others. Race conditions can be difficult to find. Bugs caused by race conditions are a frequent source of frustration within the profession of software development.
+
+

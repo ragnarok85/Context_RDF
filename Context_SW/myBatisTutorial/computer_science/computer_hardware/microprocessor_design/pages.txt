@@ -1,0 +1,13 @@
+apple a4
+arithmetic logic unit
+branch prediction
+central processing unit
+endianness
+execution unit
+instruction (computer science)
+microcode
+microprocessor
+mips architecture
+register renaming
+î¤
+infobox cpu

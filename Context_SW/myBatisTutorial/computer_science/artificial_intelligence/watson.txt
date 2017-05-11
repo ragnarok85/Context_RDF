@@ -1,0 +1,8 @@
+Watson
+
+Watson is an artificially intelligent computer system that can answer questions asked in a natural language. It was made by IBM to compete on the American television game show "Jeopardy!". In February 2011, Watson played as a contestant on "Jeopardy!" against past champions Ken Jennings and Brad Rutter. Watson won the first place prize of $1 million. It was named after Thomas J. Watson, who was the chairman and chief executive officer of IBM from 1914 to 1956.
+
+During a game, Watson had access to 200 million pages of content, including the full text of Wikipedia. Sources of information for Watson included encyclopedias, dictionaries, thesauri, news articles, and books. It was not connected to the internet, meaning that it had to use what was in its system to answer clues. For each clue, Watson's three most likely responses were displayed on the television screen along with its amount of confidence in those answers. If its confidence in a response was high enough, it would ring in to give the response.
+
+
+

@@ -1,0 +1,7 @@
+Header file
+
+In computer programming, a header file can be thought of as a dictionary a compiler uses if it comes across a word it does not understand. Mainly programming languages like C and C++ use this.
+
+As you may know, a computer is really powerful. But it lacks the power to think and learn. As a result, a computer has to be fed each and every instruction for a task you may want done. But it is not practical to type in each and every instruction again and again for a task, especially if you tend to use it a lot. As a solution to this, header files are used. For example, consider the word "cout" which is used by C++ to display outputs on the screen. The computer, however, does not know what "cout" is. So, it checks if "cout" exists in a dictionary file (i.e. the header file) that has been mentioned by the programmer. If it finds what to do when someone says "cout", the program will be compiled properly. Otherwise, it will simply result in an error that so-and-so word has not been understood by the compiler.
+
+

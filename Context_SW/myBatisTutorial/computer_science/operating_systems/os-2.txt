@@ -1,0 +1,7 @@
+OS/2
+
+OS/2 is an operating system that was made by IBM. The name stands for "Operating System/2".
+
+IBM discontinued its support for OS/2 on 31 December 2006.
+
+

@@ -1,0 +1,11 @@
+Kubuntu
+
+Kubuntu is a version of the free Linux distribution Ubuntu. It uses the desktop environment KDE instead of GNOME. Most of the software used in Kubuntu, is part of the KDE project, but all other software used in Ubuntu can also be used.
+
+Because the only difference of Kubuntu and Ubuntu is the default software, an Ubuntu system can turn into a Kubuntu system, or a Kubuntu system into an Ubuntu system, only by installing some software.
+
+Some examples of changes in software:
+
+
+
+

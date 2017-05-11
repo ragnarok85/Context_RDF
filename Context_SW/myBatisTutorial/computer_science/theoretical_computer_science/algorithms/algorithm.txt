@@ -1,0 +1,62 @@
+Algorithm
+
+An algorithm is a fancy to-do list for a computer. Algorithms take in zero or more inputs and give back one or more outputs.
+
+A recipe is a good example of an algorithm because it tells you what you need to do step by step. It takes inputs (ingredients) and produces an output (the completed dish).
+
+The words 'algorithm' and 'algorism' come from the name of a Persian mathematician called Al-Khwārizmī (Persian: خوارزمی‎‎, c. 780–850).
+
+Informally an algorithm can be called a "list of steps". This is nice, but it doesn't say much about algorithms.
+
+Formally, an algorithm is a precise list of operations that can be done by a Turing machine.
+
+Algorithms can be written in regular English, but it takes a long time to do so. Instead, algorithms are written in pseudocode, flow charts, or programming languages. Algorithms are usually meant to be run by a computer.
+
+There is usually more than one way to solve a problem. There may be many different recipes to make a certain dish which looks different but ends up tasting the same when all is said and done. The same is true for algorithms. However, some of these ways will be better than others. If a recipe needs lots of complicated ingredients that you do not have, it is not as a good as a simple recipe.
+When we look at algorithms as a way of solving problems, often we want to know how long it would take a computer to solve the problem using a particular algorithm. When we write algorithms, we like our algorithm to take the least amount of time so that we can solve our problem as quickly as possible.
+
+In cooking, some recipes are more difficult to do than others, because they take more time to finish or have more things to keep track of.
+It is the same for algorithms, and algorithms are better when they are easier for the computer to do. The thing that measures how
+hard an algorithm is called "complexity". When we ask how complex an algorithm is, often we want to know how long it will take a computer to solve the problem we want it to solve.
+
+This is an example of an algorithm for sorting cards with colors on them into piles of the same color:
+
+
+These are examples of algorithms for sorting a stack of cards with many different numbers, so that the numbers are in order.
+
+Players start with a stack of cards that have not been sorted.
+This algorithm goes through the stack of cards, one card at a time. This card is compared to the next card in the stack. Please note that this position only changes in step 3. This algorithm is called bubble sort. It is slow.
+
+
+Let us take a stack of the cards with the numbers "5 1 4 2 8", and sort it from smallest number to biggest one using this algorithm. In each step, the algorithm compares the elements written in bold. The top of the stack of cards is on the left-hand side.
+
+First pass:
+( 5 1 4 2 8 ) formula_1 ( 1 5 4 2 8 ) Here, the algorithm compares the first two elements, and swaps them.
+( 1 4 2 5 8 ) formula_1 ( 1 4 2 5 8 ) These elements are already in order, so the algorithm does not swap them.
+Second pass:
+Now, the stack of cards is already sorted, but our algorithm does not know this. The algorithm needs one whole pass without any swap to know it is sorted.
+Third pass:
+Finally, the array is sorted, and the algorithm can stop.
+
+This is an easy-to-understand algorithm for sorting. Computer scientists called it "Bubble sort", because smaller elements will rise to the top, changing their position in each run. Unfortunately, the algorithm is not very good, because it needs a long time (many passes through the stack of cards) to sort it.
+
+This algorithm uses another idea. Sometimes solving a problem is difficult, but the problem can be changed so it is made of simpler problems that are easier to solve. This is called recursion. It is more difficult to understand than the first example, but it will give a better algorithm.
+
+
+This works with two stacks of cards. One of them is called A, the other is called B. There is a third stack that is empty at the start, called C. At the end, it will contain the result.
+
+John von Neumann developed this algorithm in 1945. He did not call it "Sorting by numbers", he called it "Mergesort". It is a very good algorithm for sorting, compared to others.
+
+The first algorithm takes much longer to sort the cards than the second, but it can be improved (made better). Looking at bubble sort, it can be noticed that cards with high numbers move from the top of the stack quite quickly, but cards with low numbers at the bottom of the stack take a long time to "rise" (move to the top).
+To improve the first algorithm here is the idea:
+
+
+This algorithm was developed by C. A. R. Hoare in 1960. It is one of most widely used algorithms for sorting today. It is called "Quicksort".
+
+If players have cards with colors and numbers on them, they can sort them by color and number if they do the "sorting by colors" algorithm, then do the "sorting by numbers" algorithm to each colored stack, then put the stacks together.
+
+The sorting-by-numbers algorithms are more difficult to do than the sorting-by-colors algorithm, because they may have to do the steps again many times. One would say that sorting by numbers is more "complex".
+
+
+
+

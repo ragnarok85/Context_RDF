@@ -1,0 +1,12 @@
+Key (cryptography)
+
+In cryptography, a key (or cryptographic key) is a piece of information that allows control over the encryption or decryption process.
+
+There are two basic types of cryptographic algorithms.
+
+For symmetric algorithms, a minimum key size of 128 bits is recommended. For applications that need extreme security, such as top secret documents, 256 bits is recommended. Many older ciphers used 40, 56, or 64-bit keys—these have all been cracked by brute force attack because the key was too short.
+
+Asymmetric (public key) algorithms need much longer keys to be secure. For RSA, at least 2048 bits is recommended. The largest publicly-known key that has been cracked was a 768-bit key.
+
+
+

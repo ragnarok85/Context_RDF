@@ -1,0 +1,36 @@
+Interactive whiteboard
+
+An interactive whiteboard is a large, interactive screen that connects a computer and a projector. The projector projects the computer's desktop onto the screen of the interactive whiteboard. The user can control the computer by using a special pen, finger or another tool to touch the screen of the interactive whiteboard. Normally, interactive whiteboards are fixed on walls. However, there are some mobile interactive whiteboards. Interactive whiteboards are used in many different places such as in classrooms, in work groups and in training rooms for professional coaching. Interactive whiteboards are the modern version of the traditional whiteboards used in schools.
+
+The interactive whiteboard must be connected to an PC before you can use the whiteboard. Most whiteboards are connected to the computer's Serial port or to a USB port. Some newer systems can use a wireless connection to the computer.
+The summary of use the interactive whiteboard includes three words: controlling, translation and presentation.
+
+
+Teachers: 
+
+For students:
+
+Front-projection:
+In this system the projector is placed in front of the whiteboard. Either the projector is fixed on the whiteboard or it hangs on the ceiling.
+
+"Pros"
+
+Compared to the rear projection this system is much cheaper
+
+"Cons"
+
+The teacher or the student must stand in front of the whiteboard and sometimes their body will cast a shadow.
+
+Rear-projection:
+In the rear-projection system the projector is placed behind the whiteboard.
+
+"Pros"
+
+The teacher does not cast a shadow and does not look into the projector light while speaking to the students.
+
+"Cons"
+
+This system is very expensive.
+
+
+

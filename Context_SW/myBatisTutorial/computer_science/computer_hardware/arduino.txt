@@ -1,0 +1,17 @@
+Arduino
+
+Arduino is an open-source electronics prototyping platform based on flexible, easy-to-use hardware and software. It's intended for artists, designers, hobbyists and anyone interested in creating interactive objects or environments.
+Arduino can sense the environment by receiving input from a variety of sensors and can affect its surroundings by controlling lights, motors, and other actuators. The microcontroller on the board is programmed using the Arduino programming language (based on Wiring) and the Arduino development environment (based on Processing). Arduino projects can be stand-alone or they can communicate with software running on a computer (e.g. Flash, Processing, MaxMSP).
+
+The boards can be built by hand or purchased preassembled; the software can be downloaded for free. The hardware reference designs (CAD files) are available under an open-source license, you are free to adapt them to your needs.
+
+Arduino received an Honorary Mention in the Digital Communities section of the 2006 Ars Electronica Prix. The Arduino founders are: Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino, and David Mellis. Credits
+
+The machine part is open source, which means that anybody can make their own version of an Arduino machine for free. An official arduino costs around US$30. The original Arduino is made by a company in Italy called "Smart Projects" but other types of Arduino boards have been designed by SparkFun Electronics, an American company.
+
+Sometimes, people will make other machines that go on top of an Arduino board and let the board do more things. These are called "Arduino shields". They can do different things, like let an Arduino machine connect to the internet, or add a touchscreen, or let an Arduino use GPS to figure out where it is. Shields can also combine and stack on top of each other.
+
+Arduinos are programmed in C or C++, using a program also called Arduino. An example program to blink a light (LED) could look like this:
+First, the code after "void setup() {" runs. This tells the arduino that pin 13 is going to be sending data out. Most Arduino boards have an LED attached to pin 13. Then, the code after the "void loop () {" runs. When it reaches the bottom, the code after the "void loop" runs again, until the Arduino is turned off. This code makes the Arduino tell the LED to turn on, wait a second, then turn off and wait another second. Since it repeats, this code will turn the LED on and off again and again.
+
+

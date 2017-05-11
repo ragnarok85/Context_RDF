@@ -1,0 +1,21 @@
+Alphabet (computer science)
+
+In computer science, an alphabet is a finite non-empty set. The elements of an alphabet are called the letters or symbols of the alphabet.
+
+An example of an alphabet is formula_1 which may be used for Morse code or "{begin, if, else, for, while}" which may be the keywords of a Programming language.
+
+The set of natural numbers is not an alphabet because as it is not finite.
+
+The alphabet which is used the most in computer science is "{0,1}". It is called the binary alphabet because it contains two symbols. An alphabet can be used to make a string (or word). This is a finite Sequence of letters from the alphabet. For example, a string of length 5 over "{0,1}" is "01101".
+
+The empty string is the string containing no letters (it is often written as formula_2). The empty string is a string over any alphabet.
+
+If we have an alphabet called formula_3. Then we write the set of "all" strings that can be made from formula_3 as formula_5. This is called the Kleene star (or Kleene closure) of formula_3. It is named after the mathematician Stephen Cole Kleene.
+
+The Kleene star of the binary alphabet is formula_7. The three dots after 001, show that we cannot write the Kleene star of an alphabet in full because it is an infinite set.
+
+Alphabets are important because they are used in studying formal languages, finite automata and very difficult questions in computer science about what can be computed and what can not.
+
+
+
+

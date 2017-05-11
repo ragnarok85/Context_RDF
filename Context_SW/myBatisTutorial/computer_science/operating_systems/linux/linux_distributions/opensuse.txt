@@ -1,0 +1,12 @@
+OpenSUSE
+
+openSUSE () is a community project, sponsored by Novell and AMD, to develop and maintain a general purpose Linux distribution. After taking over SUSE Linux in January 2004, Novell decided to release the SUSE Linux Professional product as a 100% open source project, involving the community in the development process. The initial release was a beta version of SUSE Linux 10.0, and as of Janury 2016 the current stable release is openSUSE Leap 42.1
+
+OpenSUSE 11.1 has full support for 32-bit i586 and 64-bit x86-64 PC hardware, as well as PowerPC (PPC) processors. The basic requirements for non-PPC hardware is as follows:
+
+
+Older processors that still belong to the i586 family can be used, for example the AMD K6/2. When extra language/translation files and documentation are removed and X is not needed, decent console-based router systems can be made using 300 MB disk space. Most console workloads also cope with 128 MB of RAM at the cost of increased swap activity in tight situations.
+
+OpenSUSE's official software package repository includes, for example, UNetbootin.
+
+

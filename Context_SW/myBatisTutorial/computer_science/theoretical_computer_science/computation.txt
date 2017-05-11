@@ -1,0 +1,8 @@
+Computation
+
+Computation is the act of determining (working out) something by processing information. It involves using specific rules, either mathematical or logical. It may or may not involve using numbers; the computation of numbers and arithmetic is generally called "calculation". The study of computation is called computer science.
+
+The theory of computation involves determining whether a certain problem can be solved by computation.
+
+
+

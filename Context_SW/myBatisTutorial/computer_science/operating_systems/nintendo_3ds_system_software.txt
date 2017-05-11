@@ -1,0 +1,22 @@
+Nintendo 3DS system software
+
+Nintendo 3DS system software is software on the Nintendo 3DS video game console that can be updated. These updates, which are downloaded through the system's Internet connection, lets Nintendo add and take away features and software. Updates also have changes from previous versions. The newest version of the system software, 4.5.0-10, was released on December 4, 2012.
+
+The Home Menu is a GUI like the Wii's "Wii Menu" and the DSi's "DSi Menu" which lets you use applications from Nintendo game cards, 3DS applications, or DSiWare applications. The menu has space to show 60 applications, though 120 spaces, for one application each, will show when space starts to run out. On the top screen, the menu shows information such as signal strength, step count, date, time, and battery life. With the home button, the user can go to the HOME menu, except for DS games or DSiWare, which won't let the player go there without quitting the game. From the home screen, the user can manage notes, check friend lists, change the level of light, check notifications, and if updated to the latest version, browse the internet, all without closing the current application. At the home menu, the user can also take photos with the 3D cameras by pressing the L or R buttons. To open another application, the one the player is using must be closed first. Like the DSi, game cards can be swapped while in the menu.
+
+All the following applications come with the latest version of the firmware, with the system:
+
+
+All the following applications let you do something else while they are open:
+
+
+All the following applications need to be downloaded from the Nintendo eShop first:
+
+
+The following is a list of all the versions of Nintendo 3DS firmware.
+
+a This update came with the specified games and has a regular last number (0, 1, 2, 3...)
+
+b Nintendo 3DS owners who performed the 2.1.0-4 system update prior to 11:59 p.m. Eastern time on Aug. 18, 2011, were automatically registered for the program.
+
+

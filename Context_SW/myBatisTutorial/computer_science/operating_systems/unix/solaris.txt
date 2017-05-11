@@ -1,0 +1,7 @@
+Solaris
+
+Solaris is an operating system created by Sun Microsystems in 1992. It was created to run on their workstations (but it can be used on most modern PCs) and is still developed today. It used to be called SunOS until it was renamed to Solaris in 1992. As of 2010, it is one of the main commercial UNIX variants (The others are HP-UX, AIX, and z/OS). Solaris is ultimately based on UNIX System V. With version 10, released in 2009, most parts of it were made Open Source, and released as OpenSolaris. Solaris 10 runs on SPARC processors, as well as the 32-bit and 64-bit Intel and AMD processors. Oracle Corporation acquired Sun Microsystems in January 2010. Oracle continued developing Solaris, but it stopped developing OpenSolaris. OpenSolaris was later forked into the illumos kernel and the OpenIndiana distribution.
+
+It is mostly used in advanced servers like the ones that run the Internet, on some workstations, and for programming in languages like Java, having advanced features for programmers.
+
+

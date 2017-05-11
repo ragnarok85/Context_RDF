@@ -1,0 +1,12 @@
+Stack (data structure)
+
+The stack is one of the most important data structures in computer science. To understand how a stack works, think of a deck of playing cards that is face down. We can only easily access the card that is on top. When we want to look at the top card, there are two things we can do: we can peek at it, but leave it on the stack, or we can pop it off. When we pop off the top object, we are taking it off the stack. If we want to add another card to the top of the stack, we push. 
+
+A stack is called a last-in-first-out (LIFO) collection. This means that the last thing we added (pushed) is the first thing that gets pulled (popped) off. If the last card we put on our stack of cards was an ace, then the first card we pulled from the top is that same ace.
+
+The stack was first proposed in 1955, and then patented in 1957, by the German Friedrich L. Bauer. The same concept was developed independently, at around the same time, by the Australian Charles Leonard Hamblin.
+
+In modern computer languages, the stack is usually implemented with more operations than just "push" and "pop". Some implementations have a function which returns the current length of the stack. Another typical helper operation is "top" (also known as "peek"), which can return the current top element of the stack without removing it. Another common operation is "dup," which makes a copy of the element at the top of the stack.
+
+
+

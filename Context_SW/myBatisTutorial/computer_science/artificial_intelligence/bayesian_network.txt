@@ -1,0 +1,15 @@
+Bayesian network
+
+A Bayesian network is a kind of graph which is used to model events that cannot be observed. This can then be used for inference. The graph that is used is directed, and does not contain any cycles. The nodes of the graph represent random variables. If two nodes are connected by an edge, it has an associated probability that it will transmit from one node to the other.
+
+Bayesian networks are mainly used in the field of (unassisted) machine learning. They have been used where information needs to be classified. Examples are image, document, or speech recognition, and information retrieval.
+
+It is based on Reverend Thomas Bayes' discovery in the 1740s called Bayes' theorem.
+
+The term "Bayesian networks" was made by Judea Pearl in 1985 to emphasize three aspects:
+
+In the late 1980s, the seminal texts "Probabilistic Reasoning in Intelligent Systems" and "Probabilistic Reasoning in Expert Systems" summarized the properties of Bayesian networks and helped to establish Bayesian networks as a field of study.
+
+Informal variants of such networks were first used by legal scholar John Henry Wigmore, in the form of Wigmore charts, to analyse trial evidence in 1913. Another variant, called path diagrams, was developed by the geneticist Sewall Wright and used in social and behavioral sciences (mostly with linear parametric models).
+
+

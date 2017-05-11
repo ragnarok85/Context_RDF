@@ -1,0 +1,5 @@
+Trait (computer programming)
+
+In computer programming, a trait is a collection of methods. A trait is used to build a simple model for object oriented programs. A trait is a building block for classes. It makes an easy way to reuse code.
+
+

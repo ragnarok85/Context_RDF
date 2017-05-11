@@ -1,0 +1,9 @@
+Service oriented architecture
+
+Service-oriented architecture (SOA) is a concept in computer programming. It is a way of creating a program or application that is focused around distinct tasks or services. With an SOA model, each piece of the program or application performs a specific task (such as retrieving a piece of data, performing a mathematical operation, etc). The tasks are performed completely independent of each other.
+
+Since each component of the program works independently, each component can be tested by itself without needing the whole program to be completed first. The program can be built piece by piece with confidence that each piece works.
+Often times, a company has already created a program or application to perform a specific task. If that is the case, this legacy program, (program that has already been written) or a piece of this legacy program can be reused without the need to re-code that specific task. Consequently, programs with SOA can be developed faster than traditional programs in some circumstances.
+The benefit of this is that unlike in a big combined program, each task is isolated so it is easy to manage and troubleshoot the program after completion. If there is a problem, a developer can check each service component systematically until the problem is detected. After it is detected, only that one small service would need to be fixed as opposed to a much larger section of a combined application
+
+

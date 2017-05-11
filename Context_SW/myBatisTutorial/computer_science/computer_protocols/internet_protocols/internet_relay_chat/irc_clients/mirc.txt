@@ -1,0 +1,7 @@
+MIRC
+
+mIRC is a popular shareware Internet Relay Chat (IRC) client for Microsoft Windows. It was created in 1995 by Khaled Mardam-Bey in C. Its most recent update (7.25) was made in 2012. It is licensed as Proprietary. It comes free of charge for 30 days and then you have the choice to buy it for $20 USD, or continue using but the program will ask you to buy it at each launch.
+
+
+
+

@@ -1,0 +1,8 @@
+ 
+berkeley software distribution
+bsd licence
+dragonfly bsd
+freebsd
+netbsd
+openbsd
+os x

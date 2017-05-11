@@ -1,0 +1,20 @@
+Live CD
+
+A Live CD, Live DVD, or Live Distro is a special way of creating a computer operating system so that it is able to run without installing anything on the computer first. This special operating system is used when the computer is booting up, and runs all its programs off the object it is put on. The name of the operating system usually has something to do with the object, such as ""Live CD"" for CDs, ""Live DVD"" for DVDs, or ""Live USB"" for USB flash drives.
+
+""Distro"" is short for Distribution, and is used because different types of Linux operating systems are called Linux Distributions, and Linux Distros were the first operating systems to be made into Live CDs. A ""Live Distro"" is used to refer to all different kinds of these special operating systems, instead of just the ones on a certain object.
+
+The word ""live"" is used to describe the special way that the operating system is set up so that it can run on a computer without needing to install anything first.
+
+The first Linux-based Live CD was Yggdrasil Linux (it stopped being made in 1995), but it did not work well because back then CD drives could not read CDs fast enough. in 2003, a Live CD based on Debian called Knoppix was released. Many people liked to use Knoppix, both as an operating system, and as a way of fixing a computer. Many more people have started using Live CDs since then, because of programs like Linux Live scripts and remastersys which make it very easy to make your own personalized Live CD.
+
+Some Live Distros are made to demonstrate how an operating system would work on a computer, without making you install it first.
+
+Other Live Distros come with a variety of software which help fix different problems that can happen with a computer, such as if they get a computer virus, or if a person forgets their password.
+
+People also create Live Distros to demonstrate new ways of making operating systems, or proving that an operating system can run on a new type of computer.
+
+
+Here are some images/screenshots of live CDs:
+
+

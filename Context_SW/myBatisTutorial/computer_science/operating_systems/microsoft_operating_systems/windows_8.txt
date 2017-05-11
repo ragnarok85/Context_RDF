@@ -1,0 +1,32 @@
+Windows 8
+
+Windows 8 (Windows 8.x) is a version of Microsoft's Windows computer operating system. The final version for everyone was released everywhere on October 26, 2012. The president of the Windows Division, Steven Sinofsky, said: "With this system we shall make the biggest change from Windows 95", as they have removed the "Start" button and designed a new tile-based user interface to replace the "Start" menu (which first appeared in Windows 95).
+
+Several versions of Windows 8 were made available to software developers well before the final release. The first of these, the Developer Preview, came out in September 2011. On February 29, 2012, Microsoft released a beta version of Windows 8.0 known as the Consumer Preview. Anyone could register online to download this version for free. After the Consumer Preview, a final preview named "Release Preview" was released on May 31, 2012. On October 26, 2012, Windows 8, as well as a version for devices using ARM processors, called Windows RT, both became available to the general public. On the same day, Microsoft also put new devices running Windows 8, including its newly-created Surface tablets up for sale in stores and online.
+
+An update for Windows 8 with new features, such as the return of the "Start" button, was released on October 17, 2013 and is called Windows 8.1. During development, it was known as "Windows Blue", while the original version, Windows 8.0, was codenamed "Midori".
+
+Windows 10 was developed to replace Windows 8 and 8.1, and came out on July 29, 2015. For the first year, users of Windows 8.1, as well as Windows 7, can get a free upgrade to this latest OS.
+
+New features include a Windows Store where users can buy Metro style computer programs or download them for free. Windows To Go allows users to run the complete Windows system from a USB drive.
+
+Windows 8 provides a new graphic user interface – Modern (also called Metro) UI (suitable for phone, tablet, notebook and classic PCs). This interface shows “tiles” which work as links and also as interactive widgets (RSS, weather, e-mails). Modern UI is optimized for touchscreen, but can be controlled by mouse and keyboard. Windows 8 still offers the classic desktop interface as an option.
+
+Microsoft reworked the booting process, replacing classic BIOS with a new system called UEFI. This provides secure boot, which is protection against viruses.
+
+Although Windows 8 is lighter than Windows 7, it demands more pixels on the screen. The minimum is 1366 x 768 pixels, which affects many users of laptops that have a maximum resolution of 1024 x 600 pixels. Some users with old hardware have for that reason continued to use windows 7. Windows 8 will work on resolutions lower than this, but some features will be unavailable.
+
+File Explorer, formerly called Windows Explorer, has a new ribbon bar interface. It can pause and resume a file transfer, and has an improved method to resolve conflicts when two files have the same name.
+
+In Windows 8 will enable logging in through face detection and voice control or especially hand gestures, using a camera.
+
+Two months after Windows 8 was released, there were rumors that Microsoft were making a major update to be codenamed "Blue". In May 2013, Microsoft announced that "Windows Blue" was the codename for the forthcoming Windows 8.1.
+
+On June 26 2013, Microsoft released build 9431 as the Windows 8.1 Preview, which could be downloaded.
+
+On August 14 2013, Microsoft announced that Windows 8.1 would be released digitally on October 17 and released at retail and in new computers on October 18. It included greater customization and new bundled apps such as a calculator, sound recorder, and file manager.
+
+In April 2014, Microsoft released an update for Windows 8.1 with improvements for keyboard and mouse users. The update pins the Windows Store on the task bar. Each modern app has a bar at the top, and can be closed the same way desktop apps are closed.
+
+
+

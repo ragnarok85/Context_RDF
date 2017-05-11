@@ -1,0 +1,8 @@
+Interpreter (computing)
+
+In computer science, an interpreter is a computer program that performs commands written in a computer programming language. Interpreters are one of the two most important ways a program can be run, the other being compilation.
+
+The interpreter is a language processor which converts a HLL(High-Level Programming Language) program into machine language by "converting and executing it line-by-line." If there is any error in any line, it reports it at the same time and program execution cannot resume until the error is rectified.
+Interpreter must always be present in the memory every time the program is executed as every time the program is run, it is first interpreted and then executed. For error debugging, interpreter is very much useful as it reports the error(S) at the same time. But once errors are removed, unnecessary usage of memory takes place as it has to be present in the memory always.
+
+

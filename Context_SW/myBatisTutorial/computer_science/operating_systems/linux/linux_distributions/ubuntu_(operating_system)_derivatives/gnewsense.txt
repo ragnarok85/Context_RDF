@@ -1,0 +1,6 @@
+GNewSense
+
+gNewSense is a free software-only Debian based distro. The project aims to contain only free software in their distribution.
+
+
+

@@ -1,0 +1,7 @@
+Fluxbuntu
+
+Fluxbuntu was a Linux distribution made for computers that have less powerful hardware. It is based or made from Ubuntu and uses Fluxbox for its Window Manager. 
+
+
+
+

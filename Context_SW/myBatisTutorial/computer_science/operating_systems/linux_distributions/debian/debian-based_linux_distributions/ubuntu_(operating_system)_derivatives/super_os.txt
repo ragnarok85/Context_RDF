@@ -1,0 +1,18 @@
+Super OS
+
+Super OS (formerly: Super Ubuntu) is a free Linux distribution. It is a modified version of Ubuntu made with reconstructor. Its main goal is to provide an ‘Out of the Box’ experience, containing various enhancements over Ubuntu. It has the goal of remaining compatible with Ubuntu.
+
+
+"App Runner" is a script included in "Super OS" that allows any kind of executable or script to be launched without having to use the command line. App Runner was also subject of an article by Lifehacker, saying ""App Runner would come in handy"" and ""there's plenty of scripts and closed-source apps that this would be useful for"".
+
+There is also a Windows tool called "cd2usb" to create Ubuntu and "Super OS" Live USBs. The program is already included in the DVD of "Super OS".
+
+The "RUNZ Framework" is a tool that allows the use of portable apps and something called "SuperDebs" (an installer with a .deb file + its dependencies that can be installed offline) in "Super OS". It is already included in "Super OS 9.04 SP 0.1+"
+
+In addition to the official Ubuntu repositories, Super OS also includes its own repositories, which include third-party software like Adobe Reader, Skype, Real Player, TrueCrypt, PeaZip, Google Chrome or Ubuntu calendar, but also include tools/software developed by "hacktolive", like App Runner and RUNZ.
+
+"Super OS" has been received mainly with positive reviews, with softpedia saying ""it is a distribution with super powers […] [due to] the inclusion of applications, tools and technologies that are missing from a standard Ubuntu"". "Super OS" (still with the name "Super Ubuntu" at the time), was also Lifehacker's "featured download" saying ""It's basically just a re-compiled version of the official Ubuntu distribution, but with a whole bunch of features included that save you the time of grabbing them yourself""."Super OS" is also the OS that the Helios project (a non-profit organization to give away computers to children without the money to buy them) pre-loads on most of the computers they give away. , Super OS is in the top 100 of the page hit ranking of DistroWatch.
+
+
+
+

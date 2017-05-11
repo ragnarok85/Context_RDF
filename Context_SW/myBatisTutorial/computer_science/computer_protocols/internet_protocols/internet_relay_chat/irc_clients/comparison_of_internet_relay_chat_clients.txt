@@ -1,0 +1,24 @@
+Comparison of Internet Relay Chat clients
+
+The following tables compare general and technical information between a number of IRC client programs. Please see the individual products pages for more information. This page is does not include everything and may not be current.
+
+Basic general information about the clients: creator/company, license/price etc. Clients listed on a light purple background are no longer in active development.
+
+A brief overview of the release history.
+
+The operating systems on which the clients can run natively (without emulation).
+
+
+Unix and Unix-like operating systems:
+
+
+mIRC will run on *NIX systems under WINE - Confirmed
+
+What IRC related protocols and standards are supported by each client.
+
+
+
+Information on what features each of the clients support.
+
+
+

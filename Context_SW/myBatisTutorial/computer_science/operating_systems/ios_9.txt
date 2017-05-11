@@ -1,0 +1,5 @@
+IOS 9
+
+iOS 9 (codenamed "Monarch") is a version of iOS released on September 16, 2015. iOS 9 added many things to make the operating system better. Some of the things it added were a new News application, updates to the Notes and Map applications, and improvements to Siri and the Spotlight feature. For the iPad, iOS 9 also added a split screen feature.
+
+

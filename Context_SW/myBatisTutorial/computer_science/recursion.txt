@@ -1,0 +1,21 @@
+Recursion
+
+Recursion is a word from mathematics and computer science. It is used to define a thing, such as a function or a set. A recursive definition uses the thing it is defining as part of the definition.
+
+Usually, a recursive function refers to itself in some cases (or inputs), but not in every case. A function that referred to itself in every case would never terminate.
+
+When a function refers to itself, it often uses a smaller input than the input it was given. In this way, it can solve a problem by first solving a simpler version of the problem.
+
+An example of a recursive function formula_1 is:
+
+This function computes the factorial of a natural number. It works because formula_6 and formula_7.
+
+The definition has two cases: a recursive case for formula_8, and a case for formula_9 that is not recursive. The case that is not recursive is called a "base case".
+
+Recursion can be used to write computer programs. A program that uses recursion may be easier to write and understand than a program that does the same thing without recursion.
+
+Recursion is used in mathematics to prove theorems. This method is called induction.
+
+The idea of recursion can be seen in art and language. For example:
+
+

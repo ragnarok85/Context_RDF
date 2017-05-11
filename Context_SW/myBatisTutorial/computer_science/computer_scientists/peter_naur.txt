@@ -1,0 +1,9 @@
+Peter Naur
+
+Peter Naur (25 October 1928 – 3 January 2016) was a Danish computer science pioneer and Turing award winner. He helped the creation of the ALGOL 60 programming language. 
+
+He began his career as an astronomer for which he received his PhD degree in 1957. From 1969 to 1998 Naur was a professor of computer science at University of Copenhagen. Naur won the 2005 ACM A.M. Turing Award for his work on defining the ALGOL 60 programming language.
+
+Naur died on 3 January 2016 after a short illness in Herlev, aged 87.
+
+

@@ -1,0 +1,5 @@
+Dot-matrix printer
+
+Dot-matrix printers are printers for computers. A dot matrix printer creates characters by striking pins against ink ribbons. Each pin makes a dot and combinations of dots form characters and illustrations. This is much like a typewriter. Each character is made from a matrix of dots. Today, dot matrix printers are not used by many people anymore. They are still in use where forms (with multiple copies) need to be filled out.The print head moves back and forth on the paper like a typewriter and prints the image or text
+
+

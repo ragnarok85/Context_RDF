@@ -1,0 +1,10 @@
+Apple A4
+
+The Apple A4 is a microprocessor designed by Apple and manufactured by Samsung and first used in the iPad tablet computer, then in the iPhone 4 smartphone. It was also used in the iPod Touch (4th generation).
+
+Apple announced the A4 on January 27, 2010, during their "Latest Creation" event.
+
+On June 7, 2010, Steve Jobs publicly confirmed that the iPhone 4 would contain the A4 Processor, although it was not yet known if it had the same frequency, bus width, or caches as the A4 in the iPad.
+
+
+

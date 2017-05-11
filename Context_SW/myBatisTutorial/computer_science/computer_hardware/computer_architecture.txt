@@ -1,0 +1,23 @@
+Computer architecture
+
+In computer engineering, computer architecture is the conceptual design and fundamental operational structure of a computer system. It is the technical drawings and functional description of all design requirements (especially speeds and interconnections), it is how to design and implement various parts of a computer — focusing largely on the way by which the central processing unit (CPU) operates internally and how it accesses addresses in memory.
+
+It can be defined as the science and art of selecting and interconnecting hardware components to create computers that meet functional, performance and cost goals.
+Computer architecture includes at least three main subcategories:
+
+
+Once both ISA and microarchitecture has been specified, the actual computing system needs to be designed into hardware. This design process is called "implementation". Implementation is usually a hardware engineering design process. 
+
+Implementation can be further broken down into three but not fully separate pieces: 
+
+For CPUs, the entire implementation process is often called CPU design; it can also be a family of related CPU designs, such as RISC and CISC. 
+
+Some practitioners of computer architecture use more fine subcategories:
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+Capacitance Electronic Disc
+
+The Capacitance Electronic Disc (also known as a CED) was a type of video disc. It was made in 1964 by the company RCA. The CED is similar to a record because it stores the video and sound as small groves on a black disk. Because of this, the CED is an analog disc format instead of a digital format like a CD. The CED is stored inside a plastic case so you can not touch the disk as it is very easy to damage. On the plastic case is a label that has the name of the movie on the disc as well as other information such as a summary of the movie.
+
+The first CED was made in 1964 but were not available for purchase until 1981. About 200 movies were made available on CED. Each movie that was on CED was about $15 to $35 depending on the length of the movie. The CED did not sell well, this is because you could not record on the disc like you could with a video tape. The production of the CED stopped in 1986.
+
+CEDs are conductive vinyl platters that are 30.0 cm (11.8 in) in diameter. To avoid using the metric system to name their discs, they were called "12 inch discs" even though they were actually slightly smaller. Each side of the disc has grooves that are about 19 miles long and are 37 times smaller than the grooves on a regular phonograpg record. When the disc is playing, it spins at about 450 times per minute and each rotation of the disc contained several frames of audio and visual information. 
+
+To read the disc, a titanium needle was placed very lightly on the outer edge of the disc. A small electric current was then passed through the center of the needle, where it would touch the bottem of the groove and read the audio information, which was stored in small holes. The needle would read these by detecting how much air was between the needle and the pit and then the electronics of the player would convert these into audio. The visual information was stored in the grooves and were read like a regular phonograph record. As the needle passed over the grooves, it would vibrate and the player would convert the vibrations into the pictures.
+
+

@@ -1,0 +1,5 @@
+OpenStep
+
+OpenStep was an operating system by NeXT. It is an x86 version of the NeXTStep operating system, which was also by NeXT.
+
+

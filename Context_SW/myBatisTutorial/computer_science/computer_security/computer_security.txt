@@ -1,0 +1,14 @@
+Computer security
+
+Computer security is a branch of information technology known as information security which is intended to protect computers. Computer security has three main goals:
+
+
+Computer security involves telling computers what they are "not to do". This makes computer security unique because most programming makes computers "do" things. Security takes much of a computers power.
+
+Basic computer security methods (in approximate order of strength) can be:
+
+
+An example of complexity and pervasiveness of the issue is vending machines, per "Hackers Lurking in Vents and Soda Machines" April 7, 2014 New York Times.
+
+
+

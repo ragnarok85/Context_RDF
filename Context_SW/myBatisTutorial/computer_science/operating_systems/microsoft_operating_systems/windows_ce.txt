@@ -1,0 +1,7 @@
+Windows CE
+
+Windows CE (also known officially as Windows Embedded Compact post version 6.0, and sometimes abbreviated WinCE) is Microsoft's operating system for embedded devices and minimal computers. Windows CE is a different operating system and kernel. It is not a trimmed-down version of desktop Windows. It is not Windows XP Embedded which is NT-based.
+
+The Zune portable media player, as well as the Windows Mobile and Windows Phone 7 smartphone platforms are based on Windows CE.
+
+

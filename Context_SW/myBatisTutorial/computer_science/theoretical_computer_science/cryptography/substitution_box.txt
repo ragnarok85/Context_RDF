@@ -1,0 +1,18 @@
+Substitution box
+
+In cryptography, a S-Box ("Substitution-box") is a basic component of symmetric-key algorithms. In block ciphers, the S-Boxes are used to make the relation between the plaintext and the ciphertext (coded text) difficult to understand–Shannon's property of confusion. The S-Boxes are carefully chosen to resist cryptanalysis (decoding).
+
+In general, an S-Box takes some number of input bits, "m", and transforms them into some number of output bits, "n": an "m"×"n" S-Box can be implemented as a lookup table with 2 words of "n" bits each. Fixed tables are normally used, as in the Data Encryption Standard (DES), but in some ciphers the tables are generated dynamically from the key; e.g. the Blowfish and the Twofish encryption algorithms. Bruce Schneier describes IDEA's modular multiplication step as a key-dependent S-Box.
+
+One good example is this 6×4-bit S-Box from DES (S):
+
+Given a 6-bit input, the 4-bit output is found by selecting the row using the outer two bits, and the column using the inner four bits. For example, an input "011011" has outer bits "01" and inner bits "1101"; the corresponding output would be "1001".
+
+The 8 S-Boxes of DES were the subject of intensive studies for many years cause of a concern that a method of bypassing the DES cipher to obtaining access to the plaintext–a "vulnerability" ("susceptibility") known only to its designers–might have been "planted" (inserted) in the cipher. In 1994, the S-Box design criteria were finally published by its designers after the public rediscovery of differential cryptanalysis, showing that they had been carefully tuned the design to increase resistance against differential cryptanalysis attacks. Other research had already indicated that even a very small modification to one of the 8 S-Box used by the DES could weaken it very much.
+
+The design of good S-Boxes was the subject of a great amount of research; now much more is understood about their use in block ciphers than when the DES S-Boxes were released.
+
+
+
+
+

@@ -1,0 +1,7 @@
+RepRap Project
+
+The RepRap project is a project to develop a 3D printer ("RepRap", short for "replicating rapid prototyper") that can print most of its own parts. All of the designs produced by the project are released under a free software license.
+
+The RepRap project has made four machines so far: "Darwin", released in March 2007, "Mendel", released in October 2009, "Prusa Mendel" and "Huxley" released in 2010. Developers have named each after famous biologists. 
+
+

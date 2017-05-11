@@ -1,0 +1,34 @@
+Serial ATA
+
+Serial ATA (SATA or Serial Advanced Technology Attachment) is a standard that has been defined to connect storage devices or optical drives to a computer. The most common standard that was used beforehand was called ATA or IDE; it has been renamed PATA. The main difference between the two lies in the cables: SATA cables have seven wires, PATA cables have 40 or 80. Another difference is that with SATA, there is one cable for each device, while with PATA, all devices are connected to the same cable. 
+
+As of 2015, almost all desktop computers have a SATA interface. PATA is still used for industrial applications and embedded systems. 
+
+Electric signals transmitted on a parallel bus made of several wires will influence each other, if the transfer speed is increased. This phenomenon is known as crosstalk in English. Another problem with PATA is that the termination of the bus is not specified. Serial ATA uses low-voltage differential signaling, which avoids most of these problems. 
+
+Serial ATA uses 8B/10B encoding. This means that 10 bits are used to transfer 8 bits. The first standard of SATA used 1.5 GBit/second transfer speed (or 1.2 GBit/second usable data rate). This is only slightly faster than the last PATA standard (ATA/133). Later standards doubled this rate, at almost every revision. These values are transfer speeds, because of signalling, the usable speed is 25% lower. 
+
+Other benefits are that SATA cables are much easier to handle than PATA cables. Some SATA drives can also be connected and disconnected while the computer is running. This is called hot swapping. Finally, some drives support a technology called "Native Command Queueing". This means that the drive can rearrange the order of what it's told to do so that it gets done faster. 
+
+From the first version, SATA has been fast enough for hard drives. The data needs to be read from a number of locations on the drive. Between the locations, the electronic device used for reading and writing has to be repositioned. Even with current drives, this does not happen fast enough so that the 1.2 GBit/s poses a problem. 
+
+As of 2016, there are five different revisions of the SATA standard. 
+SATA Express is a version of the SATA standard that uses the same protocol as PCI Express. Current solid state drives (SSDs) are able to saturate SATA III, specified at 6 GBit/s. For this reason SATA Express has been introduced.
+
+Diffferent versions of the Serial ATA standard are compatible with each other. This means that older devices can be operated on a newer controller, but they will only support the features and speed of the standard they were built for. Similarly, devices built for a newer standard can be operated on an older controller. In ths case, the controller is the limiting factor, and some of the the functionality may not be supported, as it was only introduced with a later version.
+
+At the level of the operating system, SATA and PATA devices can be made to look the same. At the physical level, they are incompatible, though. 
+
+To be usable, the devices using SATA need to be connected to the motherboard. This is probably the most visible difference between SATA and PATA. SATA drives have two different connectors, One connection is for transmitting the data and the other connection is for transmitting power. In some cases, both have been combined into one cable, to connect external drives. The normal case though is that two different connectors are used. Some connectors can be locked in place. 
+
+PATA specified that power is transmitted using a 4 pin Molex connector. With SATA, this connector. The 4 pin Molex connector has also been used to power floppy drives. SATA changed this connector. With SATA, the power connector and the data connector look similar, but the power connector is wider than the data connector. The standard power connector has 15 pins. It is used for standard 3.5 inch and 2.5 inch drives.
+
+Smaller form factors can also use a smaller power connector, It has six pins and a coding notch. For smaller drives, there is a connector with 8 pins. A coding notch makes sure that the power connector cannot be connected to the plug which transfers the data.
+
+As with the power connector, there are different versions of the data connector, for different applications. The standard connector has 7 pins, and is used for 3.5" and 2.5" drives. The most common other form factors are mSATA, and M.2 (or NGFF). 
+
+eSATA is a version of SATA which is used to connect external drives. Its plugs are more robust, and its cables are more rugged. In this market, SATA competes with other standards, such as USB or Firewire. Many external drives are standard SATA drives in an external case. To be able to communicate over USB or Firewire, an extra electronic board is needed. This board translates between SATA and the external interface. When eSATA is used, no translation is necessary. Using USB or Firewire may have other benefits though.
+
+There also is a version of eSATA called eSATAp. It combines the pins of the USB, those of SATA, and those of the power connector. This makes it possible to directly connect SATA or USB drives externally, with only one cable. In addition to the data, power is also transmitted over this cable, so no extra power connection is necessary.
+
+

@@ -1,0 +1,12 @@
+Arithmetic logic unit
+
+In computing, an arithmetic logic unit (ALU) is a digital circuit that performs arithmetic and logical operations. The ALU is a basic building block of the central processing unit (CPU) of a computer, even the simplest microcontrollers contain one for purposes such as timing. 
+
+Now, modern microprocessors, microcontrollers and CPUs have very powerful and very complex ALUs. Furthermore, more recent CPUs may contain up to more than 4 ALUs (see superscalar CPUs).
+
+Mathematician John von Neumann proposed the ALU concept in 1945.
+
+
+
+
+

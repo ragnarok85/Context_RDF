@@ -1,0 +1,7 @@
+Commodore BASIC
+
+Commodore BASIC is also known as PET BASIC. It is a BASIC programming language. It was used in Commodore International's 8-bit home computers. It started with the PET computer in 1977. The last computer to use Commodore BASIC was Commodore 128 of 1985. The core was based on 6502 Microsoft BASIC. It shares many characteristics with other 6502 BASICs like Applesoft BASIC.
+
+Commodore licensed BASIC from Microsoft on a "pay once with no royalties" basis after Jack Tramiel turned down Bill Gates' offer of a $3 per unit fee stating "I'm already married", and would pay no more than $25,000 for a perpetual license.
+
+

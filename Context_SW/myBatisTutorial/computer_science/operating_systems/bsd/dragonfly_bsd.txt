@@ -1,0 +1,8 @@
+DragonFly BSD
+
+DragonFly BSD is an open source, Unix-like operating system focused on symmetric multiprocessing (SMP). Features introduced in DragonFly BSD include and the filesystem.
+
+Matthew Dillon created DragonFly BSD from FreeBSD 4.8 code in 2003. Matthew Dillon was formerly a part of the FreeBSD community. Dillon disagreed with FreeBSD 5's approach to SMF. Many were disappointed with the performance and stability FreeBSD 5's early releases. Dillion split from the FreeBSD project in order to develop the FreeBSD 4 series in the direction he felt was best.
+
+
+

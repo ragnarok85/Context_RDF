@@ -1,0 +1,55 @@
+Scripting language
+
+A scripting or script language is a programming language that supports scripts. Scripts are usually short computer programs that do steps that could be done one at a time by a person. This automates a job to make it easier and more reliable. A scripting language is often a simpler language, and easier to learn than other languages, but still can do many things.
+
+Scripts may run inside of another program, like in a web browser or Microsoft Excel. They may also be a "shell" that runs from a command line interface and makes calls to the operating system (OS). The shell is considered "interactive" - the user can choose what to type, and the shell responds to the command. These can be used to control jobs on mainframes and servers.
+
+Some people say a scripting language must be tied to a specific use. Others use a wider definition and include general-purpose programming languages that are interpreted, not compiled. "General-purpose" means it can be used in many ways for different things. Some general-purpose languages (such as Java) have variations that can be scripted (Javascript). There is no specific rule on what is, or is not, a scripting language.
+
+Some common examples of scripting languages:
+
+Most scripting languages are made to be easy to learn. They often can be either short files with source code, or entered one command at a time in a command line interface, which has a read–eval–print loop (REPL, language shell). This usually means a simple set of commands. There might not be functions or a "main", it just runs from start to finish. If something doesn't work, a programmer can make quick changes and run it again. This makes a scripting language good for making a "rapid prototype" to see if an idea works.
+
+For example, most people do not call Java a scripting language, because of its lengthy syntax and rules about which classes exist in which files, and because Java cannot be executed interactively in a REPL. It needs files with source code, and they can only contain definitions that must be used by a host application or application launcher. (Java is not the same as JavaScript).
+
+But Python allows choices - functions can be put in a file, it can be run without functions and use imperative programming style, or even use it interactively (type and run one line at a time).
+
+codice_1
+
+This one line of Python code prints "Hello World"; no "main()" function or anything else is needed.
+
+A scripting language is usually interpreted from source code or bytecode. However, something has to run the script (interpret it) so the computer understands it. This is an application, or something in the OS. That is often written in a compiled language and distributed in machine code form (as an "executable" that doesn't make sense to humans).
+
+Scripting languages may be designed to be used by the people using a program — end-user development. Other times they may be built by programmers for their own use. Scripting languages often use abstraction, a form of information hiding. This means users do not need to know the details of variable types, data storage, and memory management.
+
+Scripts are often made or changed by the person executing them, but some are shared or sold to others. For example, when large parts of games are written in a scripting language. Sometimes a script can be compiled before others use it. Once compiled, it will run faster and doesn't need another application to run it. And this prevents end users from changing the code.
+
+Early mainframe computers (in the 1950s) were not interactive, but used scripts stored in "batch files". IBM's Job Control Language (JCL) is the common example of a scripting language used to control batch processing.
+
+The first interactive shells were made in the 1960s to help remote operation of the first time-sharing systems. These used shell scripts, which can run computer programs within a computer program, the shell. Calvin Mooers in his TRAC language is generally given credit with inventing "command substitution". This lets commands change the script (self-modifying code). Multics calls these "active functions". 
+Louis Pouzin wrote an early processor for command scripts called RUNCOM for CTSS around 1964. Stuart Madnick at MIT wrote a scripting language for IBM's CP/CMS in 1966. He originally called this processor COMMAND, later named EXEC. Multics included an offshoot of CTSS RUNCOM, also called RUNCOM. EXEC was eventually replaced by EXEC 2 and REXX.
+
+Languages such as Tcl and Lua were made from the start to be general-purpose scripting languages that could be put into any application. Other languages such as Visual Basic for Applications (VBA) could do much of the same, but needed to work only with certain applications. Using a general-purpose scripting language instead of making a new language for each application usually makes it easier for both the person writing the application and the user writing the scripts.
+
+Scripting is sometimes used to connect different applications. This is called glue code, and a language made just for this purpose is a "glue language". Pipelines and shell scripting are common examples of glue languages. But if a lot of logic is written in a script file, it is better to think of it as simply another software application, not "glue".
+
+Glue languages are especially useful for writing and maintaining:
+
+Glue language examples:
+
+Devices like programmable calculators may also have their own glue languages. For example, the Texas Instruments TI-92, by factory default can be programmed with a command script language. The TI-NSpire calculator understands the Lua language. Others understand some kind of Basic language, or maybe Lisp or something else.
+
+This group has come from the automation of job control, which relates to starting and controlling the behavior of system programs, starting from IBM's JCL. Many of these languages' interpreters also work as command-line interpreters such as the Unix shell or the MS-DOS codice_2. Others, such as AppleScript offer the use of English-like commands to build scripts.
+
+When building graphical user interfaces, a way of testing it is needed. Specialized scripting languages were made to control graphic windows, menus, buttons, and so on just like a human user would. Many times, these can be used to copy exactly what a person does (moving a mouse, clicking or typing on a keyboard). This action or set of actions that is copied and remembered is called a macro.
+
+Many large applications include a scripting language built just for that application. The application can be a game or a business program. This type of language is made for a single application. They make look like a general-purpose language (e.g. QuakeC, modeled after C), they have custom features that distinguish them.
+
+This is like an application-specific scripting languages, in that it controls an application, but the language can be used in many applications.
+
+JavaScript started as a language for scripting inside web browsers; but it is now a general-purpose embeddable language. It is also used in Adobe products for instance.
+
+Some languages shift from one type to another over time, usually as they add capability to do more things.
+
+
+

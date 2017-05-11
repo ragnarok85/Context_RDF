@@ -1,0 +1,16 @@
+Microcontroller
+
+A microcontroller (abbreviated MCU or µC) is a computer system on a chip that does a job. It contains an integrated processor, memory (a small amount of RAM, program memory, or both), and programmable input/output peripherals, which are used to interact with things connected to the chip A microcontroller is different than a microprocessor which only contains a CPU (the kind used in a Personal Computer ). 
+
+First released in 1971 by the Intel company, microcontrollers began to become popular in their first few years. The extremely useful Intel 8008 microprocessor was then released, but it was still impractical because of high cost for each chip. These first microcontrollers combined different types of computer memory on one unit. After people began to see how useful they were, micro controllers were constantly being upgraded, with people trying to find new ways to make them better. Cost was reduced over time and by the early 2000s, micro controllers were widely used across the world.
+
+Other terms for a microcontroller are embedded system and embedded controller, because the microcontroller and its support circuits are often built into, or embedded in, a single chip.
+
+In addition to the usual arithmetic and logic elements of a general microprocessor, the microcontroller also has additional elements such as RAM for data storage, read-only memory for program storage, flash memory for permanent data storage, and other devices (peripherals).
+
+Microcontrollers often operate at very low speed compared to microprocessors (at clock speeds of as little as 32 kHz), but this is useful for typical applications. They also consume very little power (milliwatts or even micro watts).
+
+Microcontrollers are used in automatic products and devices, such as car engine systems, remote controls, machines, appliances, power tools, and toys. These are called embedded systems. Microcontrollers can also be found at work in solar power and energy harvesting, anti-lock braking systems in cars, and have many uses in the medical field as well.
+
+
+

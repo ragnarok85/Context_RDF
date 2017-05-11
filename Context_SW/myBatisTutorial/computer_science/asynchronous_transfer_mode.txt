@@ -1,0 +1,11 @@
+Asynchronous Transfer Mode
+
+Asynchronous Transfer Mode is a set of protocols used for computer networks. It is mostly used for Wide Area Networks (WAN). It splits the data, and encodes it into packets of a fixed size. Each packet can be routed differently, along virtual paths set up in the network. 
+
+ATM has been very successful in WANs, as well as in Local Area Networks (LAN). Today, many ADSL implementations use ATM technology.
+
+Standards like Ethernet (which is used for LANs) usually are quite simple. When there is little traffic on the network they work well. However, when there is a lot of traffic it is difficult to predict how an Ethernet network will behave. For this reason, Ethernet cannot give any service guarantees. It is not possible to say that an Ethernet packet will take a maximum delay, but after that time it is guaranteed to arrive.
+
+ATM is more complex, but this complexity allows to give guarantees as to data rate, maximum delay, and jitter. These are usually called Quality of Service. 
+
+

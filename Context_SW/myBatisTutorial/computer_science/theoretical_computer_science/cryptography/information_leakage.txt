@@ -1,0 +1,7 @@
+Information leakage
+
+With the development of the internet, the issue of information leakage has been more and more serious. The definition of an information leakage is that secret information is stolen by others through hacker’s attack, copying, sending, printing or screen shooting.
+
+Most individual information leakages are caused by hackers. This can be prevented by through antivirus software. Most corporate information leakages are caused by people in the company. Preventing corporate information leakage is more difficult. In 2003, the FBI and the CSI did research, the result shows that only 30 percent of information leakage accidents are caused by people outside the organization. That is because people inside are familiar with the regulation and more likely to find the information. Encrypting the information is an important way to stop corporate information leakages.
+
+

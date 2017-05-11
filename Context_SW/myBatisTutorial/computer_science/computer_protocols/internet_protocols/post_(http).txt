@@ -1,0 +1,5 @@
+POST (HTTP)
+
+In Internet computing, POST is one of many request methods supported by the Hypertext Transfer Protocol (or HTTP). POST acts to submit data to be processed to a specific resource. As examples this may be a message for a bulletin board, a newsgroup, or a mailing list. It can also be an item of data for a database. In contrast, the HTTP GET request method is designed to retrieve (or get) information from a server.
+
+

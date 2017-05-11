@@ -1,0 +1,11 @@
+Ubuntu-restricted-extras
+
+ubuntu-restricted-extras is a package for ubuntu, that allows the user to install most of the essential restricted software, due to legal, or copyright reasons.
+It is a meta-package that installs, among other things:
+
+Ubuntu-restricted-extras is already included in distros like Super OS
+
+ubuntu
+
+
+

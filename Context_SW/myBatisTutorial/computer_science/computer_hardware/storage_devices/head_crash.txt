@@ -1,0 +1,6 @@
+Head crash
+
+A head crash is when the part of a hard drive that writes on the disks (the "head") touches the disk. Usually, there is air between the head and the disk. However, if dirt and debris get into the drive, they can cause the disks to crash.The crash itself then sends more debris which can make things worse. It is important to back up files before a head crash. Head crashes make sounds. Hard drive failures can also be caused by bearings, parts found in the drive motor.
+
+
+

@@ -1,0 +1,6 @@
+Z80
+
+The Z80 microchip was one of the most popular CPU microchips for computers in the 1980s. The Z80 was created by the Zilog company in 1976. Zilog made less than 50% of all Z80s. They are made by Sharp (company), Toshiba, NEC and many other manufacturers around the world. As of 2010, it is still manufactured for use in embedded systems.
+
+
+

@@ -1,0 +1,9 @@
+Non-separable wavelets
+
+Non-separable wavelets are multi-dimensional wavelets that are not implemented using one-dimensional operations.
+They are studied since 1992.
+In contrast to separable wavelets, the non-separable wavelets have several advantages.
+For example, the non-separable filters imply more parameters in design. This consequently leads to better filters.
+
+
+

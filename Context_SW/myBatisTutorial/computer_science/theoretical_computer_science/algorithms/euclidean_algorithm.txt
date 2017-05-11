@@ -1,0 +1,16 @@
+Euclidean algorithm
+
+The Euclidean algorithm is an algorithm. It can be used to find the biggest number that divides two other numbers (the greatest common divisor of two numbers).
+
+Euclid solved the problem graphically. He said
+
+Start out with two positive integers "m" and "n".
+
+Note: This pseudocode uses modular arithmetic instead of subtraction. It does the same thing as above, but gets the answer faster.
+
+Precondition: two positive integers "m" and "n"
+Postcondition: the greatest common integer divisor of "m" and "n"
+Iterative (Non-recursive):
+Recursive:
+
+

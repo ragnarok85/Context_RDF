@@ -1,0 +1,13 @@
+HelenOS
+
+HelenOS is an operating system. It is made by staff and students of the Mathematical and Physical Faculty of Charles University in Prague. It is running on some architectures.
+
+HelenOS is a microkernel operating system, which supports multitasking, memory management, inter-process communication and symmetric multiprocessing. File system, device drivers and other services are implemented like user processes. It can run on some architectures like IA-32, x86-64, SPARC V9, IA-64, Power PC, ARM and MIPS.
+
+License of the source code is BSD license.
+
+Jakub Jermář made HelenOS as a student project at the University. A few years later worked on the HelenOS kernel group of students and some students are using it for self-education of programming until now. In 2011 the project HelenOS took part on Google Summer of Code.
+
+
+
+

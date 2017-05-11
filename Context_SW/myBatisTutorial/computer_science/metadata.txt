@@ -1,0 +1,7 @@
+Metadata
+
+Metadata (also "Meta data") is data about data, that is information about other information. This is often useful. Libraries usually group books by subject and keep a catalogue of the books. In that context the metadata in the catalog include various pieces of information including the author and the subject it is classified under. The index and table of contents of a book also present metadata.
+
+Digital cameras allow people to take pictures. Here the data is the picture taken, and the metadata is information about the picture taken, like when (the date and time), photographic exposure, focal length and other technical details about how the camera made the picture. Some cameras, especially smartphones, have GPS and can include the location in metadata.
+
+

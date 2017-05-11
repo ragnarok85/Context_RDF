@@ -1,0 +1,12 @@
+ 
+computer memory
+ddr2 sdram
+dynamic random-access memory
+flash memory
+icloud
+memory address
+non-volatile random-access memory
+programmable read-only memory
+random-access memory
+read-only memory
+static ram

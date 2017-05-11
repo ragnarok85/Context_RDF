@@ -1,0 +1,8 @@
+OpenSolaris
+
+OpenSolaris was an open source Unix operating system from Sun Microsystems. It was based based Sun's non-free Solaris operating system. The operating system was known for its ZFS file system. In 2010, Oracle Corporation bought Sun Microsystems and chose to stop making new versions of OpenSolaris. OpenSolaris was later forked into the illumos kernel and the OpenIndiana distribution.
+
+OpenSolaris (archived)<br>
+OpenIndiana (a fork of OpenSolaris)
+
+

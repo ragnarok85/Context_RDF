@@ -1,0 +1,7 @@
+Communication protocol
+
+In computing, a protocol or communication protocol is a set of rules in which computers communicate with each other. The protocol says what part of the conversation comes at which time. It also says how to end the communication.
+
+
+
+
