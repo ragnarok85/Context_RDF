@@ -25,7 +25,6 @@ public class QueryWiBi {
 			// sendGet("Ottawa","Canada");
 			sendGet("experiment");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

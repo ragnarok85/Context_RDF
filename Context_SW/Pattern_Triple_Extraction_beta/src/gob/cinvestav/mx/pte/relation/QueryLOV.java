@@ -20,7 +20,6 @@ static final String USER_AGENT = "Mozilla/5.0";
 			//sendGet("Ottawa","Canada");
 			sendGet("is based");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -59,7 +58,7 @@ static final String USER_AGENT = "Mozilla/5.0";
         String[] prefixedName;
         String[] vocabularyPrefixed;
         String[] uri;
-        double score = 0.0d;
+//        double score = 0.0d;
         String[] highlight;
         
         if(!results.isEmpty()){
@@ -85,7 +84,7 @@ static final String USER_AGENT = "Mozilla/5.0";
         			predUri.add(uri[i]);
         			//System.out.println(uri[i]);
         		}
-        		score = item.getJsonNumber("score").doubleValue();
+//        		score = item.getJsonNumber("score").doubleValue();
         		JsonObject highlights = item.getJsonObject("highlight");
         		JsonArray h = highlights.getJsonArray("http://www.w3.org/2000/01/rdf-schema#label@en");
         		if(h != null && !h.isEmpty()){

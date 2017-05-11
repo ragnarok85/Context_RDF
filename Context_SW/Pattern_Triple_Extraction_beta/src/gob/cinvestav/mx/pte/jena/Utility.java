@@ -99,7 +99,7 @@ public class Utility {
 			}
 		}
 	}
-	
+   	
 	public void populateTypes(ClausieTriple triple) {
 		if (!triple.getSubject().getWibi().getUris().isEmpty()) {
 			for (@SuppressWarnings("unused") String sbjUri : triple.getTriple().getSubjectUris()) {

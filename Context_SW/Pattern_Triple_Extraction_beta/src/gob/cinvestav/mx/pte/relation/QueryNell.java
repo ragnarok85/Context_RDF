@@ -20,7 +20,6 @@ public class QueryNell {
 			//sendGet("Ottawa","Canada");
 			sendGet("Nintendo","satoru_iwata");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

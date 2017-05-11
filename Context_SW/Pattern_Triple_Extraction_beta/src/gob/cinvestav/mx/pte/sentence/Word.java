@@ -24,7 +24,6 @@ public class Word {
 	}
 	
 	public int compareTo(Word o) {
-		// TODO Auto-generated method stub
 		int returnValue = 0;
 		if(this.getStart() > o.getStart()){
 			returnValue = 1;

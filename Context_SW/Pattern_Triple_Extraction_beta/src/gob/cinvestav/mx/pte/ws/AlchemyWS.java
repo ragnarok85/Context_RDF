@@ -18,6 +18,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+@SuppressWarnings("deprecation")
 public class AlchemyWS {
 	
 	private List<AlchemyEntities> namedEntities;
@@ -29,7 +30,6 @@ public class AlchemyWS {
 			sendPostNE(snts);
 			sendPostConcepts(snts);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return namedEntities;
@@ -38,6 +38,7 @@ public class AlchemyWS {
 	private void sendPostNE(String texto) throws Exception {
     	
         HttpPost post = new HttpPost("http://access.alchemyapi.com/calls/text/TextGetRankedNamedEntities");
+		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
 
@@ -83,6 +84,7 @@ public class AlchemyWS {
     public void sendPostConcepts(String texto) throws Exception {
 
         HttpPost post = new HttpPost("http://gateway-a.watsonplatform.net/calls/text/TextGetRankedConcepts");
+		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
 		
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();

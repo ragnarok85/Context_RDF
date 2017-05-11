@@ -5,11 +5,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
-
 import org.apache.http.Consts;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -19,6 +14,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+@SuppressWarnings("deprecation")
 public class TargetHypernymDiscovery {
 
 	public static void main(String... args){
@@ -29,7 +25,6 @@ public class TargetHypernymDiscovery {
 		try {
 			thd.sendPostNE(sentence);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -37,6 +32,7 @@ public class TargetHypernymDiscovery {
 	private void sendPostNE(String texto) throws Exception {
 
 		HttpPost post = new HttpPost("https://entityclassifier.eu/thd/api/v2/extraction");
+		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
 		List<NameValuePair> formparams = new ArrayList<NameValuePair>();
 

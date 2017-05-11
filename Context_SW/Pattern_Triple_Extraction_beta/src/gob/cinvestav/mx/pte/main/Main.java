@@ -319,6 +319,7 @@ public class Main {
 		}
 		// Extract start-end of each word
 		CoreLabelTokenFactory ctf = new CoreLabelTokenFactory();
+		@SuppressWarnings({ "rawtypes", "unchecked" })
 		PTBTokenizer ptb = new PTBTokenizer(new StringReader(sentence), ctf, "invertible=true");
 		while (ptb.hasNext()) {
 			CoreLabel label = (CoreLabel) ptb.next();
@@ -443,6 +444,8 @@ public class Main {
 	 */
 
 	public static void reduceAlchemyEntities(List<AlchemyEntities> entities) {
+		//TODO avoid compare the same object
+		
 		List<Entities> toDiscard = new ArrayList<Entities>();
 		for (Entities entity : entities) {
 			String entityText = entity.getText();
@@ -755,7 +758,6 @@ public class Main {
 			if(pred.length() > 0)
 				pred = "http://www.cinvestav.com.mx/rdf/#" + pred;
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return pred;
@@ -766,7 +768,6 @@ public class Main {
 		try {
 			uri = QueryLOV.sendGet(predicate);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return uri;
@@ -777,7 +778,6 @@ public class Main {
 		try {
 			uri = QueryWatson.asearch(predicate);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return uri;
@@ -789,7 +789,6 @@ public class Main {
 		try {
 			wibiTypes = QueryWiBi.sendGet(concept);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		if(wibiTypes.isEmpty()){
