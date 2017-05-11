@@ -22,7 +22,9 @@ public class GlobalContext {
 		} else {
 			new GlobalContext().initialRestrictions(args);
 		}
-
+		//TODO inserted by lti [May 11, 2017,6:28:30 PM] 
+		//check if output document exist if so then continue with the next file
+		
 		QueryWS query = new QueryWS();
 		Utils utils = new Utils();
 		RDFSerialization serialization = new RDFSerialization();
@@ -35,6 +37,7 @@ public class GlobalContext {
 		String outputFile = args[2];
 
 		List<File> listFiles = utils.getFilesList(documentPath);
+		List<File> outputFiles = utils.getFilesList(outputModel);
 		if (listFiles.size() == 0) {
 			System.out.println("The folder is empty");
 			System.exit(0);
@@ -43,6 +46,13 @@ public class GlobalContext {
 		List<String> listTopicsPerDoc = new ArrayList<String>();
 
 		for (File file : listFiles) {
+			for(File outputF : outputFiles){
+				if(outputF.getName().replace(".txt.rdf", "").equals(file.getName().replace(".txt", ""))){
+					System.out.println("The file " + file.getName() + " was already processed");
+					continue;
+				}
+			}
+				
 			String document = "";
 			List<Sentence> listSentences = null;
 			if (file.getName().endsWith(".txt")) {
@@ -60,6 +70,7 @@ public class GlobalContext {
 			List<String> listAlchemyTopics = new ArrayList<String>();
 			List<String> listOpenCalaisTopics = new ArrayList<String>();
 			System.out.println("\n\n");
+			System.out.println("File processing: " + file.getAbsolutePath());
 			mapKeywords = query.queryKeywords(document);
 			System.out.println("num. of keywords found = " + mapKeywords.size() + "\n\n");
 
@@ -124,21 +135,23 @@ public class GlobalContext {
 			output.mkdir();
 			new File(output.getPath() + "/topics/").mkdir();
 			new File(output.getPath() + "/sentences/").mkdir();
-		} else {
-			for (File topic : new File(output.getPath() + "/topics/").listFiles()) {
-				topic.delete();
-			}
-			for (File sentence : new File(output.getPath() + "/sentences/").listFiles()) {
-				sentence.delete();
-			}
-		}
+		} 
+//		else {
+//			for (File topic : new File(output.getPath() + "/topics/").listFiles()) {
+//				topic.delete();
+//			}
+//			for (File sentence : new File(output.getPath() + "/sentences/").listFiles()) {
+//				sentence.delete();
+//			}
+//		}
 		if(!outputRDF.exists()){
 			outputRDF.mkdir();
-		}else{
-			for(File f : outputRDF.listFiles()){
-				f.delete();
-			}
 		}
+//		else{
+//			for(File f : outputRDF.listFiles()){
+//				f.delete();
+//			}
+//		}
 	}
 
 }

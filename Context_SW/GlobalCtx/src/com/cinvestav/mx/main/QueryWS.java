@@ -25,11 +25,13 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+@SuppressWarnings("deprecation")
 public class QueryWS {
 
 	public void queryAlchemy(String sentence, Map<String, Double> topics, Sentence snt) {
 
 		HttpPost post = new HttpPost("http://gateway-a.watsonplatform.net/calls/text/TextGetRankedTaxonomy");
+		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
 
 		List<NameValuePair> formparams = new ArrayList<NameValuePair>();
@@ -76,6 +78,7 @@ public class QueryWS {
 	public String queryFileAlchemy(String document) {
 		String topic = "";
 		HttpPost post = new HttpPost("http://gateway-a.watsonplatform.net/calls/text/TextGetRankedTaxonomy");
+		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
 
 		List<NameValuePair> formparams = new ArrayList<NameValuePair>();
@@ -97,7 +100,7 @@ public class QueryWS {
 			if (taxonomy != null) {
 				for (JsonObject tax : taxonomy.getValuesAs(JsonObject.class)) {
 					String label = tax.getString("label");
-					double score = Double.parseDouble(tax.getString("score"));
+//					double score = Double.parseDouble(tax.getString("score"));
 					topic = label;
 					break;
 				}
@@ -112,6 +115,7 @@ public class QueryWS {
 	public Map<String,Double> queryKeywords(String document) {
 		Map<String,Double> mapKeywords = new HashMap<String,Double>();
 		HttpPost post = new HttpPost("http://gateway-a.watsonplatform.net/calls/text/TextGetRankedKeywords");
+		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
 
 		List<NameValuePair> formparams = new ArrayList<NameValuePair>();
@@ -247,7 +251,7 @@ public class QueryWS {
 					if (obj.containsKey("_typeGroup")
 							&& obj.getJsonString("_typeGroup").toString().contains("topics")) {
 						String name = obj.getString("name");
-						double score = obj.getJsonNumber("score").doubleValue();
+//						double score = obj.getJsonNumber("score").doubleValue();
 						// System.out.println(name +" - Score - " + score);
 						// topics.add(name + " - " + score);
 						topic = name;
