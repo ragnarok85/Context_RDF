@@ -45,11 +45,11 @@ public class GlobalContext {
 
 		List<String> listTopicsPerDoc = new ArrayList<String>();
 
-		for (File file : listFiles) {
+		outer:for (File file : listFiles) {
 			for(File outputF : outputFiles){
 				if(outputF.getName().replace(".txt.rdf", "").equals(file.getName().replace(".txt", ""))){
 					System.out.println("The file " + file.getName() + " was already processed");
-					continue;
+					continue outer;
 				}
 			}
 				

@@ -13,7 +13,7 @@ import org.apache.jena.rdf.model.Seq;
 
 public class RDFSerialization {
 	static String genericURI = "http://tamps.cinvestav.mx/rdf/resources";
-	static String genericGraphURI = "htttp://tamps.cinvestav.mx/rdf/graph";
+	static String genericGraphURI = "http://tamps.cinvestav.mx/rdf/graph";
 	static final String rdfPropertyURI = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	static final String keywordResourceURI = "http://tamps.cinvestav.mx/rdf/resource/keywords/";
 	static final String keywordPropertyURI = "http://tamps.cinvestav.mx/rdf/property/keyword";
