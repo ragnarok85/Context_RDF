@@ -79,17 +79,20 @@ public class Utility {
 	public void populateModel(ClausieTriple triple, String rdfModelFileName) {
 		String graphURI = "http://tamps.cinvestav.mx/rdf/graph/";
 		Property inDocprop = jenaModel.createProperty("http://tamps.cinvestav.mx/rdf/#inDoc");
+		Property inSntprop = jenaModel.createProperty("http://tamps.cinvestav.mx/rdf/#inSentence");
 		for (String sbjUri : triple.getTriple().getSubjectUris()) {
 			if (sbjUri.length() > 0) {
 				String sbj = triple.getSubject().getTextNE().replace(" ", "_");
 				Resource subject = jenaModel.createResource(ownNameSpace+sbj);
 				jenaModel.add(subject,inDocprop,(RDFNode)jenaModel.createResource(graphURI+rdfModelFileName));
 				jenaModel.add(subject,sameAs,jenaModel.createResource(sbjUri));
+				jenaModel.add(subject,inSntprop,jenaModel.createLiteral(triple.getOrgSentence()));
 				for (String objUri : triple.getTriple().getArgumentUris()) {
 					if (objUri.length() > 0) {
 						String obj = triple.getArgument().getTextNE().replace(" ", "_");
 						Resource object = jenaModel.createResource(ownNameSpace+obj);
 						jenaModel.add(object,inDocprop,(RDFNode)jenaModel.createResource(graphURI+rdfModelFileName));
+						jenaModel.add(object,inSntprop,jenaModel.createLiteral(triple.getOrgSentence()));
 						jenaModel.add(object,sameAs,jenaModel.createResource(objUri));
 						logger.info("Property: " + triple.getTriple().getRelationUri());
 						Property property = jenaModel.createProperty(triple.getTriple().getRelationUri());

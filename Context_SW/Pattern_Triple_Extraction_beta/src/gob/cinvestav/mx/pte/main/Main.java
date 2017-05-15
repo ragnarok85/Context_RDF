@@ -166,7 +166,7 @@ public class Main {
 				continue;
 			}
 	
-			MT.setClausieTriples(extractClausieTriples(clausIE.getPropositions()));
+			MT.setClausieTriples(extractClausieTriples(clausIE.getPropositions(), sentence));
 			triples.addAll(getClTriples(MT.getClausieTriples()));
 			MT.setSntsWrds(extractWords(clausIE, sentence));
 
@@ -336,7 +336,7 @@ public class Main {
 	}
 
 	//(iii)
-	public static List<ClausieTriple> extractClausieTriples(List<Proposition> propositions) {
+	public static List<ClausieTriple> extractClausieTriples(List<Proposition> propositions, String sentence) {
 		List<ClausieTriple> clTriples = new ArrayList<ClausieTriple>();
 		logger.info("\tClausIE triples: ");
 		
@@ -351,8 +351,9 @@ public class Main {
 				subject.setText(proposition.subject());
 				relation.setText(proposition.relation());
 				argument.setText(proposition.argument(0));
-				
+								
 				clTriple.setTriple(subject, relation, argument);
+				clTriple.setOrgSentence(sentence);
 				logger.info("\t(" + subject.getText() + "," + relation.getText() + "," + argument.getText()+")");
 				clTriples.add(clTriple);
 			}

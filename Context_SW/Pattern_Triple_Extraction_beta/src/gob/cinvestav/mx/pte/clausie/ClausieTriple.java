@@ -8,6 +8,8 @@ public class ClausieTriple {
 	Relation relation;
 	Argument argument;
 	Triple triple; 
+	String orgSentence;
+	
 	public ClausieTriple(){
 		this.subject = new Subject();
 		this.relation = new Relation();
@@ -82,6 +84,14 @@ public class ClausieTriple {
 
 	public void setTriple(Triple triple) {
 		this.triple = triple;
+	}
+
+	public String getOrgSentence() {
+		return orgSentence;
+	}
+
+	public void setOrgSentence(String orgSentence) {
+		this.orgSentence = orgSentence;
 	}
 	
 	
