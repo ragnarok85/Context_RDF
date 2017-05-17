@@ -19,7 +19,8 @@ public class RDFSerialization {
 	static final String keywordPropertyURI = "http://tamps.cinvestav.mx/rdf/property/keyword";
 	static final String haveKeywordPropertyURI = "http://tamps.cinvestav.mx/rdf/property/haveKeywords";
 	static final String sentencePropertyURI = "http://tamps.cinvestav.mx/rdf/property/sentence";
-	static final String topicPropertyURI = "http://tamps.cinvestav.mx/rdf/property/topic";
+	static final String topicPropertyAlchemyURI = "http://tamps.cinvestav.mx/rdf/property/alchemy/topic";
+	static final String topicPropertyCalaisURI = "http://tamps.cinvestav.mx/rdf/property/calais/topic";
 	
 	public void writeModel(String outputModel, List<Sentence> sentences, String alchemyTopic, String openCalaisTopic,
 			Map<String,Double> mapKeywords,String nameDoc) {
@@ -41,13 +42,13 @@ public class RDFSerialization {
 		System.out.println("Alchemy Topic = " + alchemyTopic);
 		if (alchemyTopic.length() > 0) {
 			jenaModel.add(subject,
-					jenaModel.createProperty(topicPropertyURI),
+					jenaModel.createProperty(topicPropertyAlchemyURI),
 					(RDFNode) jenaModel.createLiteral(alchemyTopic));
 		}
 		System.out.println("OpenCalais Topic = " + alchemyTopic);
 		if (openCalaisTopic.length() > 0) {
 			jenaModel.add(subject,
-					jenaModel.createProperty(topicPropertyURI),
+					jenaModel.createProperty(topicPropertyCalaisURI),
 					(RDFNode) jenaModel.createLiteral(openCalaisTopic));
 		}
 		
