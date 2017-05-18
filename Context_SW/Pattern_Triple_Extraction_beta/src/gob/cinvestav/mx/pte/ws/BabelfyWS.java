@@ -34,4 +34,31 @@ public class BabelfyWS {
         }
         return bEntities;
     }
+	
+	public static void main(String args[]) throws Exception{
+		BabelfyWS ws = new BabelfyWS();
+		
+		String texto = "a computer programmer is a person who makes computer programs using a programming language.";
+		List<BabelfyEntities> entities = ws.extractEntities(texto);
+		List<BabelfyEntities> endResult = new ArrayList<BabelfyEntities>();
+		
+		boolean isContained = false;
+		for(BabelfyEntities entityOne : entities){
+			for(BabelfyEntities entityTwo : entities){
+				if(entityTwo.text.contains(" ") && !entityOne.text.contains(" ") && entityTwo.text.contains(entityOne.text))
+					isContained = true;
+			}
+			if(!isContained){
+				endResult.add(entityOne);
+				System.out.println(entityOne.text);
+			}
+			isContained=false;
+		}
+		
+		for(BabelfyEntities entity : endResult){
+				texto = texto.replace(entity.text, " < "+ entity.getDbpediaURL() + "> ");
+		}
+		
+		System.out.println(texto);
+	}
 }

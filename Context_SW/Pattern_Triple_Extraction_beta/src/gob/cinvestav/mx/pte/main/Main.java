@@ -35,6 +35,7 @@ import gob.cinvestav.mx.pte.relation.QueryWatson;
 import gob.cinvestav.mx.pte.sentence.Word;
 import gob.cinvestav.mx.pte.type.QueryWiBi;
 import gob.cinvestav.mx.pte.type.WiBiTypes;
+import gob.cinvestav.mx.pte.utils.Utils;
 import gob.cinvestav.mx.pte.ws.AlchemyEntities;
 import gob.cinvestav.mx.pte.ws.BabelfyEntities;
 import gob.cinvestav.mx.pte.ws.Entities;
@@ -58,34 +59,39 @@ public class Main {
 	 */
 	
 	public static void main(String args[]) {
-		// String sentence = "Disease caused by parasites have plagued humankind
-		// for millennia and constitute a major global health problem";
-		//String sentence = "This existential question has been raised by a series of experiments conducted recently at the Large Hadron Collider and the Relativistic Heavy Ion Collider that smash various atomic particles together at nearly the speed of light in order to create tiny drops of primordial soup.";
-		// String sentence = "Nintendo announces new details on Mario Kart 8";
-		// String sentence = "Cows in at least 8 herds have caught salmonella this season, twice as many as last year [2010]";
-//		String sentence = "";
-		//String sentence = "Bell, a telecommunication company, which is based in Los Angeles, makes and distributes electronic, computer and building products.";
-//		String sentences[] = {"Nintendo announces new details on Mario Kart 8","Cows in at least 8 herds have caught salmonella this season, twice as many as last year [2010]"};
-		//*****************Processing Sentence with ClausIE *************************//
-//		if(args.length > 0){
-//			sentence = args[0];
+
+		Main main = new Main();
+	
+//		if(args == null){
+//			main.testProcessing();
 //		}else{
-//			sentence = "Disease caused by parasites have plagued humankind for millennia and constitute a major global health problem";
+//			main.batchProcessing(args);
 //		}
+		main.testProcessing();
+	}
+	
+	public void testProcessing(){
+		File inputFile = new File("./test/programmer.txt");
+		List<String> sentences = null;
+		List<String> triples = null;
+		List<String> seeds = new ArrayList<String>();
 		
-		if(args == null){
-			System.exit(0);
-		}else{
-			new Main().initialRestrictions(args);
-		}
+		Main main = new Main();
 		
+		sentences = Utils.readLines(inputFile);
 		
+		triples.addAll(main.extractTriples(inputFile.getName(),sentences, inputFile.getName()+".rdf", seeds, inputFile.getName()+".rdf", "seeds"+inputFile.getName()));
+	}
+	
+	public void batchProcessing(String[] args){
 		String problematicSentencesOuput = "problematicSnts.txt";
 		logger.info("Input path: " + args[0]);
 		logger.info("Output path: " + args[1]);
 		logger.info("Output seeds directory: " + args[2]);
 		logger.info("Output text triples: " + args[3]);
 		logger.info("Problematic Sentences file: " + problematicSentencesOuput);
+		
+		initialRestrictions(args);
 		
 		File inputDirectory = new File(args[0]);
 		File outputDirectory = new File(args[1]);
@@ -104,7 +110,7 @@ public class Main {
 			for(File inputFile : inputFiles){
 				
 				List<String> seeds = new ArrayList<String>();
-				List<String> sentences = new ArrayList<String>();
+				List<String> sentences = null;
 				
 				if(processedFiles.contains(inputFile.getName())){
 					logger.info("The File \"" + inputFile.getName() + "\" was previously processed");
@@ -113,20 +119,7 @@ public class Main {
 				
 				logger.info("Processing file: " + inputFile);
 				
-				try(BufferedReader br = new BufferedReader(new FileReader(inputFile))){
-					String line = "";
-					int counterLines = 0;
-					while((line = br.readLine()) != null){
-						if(line.split(" ").length > 3){
-							sentences.add(line.toLowerCase());
-							counterLines++;
-						}
-						
-					}
-					System.out.println("\tNumber of sentences:\t" + counterLines);
-				}catch(IOException e){
-					logger.error("Error reading file - " + e);
-				}
+				sentences = Utils.readLines(inputFile);
 				
 				if(sentences.size() > 0){
 					logger.info("Staring the triple extraction process\n");
@@ -145,7 +138,7 @@ public class Main {
 	}
 	
 	public List<String> extractTriples(String inputFile, List<String> sentences, String outputTriple, List<String> seeds,
-			String rdfModelFileName, String outputTriples ) {
+		String rdfModelFileName, String outputTriples ) {
 		
 		Utility utility = new Utility();
 		List<String> triples = new ArrayList<String>();
@@ -339,7 +332,7 @@ public class Main {
 	public static List<ClausieTriple> extractClausieTriples(List<Proposition> propositions, String sentence) {
 		List<ClausieTriple> clTriples = new ArrayList<ClausieTriple>();
 		logger.info("\tClausIE triples: ");
-		
+		logger.info("CLAUSIE PROPOSITIONS");
 		for (Proposition proposition : propositions) {
 			if (proposition.noArguments() > 0) {
 				
@@ -354,6 +347,7 @@ public class Main {
 								
 				clTriple.setTriple(subject, relation, argument);
 				clTriple.setOrgSentence(sentence);
+				
 				logger.info("\t(" + subject.getText() + "," + relation.getText() + "," + argument.getText()+")");
 				clTriples.add(clTriple);
 			}
