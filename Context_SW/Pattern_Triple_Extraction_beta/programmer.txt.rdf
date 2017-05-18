@@ -1,0 +1,84 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://wibitaxonomy.org/"
+    xmlns:fresnel="http://www.w3.org/2004/09/fresnel#"
+    xmlns:j.1="http://wibitaxonomy.org/Instruction_(computer_science)"
+    xmlns:cinves="http://tamps.cinvestav.mx/rdf/#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:daia="http://purl.org/ontology/daia/"
+    xmlns:j.2="http://wibitaxonomy.org/Program_(computing)"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:lingvo="http://www.lingvoj.org/ontology#"
+    xmlns:saref="https://w3id.org/saref#"
+    xmlns:ntag="http://ns.inria.fr/nicetag/2010/09/09/voc#"
+    xmlns:j.3="http://wibitaxonomy.org/Plurality_(voting)">
+  <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/software">
+    <rdf:type rdf:resource="http://wibitaxonomy.org/Program_(computing)"/>
+    <saref:IsUsedFor>
+      <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/people">
+        <rdf:type rdf:resource="http://wibitaxonomy.org/Plurality_(voting)"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/People_(Microsoft_service)"/>
+        <cinves:inSentence>some programmers are famous because their software is used by many people.</cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+      </rdf:Description>
+    </saref:IsUsedFor>
+    <cinves:inSentence>some programmers are famous because their software is used by many people.</cinves:inSentence>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Software"/>
+    <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/programmers">
+    <daia:provides>
+      <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/integrated_development_environments">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Integrated_development_environment"/>
+        <cinves:inSentence>programmers often use software tools such as text editors and ides (integrated development environments) to help them work.</cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+      </rdf:Description>
+    </daia:provides>
+    <fresnel:use>
+      <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/text_editors">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Text_editor"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Programming_tool"/>
+        <cinves:inSentence>programmers often use software tools such as text editors and ides (integrated development environments) to help them work.</cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+      </rdf:Description>
+    </fresnel:use>
+    <cinves:inSentence>programmers often use software tools such as text editors and ides (integrated development environments) to help them work.</cinves:inSentence>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Software_engineer"/>
+    <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+  </rdf:Description>
+  <j.0:Person rdf:about="http://tamps.cinvestav.mx/rdf/resources/programmer">
+    <lingvo:expertWriting>
+      <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/source_code">
+        <rdf:type rdf:resource="http://wibitaxonomy.org/Instruction_(computer_science)"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/source code"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Source_code"/>
+        <cinves:inSentence>a programmer's main jobs are writing program source code, testing if it works, and debugging (fixing) the program if there are problems.</cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+      </rdf:Description>
+    </lingvo:expertWriting>
+    <cinves:inSentence>a programmer's main jobs are writing program source code, testing if it works, and debugging (fixing) the program if there are problems.</cinves:inSentence>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/programmer"/>
+    <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+  </j.0:Person>
+  <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/example">
+    <ntag:isRelevant>
+      <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/linus_torvalds">
+        <dcterms:created>
+          <j.0:Warship rdf:about="http://tamps.cinvestav.mx/rdf/resources/linux_operating_system">
+            <owl:sameAs rdf:resource="http://dbpedia.org/resource/operating system"/>
+            <owl:sameAs rdf:resource="http://dbpedia.org/resource/Linux"/>
+            <cinves:inSentence>one example is linus torvalds, who created an important part of the linux operating system.</cinves:inSentence>
+            <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+          </j.0:Warship>
+        </dcterms:created>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/linus torvalds"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Linus_Torvalds"/>
+        <cinves:inSentence>one example is linus torvalds, who created an important part of the linux operating system.</cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+      </rdf:Description>
+    </ntag:isRelevant>
+    <cinves:inSentence>one example is linus torvalds, who created an important part of the linux operating system.</cinves:inSentence>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Conceptual_model"/>
+    <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/programmer.txt.rdf"/>
+  </rdf:Description>
+</rdf:RDF>
