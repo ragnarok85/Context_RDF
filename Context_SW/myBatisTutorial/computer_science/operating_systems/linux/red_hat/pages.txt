@@ -1,3 +1,0 @@
-anaconda (installer)
-red hat linux
-rpm package manager

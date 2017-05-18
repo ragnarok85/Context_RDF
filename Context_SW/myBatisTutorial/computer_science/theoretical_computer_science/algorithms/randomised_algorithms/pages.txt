@@ -1,3 +1,0 @@
-las vegas algorithm
-monte carlo algorithm
-random forest

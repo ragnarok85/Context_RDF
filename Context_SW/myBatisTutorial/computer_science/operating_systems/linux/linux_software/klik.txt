@@ -1,6 +1,0 @@
-Klik
-
-klik is a system for software download and use on Linux.
-
-
-

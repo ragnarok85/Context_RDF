@@ -1,5 +1,0 @@
-disk buffer
-disk partitioning
-giant magnetoresistance
-hard disk
-solid-state drive

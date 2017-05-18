@@ -1,5 +1,0 @@
-Xeon
-
-Xeon is a brand of x86 microprocessors designed and manufactured by Intel Corporation. In 1988 Intel released the first microprocessor using the name Xeon.
-
-

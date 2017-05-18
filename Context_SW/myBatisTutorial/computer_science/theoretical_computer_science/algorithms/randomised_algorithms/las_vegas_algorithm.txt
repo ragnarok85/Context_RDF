@@ -1,9 +1,0 @@
-Las Vegas algorithm
-
-A Las Vegas algorithm is an algorithm that uses randomness. If the algorithm gives a result, this result will be the correct one. The algorithm gambles with the resources used. It may take a very long times to give back a result, or it may not give back a result at all. 
-
-A simple example would be a version of the QuickSort algorithm. Quicksort is used to quickly sort things (mostly numbers). For this, each element is compared to a central element (called "pivot"). Depending on how this element is selected the sorting can take more time or less.
-
-Most often, a Las Vegas algorithm is used to pick the pivot randomly.
-
-

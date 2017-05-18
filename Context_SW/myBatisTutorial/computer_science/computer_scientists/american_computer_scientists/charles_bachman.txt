@@ -1,5 +1,0 @@
-Charles Bachman
-
-Charles William "Charlie" Bachman III (born December 11, 1924) is an American computer scientist. He spent his entire career as an industrial researcher, developer, and manager rather than in academia. He is particularly known for his work in the early development of database management systems. The Bachman diagrams are named after him. He won the Turing Award in 1973.
-
-

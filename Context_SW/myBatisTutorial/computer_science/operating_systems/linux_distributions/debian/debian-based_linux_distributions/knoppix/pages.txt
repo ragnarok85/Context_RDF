@@ -1,4 +1,0 @@
- 
-knoppix
-feather linux
-kanotix

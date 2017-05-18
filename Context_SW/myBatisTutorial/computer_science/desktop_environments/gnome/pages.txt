@@ -1,5 +1,0 @@
- 
-gnome
-abiword
-epiphany (software)
-eye of gnome

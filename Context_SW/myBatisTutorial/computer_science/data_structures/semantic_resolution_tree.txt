@@ -1,5 +1,0 @@
-Semantic resolution tree
-
-A semantic resolution tree is a tree used for the definition of the semantics of a programming language.
-
-

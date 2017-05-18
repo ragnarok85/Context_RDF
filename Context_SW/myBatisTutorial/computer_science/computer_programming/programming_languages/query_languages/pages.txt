@@ -1,6 +1,0 @@
- 
-query language
-ejb ql
-join (sql)
-query by example
-structured query language

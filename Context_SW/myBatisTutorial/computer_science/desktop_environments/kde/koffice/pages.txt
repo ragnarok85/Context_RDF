@@ -1,7 +1,0 @@
- 
-koffice
-karbon14
-kivio
-kpresenter
-kspread
-kword

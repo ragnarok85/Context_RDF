@@ -1,5 +1,0 @@
-JSGF
-
-JSGF stands for Java Speech Grammar Format or the JSpeech Grammar Format. It is a special format used to describe a set of text that fits into a certain language.
-
-

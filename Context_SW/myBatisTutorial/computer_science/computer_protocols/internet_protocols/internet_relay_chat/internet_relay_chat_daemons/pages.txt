@@ -1,4 +1,0 @@
-*
-comparison of internet relay chat daemons
-*
-ircd

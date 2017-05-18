@@ -1,7 +1,0 @@
-Fedora Live USB creator
-
-The Fedora Live USB creator is an official tool designed to create Live USBs of Fedora.
-
-
-
-

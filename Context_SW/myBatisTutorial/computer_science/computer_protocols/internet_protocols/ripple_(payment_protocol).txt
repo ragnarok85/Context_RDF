@@ -1,6 +1,0 @@
-Ripple (payment protocol)
-
-Ripple is a communication protocol for sending money through the internet.
-
-
-

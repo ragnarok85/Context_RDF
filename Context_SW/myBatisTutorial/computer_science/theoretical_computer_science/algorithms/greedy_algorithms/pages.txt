@@ -1,4 +1,0 @@
- 
-greedy algorithm
-kruskal's algorithm
-nearest neighbour algorithm
