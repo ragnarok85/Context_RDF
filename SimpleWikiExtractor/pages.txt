@@ -1,0 +1,192 @@
+computer science
+hash function
+64-bit computing
+alphabet (computer science)
+ambient intelligence
+arity
+assembler
+asynchronous transfer mode
+atomicity
+bandwidth (computing)
+big o notation
+binary
+bioinformatics
+bit
+bit-level parallelism
+bitwise operation
+bloom filter
+byte
+cache
+cache coherence
+cellular automaton
+character (computing)
+checksum
+client-server
+closure (computer science)
+cloud computing
+collision detection
+complex instruction set computer
+complexity theory
+computer assisted language learning
+computer engineering
+computer numbering formats
+computer performance
+computer recycling
+computer-aided technologies
+concatenation
+constant
+context (computing)
+context switch
+copy-on-write
+cryptography
+data compression
+data corruption
+data integrity
+data loss
+data migration
+data mining
+data parallelism
+data science
+data type
+daubechies wavelet
+deadlock
+debugger
+debugging
+design pattern
+device controller
+device driver
+digital signal controller
+distributed computing
+dynamic programming
+ejb ql
+embedded system
+empty string
+emulator
+error detection and correction
+everything as a service
+exit (command)
+exit (command)
+fermat's primality test
+fibre channel
+filter
+firmware
+fitts's law
+floating point
+floating point unit
+gaussian elimination
+graphics interchange format
+hamiltonian path
+heuristic
+home computer
+horn clause
+horn clause
+host (network)
+humanâcomputer interaction
+idempotence
+image processing
+immunity aware programming
+information retrieval
+information theory
+inheritance (computer science)
+input
+input output
+input/output
+instruction level parallelism
+instruction pipelining
+instruction set
+interrupt latency
+java virtual machine
+kernel (computer science)
+locality of reference
+logical volume management
+lookup table
+machine code
+message (computer science)
+metadata
+micro-operation
+microarchitecture
+microcontroller
+minimal instruction set computer
+mojibake
+multi-user
+multiprocessing
+multitasking
+multithreading
+natural language processing
+nested paging
+non-deterministic turing machine
+object-oriented design
+object-oriented programming
+off-by-one error
+one instruction set computer
+opcode
+optical disc drive
+optimization (computer science)
+out-of-order execution
+output
+output device
+page cache
+page replacement algorithm
+parallel computing
+pattern
+pattern language
+peripheral equipment
+physical address extension
+pigeonhole principle
+pixel
+pointer aliasing (computer programming)
+predictive failure analysis
+process (computing)
+process switching latency
+programmer
+pseudocode
+quadrature mirror filter
+read-only memory
+real-time computing
+real-time operating system
+recursion
+reduced instruction set computer
+redundancy
+reed-solomon error correction
+relational database
+runtime
+signed number representations
+simultaneous multithreading
+sinclair research ltd
+sobig
+software
+software engineering
+space-time tradeoff
+speculative execution
+stack (data structure)
+stack machine
+subset sum problem
+superscalar
+synchronization (computer science)
+system of linear equations
+system requirements
+tagged command queuing
+task (computers)
+task parallelism
+template
+theory of computation
+thin film transistor liquid crystal display
+thrashing (computer science)
+thread (computer science)
+thread switching latency
+turing machine
+turing test
+unicode
+variable
+variable-width encoding
+very long instruction word
+virtual memory
+von neumann architecture
+web application
+web application
+word (computing)
+x64
+z80
+zero instruction set computer
+zx spectrum
+infobox data structure
