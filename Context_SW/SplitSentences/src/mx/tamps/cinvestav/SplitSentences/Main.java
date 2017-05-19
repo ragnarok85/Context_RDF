@@ -14,7 +14,10 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
+import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
@@ -30,16 +33,13 @@ public class Main {
 	 */
 	
 	public static void main(String[] args) {
-		
-//		String outputPath = "/Users/lti/Documents/testMultiprototype/1/sentences/";
-//		String inputPath="/Users/lti/Documents/testMultiprototype/1/";
 		try{
 			new Main().initialRestrictions(args);
 		}catch(ArrayIndexOutOfBoundsException e){
 			logger.info("there are no arguments!!");
 			System.exit(0);
 		}
-		
+
 		File inputDir = new File(args[0]);
 		List<String> listSentences = new ArrayList<String>();
 		Map<String,Integer> wordsPerDoc = new HashMap<String,Integer>();
@@ -54,7 +54,7 @@ public class Main {
 			if(inputFile.isFile() && inputFile.getName().endsWith("txt")){
 				logger.info("Processing file: " + inputFile.getName());
 				Properties props = new Properties();
-				props.setProperty("annotators", "tokenize,ssplit");
+				props.setProperty("annotators", "tokenize,ssplit,pos,lemma");
 				StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 				
 				String docContent = new Main().readDoc(inputFile);
@@ -64,24 +64,20 @@ public class Main {
 				
 				List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 				Integer wordsDoc = 0;
+				String lemmaSentence = "";
 				for(CoreMap sentence: sentences){
-//					System.out.println(sentence.toString() + " - " +sentence.toString().split(" ").length);
-					wordsDoc += sentence.toString().split(" ").length;
-					mapSentences.put(sentence.toString().replace("\n", " "), wordsDoc);
-					listSentences.add(sentence.toString());
+					for(CoreLabel token : sentence.get(TokensAnnotation.class)){
+						lemmaSentence += token.get(LemmaAnnotation.class) + " ";
+					}
+					lemmaSentence = lemmaSentence.trim();
+					
+					wordsDoc += lemmaSentence.split(" ").length;
+					mapSentences.put(lemmaSentence, wordsDoc);
+					listSentences.add(lemmaSentence);
 				}
 				wordsPerDoc.put(inputFile.getName(), wordsDoc);
 				writeSenteces(args[1]+inputFile.getName(), listSentences);
 				listSentences.clear();
-//				try(PrintWriter pw = new PrintWriter(new FileWriter(args[1]+inputFile.getName()))){
-//					System.out.println("Writing splitted sentences in the file: " + args[1] + inputFile.getName());
-//					for(CoreMap sentence: sentences){
-//						pw.write(sentence+"\n");
-//					}
-//					pw.close();
-//				}catch(IOException e){
-//					e.printStackTrace();
-//				}
 			}
 			statistics.put(inputFile.getName(), mapSentences);
 		}
