@@ -9,6 +9,12 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
@@ -203,6 +209,25 @@ public class Utility {
 			}
 			jenaModel.close();
 		}
+	}
+	
+	public static String queryNEDBpedia(String neText){
+		String neURI  ="";
+		String service = "http://dbpedia.org/sparql";
+		String queryString = "SELECT ?subject ?label WHERE {"
+				+ " ?subject <http://www.w3.org/2000/01/rdf-schema#label> ?label. "
+				+ " FILTER regex(?label, '^"+neText+"$', \"i\")"
+						+ "}";
+		Query query = QueryFactory.create(queryString);
+		try(QueryExecution qexec = QueryExecutionFactory.sparqlService(service, query)){
+			ResultSet results = qexec.execSelect();
+			while(results.hasNext()){
+				QuerySolution rsn = results.next();
+				neURI = rsn.get("?subject").toString();
+			}
+		}
+		
+		return neURI;
 	}
 
 }

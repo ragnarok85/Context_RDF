@@ -18,6 +18,7 @@ import org.apache.log4j.Logger;
 
 import de.mpii.clausie.ClausIE;
 import de.mpii.clausie.Proposition;
+import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
@@ -43,13 +44,9 @@ import gob.cinvestav.mx.pte.ws.Entity;
 import gob.cinvestav.mx.pte.ws.EntityOpts;
 
 public class Main {
-
-//	static private MasterOfTriples MT = new MasterOfTriples();
-	//static private String outputTriple = "triple.rdf";
 	public static List<String> lovUris = new ArrayList<String>();
 	public static Map<String,List<String>> problematicSentences = new HashMap<String,List<String>>();
 	final static Logger logger = Logger.getLogger(Main.class);
-	
 	
 	/*
 	 * args[0] - input folder
@@ -71,9 +68,9 @@ public class Main {
 	}
 	
 	public void testProcessing(){
-		File inputFile = new File("./test/programmer.txt");
+		File inputFile = new File("./test/lemmatizeProgrammer.txt");
 		List<String> sentences = null;
-		List<String> triples = null;
+		List<String> triples = new ArrayList<String>();
 		List<String> seeds = new ArrayList<String>();
 		
 		Main main = new Main();
@@ -150,7 +147,8 @@ public class Main {
 
 			MasterOfTriples MT = new MasterOfTriples();
 			ClausIE clausIE = new ClausIE();
-
+			
+			MT.setSentence(sentence);
 			logger.info("\tProcessing sentences with ClausIE\n");
 			clausIE = processingClausIE(listProblematicSentences,sentence);
 			
@@ -158,47 +156,61 @@ public class Main {
 				logger.info("No triples get extracted from ClausIE");
 				continue;
 			}
-	
-			MT.setClausieTriples(extractClausieTriples(clausIE.getPropositions(), sentence));
-			triples.addAll(getClTriples(MT.getClausieTriples()));
-			MT.setSntsWrds(extractWords(clausIE, sentence));
+			List<ClausieTriple> clsTriples = extractClausieTriples(clausIE.getPropositions(), sentence);
+			MT.setClausieTriples(clsTriples);
+			List<String> stringClTriples = getClTriples(MT.getClausieTriples());
+			triples.addAll(stringClTriples);
+			List<Word> wordsInf = Utils.extractWords(clausIE, sentence);
+			MT.setSntsWrds(wordsInf);
+			
+			Utils.reCreateClTriples(clsTriples,wordsInf);
+			
 
 			// *****************NE/concept processing
 			// ***********************************//
-			MT.setAlchemyEntities(EntityOpts.extractAlchemyEntities(sentence));
-			MT.setBabelfyEntities(EntityOpts.extractBabelfyEntities(sentence));
+			List<AlchemyEntities> alchemyEntities = EntityOpts.extractAlchemyEntities(sentence);
+			List<BabelfyEntities> babelfyEntities = EntityOpts.extractBabelfyEntities(sentence);
+			
+			MT.setAlchemyEntities(alchemyEntities);
+			MT.setBabelfyEntities(babelfyEntities);
+			
 			List<Entity> entities = new ArrayList<Entity>();
 			EntityOpts.fuseAlchemyUris(MT.getAlchemyEntities(), entities);
 			EntityOpts.fuseBabelfyUris(MT.getBabelfyEntities(), entities);
+			
+			
+			
 			EntityOpts.printEntities(entities);
 
 			// System.exit(0);
+//			if (!MT.getAlchemyEntities().isEmpty()) {
+//				for (AlchemyEntities alchemy : MT.getAlchemyEntities()) {
+//					List<Integer> entityListIndex = Utils.searchListPosition(alchemy.getText(), MT.getSntsWrds());
+//					alchemy.setListPosition(entityListIndex);
+//				}
+//			}
+//
+//			if (!MT.getBabelfyEntities().isEmpty()) {
+//				for (BabelfyEntities babelfy : MT.babelfyEntities) {
+//					List<Integer> entityListIndex = Utils.searchListPosition(babelfy.getText(), MT.getSntsWrds());
+//					babelfy.setListPosition(entityListIndex);
+//				}
+//			}
 
-			if (!MT.getAlchemyEntities().isEmpty()) {
-				for (AlchemyEntities alchemy : MT.alchemyEntities) {
-					alchemy.setListPosition(searchListPosition(alchemy.getText(), MT.sntsWrds));
-				}
-			}
-
-			if (!MT.getBabelfyEntities().isEmpty()) {
-				for (BabelfyEntities babelfy : MT.babelfyEntities) {
-					babelfy.setListPosition(searchListPosition(babelfy.getText(), MT.sntsWrds));
-				}
-			}
-
-			lookTriplesPositionList(MT.clausieTriples, MT.sntsWrds);
-			calculateStartEndTriples(MT.clausieTriples, MT.sntsWrds);
+//			lookTriplesPositionList(MT.clausieTriples, MT.sntsWrds);
+//			calculateStartEndTriples(MT.clausieTriples, MT.sntsWrds);
 
 			logger.info("=============reducing entities=======================");
-			reduceAlchemyEntities(MT.getAlchemyEntities());
-			reduceBabelfyEntities(MT.getBabelfyEntities(), MT.sntsWrds);
+//			reduceAlchemyEntities(MT.getAlchemyEntities());
+//			reduceBabelfyEntities(MT.getBabelfyEntities(), MT.sntsWrds);
 			logger.info("=============remove entities=======================");
-			removeAlchemyEntites(MT.getAlchemyEntities());
-			removeBabelfyEntites(MT.getBabelfyEntities());
-			lookEntities(MT.clausieTriples, MT.alchemyEntities, MT.babelfyEntities);
+//			removeAlchemyEntites(MT.getAlchemyEntities());
+//			removeBabelfyEntites(MT.getBabelfyEntities());
+//			lookEntities(MT.clausieTriples, MT.alchemyEntities, MT.babelfyEntities);
+			lookEntities(MT.clausieTriples, entities);
 			logger.info("=============Create triples=======================");
 			createTriple(MT.clausieTriples);
-			eliminateDuplicateURL(MT.clausieTriples);
+//			eliminateDuplicateURL(MT.clausieTriples);
 			logger.info("=============Search relation=======================");
 			for (ClausieTriple triple : MT.clausieTriples) {
 				String uri = "";
@@ -301,32 +313,7 @@ public class Main {
 	}
 	
 	//(ii)
-	public static List<Word> extractWords(ClausIE clausIE, String sentence) {
-		List<Word> words = new ArrayList<Word>();
-
-		for (CoreLabel token : clausIE.getDepTree().taggedLabeledYield()) {
-			Word wrd = new Word();
-			wrd.setWord(token.get(TextAnnotation.class));
-			wrd.setPosTag(token.get(PartOfSpeechAnnotation.class));
-			words.add(wrd);
-		}
-		// Extract start-end of each word
-		CoreLabelTokenFactory ctf = new CoreLabelTokenFactory();
-		@SuppressWarnings({ "rawtypes", "unchecked" })
-		PTBTokenizer ptb = new PTBTokenizer(new StringReader(sentence), ctf, "invertible=true");
-		while (ptb.hasNext()) {
-			CoreLabel label = (CoreLabel) ptb.next();
-			for (Word word : words) {
-				if (word.getWord().equalsIgnoreCase(label.originalText()) && !(word.getEnd() > 0)) {
-					word.setStart(label.beginPosition());
-					word.setEnd(label.endPosition());
-					break;
-				}
-			}
-
-		}
-		return words;
-	}
+	
 
 	//(iii)
 	public static List<ClausieTriple> extractClausieTriples(List<Proposition> propositions, String sentence) {
@@ -369,9 +356,9 @@ public class Main {
 
 	public static void lookTriplesPositionList(List<ClausieTriple> clTriple, List<Word> words) {
 		for (ClausieTriple triple : clTriple) {
-			triple.getSubject().setListPosition(searchListPosition(triple.getSubject().getText(), words));
-			triple.getRelation().setListPosition(searchListPosition(triple.getRelation().getText(), words));
-			triple.getArgument().setListPosition(searchListPosition(triple.getArgument().getText(), words));
+			triple.getSubject().setListPosition(Utils.searchListPosition(triple.getSubject().getText(), words));
+			triple.getRelation().setListPosition(Utils.searchListPosition(triple.getRelation().getText(), words));
+			triple.getArgument().setListPosition(Utils.searchListPosition(triple.getArgument().getText(), words));
 		}
 	}
 
@@ -393,42 +380,9 @@ public class Main {
 		element.setEnd(words.get(end).getEnd());
 	}
 
-	private static List<Integer> searchListPosition(String text, List<Word> words) {
-		String[] splitText = text.split(" ");
-		List<Integer> positions = new ArrayList<Integer>();
-		for (int i = 0; i < splitText.length; i++) {
-			for (Word word : words) {
-				if (word.getWord().equalsIgnoreCase(splitText[i])) {
-					positions.add(words.indexOf(word));
-				}
-			}
-		}
-		deleteDiscontinuousElements(positions);
-		return positions;
-	}
+	
 
-	public static void deleteDiscontinuousElements(List<Integer> positions) {
-		// delete discontinuous elements from beginning and ending
-		Collections.sort(positions);
-		List<Integer> delete = new ArrayList<Integer>();
-		for (int i = positions.size() - 1; i >= 0; i--) {
-			if (i - 1 > 0) {
-				int op = positions.get(i) - positions.get(i - 1);
-				if (op > 1) {
-					delete.add(Math.max(positions.get(i), positions.get(i - 1)));
-				}
-			} else {
-				int op = positions.get(i) - positions.get(0);
-				if (op > 1) {
-					delete.add(Math.min(positions.get(i), positions.get(0)));
-				}
-			}
-
-		}
-		for (Integer del : delete) {
-			positions.remove(del);
-		}
-	}
+	
 
 	// ************************ Phase 2 **********************************//
 	/*
@@ -438,93 +392,93 @@ public class Main {
 	 * 
 	 */
 
-	public static void reduceAlchemyEntities(List<AlchemyEntities> entities) {
-		//TODO avoid compare the same object
-		
-		List<Entities> toDiscard = new ArrayList<Entities>();
-		for (Entities entity : entities) {
-			String entityText = entity.getText();
-			for (Entities innerEntity : entities) {
-				String iEntityText = innerEntity.getText();
-				if (!entityText.equalsIgnoreCase(iEntityText) && entityText.contains(iEntityText)) {
-//					System.out.println(
-//							"\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + " (discarted)");
-					logger.info("\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + " (discarted)");
-					toDiscard.add(innerEntity);
-				}
-			}
-		}
-		for (Entities discard : toDiscard) {
-			entities.remove(discard);
-		}
+//	public static void reduceAlchemyEntities(List<AlchemyEntities> entities) {
+//		//TODO avoid compare the same object
+//		
+//		List<Entities> toDiscard = new ArrayList<Entities>();
+//		for (Entities entity : entities) {
+//			String entityText = entity.getText();
+//			for (Entities innerEntity : entities) {
+//				String iEntityText = innerEntity.getText();
+//				if (!entityText.equalsIgnoreCase(iEntityText) && entityText.contains(iEntityText)) {
+////					System.out.println(
+////							"\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + " (discarted)");
+//					logger.info("\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + " (discarted)");
+//					toDiscard.add(innerEntity);
+//				}
+//			}
+//		}
+//		for (Entities discard : toDiscard) {
+//			entities.remove(discard);
+//		}
+//
+//	}
 
-	}
-
-	public static void reduceBabelfyEntities(List<BabelfyEntities> entities, List<Word> words) {
-		List<BabelfyEntities> toDiscard = new ArrayList<BabelfyEntities>();
-		for (BabelfyEntities entity : entities) {
-			String entityText = entity.getText();
-
-			// the concept is not a noun
-			if (entity.getListPosition().size() == 1) {
-				if (!words.get(entity.getListPosition().get(0)).getPosTag().contains("NN")) {
-					toDiscard.add(entity);
-					logger.info("\"" + entityText + "\"" + " is not a noun " + " (discarted)");
-				}
-			}
-			// score is equal to 0
-			if (entity.getScore() == 0.0d) {
-//				System.out.println("\"" + entityText + "\"" + " have score = 0.0 " + " (discarted)");
-				logger.info("\"" + entityText + "\"" + " have score = 0.0 " + " (discarted)");
-				toDiscard.add(entity);
-			}
-			// An entity is contained inside another entity
-			for (BabelfyEntities innerEntity : entities) {
-				String iEntityText = innerEntity.getText();
-				if (!entityText.equalsIgnoreCase(iEntityText) && entityText.contains(iEntityText)) {
-//					System.out.println(
-//							"\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + " (discarted)");
-					logger.info("\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + "--> \"" + iEntityText + "\"" +"(discarted)");
-					toDiscard.add(innerEntity);
-				}
-
-			}
-		}
-		for (Entities discard : toDiscard) {
-			entities.remove(discard);
-		}
-
-	}
+//	public static void reduceBabelfyEntities(List<BabelfyEntities> entities, List<Word> words) {
+//		List<BabelfyEntities> toDiscard = new ArrayList<BabelfyEntities>();
+//		for (BabelfyEntities entity : entities) {
+//			String entityText = entity.getText();
+//
+//			// the concept is not a noun
+//			if (entity.getListPosition().size() == 1) {
+//				if (!words.get(entity.getListPosition().get(0)).getPosTag().contains("NN")) {
+//					toDiscard.add(entity);
+//					logger.info("\"" + entityText + "\"" + " is not a noun " + " (discarted)");
+//				}
+//			}
+//			// score is equal to 0
+//			if (entity.getScore() == 0.0d) {
+////				System.out.println("\"" + entityText + "\"" + " have score = 0.0 " + " (discarted)");
+//				logger.info("\"" + entityText + "\"" + " have score = 0.0 " + " (discarted)");
+//				toDiscard.add(entity);
+//			}
+//			// An entity is contained inside another entity
+//			for (BabelfyEntities innerEntity : entities) {
+//				String iEntityText = innerEntity.getText();
+//				if (!entityText.equalsIgnoreCase(iEntityText) && entityText.contains(iEntityText)) {
+////					System.out.println(
+////							"\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + " (discarted)");
+//					logger.info("\"" + entityText + "\"" + " contains " + "\"" + iEntityText + "\"" + "--> \"" + iEntityText + "\"" +"(discarted)");
+//					toDiscard.add(innerEntity);
+//				}
+//
+//			}
+//		}
+//		for (Entities discard : toDiscard) {
+//			entities.remove(discard);
+//		}
+//
+//	}
 
 	//Discard entities which are not part of the sentence
 	//that means, Alchemy return an URI which main word are not in the sentence
-	public static void removeAlchemyEntites(List<AlchemyEntities> entities) {
-		List<Entities> toDiscard = new ArrayList<Entities>();
-		for (Entities entity : entities) {
-			if (entity.getListPosition().isEmpty()) {
-//				System.out.println("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
-				logger.info("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
-				toDiscard.add(entity);
-			}
-		}
-		for (Entities discard : toDiscard) {
-			entities.remove(discard);
-		}
-	}
+//	public static void removeAlchemyEntites(List<AlchemyEntities> entities) {
+//		List<Entities> toDiscard = new ArrayList<Entities>();
+//		for (Entities entity : entities) {
+//			if (entity.getListPosition().isEmpty()) {
+////				System.out.println("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
+//				logger.info("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
+//				toDiscard.add(entity);
+//			}
+//		}
+//		for (Entities discard : toDiscard) {
+//			entities.remove(discard);
+//		}
+//	}
 
-	public static void removeBabelfyEntites(List<BabelfyEntities> entities) {
-		List<Entities> toDiscard = new ArrayList<Entities>();
-		for (Entities entity : entities) {
-			if (entity.getListPosition().isEmpty()) {
-//				System.out.println("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
-				logger.info("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
-				toDiscard.add(entity);
-			}
-		}
-		for (Entities discard : toDiscard) {
-			entities.remove(discard);
-		}
-	}
+//	public static void removeBabelfyEntites(List<BabelfyEntities> entities) {
+//		List<Entities> toDiscard = new ArrayList<Entities>();
+//		for (Entities entity : entities) {
+//			if (entity.getListPosition().isEmpty()) {
+////				System.out.println("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
+//				logger.info("\"" + entity.getText() + "\"" + " -  didn't match with any element in the list");
+//				toDiscard.add(entity);
+//			}
+//		}
+//		for (Entities discard : toDiscard) {
+//			entities.remove(discard);
+//		}
+//	}
 
 	public static void lookEntities(List<ClausieTriple> triples, List<AlchemyEntities> alchemyEntities,
 			List<BabelfyEntities> babelfyEntities) {
@@ -533,20 +487,36 @@ public class Main {
 			logger.info("Look entities for: " + triple.toString());
 
 			for (AlchemyEntities alchemy : alchemyEntities) {
-				if (triple.getSubject().getText().contains(alchemy.getText())) {
+				if (triple.getSubject().getText().contains(alchemy.getText().replace(" ", ""))) {
 					triple.getSubject().getAlchemy().add(alchemy);
 				}
-				if (triple.getArgument().getText().contains(alchemy.getText())) {
+				if (triple.getArgument().getText().contains(alchemy.getText().replace(" ", ""))) {
 					triple.getArgument().getAlchemy().add(alchemy);
 				}
 			}
 
 			for (BabelfyEntities babelfy : babelfyEntities) {
-				if (triple.getSubject().getText().contains(babelfy.getText())) {
+				if (triple.getSubject().getText().contains(babelfy.getText().replace(" ", ""))) {
 					triple.getSubject().getBabelfy().add(babelfy);
 				}
-				if (triple.getArgument().getText().contains(babelfy.getText())) {
+				if (triple.getArgument().getText().contains(babelfy.getText().replace(" ", ""))) {
 					triple.getArgument().getBabelfy().add(babelfy);
+				}
+			}
+		}
+	}
+	
+	public static void lookEntities(List<ClausieTriple> triples, List<Entity> entities) {
+		for (ClausieTriple triple : triples) {
+//			System.out.println("Look entities for: " + triple.toString());
+			logger.info("Look entities for: " + triple.toString());
+
+			for (Entity entity : entities) {
+				if (triple.getSubject().getText().contains(entity.getText().replace(" ", ""))) {
+					triple.getSubject().getEntity().add(entity);
+				}
+				if (triple.getArgument().getText().contains(entity.getText().replace(" ", ""))) {
+					triple.getArgument().getEntity().add(entity);
 				}
 			}
 		}
@@ -556,40 +526,70 @@ public class Main {
 	 * (i) create triple (ii) delete duplicated uris
 	 */
 
+//	public static void createTriple(List<ClausieTriple> clTriple) {
+//		for (ClausieTriple trip : clTriple) {
+//			Triple triple = new Triple();
+//
+//			if (!trip.getSubject().getAlchemy().isEmpty()) {
+//				for (AlchemyEntities alchemy : trip.getSubject().getAlchemy()) {
+//					trip.getSubject().setTextNE(alchemy.getText());
+//					if (!alchemy.getDbpediaURL().isEmpty()) {
+//						triple.getSubjectUris().add(alchemy.getDbpediaURL());
+//					}
+//				}
+//			}
+//			if (!trip.getArgument().getAlchemy().isEmpty()) {
+//				for (AlchemyEntities alchemy : trip.getArgument().getAlchemy()) {
+//					trip.getArgument().setTextNE(alchemy.getText());
+//					if (!alchemy.getDbpediaURL().isEmpty()) {
+//						triple.getArgumentUris().add(alchemy.getDbpediaURL());
+//					}
+//				}
+//			}
+//
+//			if (!trip.getSubject().getBabelfy().isEmpty()) {
+//				for (BabelfyEntities babelfy : trip.getSubject().getBabelfy()) {
+//					trip.getSubject().setTextNE(babelfy.getText());
+//					if (babelfy.getDbpediaURL() != null && !babelfy.getDbpediaURL().isEmpty()) {
+//						triple.getSubjectUris().add(babelfy.getDbpediaURL());
+//					}
+//				}
+//			}
+//			if (!trip.getArgument().getBabelfy().isEmpty()) {
+//				for (BabelfyEntities babelfy : trip.getArgument().getBabelfy()) {
+//					trip.getArgument().setTextNE(babelfy.getText());
+//					if (babelfy.getDbpediaURL() != null && !babelfy.getDbpediaURL().isEmpty()) {
+//						triple.getArgumentUris().add(babelfy.getDbpediaURL());
+//					}
+//				}
+//			}
+//
+//			triple.setRelation(trip.getRelation().getText());
+//			if (!triple.getArgumentUris().isEmpty() && !triple.getSubjectUris().isEmpty()) {
+//				logger.info("Triple: " + triple);
+//				trip.setTriple(triple);
+//			}
+//
+//		}
+//	}
+	
 	public static void createTriple(List<ClausieTriple> clTriple) {
 		for (ClausieTriple trip : clTriple) {
 			Triple triple = new Triple();
 
-			if (!trip.getSubject().getAlchemy().isEmpty()) {
-				for (AlchemyEntities alchemy : trip.getSubject().getAlchemy()) {
-					trip.getSubject().setTextNE(alchemy.getText());
-					if (!alchemy.getDbpediaURL().isEmpty()) {
-						triple.getSubjectUris().add(alchemy.getDbpediaURL());
+			if (!trip.getSubject().getEntity().isEmpty()) {
+				for (Entity entity : trip.getSubject().getEntity()) {
+					trip.getSubject().setTextNE(entity.getText());
+					if (!entity.getUris().isEmpty()) {
+						triple.getSubjectUris().addAll(entity.getUris());
 					}
 				}
 			}
-			if (!trip.getArgument().getAlchemy().isEmpty()) {
-				for (AlchemyEntities alchemy : trip.getArgument().getAlchemy()) {
-					trip.getArgument().setTextNE(alchemy.getText());
-					if (!alchemy.getDbpediaURL().isEmpty()) {
-						triple.getArgumentUris().add(alchemy.getDbpediaURL());
-					}
-				}
-			}
-
-			if (!trip.getSubject().getBabelfy().isEmpty()) {
-				for (BabelfyEntities babelfy : trip.getSubject().getBabelfy()) {
-					trip.getSubject().setTextNE(babelfy.getText());
-					if (babelfy.getDbpediaURL() != null && !babelfy.getDbpediaURL().isEmpty()) {
-						triple.getSubjectUris().add(babelfy.getDbpediaURL());
-					}
-				}
-			}
-			if (!trip.getArgument().getBabelfy().isEmpty()) {
-				for (BabelfyEntities babelfy : trip.getArgument().getBabelfy()) {
-					trip.getArgument().setTextNE(babelfy.getText());
-					if (babelfy.getDbpediaURL() != null && !babelfy.getDbpediaURL().isEmpty()) {
-						triple.getArgumentUris().add(babelfy.getDbpediaURL());
+			if (!trip.getArgument().getEntity().isEmpty()) {
+				for (Entity entity : trip.getArgument().getEntity()) {
+					trip.getArgument().setTextNE(entity.getText());
+					if (!entity.getUris().isEmpty()) {
+						triple.getArgumentUris().addAll(entity.getUris());
 					}
 				}
 			}

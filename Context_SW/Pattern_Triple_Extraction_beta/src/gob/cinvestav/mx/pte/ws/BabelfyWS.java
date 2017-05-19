@@ -3,13 +3,17 @@ package gob.cinvestav.mx.pte.ws;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import it.uniroma1.lcl.babelfy.commons.annotation.SemanticAnnotation;
 import it.uniroma1.lcl.babelfy.core.Babelfy;
 import it.uniroma1.lcl.jlt.util.Language;
 
 public class BabelfyWS {
+	final static Logger logger = Logger.getLogger(BabelfyWS.class);
 	
 	public List<BabelfyEntities> extractEntities(String texto) throws Exception {
+		
 
         List<BabelfyEntities> bEntities = new ArrayList<BabelfyEntities>();
 
@@ -28,18 +32,29 @@ public class BabelfyWS {
             	bEntity.setCoherenceScore(annotation.getCoherenceScore());
             	bEntity.setGlobalScore(annotation.getGlobalScore());
             	bEntity.setSource(annotation.getSource().name());
-            	bEntities.add(bEntity);
+            	if(!(bEntity.getDbpediaURL() == null) && !bEntity.getDbpediaURL().isEmpty())
+            		if(namedEntityContainText(bEntity.getDbpediaURL(),bEntity.getText()))
+            			bEntities.add(bEntity);
         	//}
         	
         }
-        return bEntities;
+        return reduceList(bEntities);
     }
 	
-	public static void main(String args[]) throws Exception{
-		BabelfyWS ws = new BabelfyWS();
+	public static boolean namedEntityContainText(String uri, String text){
+		boolean containText = false;
 		
-		String texto = "a computer programmer is a person who makes computer programs using a programming language.";
-		List<BabelfyEntities> entities = ws.extractEntities(texto);
+		String splitUri[] = uri.split("/");
+		String lastUriElement = splitUri[splitUri.length - 1].toLowerCase();
+		lastUriElement = lastUriElement.replace("_", " ");
+		logger.info("++++This text \"" + text + "\" is contained in this segment of URI \"" + lastUriElement+"\"? = " + lastUriElement.equals(text));
+		
+		if(lastUriElement.equals(text))
+			containText = true;
+		return containText;
+	}
+	
+	public static List<BabelfyEntities> reduceList(List<BabelfyEntities> entities){
 		List<BabelfyEntities> endResult = new ArrayList<BabelfyEntities>();
 		
 		boolean isContained = false;
@@ -55,8 +70,17 @@ public class BabelfyWS {
 			isContained=false;
 		}
 		
-		for(BabelfyEntities entity : endResult){
-				texto = texto.replace(entity.text, " < "+ entity.getDbpediaURL() + "> ");
+		return endResult;
+	}
+	
+	public static void main(String args[]) throws Exception{
+		BabelfyWS ws = new BabelfyWS();
+		
+		String texto = "a computer programmer is a person who makes computer programs using a programming language.";
+		List<BabelfyEntities> entities = ws.extractEntities(texto);
+		
+		for(BabelfyEntities entity : entities){
+				texto = texto.replaceAll("\\b"+entity.text.toLowerCase()+"\\b", "<"+entity.dbpediaURL+">");
 		}
 		
 		System.out.println(texto);

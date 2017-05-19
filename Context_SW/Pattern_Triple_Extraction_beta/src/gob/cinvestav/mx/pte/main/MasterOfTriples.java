@@ -11,6 +11,7 @@ import gob.cinvestav.mx.pte.ws.Entity;
 
 public class MasterOfTriples {
 
+	String sentence;
 	List<Word> sntsWrds;
 	List<AlchemyEntities> alchemyEntities;
 	List<BabelfyEntities> babelfyEntities;
@@ -124,6 +125,14 @@ public class MasterOfTriples {
 
 	public void setEntities(List<Entity> entities) {
 		this.entities.addAll(entities);
+	}
+
+	public String getSentence() {
+		return sentence;
+	}
+
+	public void setSentence(String sentence) {
+		this.sentence = sentence;
 	}
 	
 	

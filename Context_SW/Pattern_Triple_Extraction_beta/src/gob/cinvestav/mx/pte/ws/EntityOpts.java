@@ -1,7 +1,9 @@
 package gob.cinvestav.mx.pte.ws;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
@@ -39,8 +41,8 @@ public class EntityOpts {
 		if(!entities.isEmpty()){
 			for(AlchemyEntities alchemyEntity : alchemy){
 				Entity entity = new Entity();
-				List<String> uris = new ArrayList<String>();
-				entity.setText(alchemyEntity.getText());
+				Set<String> uris = new HashSet<String>();
+				entity.setText(alchemyEntity.getText().toLowerCase());
 				if(alchemyEntity.getDbpediaURL().length() > 0)
 					uris.add(alchemyEntity.getDbpediaURL());
 //				if(alchemyEntity.getFreebaseURL().length() > 0)
@@ -52,8 +54,8 @@ public class EntityOpts {
 			for(AlchemyEntities alchemyEntity : alchemy){
 				if(!entities.contains(alchemyEntity.getText())){
 					Entity entity = new Entity();
-					List<String> uris = new ArrayList<String>();
-					entity.setText(alchemyEntity.getText());
+					Set<String> uris = new HashSet<String>();
+					entity.setText(alchemyEntity.getText().toLowerCase());
 					if(alchemyEntity.getDbpediaURL().length() > 0)
 						uris.add(alchemyEntity.getDbpediaURL());
 //					if(alchemyEntity.getFreebaseURL().length() > 0)
@@ -69,7 +71,7 @@ public class EntityOpts {
 		if(!entities.isEmpty()){
 			for(BabelfyEntities babelfyEntity : babelfy){
 				Entity entity = new Entity();
-				List<String> uris = new ArrayList<String>();
+				Set<String> uris = new HashSet<String>();
 				entity.setText(babelfyEntity.getText());
 //				if(babelfyEntity.getDbpediaURL().length() > 0)
 				if(babelfyEntity.getDbpediaURL() != null)
@@ -83,7 +85,7 @@ public class EntityOpts {
 			for(BabelfyEntities babelfyEntity : babelfy){
 				if(!entities.contains(babelfyEntity.getText())){
 					Entity entity = new Entity();
-					List<String> uris = new ArrayList<String>();
+					Set<String> uris = new HashSet<String>();
 					entity.setText(babelfyEntity.getText());
 //					if(babelfyEntity.getDbpediaURL().length() > 0)
 					if(babelfyEntity.getDbpediaURL() != null)

@@ -6,12 +6,14 @@ import java.util.List;
 import gob.cinvestav.mx.pte.type.WiBiTypes;
 import gob.cinvestav.mx.pte.ws.AlchemyEntities;
 import gob.cinvestav.mx.pte.ws.BabelfyEntities;
+import gob.cinvestav.mx.pte.ws.Entity;
 
 public class Subject implements TripleElement{
 	String text = "";
 	String textNE = "";
 	List<AlchemyEntities> alchemy;
 	List<BabelfyEntities> babelfy;
+	List<Entity> entity;
 	WiBiTypes wibi;
 	List<Integer> listPosition;
 	int start;
@@ -22,6 +24,7 @@ public class Subject implements TripleElement{
 		this.alchemy = new ArrayList<AlchemyEntities>();
 		this.babelfy = new ArrayList<BabelfyEntities>();
 		this.wibi = new WiBiTypes();
+		this.entity = new ArrayList<Entity>();
 	}
 	
 	//***********Getter // Setter **************************//
@@ -88,6 +91,14 @@ public class Subject implements TripleElement{
 
 	public void setWibi(WiBiTypes wibi) {
 		this.wibi = wibi;
+	}
+
+	public List<Entity> getEntity() {
+		return entity;
+	}
+
+	public void setEntity(List<Entity> entity) {
+		this.entity.addAll(entity);
 	}
 	
 

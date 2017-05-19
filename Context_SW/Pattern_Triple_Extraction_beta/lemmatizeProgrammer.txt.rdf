@@ -1,0 +1,80 @@
+<rdf:RDF
+    xmlns:cmo="http://purl.org/twc/ontologies/cmo.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://wibitaxonomy.org/"
+    xmlns:j.1="http://wibitaxonomy.org/Program_(computing)"
+    xmlns:ov="http://open.vocab.org/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+    xmlns:j.2="http://wibitaxonomy.org/Instruction_(computer_science)"
+    xmlns:cinves="http://tamps.cinvestav.mx/rdf/#"
+    xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:j.3="http://wibitaxonomy.org/Challenge_(TV_channel)">
+  <j.0:Vocation rdf:about="http://tamps.cinvestav.mx/rdf/resources/profession">
+    <cmo:valuesCanBe>
+      <j.0:Champion rdf:about="http://tamps.cinvestav.mx/rdf/resources/world">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/World"/>
+        <cinves:inSentence>computer programming be a profession that can be do from a computer anywhere in the world </cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+      </j.0:Champion>
+    </cmo:valuesCanBe>
+    <cinves:inSentence>computer programming be a profession that can be do from a computer anywhere in the world </cinves:inSentence>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Profession"/>
+    <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+  </j.0:Vocation>
+  <j.0:Sequence rdf:about="http://tamps.cinvestav.mx/rdf/resources/computer_program">
+    <iso-thes:plusUseTerm>
+      <j.0:Formal_language rdf:about="http://tamps.cinvestav.mx/rdf/resources/programming_language">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Programming_language"/>
+        <cinves:inSentence>a computer programmer be a person who make computer program use a programming language</cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+      </j.0:Formal_language>
+    </iso-thes:plusUseTerm>
+    <cinves:inSentence>a computer programmer be a person who make computer program use a programming language</cinves:inSentence>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Computer_program"/>
+    <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+  </j.0:Sequence>
+  <j.0:Person rdf:about="http://tamps.cinvestav.mx/rdf/resources/programmer">
+    <iso-thes:plusUseTerm>
+      <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/text_editor">
+        <rdf:type rdf:resource="http://wibitaxonomy.org/Program_(computing)"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Text_editor"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Tool"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Software"/>
+        <cinves:inSentence>programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work </cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+      </rdf:Description>
+    </iso-thes:plusUseTerm>
+    <cinves:inSentence>programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work </cinves:inSentence>
+    <cc:license>
+      <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/job">
+        <dbpedia-owl:millsCodeBE>
+          <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/problem">
+            <rdf:type rdf:resource="http://wibitaxonomy.org/Challenge_(TV_channel)"/>
+            <rdf:type rdf:resource="http://wibitaxonomy.org/Obstacle"/>
+            <rdf:type rdf:resource="http://wibitaxonomy.org/Impediment"/>
+            <owl:sameAs rdf:resource="http://dbpedia.org/resource/Problem"/>
+            <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
+            <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+          </rdf:Description>
+        </dbpedia-owl:millsCodeBE>
+        <ov:writeGraph>
+          <rdf:Description rdf:about="http://tamps.cinvestav.mx/rdf/resources/source_code">
+            <rdf:type rdf:resource="http://wibitaxonomy.org/Instruction_(computer_science)"/>
+            <owl:sameAs rdf:resource="http://dbpedia.org/resource/Source_code"/>
+            <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
+            <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+          </rdf:Description>
+        </ov:writeGraph>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Programmer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Job"/>
+        <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
+        <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+      </rdf:Description>
+    </cc:license>
+    <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Programmer"/>
+    <cinves:inDoc rdf:resource="http://tamps.cinvestav.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
+  </j.0:Person>
+</rdf:RDF>

@@ -1,0 +1,10 @@
+a computer programmer be a person who make computer program use a programming language
+programmer be also call software developer , coder , or hacker
+a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .
+programmer often use software tool such as text editor and ides ( Integrated Development environment ) to help they work 
+Computer programming be a profession that can be do from a computer anywhere in the world 
+this be call `` telecommuting '' - do work on the internet instead of in a office .
+some programmer be famous because they software be use by many people . 
+one example be Linus Torvalds , who create a important part of the Linux operating system . 
+programming can be do in many different language and can look very different but do the same thing . 
+a example of this be the hello world program . 

@@ -1,14 +1,15 @@
 package gob.cinvestav.mx.pte.ws;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Entity {
 	String text;
-	List<String> uris;
+	Set<String> uris;
 	
 	public Entity(){
-		this.uris = new ArrayList<String>();
+		this.uris = new HashSet<String>();
 		this.text = "";
 	}
 	
@@ -34,11 +35,11 @@ public class Entity {
 		this.text = text;
 	}
 
-	public List<String> getUris() {
+	public Set<String> getUris() {
 		return uris;
 	}
 
-	public void setUris(List<String> uris) {
+	public void setUris(Set<String> uris) {
 		this.uris = uris;
 	}
 }

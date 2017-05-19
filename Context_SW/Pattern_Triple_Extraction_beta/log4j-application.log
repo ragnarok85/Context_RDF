@@ -1,765 +1,572 @@
-2017-05-18 09:39:06 ERROR Main:32 - Error reading file - java.io.FileNotFoundException: ./test/programer.txt (No such file or directory)
-2017-05-18 09:39:07 INFO  Main:267 - Saving information in: programer.txt.rdf
-2017-05-18 09:39:22 INFO  Main:149 - 	Processing sentence (1-10) : a computer programmer is a person who makes computer programs using a programming language.
-2017-05-18 09:39:23 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:18:50 INFO  Main:146 - 	Processing sentence (1-10) : a computer programmer be a person who make computer program use a programming language
+2017-05-19 18:18:51 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:24 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:24 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:24 INFO  Main:351 - 	(a computer programmer,is,a person)
-2017-05-18 09:39:24 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:24 INFO  Main:351 - 	(a person,makes,computer programs using a programming language)
-2017-05-18 09:39:24 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:24 INFO  Main:351 - 	(computer programs,be using,a programming language)
-2017-05-18 09:39:24 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:24 INFO  Main:675 - 	a computer programmer	is	a person
-2017-05-18 09:39:24 INFO  Main:675 - 	a person	makes	computer programs using a programming language
-2017-05-18 09:39:24 INFO  Main:675 - 	computer programs	be using	a programming language
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = computer programmer
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/computer programmer]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = programming language
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/programming language]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Programming language
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programming_language]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Computer programming
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_programming]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Computer
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Computer program
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_program]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Programmer
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Source code
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Source_code]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Computer software
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_software]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = Algorithm
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Algorithm]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = computer
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = computer programmer
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_engineer]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = programmer
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer_(hardware)]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = person
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Individual]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = computer
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = computer programs
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_program]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = programming language
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programming_language]
-2017-05-18 09:39:27 INFO  EntityOpts:103 - Text = language
-2017-05-18 09:39:27 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Language]
-2017-05-18 09:39:27 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:39:27 INFO  Main:452 - "Computer programming" contains "Computer" (discarted)
-2017-05-18 09:39:27 INFO  Main:452 - "Computer programming" contains "Computer program" (discarted)
-2017-05-18 09:39:27 INFO  Main:452 - "Computer program" contains "Computer" (discarted)
-2017-05-18 09:39:27 INFO  Main:452 - "Computer software" contains "Computer" (discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "computer programmer" contains "computer"--> "computer"(discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "computer programmer" contains "programmer"--> "programmer"(discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "computer programmer" contains "computer"--> "computer"(discarted)
-2017-05-18 09:39:27 INFO  Main:478 - "programmer" have score = 0.0  (discarted)
-2017-05-18 09:39:27 INFO  Main:478 - "person" have score = 0.0  (discarted)
-2017-05-18 09:39:27 INFO  Main:478 - "computer programs" have score = 0.0  (discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "computer programs" contains "computer"--> "computer"(discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "computer programs" contains "computer"--> "computer"(discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "computer programs" contains "programs"--> "programs"(discarted)
-2017-05-18 09:39:27 INFO  Main:478 - "programs" have score = 0.0  (discarted)
-2017-05-18 09:39:27 INFO  Main:478 - "programming" have score = 0.0  (discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "programming language" contains "programming"--> "programming"(discarted)
-2017-05-18 09:39:27 INFO  Main:487 - "programming language" contains "language"--> "language"(discarted)
-2017-05-18 09:39:27 INFO  Main:478 - "language" have score = 0.0  (discarted)
-2017-05-18 09:39:27 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:39:27 INFO  Main:506 - "Source code" -  didn't match with any element in the list
-2017-05-18 09:39:27 INFO  Main:506 - "Algorithm" -  didn't match with any element in the list
-2017-05-18 09:39:27 INFO  Main:533 - Look entities for: [a computer programmer,is,a person]
-2017-05-18 09:39:27 INFO  Main:533 - Look entities for: [a person,makes,computer programs using a programming language]
-2017-05-18 09:39:27 INFO  Main:533 - Look entities for: [computer programs,be using,a programming language]
-2017-05-18 09:39:27 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:39:27 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:39:27 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:39:27 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:39:27 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Computer_programmer&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:28 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:28 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
-2017-05-18 09:39:28 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programming_language&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:28 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:28 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Formal_language]
-2017-05-18 09:39:28 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programming_language&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:29 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:29 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Formal_language]
-2017-05-18 09:39:29 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:39:29 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:39:29 INFO  Main:649 - no URL triple for: [a computer programmer,is,a person]
-2017-05-18 09:39:29 INFO  Main:649 - no URL triple for: [a person,makes,computer programs using a programming language]
-2017-05-18 09:39:29 INFO  Main:649 - no URL triple for: [computer programs,be using,a programming language]
-2017-05-18 09:39:29 INFO  Main:149 - 	Processing sentence (2-10) : programmers are also called software developers, coders, or hackers.
-2017-05-18 09:39:29 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:18:53 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:18:53 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:18:53 INFO  Main:338 - 	(a person,make,computer program use a programming language)
+2017-05-19 18:18:53 INFO  Main:338 - 	(computer program,use,a programming language)
+2017-05-19 18:18:53 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:18:53 INFO  Main:675 - 	a person	make	computer program use a programming language
+2017-05-19 18:18:53 INFO  Main:675 - 	computer program	use	a programming language
+2017-05-19 18:18:53 INFO  Main:123 - Original subject: a person
+2017-05-19 18:18:53 INFO  Main:125 - New subject: person
+2017-05-19 18:18:53 INFO  Main:132 - Original argument: computer program use a programming language
+2017-05-19 18:18:53 INFO  Main:134 - New Argument: computerprogramprogramminglanguage
+2017-05-19 18:18:53 INFO  Main:123 - Original subject: computer program
+2017-05-19 18:18:53 INFO  Main:125 - New subject: computerprogram
+2017-05-19 18:18:53 INFO  Main:132 - Original argument: a programming language
+2017-05-19 18:18:53 INFO  Main:134 - New Argument: programminglanguage
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "computer" is contained in this segment of URI "computer"? = true
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "computer programmer" is contained in this segment of URI "software engineer"? = false
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "programmer" is contained in this segment of URI "programmer (hardware)"? = false
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "person" is contained in this segment of URI "individual"? = false
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "computer" is contained in this segment of URI "computer"? = true
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "computer program" is contained in this segment of URI "computer program"? = true
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "programming language" is contained in this segment of URI "programming language"? = true
+2017-05-19 18:18:57 INFO  BabelfyWS:50 - ++++This text "language" is contained in this segment of URI "language"? = true
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = programming language
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programming_language]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = computer programming
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_programming]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = computer program
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_program]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = programmer
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programmer]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = algorithm
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Algorithm]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = source code
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Source_code]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = computer software
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_software]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = computer program
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_program]
+2017-05-19 18:18:57 INFO  EntityOpts:105 - Text = programming language
+2017-05-19 18:18:57 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programming_language]
+2017-05-19 18:18:57 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:18:57 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:18:57 INFO  Main:512 - Look entities for: [person,make,computerprogramprogramminglanguage]
+2017-05-19 18:18:57 INFO  Main:512 - Look entities for: [computerprogram,use,programminglanguage]
+2017-05-19 18:18:57 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:18:57 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Computer_program, http://dbpedia.org/resource/Computer_program] use [http://dbpedia.org/resource/Programming_language, http://dbpedia.org/resource/Programming_language]
+2017-05-19 18:18:57 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:18:58 INFO  Main:727 - LOV result = http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:18:58 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:18:58 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programming_language&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:18:58 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:18:58 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Formal_language]
+2017-05-19 18:18:58 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Computer_program&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:18:59 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:18:59 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Sequence]
+2017-05-19 18:18:59 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programming_language&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:18:59 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:18:59 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Formal_language]
+2017-05-19 18:18:59 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:18:59 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:18:59 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:18:59 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:18:59 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:18:59 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:18:59 INFO  Main:649 - no URL triple for: [person,make,computerprogramprogramminglanguage]
+2017-05-19 18:18:59 INFO  Main:649 - [[http://dbpedia.org/resource/Computer_program, http://dbpedia.org/resource/Computer_program],http://purl.org/iso25964/skos-thes#plusUseTerm,[http://dbpedia.org/resource/Programming_language, http://dbpedia.org/resource/Programming_language]]
+2017-05-19 18:18:59 INFO  Main:146 - 	Processing sentence (2-10) : programmer be also call software developer , coder , or hacker
+2017-05-19 18:18:59 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:30 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:30 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:30 INFO  Main:351 - 	(programmers,are called,software developers coders or hackers also)
-2017-05-18 09:39:30 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:30 INFO  Main:351 - 	(programmers,are called,software developers coders or hackers)
-2017-05-18 09:39:30 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:30 INFO  Main:675 - 	programmers	are called	software developers coders or hackers also
-2017-05-18 09:39:30 INFO  Main:675 - 	programmers	are called	software developers coders or hackers
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = software developers
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/software developers]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Software developer
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_developer]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Programmer
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Computer software
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_software]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Computer
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Software project management
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_project_management]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Computer programmers
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_programmers]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Software engineering
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_engineering]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = Computer occupations
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_occupations]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = programmers
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer_(hardware)]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = software
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = software developers
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_developer]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = developers
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Real_estate_development]
-2017-05-18 09:39:31 INFO  EntityOpts:103 - Text = coders
-2017-05-18 09:39:31 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_engineer]
-2017-05-18 09:39:31 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:39:31 INFO  Main:452 - "Computer software" contains "Computer" (discarted)
-2017-05-18 09:39:31 INFO  Main:452 - "Computer programmers" contains "Computer" (discarted)
-2017-05-18 09:39:31 INFO  Main:452 - "Computer occupations" contains "Computer" (discarted)
-2017-05-18 09:39:31 INFO  Main:478 - "programmers" have score = 0.0  (discarted)
-2017-05-18 09:39:31 INFO  Main:472 - "called" is not a noun  (discarted)
-2017-05-18 09:39:31 INFO  Main:478 - "called" have score = 0.0  (discarted)
-2017-05-18 09:39:31 INFO  Main:478 - "software developers" have score = 0.0  (discarted)
-2017-05-18 09:39:31 INFO  Main:487 - "software developers" contains "software"--> "software"(discarted)
-2017-05-18 09:39:31 INFO  Main:487 - "software developers" contains "developers"--> "developers"(discarted)
-2017-05-18 09:39:31 INFO  Main:478 - "developers" have score = 0.0  (discarted)
-2017-05-18 09:39:31 INFO  Main:478 - "hackers" have score = 0.0  (discarted)
-2017-05-18 09:39:31 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:39:31 INFO  Main:506 - "Programmer" -  didn't match with any element in the list
-2017-05-18 09:39:31 INFO  Main:506 - "Computer occupations" -  didn't match with any element in the list
-2017-05-18 09:39:31 INFO  Main:533 - Look entities for: [programmers,are called,software developers coders or hackers also]
-2017-05-18 09:39:31 INFO  Main:533 - Look entities for: [programmers,are called,software developers coders or hackers]
-2017-05-18 09:39:31 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:39:31 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:39:31 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:39:31 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:39:31 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Coders&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:31 INFO  Main:790 - WiBi does not return something for: coders
-2017-05-18 09:39:31 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Coders&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:32 INFO  Main:790 - WiBi does not return something for: coders
-2017-05-18 09:39:32 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:39:32 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:39:32 INFO  Main:649 - no URL triple for: [programmers,are called,software developers coders or hackers also]
-2017-05-18 09:39:32 INFO  Main:649 - no URL triple for: [programmers,are called,software developers coders or hackers]
-2017-05-18 09:39:32 INFO  Main:149 - 	Processing sentence (3-10) : a programmer's main jobs are writing program source code, testing if it works, and debugging (fixing) the program if there are problems.
-2017-05-18 09:39:32 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:00 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:00 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:00 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:01 INFO  BabelfyWS:50 - ++++This text "programmer" is contained in this segment of URI "programmer (hardware)"? = false
+2017-05-19 18:19:01 INFO  BabelfyWS:50 - ++++This text "software" is contained in this segment of URI "software"? = true
+2017-05-19 18:19:01 INFO  BabelfyWS:50 - ++++This text "software developer" is contained in this segment of URI "software developer"? = true
+2017-05-19 18:19:01 INFO  BabelfyWS:50 - ++++This text "developer" is contained in this segment of URI "real estate development"? = false
+2017-05-19 18:19:01 INFO  BabelfyWS:50 - ++++This text "coder" is contained in this segment of URI "software engineer"? = false
+2017-05-19 18:19:01 INFO  EntityOpts:105 - Text = programmer
+2017-05-19 18:19:01 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programmer]
+2017-05-19 18:19:01 INFO  EntityOpts:105 - Text = software developer
+2017-05-19 18:19:01 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Software_developer]
+2017-05-19 18:19:01 INFO  EntityOpts:105 - Text = computer software
+2017-05-19 18:19:01 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_software]
+2017-05-19 18:19:01 INFO  EntityOpts:105 - Text = software engineering
+2017-05-19 18:19:01 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Software_engineering]
+2017-05-19 18:19:01 INFO  EntityOpts:105 - Text = computer programmers
+2017-05-19 18:19:01 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_programmers]
+2017-05-19 18:19:01 INFO  EntityOpts:105 - Text = software developer
+2017-05-19 18:19:01 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Software_developer]
+2017-05-19 18:19:01 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:01 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:01 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:01 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:01 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:01 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:01 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:01 INFO  Main:146 - 	Processing sentence (3-10) : a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .
+2017-05-19 18:19:01 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:33 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:33 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:33 INFO  Main:351 - 	(a programmer,has,main jobs)
-2017-05-18 09:39:33 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:33 INFO  Main:351 - 	(a programmer 's main jobs,are writing,program source code)
-2017-05-18 09:39:33 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:33 INFO  Main:351 - 	(a programmer 's main jobs,are debugging,the program if there are problems)
-2017-05-18 09:39:33 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:33 INFO  Main:351 - 	(a programmer 's main jobs,are testing,if it works)
-2017-05-18 09:39:33 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:33 INFO  Main:675 - 	a programmer	has	main jobs
-2017-05-18 09:39:33 INFO  Main:675 - 	a programmer 's main jobs	are writing	program source code
-2017-05-18 09:39:33 INFO  Main:675 - 	a programmer 's main jobs	are debugging	the program if there are problems
-2017-05-18 09:39:33 INFO  Main:675 - 	a programmer 's main jobs	are testing	if it works
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = programmer
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/programmer]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = source code
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/source code]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Source code
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Source_code]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Programming language
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programming_language]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Programmer
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Computer program
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_program]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Compiler
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Compiler]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Interpreter
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Interpreter_(computing)]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Free software
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Free_software]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = Assembly language
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Assembly_language]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = programmer
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_engineer]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = jobs
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Job]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = writing program
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Text_editor]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = program
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Program_management]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = source code
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Source_code]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = code
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Code]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = program
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Program_management]
-2017-05-18 09:39:34 INFO  EntityOpts:103 - Text = problems
-2017-05-18 09:39:34 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Problem]
-2017-05-18 09:39:34 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:39:34 INFO  Main:478 - "programmer" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:487 - "programmer" contains "program"--> "program"(discarted)
-2017-05-18 09:39:34 INFO  Main:487 - "programmer" contains "program"--> "program"(discarted)
-2017-05-18 09:39:34 INFO  Main:472 - "main" is not a noun  (discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "main" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "jobs" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:472 - "writing" is not a noun  (discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "writing" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:487 - "writing program" contains "writing"--> "writing"(discarted)
-2017-05-18 09:39:34 INFO  Main:487 - "writing program" contains "program"--> "program"(discarted)
-2017-05-18 09:39:34 INFO  Main:487 - "writing program" contains "program"--> "program"(discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "program" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "source" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:487 - "source code" contains "source"--> "source"(discarted)
-2017-05-18 09:39:34 INFO  Main:487 - "source code" contains "code"--> "code"(discarted)
-2017-05-18 09:39:34 INFO  Main:472 - "testing" is not a noun  (discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "testing" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:472 - "works" is not a noun  (discarted)
-2017-05-18 09:39:34 INFO  Main:472 - "debugging" is not a noun  (discarted)
-2017-05-18 09:39:34 INFO  Main:472 - "fixing" is not a noun  (discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "program" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:478 - "problems" have score = 0.0  (discarted)
-2017-05-18 09:39:34 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:39:34 INFO  Main:506 - "Programming language" -  didn't match with any element in the list
-2017-05-18 09:39:34 INFO  Main:506 - "Compiler" -  didn't match with any element in the list
-2017-05-18 09:39:34 INFO  Main:506 - "Interpreter" -  didn't match with any element in the list
-2017-05-18 09:39:34 INFO  Main:506 - "Free software" -  didn't match with any element in the list
-2017-05-18 09:39:34 INFO  Main:506 - "Assembly language" -  didn't match with any element in the list
-2017-05-18 09:39:34 INFO  Main:533 - Look entities for: [a programmer,has,main jobs]
-2017-05-18 09:39:34 INFO  Main:533 - Look entities for: [a programmer 's main jobs,are writing,program source code]
-2017-05-18 09:39:34 INFO  Main:533 - Look entities for: [a programmer 's main jobs,are debugging,the program if there are problems]
-2017-05-18 09:39:34 INFO  Main:533 - Look entities for: [a programmer 's main jobs,are testing,if it works]
-2017-05-18 09:39:34 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:39:34 INFO  Main:599 - Triple: [http://dbpedia.org/resource/programmer] are writing [http://dbpedia.org/resource/source code, http://dbpedia.org/resource/Source_code]
-2017-05-18 09:39:34 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:39:34 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:39:37 INFO  Main:727 - LOV result = http://www.lingvoj.org/ontology#expertWriting
-2017-05-18 09:39:37 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:39:37 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmer&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:38 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:38 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
-2017-05-18 09:39:38 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmer&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:38 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:38 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
-2017-05-18 09:39:38 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Source_code&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:39 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:39 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Instruction_(computer_science)]
-2017-05-18 09:39:39 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmer&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:39 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:39 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
-2017-05-18 09:39:39 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmer&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:40 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:40 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
-2017-05-18 09:39:40 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:39:40 INFO  Utility:97 - Property: http://www.lingvoj.org/ontology#expertWriting
-2017-05-18 09:39:40 INFO  Utility:97 - Property: http://www.lingvoj.org/ontology#expertWriting
-2017-05-18 09:39:40 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:39:40 INFO  Main:649 - no URL triple for: [a programmer,has,main jobs]
-2017-05-18 09:39:40 INFO  Main:649 - [[http://dbpedia.org/resource/programmer],http://www.lingvoj.org/ontology#expertWriting,[http://dbpedia.org/resource/Source_code, http://dbpedia.org/resource/source code]]
-2017-05-18 09:39:40 INFO  Main:649 - no URL triple for: [a programmer 's main jobs,are debugging,the program if there are problems]
-2017-05-18 09:39:40 INFO  Main:649 - no URL triple for: [a programmer 's main jobs,are testing,if it works]
-2017-05-18 09:39:40 INFO  Main:149 - 	Processing sentence (4-10) : programmers often use software tools such as text editors and ides (integrated development environments) to help them work.
-2017-05-18 09:39:40 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:03 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:03 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:03 INFO  Main:338 - 	(a programmer,has,main job)
+2017-05-19 18:19:03 INFO  Main:338 - 	(a programmer 's main job,be write,program source code)
+2017-05-19 18:19:03 INFO  Main:338 - 	(a programmer 's main job,be debugging,the program if there be problem)
+2017-05-19 18:19:03 INFO  Main:338 - 	(a programmer 's main job,be testing,if it work)
+2017-05-19 18:19:03 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:03 INFO  Main:675 - 	a programmer	has	main job
+2017-05-19 18:19:03 INFO  Main:675 - 	a programmer 's main job	be write	program source code
+2017-05-19 18:19:03 INFO  Main:675 - 	a programmer 's main job	be debugging	the program if there be problem
+2017-05-19 18:19:03 INFO  Main:675 - 	a programmer 's main job	be testing	if it work
+2017-05-19 18:19:03 INFO  Main:123 - Original subject: a programmer
+2017-05-19 18:19:03 INFO  Main:125 - New subject: programmer
+2017-05-19 18:19:03 INFO  Main:132 - Original argument: main job
+2017-05-19 18:19:03 INFO  Main:134 - New Argument: job
+2017-05-19 18:19:03 INFO  Main:123 - Original subject: a programmer 's main job
+2017-05-19 18:19:03 INFO  Main:125 - New subject: programmerjob
+2017-05-19 18:19:03 INFO  Main:132 - Original argument: program source code
+2017-05-19 18:19:03 INFO  Main:134 - New Argument: programsourcecode
+2017-05-19 18:19:03 INFO  Main:123 - Original subject: a programmer 's main job
+2017-05-19 18:19:03 INFO  Main:125 - New subject: programmerjob
+2017-05-19 18:19:03 INFO  Main:132 - Original argument: the program if there be problem
+2017-05-19 18:19:03 INFO  Main:134 - New Argument: programproblem
+2017-05-19 18:19:03 INFO  Main:123 - Original subject: a programmer 's main job
+2017-05-19 18:19:03 INFO  Main:125 - New subject: programmerjob
+2017-05-19 18:19:03 INFO  Main:132 - Original argument: if it work
+2017-05-19 18:19:03 INFO  Main:134 - New Argument: 
+2017-05-19 18:19:03 INFO  Main:141 - ==Deleting triple: programmerjob,be testing,if it work
+2017-05-19 18:19:03 INFO  BabelfyWS:50 - ++++This text "programmer" is contained in this segment of URI "software engineer"? = false
+2017-05-19 18:19:03 INFO  BabelfyWS:50 - ++++This text "job" is contained in this segment of URI "job"? = true
+2017-05-19 18:19:03 INFO  BabelfyWS:50 - ++++This text "program" is contained in this segment of URI "program management"? = false
+2017-05-19 18:19:03 INFO  BabelfyWS:50 - ++++This text "source code" is contained in this segment of URI "source code"? = true
+2017-05-19 18:19:03 INFO  BabelfyWS:50 - ++++This text "code" is contained in this segment of URI "code"? = true
+2017-05-19 18:19:03 INFO  BabelfyWS:50 - ++++This text "program" is contained in this segment of URI "program management"? = false
+2017-05-19 18:19:03 INFO  BabelfyWS:50 - ++++This text "problem" is contained in this segment of URI "problem"? = true
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = source code
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Source_code]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = programming language
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programming_language]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = programmer
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programmer]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = computer program
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_program]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = compiler
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Compiler]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = interpreter
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Interpreter_(computing)]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = free software
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Free_software]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = assembly language
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Assembly_language]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = job
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Job]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = source code
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Source_code]
+2017-05-19 18:19:03 INFO  EntityOpts:105 - Text = problem
+2017-05-19 18:19:03 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Problem]
+2017-05-19 18:19:03 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:03 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:03 INFO  Main:512 - Look entities for: [programmer,has,job]
+2017-05-19 18:19:03 INFO  Main:512 - Look entities for: [programmerjob,be write,programsourcecode]
+2017-05-19 18:19:03 INFO  Main:512 - Look entities for: [programmerjob,be debugging,programproblem]
+2017-05-19 18:19:03 INFO  Main:512 - Look entities for: [programmerjob,be testing,if it work]
+2017-05-19 18:19:03 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:03 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Programmer] has [http://dbpedia.org/resource/Job]
+2017-05-19 18:19:03 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Programmer, http://dbpedia.org/resource/Job] be write [http://dbpedia.org/resource/Source_code, http://dbpedia.org/resource/Source_code]
+2017-05-19 18:19:03 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Programmer, http://dbpedia.org/resource/Job] be debugging [http://dbpedia.org/resource/Problem]
+2017-05-19 18:19:03 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:04 INFO  Main:727 - LOV result = http://creativecommons.org/ns#license
+2017-05-19 18:19:04 INFO  Main:727 - LOV result = http://open.vocab.org/terms/writeGraph
+2017-05-19 18:19:05 INFO  Main:727 - LOV result = http://dbpedia.org/ontology/millsCodeBE
+2017-05-19 18:19:05 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:05 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmer&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:05 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:05 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
+2017-05-19 18:19:05 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Job&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:05 INFO  Main:790 - WiBi does not return something for: job
+2017-05-19 18:19:05 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Job&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:06 INFO  Main:790 - WiBi does not return something for: job
+2017-05-19 18:19:06 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Source_code&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:06 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:06 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Instruction_(computer_science)]
+2017-05-19 18:19:06 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Job&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:06 INFO  Main:790 - WiBi does not return something for: job
+2017-05-19 18:19:06 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Problem&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:07 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:07 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Impediment, http://wibitaxonomy.org/Obstacle, http://wibitaxonomy.org/Challenge_(TV_channel)]
+2017-05-19 18:19:07 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Job&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:07 INFO  Main:790 - WiBi does not return something for: job
+2017-05-19 18:19:07 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:07 INFO  Utility:103 - Property: http://creativecommons.org/ns#license
+2017-05-19 18:19:07 INFO  Utility:103 - Property: http://open.vocab.org/terms/writeGraph
+2017-05-19 18:19:07 INFO  Utility:103 - Property: http://open.vocab.org/terms/writeGraph
+2017-05-19 18:19:07 INFO  Utility:103 - Property: http://open.vocab.org/terms/writeGraph
+2017-05-19 18:19:07 INFO  Utility:103 - Property: http://open.vocab.org/terms/writeGraph
+2017-05-19 18:19:07 INFO  Utility:103 - Property: http://dbpedia.org/ontology/millsCodeBE
+2017-05-19 18:19:07 INFO  Utility:103 - Property: http://dbpedia.org/ontology/millsCodeBE
+2017-05-19 18:19:07 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:07 INFO  Main:649 - [[http://dbpedia.org/resource/Programmer],http://creativecommons.org/ns#license,[http://dbpedia.org/resource/Job]]
+2017-05-19 18:19:07 INFO  Main:649 - [[http://dbpedia.org/resource/Programmer, http://dbpedia.org/resource/Job],http://open.vocab.org/terms/writeGraph,[http://dbpedia.org/resource/Source_code, http://dbpedia.org/resource/Source_code]]
+2017-05-19 18:19:07 INFO  Main:649 - [[http://dbpedia.org/resource/Programmer, http://dbpedia.org/resource/Job],http://dbpedia.org/ontology/millsCodeBE,[http://dbpedia.org/resource/Problem]]
+2017-05-19 18:19:07 INFO  Main:649 - no URL triple for: [programmerjob,be testing,if it work]
+2017-05-19 18:19:07 INFO  Main:146 - 	Processing sentence (4-10) : programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work 
+2017-05-19 18:19:07 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:41 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:41 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:41 INFO  Main:351 - 	(programmers,use,software tools such as text editors often)
-2017-05-18 09:39:41 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:41 INFO  Main:351 - 	(programmers,use,software tools such as text editors)
-2017-05-18 09:39:41 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:41 INFO  Main:351 - 	(programmers,ides,integrated development environments to help them work)
-2017-05-18 09:39:41 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:41 INFO  Main:351 - 	(integrated development environments,to help,them work)
-2017-05-18 09:39:41 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:41 INFO  Main:675 - 	programmers	use	software tools such as text editors often
-2017-05-18 09:39:41 INFO  Main:675 - 	programmers	use	software tools such as text editors
-2017-05-18 09:39:41 INFO  Main:675 - 	programmers	ides	integrated development environments to help them work
-2017-05-18 09:39:41 INFO  Main:675 - 	integrated development environments	to help	them work
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = Integrated development environment
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Integrated_development_environment]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = Computer program
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_program]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = Text file
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Text_file]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = Text editor
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Text_editor]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = Memory leak
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Memory_leak]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = programmers
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_engineer]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = software
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = software tools
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programming_tool]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = tools
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Tool]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = text
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Text_(literary_theory)]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = text editors
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Text_editor]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = editors
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Editing]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = integrated development environments
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Integrated_development_environment]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = development
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Exploitation]
-2017-05-18 09:39:43 INFO  EntityOpts:103 - Text = development environments
-2017-05-18 09:39:43 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Development_environment_(software_development_process)]
-2017-05-18 09:39:43 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:39:43 INFO  Main:487 - "software tools" contains "software"--> "software"(discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "software tools" contains "tools"--> "tools"(discarted)
-2017-05-18 09:39:43 INFO  Main:478 - "tools" have score = 0.0  (discarted)
-2017-05-18 09:39:43 INFO  Main:478 - "text" have score = 0.0  (discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "text editors" contains "text"--> "text"(discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "text editors" contains "editors"--> "editors"(discarted)
-2017-05-18 09:39:43 INFO  Main:478 - "editors" have score = 0.0  (discarted)
-2017-05-18 09:39:43 INFO  Main:472 - "ides" is not a noun  (discarted)
-2017-05-18 09:39:43 INFO  Main:478 - "ides" have score = 0.0  (discarted)
-2017-05-18 09:39:43 INFO  Main:472 - "integrated" is not a noun  (discarted)
-2017-05-18 09:39:43 INFO  Main:478 - "integrated" have score = 0.0  (discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "integrated development environments" contains "integrated"--> "integrated"(discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "integrated development environments" contains "development"--> "development"(discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "integrated development environments" contains "development environments"--> "development environments"(discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "integrated development environments" contains "environments"--> "environments"(discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "development environments" contains "development"--> "development"(discarted)
-2017-05-18 09:39:43 INFO  Main:487 - "development environments" contains "environments"--> "environments"(discarted)
-2017-05-18 09:39:43 INFO  Main:478 - "environments" have score = 0.0  (discarted)
-2017-05-18 09:39:43 INFO  Main:472 - "help" is not a noun  (discarted)
-2017-05-18 09:39:43 INFO  Main:472 - "work" is not a noun  (discarted)
-2017-05-18 09:39:43 INFO  Main:478 - "work" have score = 0.0  (discarted)
-2017-05-18 09:39:43 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:39:43 INFO  Main:506 - "Computer program" -  didn't match with any element in the list
-2017-05-18 09:39:43 INFO  Main:506 - "Memory leak" -  didn't match with any element in the list
-2017-05-18 09:39:43 INFO  Main:533 - Look entities for: [programmers,use,software tools such as text editors often]
-2017-05-18 09:39:43 INFO  Main:533 - Look entities for: [programmers,use,software tools such as text editors]
-2017-05-18 09:39:43 INFO  Main:533 - Look entities for: [programmers,ides,integrated development environments to help them work]
-2017-05-18 09:39:43 INFO  Main:533 - Look entities for: [integrated development environments,to help,them work]
-2017-05-18 09:39:43 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:39:43 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Software_engineer] use [http://dbpedia.org/resource/Programming_tool, http://dbpedia.org/resource/Text_editor]
-2017-05-18 09:39:43 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Software_engineer] use [http://dbpedia.org/resource/Programming_tool, http://dbpedia.org/resource/Text_editor]
-2017-05-18 09:39:43 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Software_engineer] ides [http://dbpedia.org/resource/Integrated_development_environment]
-2017-05-18 09:39:43 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:39:43 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:39:44 INFO  Main:727 - LOV result = http://www.w3.org/2004/09/fresnel#use
-2017-05-18 09:39:45 INFO  Main:727 - LOV result = http://www.w3.org/2004/09/fresnel#use
-2017-05-18 09:39:45 INFO  Main:727 - LOV result = http://purl.org/ontology/daia/provides
-2017-05-18 09:39:45 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:39:45 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmers&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:46 INFO  Main:790 - WiBi does not return something for: programmers
-2017-05-18 09:39:46 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Text_editors&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:46 INFO  Main:790 - WiBi does not return something for: text editors
-2017-05-18 09:39:46 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmers&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:46 INFO  Main:790 - WiBi does not return something for: programmers
-2017-05-18 09:39:46 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Text_editors&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:47 INFO  Main:790 - WiBi does not return something for: text editors
-2017-05-18 09:39:47 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmers&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:47 INFO  Main:790 - WiBi does not return something for: programmers
-2017-05-18 09:39:47 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Integrated_development_environments&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:48 INFO  Main:790 - WiBi does not return something for: integrated development environments
-2017-05-18 09:39:48 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Integrated_development_environments&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:48 INFO  Main:790 - WiBi does not return something for: integrated development environments
-2017-05-18 09:39:48 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:39:48 INFO  Utility:97 - Property: http://www.w3.org/2004/09/fresnel#use
-2017-05-18 09:39:48 INFO  Utility:97 - Property: http://www.w3.org/2004/09/fresnel#use
-2017-05-18 09:39:48 INFO  Utility:97 - Property: http://www.w3.org/2004/09/fresnel#use
-2017-05-18 09:39:48 INFO  Utility:97 - Property: http://www.w3.org/2004/09/fresnel#use
-2017-05-18 09:39:48 INFO  Utility:97 - Property: http://purl.org/ontology/daia/provides
-2017-05-18 09:39:48 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:39:48 INFO  Main:649 - [[http://dbpedia.org/resource/Software_engineer],http://www.w3.org/2004/09/fresnel#use,[http://dbpedia.org/resource/Programming_tool, http://dbpedia.org/resource/Text_editor]]
-2017-05-18 09:39:48 INFO  Main:649 - [[http://dbpedia.org/resource/Software_engineer],http://www.w3.org/2004/09/fresnel#use,[http://dbpedia.org/resource/Programming_tool, http://dbpedia.org/resource/Text_editor]]
-2017-05-18 09:39:48 INFO  Main:649 - [[http://dbpedia.org/resource/Software_engineer],http://purl.org/ontology/daia/provides,[http://dbpedia.org/resource/Integrated_development_environment]]
-2017-05-18 09:39:48 INFO  Main:649 - no URL triple for: [integrated development environments,to help,them work]
-2017-05-18 09:39:48 INFO  Main:149 - 	Processing sentence (5-10) : computer programming is a profession that can be done from a computer anywhere in the world.
-2017-05-18 09:39:48 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:08 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:08 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:08 INFO  Main:338 - 	(programmer,use,software tool such as text editor and ides to help they work often)
+2017-05-19 18:19:08 INFO  Main:338 - 	(programmer,use,software tool such as text editor and ides to help they work)
+2017-05-19 18:19:08 INFO  Main:338 - 	(software tool such as text editor and ides,is,integrated development environment)
+2017-05-19 18:19:08 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:08 INFO  Main:675 - 	programmer	use	software tool such as text editor and ides to help they work often
+2017-05-19 18:19:08 INFO  Main:675 - 	programmer	use	software tool such as text editor and ides to help they work
+2017-05-19 18:19:08 INFO  Main:675 - 	software tool such as text editor and ides	is	integrated development environment
+2017-05-19 18:19:08 INFO  Main:123 - Original subject: programmer
+2017-05-19 18:19:08 INFO  Main:125 - New subject: programmer
+2017-05-19 18:19:08 INFO  Main:132 - Original argument: software tool such as text editor and ides to help they work often
+2017-05-19 18:19:08 INFO  Main:134 - New Argument: softwaretooltexteditorides
+2017-05-19 18:19:08 INFO  Main:123 - Original subject: programmer
+2017-05-19 18:19:08 INFO  Main:125 - New subject: programmer
+2017-05-19 18:19:08 INFO  Main:132 - Original argument: software tool such as text editor and ides to help they work
+2017-05-19 18:19:08 INFO  Main:134 - New Argument: softwaretooltexteditorides
+2017-05-19 18:19:08 INFO  Main:123 - Original subject: software tool such as text editor and ides
+2017-05-19 18:19:08 INFO  Main:125 - New subject: softwaretooltexteditorides
+2017-05-19 18:19:08 INFO  Main:132 - Original argument: integrated development environment
+2017-05-19 18:19:08 INFO  Main:134 - New Argument: developmentenvironment
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "programmer" is contained in this segment of URI "software engineer"? = false
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "software" is contained in this segment of URI "software"? = true
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "software tool" is contained in this segment of URI "programming tool"? = false
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "tool" is contained in this segment of URI "tool"? = true
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "text" is contained in this segment of URI "text (literary theory)"? = false
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "text editor" is contained in this segment of URI "text editor"? = true
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "editor" is contained in this segment of URI "editing"? = false
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "integrated development environment" is contained in this segment of URI "integrated development environment"? = true
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "development" is contained in this segment of URI "exploitation"? = false
+2017-05-19 18:19:09 INFO  BabelfyWS:50 - ++++This text "development environment" is contained in this segment of URI "development environment (software development process)"? = false
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = computer software
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_software]
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = programmer
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programmer]
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = computer program
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_program]
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = integrated development environment
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Integrated_development_environment]
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = software
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Software]
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = tool
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Tool]
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = text editor
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Text_editor]
+2017-05-19 18:19:09 INFO  EntityOpts:105 - Text = integrated development environment
+2017-05-19 18:19:09 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Integrated_development_environment]
+2017-05-19 18:19:09 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:09 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:09 INFO  Main:512 - Look entities for: [programmer,use,softwaretooltexteditorides]
+2017-05-19 18:19:09 INFO  Main:512 - Look entities for: [programmer,use,softwaretooltexteditorides]
+2017-05-19 18:19:09 INFO  Main:512 - Look entities for: [softwaretooltexteditorides,is,developmentenvironment]
+2017-05-19 18:19:09 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:09 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Programmer] use [http://dbpedia.org/resource/Software, http://dbpedia.org/resource/Tool, http://dbpedia.org/resource/Text_editor]
+2017-05-19 18:19:09 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Programmer] use [http://dbpedia.org/resource/Software, http://dbpedia.org/resource/Tool, http://dbpedia.org/resource/Text_editor]
+2017-05-19 18:19:09 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:09 INFO  Main:727 - LOV result = http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:10 INFO  Main:727 - LOV result = http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:10 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:10 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmer&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:10 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:10 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
+2017-05-19 18:19:10 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Text_editor&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:11 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:11 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Program_(computing)]
+2017-05-19 18:19:11 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Programmer&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:11 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:11 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Person]
+2017-05-19 18:19:11 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Text_editor&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:11 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:11 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Program_(computing)]
+2017-05-19 18:19:11 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Text_editor&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:12 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:12 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Program_(computing)]
+2017-05-19 18:19:12 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:12 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:12 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:12 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:12 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:12 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:12 INFO  Utility:103 - Property: http://purl.org/iso25964/skos-thes#plusUseTerm
+2017-05-19 18:19:12 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:12 INFO  Main:649 - [[http://dbpedia.org/resource/Programmer],http://purl.org/iso25964/skos-thes#plusUseTerm,[http://dbpedia.org/resource/Software, http://dbpedia.org/resource/Tool, http://dbpedia.org/resource/Text_editor]]
+2017-05-19 18:19:12 INFO  Main:649 - [[http://dbpedia.org/resource/Programmer],http://purl.org/iso25964/skos-thes#plusUseTerm,[http://dbpedia.org/resource/Software, http://dbpedia.org/resource/Tool, http://dbpedia.org/resource/Text_editor]]
+2017-05-19 18:19:12 INFO  Main:649 - no URL triple for: [softwaretooltexteditorides,is,developmentenvironment]
+2017-05-19 18:19:12 INFO  Main:146 - 	Processing sentence (5-10) : computer programming be a profession that can be do from a computer anywhere in the world 
+2017-05-19 18:19:12 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:49 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:49 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:49 INFO  Main:351 - 	(computer programming,is,a profession)
-2017-05-18 09:39:49 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:49 INFO  Main:351 - 	(a profession,can be done,from a computer anywhere in the world)
-2017-05-18 09:39:49 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:49 INFO  Main:675 - 	computer programming	is	a profession
-2017-05-18 09:39:49 INFO  Main:675 - 	a profession	can be done	from a computer anywhere in the world
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = Computer
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = Computer programming
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_programming]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = Software engineering
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software_engineering]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = Computer program
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_program]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = Programmer
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = Algorithm
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Algorithm]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = World
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/World]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = Programming language
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programming_language]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = computer
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = computer programming
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_programming]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = profession
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Profession]
-2017-05-18 09:39:50 INFO  EntityOpts:103 - Text = computer
-2017-05-18 09:39:50 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:50 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:39:50 INFO  Main:452 - "Computer programming" contains "Computer" (discarted)
-2017-05-18 09:39:50 INFO  Main:452 - "Computer programming" contains "Computer program" (discarted)
-2017-05-18 09:39:50 INFO  Main:452 - "Computer program" contains "Computer" (discarted)
-2017-05-18 09:39:50 INFO  Main:478 - "computer programming" have score = 0.0  (discarted)
-2017-05-18 09:39:50 INFO  Main:487 - "computer programming" contains "computer"--> "computer"(discarted)
-2017-05-18 09:39:50 INFO  Main:487 - "computer programming" contains "programming"--> "programming"(discarted)
-2017-05-18 09:39:50 INFO  Main:487 - "computer programming" contains "computer"--> "computer"(discarted)
-2017-05-18 09:39:50 INFO  Main:478 - "programming" have score = 0.0  (discarted)
-2017-05-18 09:39:50 INFO  Main:478 - "profession" have score = 0.0  (discarted)
-2017-05-18 09:39:50 INFO  Main:478 - "world" have score = 0.0  (discarted)
-2017-05-18 09:39:50 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:39:50 INFO  Main:506 - "Software engineering" -  didn't match with any element in the list
-2017-05-18 09:39:50 INFO  Main:506 - "Programmer" -  didn't match with any element in the list
-2017-05-18 09:39:50 INFO  Main:506 - "Algorithm" -  didn't match with any element in the list
-2017-05-18 09:39:50 INFO  Main:533 - Look entities for: [computer programming,is,a profession]
-2017-05-18 09:39:50 INFO  Main:533 - Look entities for: [a profession,can be done,from a computer anywhere in the world]
-2017-05-18 09:39:50 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:39:50 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:39:50 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:39:50 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:39:50 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:39:50 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:39:50 INFO  Main:649 - no URL triple for: [computer programming,is,a profession]
-2017-05-18 09:39:50 INFO  Main:649 - no URL triple for: [a profession,can be done,from a computer anywhere in the world]
-2017-05-18 09:39:50 INFO  Main:149 - 	Processing sentence (6-10) : this is called "telecommuting" - doing work on the internet instead of in an office.
-2017-05-18 09:39:50 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:13 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:13 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:13 INFO  Main:338 - 	(a profession,can be do,from a computer anywhere in the world)
+2017-05-19 18:19:13 INFO  Main:338 - 	(a profession,can be do,from a computer)
+2017-05-19 18:19:13 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:13 INFO  Main:675 - 	a profession	can be do	from a computer anywhere in the world
+2017-05-19 18:19:13 INFO  Main:675 - 	a profession	can be do	from a computer
+2017-05-19 18:19:13 INFO  Main:123 - Original subject: a profession
+2017-05-19 18:19:13 INFO  Main:125 - New subject: profession
+2017-05-19 18:19:13 INFO  Main:132 - Original argument: from a computer anywhere in the world
+2017-05-19 18:19:13 INFO  Main:134 - New Argument: computerworld
+2017-05-19 18:19:13 INFO  Main:123 - Original subject: a profession
+2017-05-19 18:19:13 INFO  Main:125 - New subject: profession
+2017-05-19 18:19:13 INFO  Main:132 - Original argument: from a computer
+2017-05-19 18:19:13 INFO  Main:134 - New Argument: computer
+2017-05-19 18:19:14 INFO  BabelfyWS:50 - ++++This text "computer" is contained in this segment of URI "computer"? = true
+2017-05-19 18:19:14 INFO  BabelfyWS:50 - ++++This text "computer programming" is contained in this segment of URI "computer programming"? = true
+2017-05-19 18:19:14 INFO  BabelfyWS:50 - ++++This text "profession" is contained in this segment of URI "profession"? = true
+2017-05-19 18:19:14 INFO  BabelfyWS:50 - ++++This text "computer" is contained in this segment of URI "computer"? = true
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = computer programming
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_programming]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = software engineering
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Software_engineering]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = computer program
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_program]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = programmer
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programmer]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = algorithm
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Algorithm]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = world
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/World]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = programming language
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programming_language]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = computer programming
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_programming]
+2017-05-19 18:19:14 INFO  EntityOpts:105 - Text = profession
+2017-05-19 18:19:14 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Profession]
+2017-05-19 18:19:14 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:14 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:14 INFO  Main:512 - Look entities for: [profession,can be do,computerworld]
+2017-05-19 18:19:14 INFO  Main:512 - Look entities for: [profession,can be do,computer]
+2017-05-19 18:19:14 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:14 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Profession] can be do [http://dbpedia.org/resource/World]
+2017-05-19 18:19:14 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:14 INFO  Main:727 - LOV result = http://purl.org/twc/ontologies/cmo.owl#valuesCanBe
+2017-05-19 18:19:14 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:14 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Profession&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:15 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:15 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Vocation]
+2017-05-19 18:19:15 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=World&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:15 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:15 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Champion]
+2017-05-19 18:19:15 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Profession&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:15 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:15 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Vocation]
+2017-05-19 18:19:15 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:15 INFO  Utility:103 - Property: http://purl.org/twc/ontologies/cmo.owl#valuesCanBe
+2017-05-19 18:19:15 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:15 INFO  Main:649 - [[http://dbpedia.org/resource/Profession],http://purl.org/twc/ontologies/cmo.owl#valuesCanBe,[http://dbpedia.org/resource/World]]
+2017-05-19 18:19:15 INFO  Main:649 - no URL triple for: [profession,can be do,computer]
+2017-05-19 18:19:15 INFO  Main:146 - 	Processing sentence (6-10) : this be call `` telecommuting '' - do work on the internet instead of in a office .
+2017-05-19 18:19:15 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:51 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:51 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:51 INFO  Main:351 - 	(this,is called,telecommuting)
-2017-05-18 09:39:51 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:51 INFO  Main:675 - 	this	is called	telecommuting
-2017-05-18 09:39:52 INFO  EntityOpts:103 - Text = Internet
-2017-05-18 09:39:52 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Internet]
-2017-05-18 09:39:52 INFO  EntityOpts:103 - Text = Linux
-2017-05-18 09:39:52 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Linux]
-2017-05-18 09:39:52 INFO  EntityOpts:103 - Text = History of the Internet
-2017-05-18 09:39:52 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/History_of_the_Internet]
-2017-05-18 09:39:52 INFO  EntityOpts:103 - Text = World Wide Web
-2017-05-18 09:39:52 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/World_Wide_Web]
-2017-05-18 09:39:52 INFO  EntityOpts:103 - Text = Freedom of information
-2017-05-18 09:39:52 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Freedom_of_information]
-2017-05-18 09:39:52 INFO  EntityOpts:103 - Text = internet
-2017-05-18 09:39:52 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Cyberspace]
-2017-05-18 09:39:52 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:39:52 INFO  Main:452 - "History of the Internet" contains "Internet" (discarted)
-2017-05-18 09:39:52 INFO  Main:472 - "called" is not a noun  (discarted)
-2017-05-18 09:39:52 INFO  Main:478 - "called" have score = 0.0  (discarted)
-2017-05-18 09:39:52 INFO  Main:472 - "telecommuting" is not a noun  (discarted)
-2017-05-18 09:39:52 INFO  Main:478 - "telecommuting" have score = 0.0  (discarted)
-2017-05-18 09:39:52 INFO  Main:478 - "work" have score = 0.0  (discarted)
-2017-05-18 09:39:52 INFO  Main:472 - "instead" is not a noun  (discarted)
-2017-05-18 09:39:52 INFO  Main:478 - "instead" have score = 0.0  (discarted)
-2017-05-18 09:39:52 INFO  Main:478 - "office" have score = 0.0  (discarted)
-2017-05-18 09:39:52 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:39:52 INFO  Main:506 - "Linux" -  didn't match with any element in the list
-2017-05-18 09:39:52 INFO  Main:506 - "World Wide Web" -  didn't match with any element in the list
-2017-05-18 09:39:52 INFO  Main:533 - Look entities for: [this,is called,telecommuting]
-2017-05-18 09:39:52 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:39:52 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:39:52 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:39:52 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:39:52 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:39:52 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:39:52 INFO  Main:649 - no URL triple for: [this,is called,telecommuting]
-2017-05-18 09:39:52 INFO  Main:149 - 	Processing sentence (7-10) : some programmers are famous because their software is used by many people.
-2017-05-18 09:39:52 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:16 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:16 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:16 INFO  Main:338 - 	(this,be,call telecommuting do work on the internet instead of in a office)
+2017-05-19 18:19:16 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:16 INFO  Main:675 - 	this	be	call telecommuting do work on the internet instead of in a office
+2017-05-19 18:19:16 INFO  Main:123 - Original subject: this
+2017-05-19 18:19:16 INFO  Main:125 - New subject: 
+2017-05-19 18:19:16 INFO  Main:141 - ==Deleting triple: this,be,call telecommuting do work on the internet instead of in a office
+2017-05-19 18:19:17 INFO  BabelfyWS:50 - ++++This text "internet" is contained in this segment of URI "cyberspace"? = false
+2017-05-19 18:19:17 INFO  EntityOpts:105 - Text = linux
+2017-05-19 18:19:17 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Linux]
+2017-05-19 18:19:17 INFO  EntityOpts:105 - Text = history of the internet
+2017-05-19 18:19:17 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/History_of_the_Internet]
+2017-05-19 18:19:17 INFO  EntityOpts:105 - Text = world wide web
+2017-05-19 18:19:17 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/World_Wide_Web]
+2017-05-19 18:19:17 INFO  EntityOpts:105 - Text = freedom of information
+2017-05-19 18:19:17 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Freedom_of_information]
+2017-05-19 18:19:17 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:17 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:17 INFO  Main:512 - Look entities for: [this,be,call telecommuting do work on the internet instead of in a office]
+2017-05-19 18:19:17 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:17 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:17 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:17 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:17 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:17 INFO  Main:649 - no URL triple for: [this,be,call telecommuting do work on the internet instead of in a office]
+2017-05-19 18:19:17 INFO  Main:146 - 	Processing sentence (7-10) : some programmer be famous because they software be use by many people . 
+2017-05-19 18:19:17 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:53 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:53 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:53 INFO  Main:351 - 	(some programmers,are,famous because their software is used by many people)
-2017-05-18 09:39:53 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:53 INFO  Main:351 - 	(their,has,software)
-2017-05-18 09:39:53 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:53 INFO  Main:351 - 	(their software,is used,by many people)
-2017-05-18 09:39:53 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:53 INFO  Main:675 - 	some programmers	are	famous because their software is used by many people
-2017-05-18 09:39:53 INFO  Main:675 - 	their	has	software
-2017-05-18 09:39:53 INFO  Main:675 - 	their software	is used	by many people
-2017-05-18 09:39:54 INFO  EntityOpts:103 - Text = Computer software
-2017-05-18 09:39:54 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_software]
-2017-05-18 09:39:54 INFO  EntityOpts:103 - Text = Programmer
-2017-05-18 09:39:54 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer]
-2017-05-18 09:39:54 INFO  EntityOpts:103 - Text = Computer
-2017-05-18 09:39:54 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer]
-2017-05-18 09:39:54 INFO  EntityOpts:103 - Text = programmers
-2017-05-18 09:39:54 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programmer_(hardware)]
-2017-05-18 09:39:54 INFO  EntityOpts:103 - Text = software
-2017-05-18 09:39:54 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Software]
-2017-05-18 09:39:54 INFO  EntityOpts:103 - Text = people
-2017-05-18 09:39:54 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/People_(Microsoft_service)]
-2017-05-18 09:39:54 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:39:54 INFO  Main:452 - "Computer software" contains "Computer" (discarted)
-2017-05-18 09:39:54 INFO  Main:478 - "programmers" have score = 0.0  (discarted)
-2017-05-18 09:39:54 INFO  Main:472 - "famous" is not a noun  (discarted)
-2017-05-18 09:39:54 INFO  Main:478 - "famous" have score = 0.0  (discarted)
-2017-05-18 09:39:54 INFO  Main:472 - "used" is not a noun  (discarted)
-2017-05-18 09:39:54 INFO  Main:478 - "used" have score = 0.0  (discarted)
-2017-05-18 09:39:54 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:39:54 INFO  Main:506 - "Programmer" -  didn't match with any element in the list
-2017-05-18 09:39:54 INFO  Main:533 - Look entities for: [some programmers,are,famous because their software is used by many people]
-2017-05-18 09:39:54 INFO  Main:533 - Look entities for: [their,has,software]
-2017-05-18 09:39:54 INFO  Main:533 - Look entities for: [their software,is used,by many people]
-2017-05-18 09:39:54 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:39:54 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Software] is used [http://dbpedia.org/resource/People_(Microsoft_service)]
-2017-05-18 09:39:54 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:39:54 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:39:55 INFO  Main:727 - LOV result = https://w3id.org/saref#IsUsedFor
-2017-05-18 09:39:55 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:39:55 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=People&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:56 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:56 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Plurality_(voting)]
-2017-05-18 09:39:56 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Software&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:56 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:56 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Program_(computing)]
-2017-05-18 09:39:56 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Software&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:57 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:57 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Program_(computing)]
-2017-05-18 09:39:57 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=People&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:39:57 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:39:57 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Plurality_(voting)]
-2017-05-18 09:39:57 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:39:57 INFO  Utility:97 - Property: https://w3id.org/saref#IsUsedFor
-2017-05-18 09:39:57 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:39:57 INFO  Main:649 - no URL triple for: [some programmers,are,famous because their software is used by many people]
-2017-05-18 09:39:57 INFO  Main:649 - no URL triple for: [their,has,software]
-2017-05-18 09:39:57 INFO  Main:649 - [[http://dbpedia.org/resource/Software],https://w3id.org/saref#IsUsedFor,[http://dbpedia.org/resource/People_(Microsoft_service)]]
-2017-05-18 09:39:57 INFO  Main:149 - 	Processing sentence (8-10) : one example is linus torvalds, who created an important part of the linux operating system.
-2017-05-18 09:39:57 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:18 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:18 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:18 INFO  Main:338 - 	(some programmer,be,famous because they software be use by many people)
+2017-05-19 18:19:18 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:18 INFO  Main:675 - 	some programmer	be	famous because they software be use by many people
+2017-05-19 18:19:18 INFO  Main:123 - Original subject: some programmer
+2017-05-19 18:19:18 INFO  Main:125 - New subject: programmer
+2017-05-19 18:19:18 INFO  Main:132 - Original argument: famous because they software be use by many people
+2017-05-19 18:19:18 INFO  Main:134 - New Argument: usepeople
+2017-05-19 18:19:19 INFO  BabelfyWS:50 - ++++This text "programmer" is contained in this segment of URI "programmer (hardware)"? = false
+2017-05-19 18:19:19 INFO  BabelfyWS:50 - ++++This text "software" is contained in this segment of URI "software"? = true
+2017-05-19 18:19:19 INFO  BabelfyWS:50 - ++++This text "use by" is contained in this segment of URI "shelf life"? = false
+2017-05-19 18:19:19 INFO  BabelfyWS:50 - ++++This text "people" is contained in this segment of URI "people (microsoft service)"? = false
+2017-05-19 18:19:19 INFO  EntityOpts:105 - Text = computer software
+2017-05-19 18:19:19 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_software]
+2017-05-19 18:19:19 INFO  EntityOpts:105 - Text = software
+2017-05-19 18:19:19 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Software]
+2017-05-19 18:19:19 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:19 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:19 INFO  Main:512 - Look entities for: [programmer,be,usepeople]
+2017-05-19 18:19:19 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:19 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:19 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:19 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:19 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:19 INFO  Main:649 - no URL triple for: [programmer,be,usepeople]
+2017-05-19 18:19:19 INFO  Main:146 - 	Processing sentence (8-10) : one example be linus torvalds , who create a important part of the linux operating system . 
+2017-05-19 18:19:19 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:39:58 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:39:58 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:58 INFO  Main:351 - 	(one example,is,linus torvalds)
-2017-05-18 09:39:58 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:39:58 INFO  Main:351 - 	(linus torvalds,created,an important part of the linux operating system)
-2017-05-18 09:39:58 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:39:58 INFO  Main:675 - 	one example	is	linus torvalds
-2017-05-18 09:39:58 INFO  Main:675 - 	linus torvalds	created	an important part of the linux operating system
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = linus torvalds
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/linus torvalds]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = operating system
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/operating system]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = linux
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/linux]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = Linus Torvalds
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Linus_Torvalds]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = Linux kernel
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Linux_kernel]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = Linux
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Linux]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = Tux
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Tux]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = University of Helsinki
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/University_of_Helsinki]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = Richard Stallman
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Richard_Stallman]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = Unix-like
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Unix-like]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = MINIX
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/MINIX]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = example
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Conceptual_model]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = linus torvalds
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Linus_Torvalds]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = torvalds
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Torvalds]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = linux operating system
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Linux]
-2017-05-18 09:40:02 INFO  EntityOpts:103 - Text = operating system
-2017-05-18 09:40:02 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Operating_system]
-2017-05-18 09:40:02 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:40:02 INFO  Main:452 - "Linux kernel" contains "Linux" (discarted)
-2017-05-18 09:40:02 INFO  Main:472 - "one" is not a noun  (discarted)
-2017-05-18 09:40:02 INFO  Main:478 - "one" have score = 0.0  (discarted)
-2017-05-18 09:40:02 INFO  Main:487 - "linus torvalds" contains "torvalds"--> "torvalds"(discarted)
-2017-05-18 09:40:02 INFO  Main:472 - "created" is not a noun  (discarted)
-2017-05-18 09:40:02 INFO  Main:472 - "important" is not a noun  (discarted)
-2017-05-18 09:40:02 INFO  Main:487 - "linux operating system" contains "operating"--> "operating"(discarted)
-2017-05-18 09:40:02 INFO  Main:487 - "linux operating system" contains "operating system"--> "operating system"(discarted)
-2017-05-18 09:40:02 INFO  Main:487 - "linux operating system" contains "system"--> "system"(discarted)
-2017-05-18 09:40:02 INFO  Main:472 - "operating" is not a noun  (discarted)
-2017-05-18 09:40:02 INFO  Main:487 - "operating system" contains "operating"--> "operating"(discarted)
-2017-05-18 09:40:02 INFO  Main:487 - "operating system" contains "system"--> "system"(discarted)
-2017-05-18 09:40:02 INFO  Main:478 - "system" have score = 0.0  (discarted)
-2017-05-18 09:40:02 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:40:02 INFO  Main:506 - "Tux" -  didn't match with any element in the list
-2017-05-18 09:40:02 INFO  Main:506 - "Richard Stallman" -  didn't match with any element in the list
-2017-05-18 09:40:02 INFO  Main:506 - "Unix-like" -  didn't match with any element in the list
-2017-05-18 09:40:02 INFO  Main:506 - "MINIX" -  didn't match with any element in the list
-2017-05-18 09:40:02 INFO  Main:533 - Look entities for: [one example,is,linus torvalds]
-2017-05-18 09:40:02 INFO  Main:533 - Look entities for: [linus torvalds,created,an important part of the linux operating system]
-2017-05-18 09:40:02 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:40:02 INFO  Main:599 - Triple: [http://dbpedia.org/resource/Conceptual_model] is [http://dbpedia.org/resource/linus torvalds, http://dbpedia.org/resource/Linus_Torvalds]
-2017-05-18 09:40:02 INFO  Main:599 - Triple: [http://dbpedia.org/resource/linus torvalds, http://dbpedia.org/resource/Linus_Torvalds] created [http://dbpedia.org/resource/operating system, http://dbpedia.org/resource/linux, http://dbpedia.org/resource/Linux]
-2017-05-18 09:40:02 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:40:02 INFO  Main:640 - http://dbpedia.org/resource/linux --> argument eliminated
-2017-05-18 09:40:02 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:40:05 INFO  Main:727 - LOV result = http://ns.inria.fr/nicetag/2010/09/09/voc#isRelevant
-2017-05-18 09:40:06 INFO  Main:727 - LOV result = http://purl.org/dc/terms/created
-2017-05-18 09:40:06 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:40:06 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Example&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:40:07 INFO  Main:790 - WiBi does not return something for: example
-2017-05-18 09:40:07 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Linus_torvalds&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:40:08 INFO  Main:790 - WiBi does not return something for: linus torvalds
-2017-05-18 09:40:08 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Linus_torvalds&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:40:08 INFO  Main:790 - WiBi does not return something for: linus torvalds
-2017-05-18 09:40:08 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Linux_operating_system&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:40:08 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:40:08 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Warship]
-2017-05-18 09:40:08 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:40:08 INFO  Utility:97 - Property: http://ns.inria.fr/nicetag/2010/09/09/voc#isRelevant
-2017-05-18 09:40:08 INFO  Utility:97 - Property: http://ns.inria.fr/nicetag/2010/09/09/voc#isRelevant
-2017-05-18 09:40:08 INFO  Utility:97 - Property: http://purl.org/dc/terms/created
-2017-05-18 09:40:08 INFO  Utility:97 - Property: http://purl.org/dc/terms/created
-2017-05-18 09:40:08 INFO  Utility:97 - Property: http://purl.org/dc/terms/created
-2017-05-18 09:40:08 INFO  Utility:97 - Property: http://purl.org/dc/terms/created
-2017-05-18 09:40:08 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:40:08 INFO  Main:649 - [[http://dbpedia.org/resource/Conceptual_model],http://ns.inria.fr/nicetag/2010/09/09/voc#isRelevant,[http://dbpedia.org/resource/Linus_Torvalds, http://dbpedia.org/resource/linus torvalds]]
-2017-05-18 09:40:08 INFO  Main:649 - [[http://dbpedia.org/resource/Linus_Torvalds, http://dbpedia.org/resource/linus torvalds],http://purl.org/dc/terms/created,[http://dbpedia.org/resource/Linux, http://dbpedia.org/resource/operating system]]
-2017-05-18 09:40:08 INFO  Main:149 - 	Processing sentence (9-10) : programming can be done in many different languages and can look very different but do the same thing.
-2017-05-18 09:40:08 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:20 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:20 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:20 INFO  Main:338 - 	(one example,be,linus torvalds)
+2017-05-19 18:19:20 INFO  Main:338 - 	(linus torvalds,create,a important part of the linux operating system)
+2017-05-19 18:19:20 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:20 INFO  Main:675 - 	one example	be	linus torvalds
+2017-05-19 18:19:20 INFO  Main:675 - 	linus torvalds	create	a important part of the linux operating system
+2017-05-19 18:19:20 INFO  Main:123 - Original subject: one example
+2017-05-19 18:19:20 INFO  Main:125 - New subject: example
+2017-05-19 18:19:20 INFO  Main:132 - Original argument: linus torvalds
+2017-05-19 18:19:20 INFO  Main:134 - New Argument: torvalds
+2017-05-19 18:19:20 INFO  Main:123 - Original subject: linus torvalds
+2017-05-19 18:19:20 INFO  Main:125 - New subject: torvalds
+2017-05-19 18:19:20 INFO  Main:132 - Original argument: a important part of the linux operating system
+2017-05-19 18:19:20 INFO  Main:134 - New Argument: partlinuxsystem
+2017-05-19 18:19:21 INFO  BabelfyWS:50 - ++++This text "example" is contained in this segment of URI "conceptual model"? = false
+2017-05-19 18:19:21 INFO  BabelfyWS:50 - ++++This text "linus torvalds" is contained in this segment of URI "linus torvalds"? = true
+2017-05-19 18:19:21 INFO  BabelfyWS:50 - ++++This text "torvalds" is contained in this segment of URI "torvalds"? = true
+2017-05-19 18:19:21 INFO  BabelfyWS:50 - ++++This text "linux operating system" is contained in this segment of URI "linux"? = false
+2017-05-19 18:19:21 INFO  BabelfyWS:50 - ++++This text "operating system" is contained in this segment of URI "operating system"? = true
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = linus torvalds
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Linus_Torvalds]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = linux kernel
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Linux_kernel]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = tux
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Tux]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = university of helsinki
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/University_of_Helsinki]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = richard stallman
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Richard_Stallman]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = unix-like
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Unix-like]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = linus' law
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Linus'_Law]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = linus torvalds
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Linus_Torvalds]
+2017-05-19 18:19:21 INFO  EntityOpts:105 - Text = operating system
+2017-05-19 18:19:21 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Operating_system]
+2017-05-19 18:19:21 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:21 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:21 INFO  Main:512 - Look entities for: [example,be,torvalds]
+2017-05-19 18:19:21 INFO  Main:512 - Look entities for: [torvalds,create,partlinuxsystem]
+2017-05-19 18:19:21 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:21 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:21 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:21 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:21 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:21 INFO  Main:649 - no URL triple for: [example,be,torvalds]
+2017-05-19 18:19:21 INFO  Main:649 - no URL triple for: [torvalds,create,partlinuxsystem]
+2017-05-19 18:19:21 INFO  Main:146 - 	Processing sentence (9-10) : programming can be do in many different language and can look very different but do the same thing . 
+2017-05-19 18:19:21 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:40:09 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:40:09 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:40:09 INFO  Main:351 - 	(programming,can be done,in many different languages)
-2017-05-18 09:40:09 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:40:09 INFO  Main:351 - 	(programming,can be can look,very different)
-2017-05-18 09:40:09 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:40:09 INFO  Main:351 - 	(programming,do,the same thing)
-2017-05-18 09:40:09 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:40:09 INFO  Main:675 - 	programming	can be done	in many different languages
-2017-05-18 09:40:09 INFO  Main:675 - 	programming	can be can look	very different
-2017-05-18 09:40:09 INFO  Main:675 - 	programming	do	the same thing
-2017-05-18 09:40:10 INFO  EntityOpts:103 - Text = Programming language
-2017-05-18 09:40:10 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Programming_language]
-2017-05-18 09:40:10 INFO  EntityOpts:103 - Text = languages
-2017-05-18 09:40:10 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Language]
-2017-05-18 09:40:10 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:40:10 INFO  Main:478 - "programming" have score = 0.0  (discarted)
-2017-05-18 09:40:10 INFO  Main:478 - "done in" have score = 0.0  (discarted)
-2017-05-18 09:40:10 INFO  Main:472 - "different" is not a noun  (discarted)
-2017-05-18 09:40:10 INFO  Main:478 - "different" have score = 0.0  (discarted)
-2017-05-18 09:40:10 INFO  Main:472 - "look" is not a noun  (discarted)
-2017-05-18 09:40:10 INFO  Main:478 - "look" have score = 0.0  (discarted)
-2017-05-18 09:40:10 INFO  Main:472 - "different" is not a noun  (discarted)
-2017-05-18 09:40:10 INFO  Main:478 - "different" have score = 0.0  (discarted)
-2017-05-18 09:40:10 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:40:10 INFO  Main:533 - Look entities for: [programming,can be done,in many different languages]
-2017-05-18 09:40:10 INFO  Main:533 - Look entities for: [programming,can be can look,very different]
-2017-05-18 09:40:10 INFO  Main:533 - Look entities for: [programming,do,the same thing]
-2017-05-18 09:40:10 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:40:10 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:40:10 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:40:10 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:40:10 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Languages&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:40:11 INFO  QueryWiBi:78 - content: 
-2017-05-18 09:40:11 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Teacher]
-2017-05-18 09:40:11 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:40:11 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:40:11 INFO  Main:649 - no URL triple for: [programming,can be done,in many different languages]
-2017-05-18 09:40:11 INFO  Main:649 - no URL triple for: [programming,can be can look,very different]
-2017-05-18 09:40:11 INFO  Main:649 - no URL triple for: [programming,do,the same thing]
-2017-05-18 09:40:11 INFO  Main:149 - 	Processing sentence (10-10) : an example of this is the hello world program.
-2017-05-18 09:40:11 INFO  Main:154 - 	Processing sentences with ClausIE
+2017-05-19 18:19:22 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:22 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:22 INFO  Main:338 - 	(programming,can be do,in many different language)
+2017-05-19 18:19:22 INFO  Main:338 - 	(programming,can look,very different)
+2017-05-19 18:19:22 INFO  Main:338 - 	(programming,do,the same thing)
+2017-05-19 18:19:22 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:22 INFO  Main:675 - 	programming	can be do	in many different language
+2017-05-19 18:19:22 INFO  Main:675 - 	programming	can look	very different
+2017-05-19 18:19:22 INFO  Main:675 - 	programming	do	the same thing
+2017-05-19 18:19:22 INFO  Main:123 - Original subject: programming
+2017-05-19 18:19:22 INFO  Main:125 - New subject: programming
+2017-05-19 18:19:22 INFO  Main:132 - Original argument: in many different language
+2017-05-19 18:19:22 INFO  Main:134 - New Argument: language
+2017-05-19 18:19:22 INFO  Main:123 - Original subject: programming
+2017-05-19 18:19:22 INFO  Main:125 - New subject: programming
+2017-05-19 18:19:22 INFO  Main:132 - Original argument: very different
+2017-05-19 18:19:22 INFO  Main:134 - New Argument: 
+2017-05-19 18:19:22 INFO  Main:123 - Original subject: programming
+2017-05-19 18:19:22 INFO  Main:125 - New subject: programming
+2017-05-19 18:19:22 INFO  Main:132 - Original argument: the same thing
+2017-05-19 18:19:22 INFO  Main:134 - New Argument: thing
+2017-05-19 18:19:22 INFO  Main:141 - ==Deleting triple: programming,can look,very different
+2017-05-19 18:19:23 INFO  BabelfyWS:50 - ++++This text "language" is contained in this segment of URI "language"? = true
+2017-05-19 18:19:23 INFO  EntityOpts:105 - Text = programming language
+2017-05-19 18:19:23 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Programming_language]
+2017-05-19 18:19:23 INFO  EntityOpts:105 - Text = language
+2017-05-19 18:19:23 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Language]
+2017-05-19 18:19:23 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:23 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:23 INFO  Main:512 - Look entities for: [programming,can be do,language]
+2017-05-19 18:19:23 INFO  Main:512 - Look entities for: [programming,can look,very different]
+2017-05-19 18:19:23 INFO  Main:512 - Look entities for: [programming,do,thing]
+2017-05-19 18:19:23 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:23 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:23 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:23 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Language&lang=EN&pageH=2&cateH=3&output=xml
+2017-05-19 18:19:24 INFO  QueryWiBi:78 - content: 
+2017-05-19 18:19:24 INFO  QueryWiBi:82 -    [http://wibitaxonomy.org/Dialect]
+2017-05-19 18:19:24 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:24 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:24 INFO  Main:649 - no URL triple for: [programming,can be do,language]
+2017-05-19 18:19:24 INFO  Main:649 - no URL triple for: [programming,can look,very different]
+2017-05-19 18:19:24 INFO  Main:649 - no URL triple for: [programming,do,thing]
+2017-05-19 18:19:24 INFO  Main:146 - 	Processing sentence (10-10) : a example of this be the hello world program . 
+2017-05-19 18:19:24 INFO  Main:152 - 	Processing sentences with ClausIE
 
-2017-05-18 09:40:12 INFO  Main:334 - 	ClausIE triples: 
-2017-05-18 09:40:12 INFO  Main:350 - CLAUSIE PROPOSITIONS
-2017-05-18 09:40:12 INFO  Main:351 - 	(an example of this,is,the hello world program)
-2017-05-18 09:40:12 INFO  Main:670 - saving ClausIE triple: 
-2017-05-18 09:40:12 INFO  Main:675 - 	an example of this	is	the hello world program
-2017-05-18 09:40:13 INFO  EntityOpts:103 - Text = Computer programming
-2017-05-18 09:40:13 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Computer_programming]
-2017-05-18 09:40:13 INFO  EntityOpts:103 - Text = Hello world program
-2017-05-18 09:40:13 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Hello_world_program]
-2017-05-18 09:40:13 INFO  EntityOpts:103 - Text = example
-2017-05-18 09:40:13 INFO  EntityOpts:104 - Uris = [http://dbpedia.org/resource/Conceptual_model]
-2017-05-18 09:40:13 INFO  Main:192 - =============reducing entities=======================
-2017-05-18 09:40:13 INFO  Main:478 - "world" have score = 0.0  (discarted)
-2017-05-18 09:40:13 INFO  Main:478 - "program" have score = 0.0  (discarted)
-2017-05-18 09:40:13 INFO  Main:195 - =============remove entities=======================
-2017-05-18 09:40:13 INFO  Main:506 - "Computer programming" -  didn't match with any element in the list
-2017-05-18 09:40:13 INFO  Main:533 - Look entities for: [an example of this,is,the hello world program]
-2017-05-18 09:40:13 INFO  Main:199 - =============Create triples=======================
-2017-05-18 09:40:13 INFO  Main:607 - Eliminating duplicated URLs
-2017-05-18 09:40:13 INFO  Main:202 - =============Search relation=======================
-2017-05-18 09:40:13 INFO  Main:213 - =============Search and create type triples =======================
-2017-05-18 09:40:13 INFO  QueryWiBi:38 - http://www.wibitaxonomy.org/rdf/?type=page&item=Example&lang=EN&pageH=2&cateH=3&output=xml
-2017-05-18 09:40:13 INFO  Main:790 - WiBi does not return something for: example
-2017-05-18 09:40:13 INFO  Main:244 - =============Create and write model=======================
-2017-05-18 09:40:13 INFO  Main:254 - =============Triples=======================
-2017-05-18 09:40:13 INFO  Main:649 - no URL triple for: [an example of this,is,the hello world program]
-2017-05-18 09:40:13 INFO  Main:267 - Saving information in: programmer.txt.rdf
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [integrated_development_environments,integrated_development_environment] was added....
+2017-05-19 18:19:25 INFO  Main:321 - 	ClausIE triples: 
+2017-05-19 18:19:25 INFO  Main:322 - CLAUSIE PROPOSITIONS
+2017-05-19 18:19:25 INFO  Main:338 - 	(a example of this,be,the hello world program)
+2017-05-19 18:19:25 INFO  Main:670 - saving ClausIE triple: 
+2017-05-19 18:19:25 INFO  Main:675 - 	a example of this	be	the hello world program
+2017-05-19 18:19:25 INFO  Main:123 - Original subject: a example of this
+2017-05-19 18:19:25 INFO  Main:125 - New subject: example
+2017-05-19 18:19:25 INFO  Main:132 - Original argument: the hello world program
+2017-05-19 18:19:25 INFO  Main:134 - New Argument: worldprogram
+2017-05-19 18:19:26 INFO  BabelfyWS:50 - ++++This text "example" is contained in this segment of URI "conceptual model"? = false
+2017-05-19 18:19:26 INFO  EntityOpts:105 - Text = computer programming
+2017-05-19 18:19:26 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Computer_programming]
+2017-05-19 18:19:26 INFO  EntityOpts:105 - Text = hello world program
+2017-05-19 18:19:26 INFO  EntityOpts:106 - Uris = [http://dbpedia.org/resource/Hello_world_program]
+2017-05-19 18:19:26 INFO  Main:203 - =============reducing entities=======================
+2017-05-19 18:19:26 INFO  Main:206 - =============remove entities=======================
+2017-05-19 18:19:26 INFO  Main:512 - Look entities for: [example,be,worldprogram]
+2017-05-19 18:19:26 INFO  Main:211 - =============Create triples=======================
+2017-05-19 18:19:26 INFO  Main:214 - =============Search relation=======================
+2017-05-19 18:19:26 INFO  Main:225 - =============Search and create type triples =======================
+2017-05-19 18:19:26 INFO  Main:256 - =============Create and write model=======================
+2017-05-19 18:19:26 INFO  Main:266 - =============Triples=======================
+2017-05-19 18:19:26 INFO  Main:649 - no URL triple for: [example,be,worldprogram]
+2017-05-19 18:19:26 INFO  Main:279 - Saving information in: lemmatizeProgrammer.txt.rdf
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [programmer,text_editor] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [linus_torvalds,linux_operating_system] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [computer_program,programming_language] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [linus_torvalds,linus_torvalds] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [computer_program,computer_program] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [programmer,source_code] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [source_code,instruction_(computer_science)] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [people,plurality_(voting)] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [source_code,source_code] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [people,people_(microsoft_service)] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [programming_language,formal_language] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [source_code,instruction_(computer_science)] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [programming_language,programming_language] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [source_code,source_code] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [text_editor,program_(computing)] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [programmers,integrated_development_environments] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [text_editor,text_editor] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [programmers,text_editors] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [job,source_code] was added....
 
 
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [programmers,software_engineer] was added....
-
-
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [example,linus_torvalds] was added....
-
-
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [example,conceptual_model] was added....
-
-
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [text_editors,text_editor] was added....
-
-
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [text_editors,programming_tool] was added....
-
-
-2017-05-18 09:40:13 INFO  Utility:202 - seeds : [software,program_(computing)] was added....
+2017-05-19 18:19:26 INFO  Utility:208 - seeds : [problem,challenge_(tv_channel)] was added....
 
 
