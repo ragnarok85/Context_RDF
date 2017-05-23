@@ -35,7 +35,7 @@ public class QueryWiBi {
 		concept = concept.substring(0,1).toUpperCase() + concept.substring(1);
 		//concept = concept.substring(0,1).toUpperCase() + concept.substring(1);
 		String url = "http://www.wibitaxonomy.org/rdf/?type=page&item=" + concept + "&lang=EN&pageH=2&cateH=3&output=xml";
-		logger.info(url);
+//		logger.info(url);
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 

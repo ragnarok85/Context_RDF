@@ -120,18 +120,18 @@ public class Utils {
 	public static void reCreateClTriples(List<ClausieTriple> clTriples, List<Word> listWords){
 		List<ClausieTriple> toDelete = new ArrayList<ClausieTriple>();
 		for(ClausieTriple triple : clTriples){
-			logger.info("Original subject: " + triple.getSubject().getText());
+//			logger.info("Original subject: " + triple.getSubject().getText());
 			String subject = joinNN(triple.getSubject().getText(), listWords);
-			logger.info("New subject: " + subject);
+//			logger.info("New subject: " + subject);
 			if(subject.length() > 0)
 				triple.getSubject().setText(subject);
 			else{
 				toDelete.add(triple);
 				continue;
 			}
-			logger.info("Original argument: " + triple.getArgument().getText());
+//			logger.info("Original argument: " + triple.getArgument().getText());
 			String object = joinNN(triple.getArgument().getText(),listWords);
-			logger.info("New Argument: " + object);
+//			logger.info("New Argument: " + object);
 			if(object.length() > 0)
 				triple.getArgument().setText(object);
 			else
@@ -150,12 +150,16 @@ public class Utils {
 			for(Word word : listWords){
 				if(word.getWord().equals(splitS)){
 					if(word.getPosTag().contains("NN")){
-						newString += word.getWord();
+						if(newString.length() > 0)
+							newString += "_" + word.getWord();
+						else
+							newString += word.getWord();
 						break;
 					}
 				}
 			}
 		}
+		
 		return newString;
 	}
 	

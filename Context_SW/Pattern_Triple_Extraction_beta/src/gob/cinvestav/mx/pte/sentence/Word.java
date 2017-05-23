@@ -4,6 +4,7 @@ public class Word {
 	
 	String word;
 	String posTag;
+	int numberNouns;
 	int start;
 	int end;
 	
@@ -67,6 +68,14 @@ public class Word {
 
 	public void setEnd(int end) {
 		this.end = end;
+	}
+
+	public int getNumberNouns() {
+		return numberNouns;
+	}
+
+	public void setNumberNouns(int numberNouns) {
+		this.numberNouns = numberNouns;
 	}
 	
 	

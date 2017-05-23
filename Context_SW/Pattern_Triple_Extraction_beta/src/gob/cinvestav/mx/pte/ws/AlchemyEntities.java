@@ -94,6 +94,17 @@ public class AlchemyEntities implements Entities{
 		this.end = end;
 	}
 	
-	
+	@Override
+	public boolean equals(Object other){
+		if(other == null)
+			return false;
+		if(!(other instanceof AlchemyEntities))
+			return false;
+		AlchemyEntities o = (AlchemyEntities) other;
+		if(this.getDbpediaURL().equals(o.getDbpediaURL()))
+			return true;
+		
+		return false;
+	}
 
 }

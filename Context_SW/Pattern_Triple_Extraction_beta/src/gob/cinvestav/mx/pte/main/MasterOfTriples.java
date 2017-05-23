@@ -1,7 +1,9 @@
 package gob.cinvestav.mx.pte.main;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import gob.cinvestav.mx.pte.clausie.ClausieTriple;
 import gob.cinvestav.mx.pte.sentence.Word;
@@ -13,15 +15,15 @@ public class MasterOfTriples {
 
 	String sentence;
 	List<Word> sntsWrds;
-	List<AlchemyEntities> alchemyEntities;
-	List<BabelfyEntities> babelfyEntities;
+	Set<AlchemyEntities> alchemyEntities;
+	Set<BabelfyEntities> babelfyEntities;
 	List<Entity> entities;
 	List<ClausieTriple> clausieTriples;
 	
 	public MasterOfTriples(){
 		this.sntsWrds = new ArrayList<Word>();
-		this.alchemyEntities = new ArrayList<AlchemyEntities>();
-		this.babelfyEntities = new ArrayList<BabelfyEntities>();
+		this.alchemyEntities = new HashSet<AlchemyEntities>();
+		this.babelfyEntities = new HashSet<BabelfyEntities>();
 		this.clausieTriples = new ArrayList<ClausieTriple>();
 		this.entities = new ArrayList<Entity>();
 	}
@@ -95,19 +97,19 @@ public class MasterOfTriples {
 		this.sntsWrds.addAll(sntsWrds);
 	}
 
-	public List<AlchemyEntities> getAlchemyEntities() {
+	public Set<AlchemyEntities> getAlchemyEntities() {
 		return alchemyEntities;
 	}
 
-	public void setAlchemyEntities(List<AlchemyEntities> alchemyEntities) {
+	public void setAlchemyEntities(Set<AlchemyEntities> alchemyEntities) {
 		this.alchemyEntities.addAll(alchemyEntities);
 	}
 
-	public List<BabelfyEntities> getBabelfyEntities() {
+	public Set<BabelfyEntities> getBabelfyEntities() {
 		return babelfyEntities;
 	}
 
-	public void setBabelfyEntities(List<BabelfyEntities> babelfyEntities) {
+	public void setBabelfyEntities(Set<BabelfyEntities> babelfyEntities) {
 		this.babelfyEntities.addAll(babelfyEntities);
 	}
 

@@ -1,23 +1,24 @@
 package gob.cinvestav.mx.pte.type;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class WiBiTypes {
 	
-	List<String> uris;
+	Set<String> uris;
 	
 	public WiBiTypes(){
-		this.uris = new ArrayList<String>();
+		this.uris = new HashSet<String>();
 	}
 
 	//**********************Getters/Setters*****************************//
 	
-	public List<String> getUris() {
+	public Set<String> getUris() {
 		return uris;
 	}
 
-	public void setUris(List<String> uris) {
+	public void setUris(Set<String> uris) {
 		this.uris = uris;
 	}
 

@@ -7,17 +7,20 @@ import java.util.Set;
 public class Entity {
 	String text;
 	Set<String> uris;
+	Set<String> wikiUris;
 	
 	public Entity(){
 		this.uris = new HashSet<String>();
 		this.text = "";
+		this.wikiUris = new HashSet<String>();
 	}
 	
 	@Override
 	public boolean equals(Object text){
 		boolean returnVal = false;
-		if(text instanceof String){
-			this.text.equalsIgnoreCase((String)text);
+		Entity txt = (Entity) text;
+		if(txt instanceof Entity){
+			this.text.equalsIgnoreCase(txt.getText());
 			returnVal = true;
 		}else{
 			returnVal = false;
@@ -41,5 +44,13 @@ public class Entity {
 
 	public void setUris(Set<String> uris) {
 		this.uris = uris;
+	}
+
+	public Set<String> getWikiUris() {
+		return wikiUris;
+	}
+
+	public void setWikiUris(Set<String> wikiUris) {
+		this.wikiUris.addAll(wikiUris);
 	}
 }

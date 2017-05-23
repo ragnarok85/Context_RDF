@@ -17,15 +17,15 @@ public class EntityOpts {
 	final static Logger logger = Logger.getLogger(EntityOpts.class);
 	
 	//(i)
-	public static List<AlchemyEntities> extractAlchemyEntities(String sentence) {
-		List<AlchemyEntities> alchemy;
+	public static Set<AlchemyEntities> extractAlchemyEntities(String sentence) {
+		Set<AlchemyEntities> alchemy;
 		alchemy = new AlchemyWS().extractEntities(sentence);
 		return alchemy;
 	}
 	
 	//(ii)
-	public static List<BabelfyEntities> extractBabelfyEntities(String sentence) {
-		List<BabelfyEntities> babelfy = null;
+	public static Set<BabelfyEntities> extractBabelfyEntities(String sentence) {
+		Set<BabelfyEntities> babelfy = null;
 
 		try {
 			babelfy = new BabelfyWS().extractEntities(sentence);
@@ -37,7 +37,7 @@ public class EntityOpts {
 	}
 
 	//(iii) fuse uris
-	public static void fuseAlchemyUris(List<AlchemyEntities> alchemy, List<Entity> entities){
+	public static void fuseAlchemyUris(Set<AlchemyEntities> alchemy, Set<Entity> entities){
 		if(!entities.isEmpty()){
 			for(AlchemyEntities alchemyEntity : alchemy){
 				Entity entity = new Entity();
@@ -67,7 +67,7 @@ public class EntityOpts {
 		}
 	}
 	
-	public static void fuseBabelfyUris(List<BabelfyEntities> babelfy, List<Entity> entities){
+	public static void fuseBabelfyUris(Set<BabelfyEntities> babelfy, Set<Entity> entities){
 		if(!entities.isEmpty()){
 			for(BabelfyEntities babelfyEntity : babelfy){
 				Entity entity = new Entity();
@@ -99,7 +99,7 @@ public class EntityOpts {
 		}
 	}
 	
-	public static void printEntities(List<Entity> entities){
+	public static void printEntities(Set<Entity> entities){
 		for(Entity entity : entities){
 			if(!entity.getUris().isEmpty()){
 				logger.info("Text = " + entity.getText());

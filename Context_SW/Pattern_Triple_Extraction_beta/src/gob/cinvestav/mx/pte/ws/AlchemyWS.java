@@ -2,7 +2,9 @@ package gob.cinvestav.mx.pte.ws;
 
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,18 +27,19 @@ import gob.cinvestav.mx.pte.jena.Utility;
 @SuppressWarnings("deprecation")
 public class AlchemyWS {
 	
-	private List<AlchemyEntities> namedEntities;
+	private Set<AlchemyEntities> namedEntities;
 
 	
-	public List<AlchemyEntities> extractEntities(String snts){
-		namedEntities = new ArrayList<AlchemyEntities>();
+	public Set<AlchemyEntities> extractEntities(String snts){
+		namedEntities = new HashSet<AlchemyEntities>();
 		try {
 //			sendPostNE(snts);
 			sendPostConcepts(snts);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return reduceEntities(namedEntities);
+//		return reduceEntities(namedEntities);
+		return namedEntities;
 	}
 	
 	private void sendPostNE(String texto) throws Exception {
@@ -177,7 +180,7 @@ public class AlchemyWS {
     	AlchemyWS ws = new AlchemyWS();
     	String text = "a computer programmer is a person who makes computer programs using a programming language";
     	String textCopy = text;
-    	List<AlchemyEntities> entityList = ws.extractEntities(text);
+    	Set<AlchemyEntities> entityList = ws.extractEntities(text);
     	
     	for(AlchemyEntities entity : entityList){
 	    	text = text.replaceAll("\\b"+entity.text.toLowerCase()+"\\b", "<"+entity.dbpediaURL+">");

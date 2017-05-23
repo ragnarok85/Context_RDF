@@ -1,29 +1,22 @@
 package gob.cinvestav.mx.pte.main;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
 import de.mpii.clausie.ClausIE;
 import de.mpii.clausie.Proposition;
-import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.process.CoreLabelTokenFactory;
-import edu.stanford.nlp.process.PTBTokenizer;
 import gob.cinvestav.mx.pte.clausie.Argument;
 import gob.cinvestav.mx.pte.clausie.ClausieTriple;
 import gob.cinvestav.mx.pte.clausie.Relation;
@@ -39,7 +32,6 @@ import gob.cinvestav.mx.pte.type.WiBiTypes;
 import gob.cinvestav.mx.pte.utils.Utils;
 import gob.cinvestav.mx.pte.ws.AlchemyEntities;
 import gob.cinvestav.mx.pte.ws.BabelfyEntities;
-import gob.cinvestav.mx.pte.ws.Entities;
 import gob.cinvestav.mx.pte.ws.Entity;
 import gob.cinvestav.mx.pte.ws.EntityOpts;
 
@@ -71,13 +63,15 @@ public class Main {
 		File inputFile = new File("./test/lemmatizeProgrammer.txt");
 		List<String> sentences = null;
 		List<String> triples = new ArrayList<String>();
-		List<String> seeds = new ArrayList<String>();
+		Set<String> seeds = new HashSet<String>();
 		
 		Main main = new Main();
 		
 		sentences = Utils.readLines(inputFile);
 		
-		triples.addAll(main.extractTriples(inputFile.getName(),sentences, inputFile.getName()+".rdf", seeds, inputFile.getName()+".rdf", "seeds"+inputFile.getName()));
+		triples.addAll(main.extractTriples(inputFile.getName(),sentences, inputFile.getName()+".rdf", seeds, inputFile.getName()+".rdf", "triples"+inputFile.getName()));
+		main.writeSeeds(seeds, "Seeds-"+inputFile.getName());
+		Utility.printTriples(triples,"AllTriples.txt");
 	}
 	
 	public void batchProcessing(String[] args){
@@ -99,14 +93,14 @@ public class Main {
 		Main main = new Main();
 		
 		if(inputFiles.size() > 0){
-			List<String>allSeeds = new ArrayList<String>();
+			Set<String>allSeeds = new HashSet<String>();
 			List<String> triples = new ArrayList<String>();
 			
 			logger.info("number of inputFiles = " + inputFiles.size() + " number of processedFiles = " + processedFiles.size());
 			
 			for(File inputFile : inputFiles){
 				
-				List<String> seeds = new ArrayList<String>();
+				Set<String> seeds = new HashSet<String>();
 				List<String> sentences = null;
 				
 				if(processedFiles.contains(inputFile.getName())){
@@ -134,7 +128,7 @@ public class Main {
 		}
 	}
 	
-	public List<String> extractTriples(String inputFile, List<String> sentences, String outputTriple, List<String> seeds,
+	public List<String> extractTriples(String inputFile, List<String> sentences, String outputTriple, Set<String> seeds,
 		String rdfModelFileName, String outputTriples ) {
 		
 		Utility utility = new Utility();
@@ -143,19 +137,20 @@ public class Main {
 		int sentenceCounter = 1;
 		
 		for (String sentence : sentences) {
-			logger.info("\tProcessing sentence (" + sentenceCounter++ + "-" + sentences.size() + ") : " + sentence);
+			logger.info("\n\n\tProcessing sentence (" + sentenceCounter++ + "-" + sentences.size() + ") : " + sentence);
 
 			MasterOfTriples MT = new MasterOfTriples();
 			ClausIE clausIE = new ClausIE();
 			
 			MT.setSentence(sentence);
-			logger.info("\tProcessing sentences with ClausIE\n");
+//			logger.info("\tProcessing sentences with ClausIE\n");
 			clausIE = processingClausIE(listProblematicSentences,sentence);
 			
 			if (clausIE == null){
 				logger.info("No triples get extracted from ClausIE");
 				continue;
 			}
+			
 			List<ClausieTriple> clsTriples = extractClausieTriples(clausIE.getPropositions(), sentence);
 			MT.setClausieTriples(clsTriples);
 			List<String> stringClTriples = getClTriples(MT.getClausieTriples());
@@ -168,13 +163,13 @@ public class Main {
 
 			// *****************NE/concept processing
 			// ***********************************//
-			List<AlchemyEntities> alchemyEntities = EntityOpts.extractAlchemyEntities(sentence);
-			List<BabelfyEntities> babelfyEntities = EntityOpts.extractBabelfyEntities(sentence);
+			Set<AlchemyEntities> alchemyEntities = EntityOpts.extractAlchemyEntities(sentence);
+			Set<BabelfyEntities> babelfyEntities = EntityOpts.extractBabelfyEntities(sentence);
 			
 			MT.setAlchemyEntities(alchemyEntities);
 			MT.setBabelfyEntities(babelfyEntities);
 			
-			List<Entity> entities = new ArrayList<Entity>();
+			Set<Entity> entities = new HashSet<Entity>();
 			EntityOpts.fuseAlchemyUris(MT.getAlchemyEntities(), entities);
 			EntityOpts.fuseBabelfyUris(MT.getBabelfyEntities(), entities);
 			
@@ -200,66 +195,88 @@ public class Main {
 //			lookTriplesPositionList(MT.clausieTriples, MT.sntsWrds);
 //			calculateStartEndTriples(MT.clausieTriples, MT.sntsWrds);
 
-			logger.info("=============reducing entities=======================");
+//			logger.info("=============reducing entities=======================");
 //			reduceAlchemyEntities(MT.getAlchemyEntities());
 //			reduceBabelfyEntities(MT.getBabelfyEntities(), MT.sntsWrds);
-			logger.info("=============remove entities=======================");
+//			logger.info("=============remove entities=======================");
 //			removeAlchemyEntites(MT.getAlchemyEntities());
 //			removeBabelfyEntites(MT.getBabelfyEntities());
 //			lookEntities(MT.clausieTriples, MT.alchemyEntities, MT.babelfyEntities);
+			logger.info("=============look for named entities=======================");
 			lookEntities(MT.clausieTriples, entities);
 			logger.info("=============Create triples=======================");
 			createTriple(MT.clausieTriples);
 //			eliminateDuplicateURL(MT.clausieTriples);
-			logger.info("=============Search relation=======================");
+			logger.info("=============Search/create relation=======================");
+//			for (ClausieTriple triple : MT.clausieTriples) {
+//				String uri = "";
+//				if (triple.getSubject().getTextNE().length() > 0 && triple.getArgument().getTextNE().length() > 0) {
+//					uri = lookRelation(triple.getSubject().getTextNE(), triple.getRelation().getText(),
+//							triple.getArgument().getTextNE());
+//					triple.getRelation().setUri(uri);
+//					triple.getTriple().setRelationUri(uri);
+//				}
+//
+//			}
 			for (ClausieTriple triple : MT.clausieTriples) {
 				String uri = "";
 				if (triple.getSubject().getTextNE().length() > 0 && triple.getArgument().getTextNE().length() > 0) {
-					uri = lookRelation(triple.getSubject().getTextNE(), triple.getRelation().getText(),
-							triple.getArgument().getTextNE());
+					uri = "http://tamps.cinvestav.com.mx/rdf/#"+triple.getRelation().getText().replace(" ", "");
 					triple.getRelation().setUri(uri);
 					triple.getTriple().setRelationUri(uri);
 				}
 
 			}
 			logger.info("=============Search and create type triples =======================");
-			for (ClausieTriple triple : MT.clausieTriples) {
-				if (triple.getSubject().getTextNE().length() > 0) {
-					List<String> wibiSubjectTypes = queryWiBi(triple.getSubject().getTextNE());
-					if (wibiSubjectTypes != null && !wibiSubjectTypes.isEmpty()) {
-						WiBiTypes wibi = new WiBiTypes();
-						wibi.setUris(wibiSubjectTypes);
-						triple.getSubject().setWibi(wibi);
-					}
-				}
-
-				if (triple.getArgument().getTextNE().length() > 0) {
-					List<String> wibiArgTypes = queryWiBi(triple.getArgument().getTextNE());
-					if (wibiArgTypes != null && !wibiArgTypes.isEmpty()) {
-						WiBiTypes wibi = new WiBiTypes();
-						wibi.setUris(wibiArgTypes);
-						triple.getArgument().setWibi(wibi);
-					}
-				}
-
-			}
-
-			for (ClausieTriple triple : MT.clausieTriples) {
-				if (!triple.getSubject().getWibi().getUris().isEmpty()) {
-					createTypeTriple(triple);
-				}
-				if (!triple.getArgument().getWibi().getUris().isEmpty()) {
-					createTypeTriple(triple);
+			for(Entity entity : entities){
+				List<String> wibiTypes = queryWiBi(entity.getText());
+				if (wibiTypes != null && !wibiTypes.isEmpty()) {
+					WiBiTypes wibi = new WiBiTypes();
+					wibi.getUris().addAll(wibiTypes);
+					entity.getWikiUris().addAll(wibiTypes);
 				}
 			}
+//			for (ClausieTriple triple : MT.clausieTriples) {
+//				if (triple.getSubject().getTextNE().length() > 0) {
+//					List<String> wibiSubjectTypes = queryWiBi(triple.getSubject().getTextNE());
+//					if (wibiSubjectTypes != null && !wibiSubjectTypes.isEmpty()) {
+//						WiBiTypes wibi = new WiBiTypes();
+//						wibi.setUris(wibiSubjectTypes);
+//						triple.getSubject().setWibi(wibi);
+//					}
+//				}
+//
+//				if (triple.getArgument().getTextNE().length() > 0) {
+//					List<String> wibiArgTypes = queryWiBi(triple.getArgument().getTextNE());
+//					if (wibiArgTypes != null && !wibiArgTypes.isEmpty()) {
+//						WiBiTypes wibi = new WiBiTypes();
+//						wibi.setUris(wibiArgTypes);
+//						triple.getArgument().setWibi(wibi);
+//					}
+//				}
+//
+//			}
+
+//			for (ClausieTriple triple : MT.clausieTriples) {
+//				if (!triple.getSubject().getWibi().getUris().isEmpty()) {
+//					createTypeTriple(triple);
+//				}
+//				if (!triple.getArgument().getWibi().getUris().isEmpty()) {
+//					createTypeTriple(triple);
+//				}
+//			}
 
 			logger.info("=============Create and write model=======================");
 			// Utility utility = new Utility();
+			
+			for(Entity entity : entities){
+				utility.populateTypes(entity);
+			}
 			for (ClausieTriple triple : MT.getClausieTriples()) {
-				utility.publicLovNameSpace(lovUris);
+//				utility.publicLovNameSpace(lovUris);
 				// utility.addRdfsComment(sentence);
 				utility.populateModel(triple, rdfModelFileName);
-				utility.populateTypes(triple);
+//				utility.populateTypes(triple);
 				// utility.writeTriple(outputTriple);
 			}
 
@@ -279,7 +296,7 @@ public class Main {
 		logger.info("Saving information in: " + outputTriple);
 		Utility.printTriples(triples, outputTriples);
 		utility.writeTriple(outputTriple);
-		utility.getSeeds(seeds);
+		utility.extractSeeds(seeds);
 		return triples;
 	}
 	
@@ -318,7 +335,6 @@ public class Main {
 	//(iii)
 	public static List<ClausieTriple> extractClausieTriples(List<Proposition> propositions, String sentence) {
 		List<ClausieTriple> clTriples = new ArrayList<ClausieTriple>();
-		logger.info("\tClausIE triples: ");
 		logger.info("CLAUSIE PROPOSITIONS");
 		for (Proposition proposition : propositions) {
 			if (proposition.noArguments() > 0) {
@@ -506,16 +522,16 @@ public class Main {
 		}
 	}
 	
-	public static void lookEntities(List<ClausieTriple> triples, List<Entity> entities) {
+	public static void lookEntities(List<ClausieTriple> triples, Set<Entity> entities) {
 		for (ClausieTriple triple : triples) {
 //			System.out.println("Look entities for: " + triple.toString());
 			logger.info("Look entities for: " + triple.toString());
 
 			for (Entity entity : entities) {
-				if (triple.getSubject().getText().contains(entity.getText().replace(" ", ""))) {
+				if (triple.getSubject().getText().contains(entity.getText().replace(" ", "_"))) {
 					triple.getSubject().getEntity().add(entity);
 				}
-				if (triple.getArgument().getText().contains(entity.getText().replace(" ", ""))) {
+				if (triple.getArgument().getText().contains(entity.getText().replace(" ", "_"))) {
 					triple.getArgument().getEntity().add(entity);
 				}
 			}
@@ -579,7 +595,8 @@ public class Main {
 
 			if (!trip.getSubject().getEntity().isEmpty()) {
 				for (Entity entity : trip.getSubject().getEntity()) {
-					trip.getSubject().setTextNE(entity.getText());
+//					trip.getSubject().setTextNE(entity.getText());
+					trip.getSubject().setTextNE(trip.getSubject().getText());
 					if (!entity.getUris().isEmpty()) {
 						triple.getSubjectUris().addAll(entity.getUris());
 					}
@@ -587,7 +604,8 @@ public class Main {
 			}
 			if (!trip.getArgument().getEntity().isEmpty()) {
 				for (Entity entity : trip.getArgument().getEntity()) {
-					trip.getArgument().setTextNE(entity.getText());
+//					trip.getArgument().setTextNE(entity.getText());
+					trip.getArgument().setTextNE(trip.getArgument().getText());
 					if (!entity.getUris().isEmpty()) {
 						triple.getArgumentUris().addAll(entity.getUris());
 					}
@@ -667,12 +685,12 @@ public class Main {
 
 	public List<String> getClTriples(List<ClausieTriple> clTriple){
 		List<String> triples = new ArrayList<String>();
-		logger.info("saving ClausIE triple: ");
+//		logger.info("saving ClausIE triple: ");
 		for(ClausieTriple triple : clTriple){
 			if (triple.getSubject().getText().length() > 0 && triple.getArgument().getText().length() > 0){
 				String trip = "";
 				trip = triple.getSubject().getText() + "\t" + triple.getRelation().getText() + "\t" + triple.getArgument().getText();
-				logger.info("\t" + trip);
+//				logger.info("\t" + trip);
 				triples.add(trip);
 			}
 			
@@ -793,26 +811,40 @@ public class Main {
 		return wibiTypes;
 	}
 	
-	public static TypeTriple createTypeTriple(ClausieTriple triple){
+//	public static TypeTriple createTypeTriple(ClausieTriple triple){
+//		TypeTriple tTriple = new TypeTriple();
+//		
+//		if(!triple.getTriple().getSubjectUris().isEmpty()){
+//			tTriple.setSubject(triple.getTriple().getSubjectUris().get(0));
+//			List<String> objects = new ArrayList<String>();
+//			for(String object : triple.getSubject().getWibi().getUris())
+//				objects.add(object);
+//			if(!objects.isEmpty()){
+//				tTriple.setObject(objects);
+//			}
+//		}
+//		
+//		if(!triple.getTriple().getArgumentUris().isEmpty()){
+//			tTriple.setSubject(triple.getTriple().getArgumentUris().get(0));
+//			List<String> objects = new ArrayList<String>();
+//			for(String object : triple.getArgument().getWibi().getUris())
+//				objects.add(object);
+//			if(!objects.isEmpty()){
+//				tTriple.setObject(objects);
+//			}
+//		}
+//		return tTriple;
+//		
+//	}
+	
+	public static TypeTriple createTypeTriple(Set<Entity> entities, WiBiTypes wibi){
 		TypeTriple tTriple = new TypeTriple();
 		
-		if(!triple.getTriple().getSubjectUris().isEmpty()){
-			tTriple.setSubject(triple.getTriple().getSubjectUris().get(0));
-			List<String> objects = new ArrayList<String>();
-			for(String object : triple.getSubject().getWibi().getUris())
-				objects.add(object);
-			if(!objects.isEmpty()){
-				tTriple.setObject(objects);
-			}
-		}
-		
-		if(!triple.getTriple().getArgumentUris().isEmpty()){
-			tTriple.setSubject(triple.getTriple().getArgumentUris().get(0));
-			List<String> objects = new ArrayList<String>();
-			for(String object : triple.getArgument().getWibi().getUris())
-				objects.add(object);
-			if(!objects.isEmpty()){
-				tTriple.setObject(objects);
+		for(Entity entity : entities){
+			for(String uri : entity.getUris()){
+				for(String wiki : wibi.getUris()){
+					
+				}
 			}
 		}
 		return tTriple;
@@ -865,7 +897,7 @@ public class Main {
 		
 	}
 	
-	public void writeSeeds(List<String> seeds, String output){
+	public void writeSeeds(Set<String> seeds, String output){
 		try(PrintWriter pw = new PrintWriter(new FileWriter(output))){
 			for(String seed : seeds){
 				pw.write(seed+"\n");

@@ -1,7 +1,9 @@
 package gob.cinvestav.mx.pte.ws;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
@@ -12,10 +14,10 @@ import it.uniroma1.lcl.jlt.util.Language;
 public class BabelfyWS {
 	final static Logger logger = Logger.getLogger(BabelfyWS.class);
 	
-	public List<BabelfyEntities> extractEntities(String texto) throws Exception {
+	public Set<BabelfyEntities> extractEntities(String texto) throws Exception {
 		
 
-        List<BabelfyEntities> bEntities = new ArrayList<BabelfyEntities>();
+        Set<BabelfyEntities> bEntities = new HashSet<BabelfyEntities>();
 
         Babelfy bfy = new Babelfy();
         
@@ -38,7 +40,8 @@ public class BabelfyWS {
         	//}
         	
         }
-        return reduceList(bEntities);
+//        return reduceList(bEntities);
+        return bEntities;
     }
 	
 	public static boolean namedEntityContainText(String uri, String text){
@@ -47,10 +50,11 @@ public class BabelfyWS {
 		String splitUri[] = uri.split("/");
 		String lastUriElement = splitUri[splitUri.length - 1].toLowerCase();
 		lastUriElement = lastUriElement.replace("_", " ");
-		logger.info("++++This text \"" + text + "\" is contained in this segment of URI \"" + lastUriElement+"\"? = " + lastUriElement.equals(text));
+//		logger.info("++++This text \"" + text + "\" is contained in this segment of URI \"" + lastUriElement+"\"? = " + lastUriElement.equals(text));
 		
-		if(lastUriElement.equals(text))
+		if(lastUriElement.equals(text)){
 			containText = true;
+		}
 		return containText;
 	}
 	
@@ -77,7 +81,7 @@ public class BabelfyWS {
 		BabelfyWS ws = new BabelfyWS();
 		
 		String texto = "a computer programmer is a person who makes computer programs using a programming language.";
-		List<BabelfyEntities> entities = ws.extractEntities(texto);
+		Set<BabelfyEntities> entities = ws.extractEntities(texto);
 		
 		for(BabelfyEntities entity : entities){
 				texto = texto.replaceAll("\\b"+entity.text.toLowerCase()+"\\b", "<"+entity.dbpediaURL+">");

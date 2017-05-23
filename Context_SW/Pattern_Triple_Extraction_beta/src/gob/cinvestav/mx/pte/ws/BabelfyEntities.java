@@ -102,4 +102,17 @@ public class BabelfyEntities implements Entities{
 	public void setGlobalScore(double globalScore) {
 		this.globalScore = globalScore;
 	}
+	
+	@Override
+	public boolean equals(Object other){
+		if(other == null)
+			return false;
+		if(!(other instanceof BabelfyEntities))
+			return false;
+		BabelfyEntities o = (BabelfyEntities) other;
+		if(this.getDbpediaURL().equals(o.getDbpediaURL()))
+			return true;
+		
+		return false;
+	}
 }
