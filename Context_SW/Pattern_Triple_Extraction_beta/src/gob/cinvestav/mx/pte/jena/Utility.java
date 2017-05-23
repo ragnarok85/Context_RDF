@@ -300,7 +300,10 @@ public class Utility {
 		StmtIterator iter = jenaModel.listStatements(new SimpleSelector(null, null, (RDFNode) null) {
 			public boolean selects(Statement s) {
 				return (!s.getPredicate().toString().contains("http://www.w3.org/2000/01/rdf-schema#comment")
-						|| !s.getPredicate().toString().contains("http://www.w3.org/2002/07/owl#sameAs"));
+						|| !s.getPredicate().toString().contains("http://www.w3.org/2002/07/owl#sameAs")
+								|| !s.getPredicate().toString().contains("http://tamps.cinvestav.com.mx/rdf/#inDoc")
+									|| !s.getPredicate().toString().contains("http://tamps.cinvestav.com.mx/rdf/#inSentence")
+										|| !s.getPredicate().toString().contains("http://tamps.cinvestav.com.mx/rdf/#mainTopic"));
 			}
 		});
 		while (iter.hasNext()) {
