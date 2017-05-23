@@ -1,0 +1,74 @@
+assembly language
+dialect
+software
+computer programming
+impediment
+computer programmers
+software tool text editor ides
+language
+procedure (computing)
+program problem
+interpreter (computing)
+problem
+process (science)
+one (number)
+tux
+programming language
+software engineering
+obstacle
+algorithm
+profession
+programmer
+source code
+linux kernel
+tool
+hello world program
+instruction (computer science)
+sequence
+system
+person
+name
+computer program
+character (arts)
+company (law)
+programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work 
+program (computing)
+job
+software application
+software developer
+program source code
+champion
+internet
+computer programming be a profession that can be do from a computer anywhere in the world 
+code
+mascot
+a computer programmer be a person who make computer program use a programming language
+text editor
+computer
+world
+unix-like
+programmer job
+a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .
+linux
+part linux system
+compiler
+computer world
+kernel (computing)
+c and c++
+freedom of information
+operating system
+extension (semantics)
+torvalds
+computer software
+lemmatizeprogrammer.txt.rdf
+peripheral device
+free software
+entrepreneur
+vocation
+integrated development environment
+application (software)
+challenge (tv channel)
+rules of chess
+computer operating system
+one example be linus torvalds , who create a important part of the linux operating system . 
+formal language

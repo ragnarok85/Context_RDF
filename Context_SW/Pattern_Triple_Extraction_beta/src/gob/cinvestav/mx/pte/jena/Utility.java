@@ -22,12 +22,13 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.RDFNode;
-import org.apache.jena.rdf.model.ResIterator;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.SimpleSelector;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.log4j.Logger;
+
+import com.github.jsonldjava.core.RDFDataset.Quad;
 
 import gob.cinvestav.mx.pte.clausie.ClausieTriple;
 import gob.cinvestav.mx.pte.ws.Entity;
@@ -113,18 +114,18 @@ public class Utility {
 //			}
 //		}
 //	}
-	public void populateModel(ClausieTriple triple, String rdfModelFileName) {
+	public void populateModel(ClausieTriple triple, String rdfModelFileName, String topic) {
 		String graphURI = "http://tamps.cinvestav.com.mx/rdf/graph/";
 		Property inDocprop = jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#inDoc");
 		Property inSntprop = jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#inSentence");
 		Property composedOf = jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#composedOf");
+		Property mainTopic = jenaModel.createProperty("http://tamps.cinvesetav.com.mx/rdf/#mainTopic");
 		Resource subject = null;
 		Resource object = null;
 		
 		List<String> newSubjUris = checkEntitiesRep(triple.getTriple().getSubjectUris());
 		triple.getTriple().getSubjectUris().clear();
 		triple.getTriple().setSubjectUris(newSubjUris);
-		
 		
 		if(triple.getTriple().getSubjectUris().size() > 1){
 			subject = jenaModel.createResource(ownNameSpace+triple.getSubject().getTextNE());
@@ -162,6 +163,8 @@ public class Utility {
 		}
 		
 		if(subject != null && object != null){
+			jenaModel.add(subject,mainTopic,jenaModel.createLiteral(topic));
+			jenaModel.add(object,mainTopic,jenaModel.createLiteral(topic));
 			jenaModel.add(subject,inDocprop,(RDFNode)jenaModel.createResource(graphURI+rdfModelFileName));
 			jenaModel.add(subject,inSntprop,jenaModel.createLiteral(triple.getOrgSentence()));
 			jenaModel.add(object,inDocprop,(RDFNode)jenaModel.createResource(graphURI+rdfModelFileName));
@@ -227,6 +230,15 @@ public class Utility {
 //			}
 //		}
 //	}
+	
+	public void populateTopic(Entity entity, String topic){
+		for(String uri : entity.getUris()){
+			Resource subject = jenaModel.createResource(uri);
+			Property mainTopic = jenaModel.createProperty("http://tamps.cinvesetav.com.mx/rdf/#mainTopic");
+			jenaModel.add(subject, mainTopic, jenaModel.createLiteral(topic));
+		}
+		
+	}
 	
 	public void populateTypes(Entity entity) {
 		if (!entity.getWikiUris().isEmpty()) {

@@ -34,6 +34,7 @@ import gob.cinvestav.mx.pte.ws.AlchemyEntities;
 import gob.cinvestav.mx.pte.ws.BabelfyEntities;
 import gob.cinvestav.mx.pte.ws.Entity;
 import gob.cinvestav.mx.pte.ws.EntityOpts;
+import gob.cinvestav.mx.pte.ws.TopicWS;
 
 public class Main {
 	public static List<String> lovUris = new ArrayList<String>();
@@ -265,6 +266,11 @@ public class Main {
 //					createTypeTriple(triple);
 //				}
 //			}
+			
+			logger.info("============look for a topic==============================");
+			
+			TopicWS topicWs = new TopicWS();
+			String topic = topicWs.queryAlchemy(sentence);
 
 			logger.info("=============Create and write model=======================");
 			// Utility utility = new Utility();
@@ -275,7 +281,7 @@ public class Main {
 			for (ClausieTriple triple : MT.getClausieTriples()) {
 //				utility.publicLovNameSpace(lovUris);
 				// utility.addRdfsComment(sentence);
-				utility.populateModel(triple, rdfModelFileName);
+				utility.populateModel(triple, rdfModelFileName, topic);
 //				utility.populateTypes(triple);
 				// utility.writeTriple(outputTriple);
 			}
