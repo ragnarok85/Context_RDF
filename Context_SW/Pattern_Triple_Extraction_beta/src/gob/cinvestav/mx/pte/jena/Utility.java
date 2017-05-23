@@ -2,9 +2,11 @@ package gob.cinvestav.mx.pte.jena;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -12,6 +14,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.jena.graph.Node;
+import org.apache.jena.graph.NodeFactory;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -26,9 +30,9 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.SimpleSelector;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.rdf.model.StmtIterator;
+import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.sparql.core.Quad;
 import org.apache.log4j.Logger;
-
-import com.github.jsonldjava.core.RDFDataset.Quad;
 
 import gob.cinvestav.mx.pte.clausie.ClausieTriple;
 import gob.cinvestav.mx.pte.ws.Entity;
@@ -39,11 +43,14 @@ public class Utility {
 	Model jenaModel = ModelFactory.createDefaultModel();
 	String namespace = "http://tamps.cinvestav.com.mx/rdf/#";
 	String wibiNamespace = "http://wibitaxonomy.org/";
+	String contextGrapj = "http://tamps.cinvestav.com.mx/graph/";
 //	String dbr = "http://dbpedia.org/resource/";
 	String owlNameSpace = "http://www.w3.org/2002/07/owl#";
 	String ownNameSpace = "http://tamps.cinvestav.com.mx/rdf/resources/";
 	Property sameAs;
 	Property rdfType;
+	List<Quad> quads = new ArrayList<Quad>();
+	
 	
 	public Utility() {
 //		jenaModel.setNsPrefix("cinvestav", namespace);
@@ -119,7 +126,7 @@ public class Utility {
 		Property inDocprop = jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#inDoc");
 		Property inSntprop = jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#inSentence");
 		Property composedOf = jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#composedOf");
-		Property mainTopic = jenaModel.createProperty("http://tamps.cinvesetav.com.mx/rdf/#mainTopic");
+		Property mainTopic = jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#mainTopic");
 		Resource subject = null;
 		Resource object = null;
 		
@@ -163,6 +170,7 @@ public class Utility {
 		}
 		
 		if(subject != null && object != null){
+			
 			jenaModel.add(subject,mainTopic,jenaModel.createLiteral(topic));
 			jenaModel.add(object,mainTopic,jenaModel.createLiteral(topic));
 			jenaModel.add(subject,inDocprop,(RDFNode)jenaModel.createResource(graphURI+rdfModelFileName));
@@ -171,6 +179,12 @@ public class Utility {
 			jenaModel.add(object,inSntprop,jenaModel.createLiteral(triple.getOrgSentence()));
 			logger.info("Property: " + triple.getTriple().getRelationUri());
 			Property property = jenaModel.createProperty(triple.getTriple().getRelationUri());
+			Node graph = NodeFactory.createURI(contextGrapj+"topic");
+			Node nSubject = NodeFactory.createURI(ownNameSpace+triple.getSubject().getTextNE());
+			Node nObject = NodeFactory.createURI(ownNameSpace+triple.getArgument().getTextNE());
+			Node nProperty = NodeFactory.createURI(triple.getTriple().getRelationUri());
+			Quad quad = new Quad(graph,nSubject,nProperty,nObject);
+			quads.add(quad);
 			jenaModel.add(subject, property, object);
 		}
 		
@@ -274,6 +288,9 @@ public class Utility {
 			FileWriter fos = new FileWriter(path);
 			jenaModel.write(fos, "RDF/XML");
 			fos.close();
+			OutputStream fos2 = new FileOutputStream("quad"+path);
+		
+			RDFDataMgr.writeQuads(fos2, quads.iterator());
 			//jenaModel.close();
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -3,18 +3,17 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:cinves="http://tamps.cinvestav.com.mx/rdf/#"
     xmlns:j.0="http://wibitaxonomy.org/Instruction_(computer_science)"
-    xmlns:j.1="http://tamps.cinvesetav.com.mx/rdf/#"
-    xmlns:j.2="http://wibitaxonomy.org/Process_(science)"
-    xmlns:j.3="http://wibitaxonomy.org/Kernel_(computing)"
-    xmlns:j.4="http://wibitaxonomy.org/Company_(law)"
-    xmlns:j.5="http://wibitaxonomy.org/Character_(arts)"
-    xmlns:j.6="http://wibitaxonomy.org/Procedure_(computing)"
-    xmlns:j.7="http://wibitaxonomy.org/One_(number)"
-    xmlns:j.8="http://wibitaxonomy.org/Program_(computing)"
+    xmlns:j.1="http://wibitaxonomy.org/Process_(science)"
+    xmlns:j.2="http://wibitaxonomy.org/Kernel_(computing)"
+    xmlns:j.3="http://wibitaxonomy.org/Company_(law)"
+    xmlns:j.4="http://wibitaxonomy.org/Character_(arts)"
+    xmlns:j.5="http://wibitaxonomy.org/Procedure_(computing)"
+    xmlns:j.6="http://wibitaxonomy.org/One_(number)"
+    xmlns:j.7="http://wibitaxonomy.org/Program_(computing)"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:j.9="http://wibitaxonomy.org/Application_(software)"
-    xmlns:j.10="http://wibitaxonomy.org/Extension_(semantics)"
-    xmlns:j.11="http://wibitaxonomy.org/Challenge_(TV_channel)">
+    xmlns:j.8="http://wibitaxonomy.org/Application_(software)"
+    xmlns:j.9="http://wibitaxonomy.org/Extension_(semantics)"
+    xmlns:j.10="http://wibitaxonomy.org/Challenge_(TV_channel)">
   <wibi:Mascot rdf:about="http://dbpedia.org/resource/Tux">
     <rdf:type rdf:resource="http://wibitaxonomy.org/Character_(arts)"/>
   </wibi:Mascot>
@@ -29,7 +28,7 @@
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/part_linux_system">
         <cinves:inSentence>one example be linus torvalds , who create a important part of the linux operating system . </cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/operating systems/linux</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/operating systems/linux</cinves:mainTopic>
         <owl:sameAs>
           <wibi:Computer_operating_system rdf:about="http://dbpedia.org/resource/Linux"/>
         </owl:sameAs>
@@ -37,7 +36,7 @@
     </cinves:create>
     <cinves:inSentence>one example be linus torvalds , who create a important part of the linux operating system . </cinves:inSentence>
     <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-    <j.1:mainTopic>/technology and computing/operating systems/linux</j.1:mainTopic>
+    <cinves:mainTopic>/technology and computing/operating systems/linux</cinves:mainTopic>
     <owl:sameAs>
       <wibi:Name rdf:about="http://dbpedia.org/resource/Torvalds"/>
     </owl:sameAs>
@@ -48,7 +47,7 @@
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/programming_language">
         <cinves:inSentence>a computer programmer be a person who make computer program use a programming language</cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/hardware/computer</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/hardware/computer</cinves:mainTopic>
         <owl:sameAs>
           <wibi:Formal_language rdf:about="http://dbpedia.org/resource/Programming_language"/>
         </owl:sameAs>
@@ -56,7 +55,7 @@
     </cinves:use>
     <cinves:inSentence>a computer programmer be a person who make computer program use a programming language</cinves:inSentence>
     <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-    <j.1:mainTopic>/technology and computing/hardware/computer</j.1:mainTopic>
+    <cinves:mainTopic>/technology and computing/hardware/computer</cinves:mainTopic>
     <owl:sameAs>
       <wibi:Sequence rdf:about="http://dbpedia.org/resource/Computer_program"/>
     </owl:sameAs>
@@ -70,7 +69,7 @@
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/software_tool_text_editor_ides">
         <cinves:inSentence>programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work </cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/software</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/software</cinves:mainTopic>
         <cinves:composedOf>
           <wibi:Computer rdf:about="http://dbpedia.org/resource/Tool"/>
         </cinves:composedOf>
@@ -87,18 +86,18 @@
       </rdf:Description>
     </cinves:use>
     <cinves:inSentence>programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work </cinves:inSentence>
-    <j.1:mainTopic>/technology and computing/software</j.1:mainTopic>
+    <cinves:mainTopic>/technology and computing/software</cinves:mainTopic>
     <cinves:has>
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/job">
         <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/programming languages/c and c++</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/programming languages/c and c++</cinves:mainTopic>
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Job"/>
       </rdf:Description>
     </cinves:has>
     <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
     <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-    <j.1:mainTopic>/technology and computing/programming languages/c and c++</j.1:mainTopic>
+    <cinves:mainTopic>/technology and computing/programming languages/c and c++</cinves:mainTopic>
     <owl:sameAs>
       <wibi:Person rdf:about="http://dbpedia.org/resource/Programmer"/>
     </owl:sameAs>
@@ -122,7 +121,7 @@
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/computer">
         <cinves:inSentence>computer programming be a profession that can be do from a computer anywhere in the world </cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/hardware/computer</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/hardware/computer</cinves:mainTopic>
         <owl:sameAs>
           <wibi:Peripheral_device rdf:about="http://dbpedia.org/resource/Computer"/>
         </owl:sameAs>
@@ -132,7 +131,7 @@
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/computer_world">
         <cinves:inSentence>computer programming be a profession that can be do from a computer anywhere in the world </cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/hardware/computer</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/hardware/computer</cinves:mainTopic>
         <cinves:composedOf>
           <wibi:Champion rdf:about="http://dbpedia.org/resource/World"/>
         </cinves:composedOf>
@@ -141,7 +140,7 @@
     </cinves:canbedo>
     <cinves:inSentence>computer programming be a profession that can be do from a computer anywhere in the world </cinves:inSentence>
     <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-    <j.1:mainTopic>/technology and computing/hardware/computer</j.1:mainTopic>
+    <cinves:mainTopic>/technology and computing/hardware/computer</cinves:mainTopic>
     <owl:sameAs>
       <wibi:Vocation rdf:about="http://dbpedia.org/resource/Profession"/>
     </owl:sameAs>
@@ -151,7 +150,7 @@
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/program_problem">
         <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/programming languages/c and c++</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/programming languages/c and c++</cinves:mainTopic>
         <owl:sameAs>
           <rdf:Description rdf:about="http://dbpedia.org/resource/Problem">
             <rdf:type rdf:resource="http://wibitaxonomy.org/Challenge_(TV_channel)"/>
@@ -165,7 +164,7 @@
       <rdf:Description rdf:about="http://tamps.cinvestav.com.mx/rdf/resources/program_source_code">
         <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
         <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-        <j.1:mainTopic>/technology and computing/programming languages/c and c++</j.1:mainTopic>
+        <cinves:mainTopic>/technology and computing/programming languages/c and c++</cinves:mainTopic>
         <owl:sameAs>
           <rdf:Description rdf:about="http://dbpedia.org/resource/Source_code">
             <rdf:type rdf:resource="http://wibitaxonomy.org/Instruction_(computer_science)"/>
@@ -175,7 +174,7 @@
     </cinves:bewrite>
     <cinves:inSentence>a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .</cinves:inSentence>
     <cinves:inDoc rdf:resource="http://tamps.cinvestav.com.mx/rdf/graph/lemmatizeProgrammer.txt.rdf"/>
-    <j.1:mainTopic>/technology and computing/programming languages/c and c++</j.1:mainTopic>
+    <cinves:mainTopic>/technology and computing/programming languages/c and c++</cinves:mainTopic>
     <cinves:composedOf rdf:resource="http://dbpedia.org/resource/Job"/>
     <cinves:composedOf rdf:resource="http://dbpedia.org/resource/Programmer"/>
   </rdf:Description>
