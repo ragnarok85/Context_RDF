@@ -22,12 +22,15 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.log4j.Logger;
 
 
 public class TopicWS {
 	
-	public String queryAlchemy(String sentence) {
-		String topic ="";
+	static final Logger logger = Logger.getLogger(TopicWS.class);
+	
+	public List<String> queryAlchemy(String sentence) {
+		List<String> topic = new ArrayList<String>();
 		HttpPost post = new HttpPost("http://gateway-a.watsonplatform.net/calls/text/TextGetRankedTaxonomy");
 		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
@@ -56,7 +59,7 @@ public class TopicWS {
 					String label = tax.getString("label");
 					double score = Double.parseDouble(tax.getString("score"));
 					if (first) {
-						topic = label;
+						topic = divideTopics(label);
 						first = false;
 					}
 					// I consider only the first result because it is the best
@@ -68,6 +71,19 @@ public class TopicWS {
 			e.printStackTrace();
 		}
 		return topic;
+	}
+	
+	private static List<String> divideTopics(String topic){
+		String[] splitTopic = topic.split("/");
+		List<String> topics = new ArrayList<String>();
+		for(String tpc : splitTopic){
+			if(!tpc.isEmpty()){
+				logger.info("topic - "  +tpc);
+				topics.add(tpc.replace(" ", "_"));
+			}
+			
+		}
+		return topics;
 	}
 
 	public String queryOpenCalais(String sentence) {

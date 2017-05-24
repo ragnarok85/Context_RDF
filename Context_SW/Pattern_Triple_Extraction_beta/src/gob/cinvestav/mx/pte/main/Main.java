@@ -270,7 +270,9 @@ public class Main {
 			logger.info("============look for a topic==============================");
 			
 			TopicWS topicWs = new TopicWS();
-			String topic = topicWs.queryAlchemy(sentence);
+			List<String> topic = topicWs.queryAlchemy(sentence);
+			utility.createQuadClasses(topic);
+			utility.createQuadTopics(topic);
 
 			logger.info("=============Create and write model=======================");
 			// Utility utility = new Utility();
