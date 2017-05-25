@@ -6,8 +6,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
@@ -18,30 +19,68 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.PTBTokenizer;
 import gob.cinvestav.mx.pte.clausie.ClausieTriple;
+import gob.cinvestav.mx.pte.jena.Utility;
 import gob.cinvestav.mx.pte.main.Main;
+import gob.cinvestav.mx.pte.main.Triple;
 import gob.cinvestav.mx.pte.sentence.Word;
+import gob.cinvestav.mx.pte.ws.Entity;
 
 public class Utils {
 
 	final static Logger logger = Logger.getLogger(Main.class);
 	
-	public static List<String> readLines(File inputFile){
-		List<String> sentences = new ArrayList<String>();
-		
-		try(BufferedReader br = new BufferedReader(new FileReader(inputFile))){
-			String line = "";
-			int counterLines = 0;
-			while((line = br.readLine()) != null){
-				if(line.split(" ").length > 3){
-					sentences.add(line.toLowerCase());
-					counterLines++;
+	public static void checkEntitiesRep(List<String> uris) {
+		Set<String> setOfUris = new HashSet<String>();
+		for (String uriOne : uris) {
+			String splitUriOne[] = uriOne.split("/");
+			String compareOne = splitUriOne[splitUriOne.length - 1].toLowerCase();
+			boolean contained = false;
+			for (String uriTwo : uris) {
+				if (uris.indexOf(uriTwo) != uris.indexOf(uriOne)) {
+					String splitUriTwo[] = uriTwo.split("/");
+					String compareTwo = splitUriTwo[splitUriTwo.length - 1].toLowerCase();
+					if (compareTwo.contains(compareOne) && compareTwo.length() > compareOne.length()) {
+						contained = true;
+						break;
+					}
 				}
 			}
-			System.out.println("\tNumber of sentences:\t" + counterLines);
-		}catch(IOException e){
-			logger.error("Error reading file - " + e);
+			if (!contained) {
+				setOfUris.add(uriOne);
+			}
 		}
-		return sentences;
+		uris.clear();
+		uris.addAll(setOfUris);
+	}
+	
+	public static List<String> collectUris(List<Entity> entities) {
+		List<String> listUris = new ArrayList<String>();
+		for (Entity entity : entities) {
+			if (!entity.getUris().isEmpty()) {
+				listUris.addAll(entity.getUris());
+			}
+		}
+		checkEntitiesRep(listUris);
+		return listUris;
+	}
+	
+	public static void createTriple(List<ClausieTriple> clTriple) {
+		for (ClausieTriple trip : clTriple) {
+			Triple triple = new Triple();
+			if (!trip.getSubject().getEntity().isEmpty()) {
+				trip.getSubject().setTextNE(trip.getSubject().getText());
+				triple.setSubjectUris(Utils.collectUris(trip.getSubject().getEntity()));
+			}
+			if (!trip.getArgument().getEntity().isEmpty()) {
+				trip.getArgument().setTextNE(trip.getArgument().getText());
+				triple.setArgumentUris(Utils.collectUris(trip.getArgument().getEntity()));
+			}
+			triple.setRelation(trip.getRelation().getText());
+			if (!triple.getArgumentUris().isEmpty() && !triple.getSubjectUris().isEmpty()) {
+				logger.info("Triple: " + triple);
+				trip.setTriple(triple);
+			}
+		}
 	}
 	
 	public static List<Word> extractWords(ClausIE clausIE, String sentence) {
@@ -73,48 +112,97 @@ public class Utils {
 		return words;
 	}
 	
-	public static List<Integer> searchListPosition(String text, List<Word> words) {
-		String[] splitText = text.split(" ");
-		List<Integer> positions = new ArrayList<Integer>();
-		for (int i = 0 ; i <  words.size() ; i++) {
-			if (words.get(i).getWord().equalsIgnoreCase(splitText[0])) {
-				positions.add(i);
-				for(int j = 1; j < splitText.length ; j++){
-					i++;
-					if (words.get(i).getWord().equalsIgnoreCase(splitText[j])) {
-						positions.add(i);
-					}else{
-						positions.clear();
+	public static List<String> getClTriples(List<ClausieTriple> clTriple){
+		List<String> triples = new ArrayList<String>();
+//		logger.info("saving ClausIE triple: ");
+		for(ClausieTriple triple : clTriple){
+			if (triple.getSubject().getText().length() > 0 && triple.getArgument().getText().length() > 0){
+				String trip = "";
+				trip = triple.getSubject().getText() + "\t" + triple.getRelation().getText() + "\t" + triple.getArgument().getText();
+//				logger.info("\t" + trip);
+				triples.add(trip);
+			}
+			
+		}
+		return triples;
+	}
+	
+	public static List<File> getFiles(File inputDirectory){
+		List<File> inputFiles = new ArrayList<File>();
+		for(File file : inputDirectory.listFiles()){
+			if(file.isFile() && file.getName().endsWith("txt")){
+				inputFiles.add(file);
+			}
+		}
+		return inputFiles;
+		
+	}
+	
+	public static List<String> getFilesNames(File inputDirectory){
+		List<String> inputFiles = new ArrayList<String>();
+		for(File file : inputDirectory.listFiles()){
+			if(file.isFile() && file.getName().endsWith("rdf")){
+				inputFiles.add(file.getName().replace(".rdf", ""));
+			}
+		}
+		return inputFiles;
+		
+	}
+	
+	private static String joinNN(String so, List<Word> listWords ){
+		String[] splitString = so.split(" ");
+		String newString = "";
+		for(String splitS : splitString){
+			for(Word word : listWords){
+				if(word.getWord().equals(splitS)){
+					if(word.getPosTag().contains("NN")){
+						if(newString.length() > 0)
+							newString += "_" + word.getWord();
+						else
+							newString += word.getWord();
 						break;
 					}
 				}
 			}
 		}
-		//deleteDiscontinuousElements(positions);
-		return positions;
+		
+		return newString;
 	}
 	
-	private static void deleteDiscontinuousElements(List<Integer> positions) {
-		// delete discontinuous elements from beginning and ending
-		Collections.sort(positions);
-		List<Integer> delete = new ArrayList<Integer>();
-		for (int i = positions.size() - 1; i >= 0; i--) {
-			if (i - 1 > 0) {
-				int op = positions.get(i) - positions.get(i - 1);
-				if (op > 1) {
-					delete.add(Math.max(positions.get(i), positions.get(i - 1)));
+	public static void printTriples(List<ClausieTriple> clTriple) {
+		for (ClausieTriple triple : clTriple) {
+			logger.info(triple.printTriple());
+		}
+
+	}
+	
+	public static void mapTxtToNE(List<ClausieTriple> triples, Set<Entity> entities) {
+		for (ClausieTriple triple : triples) {
+			logger.info("Look entities for: " + triple.toString());
+
+			for (Entity entity : entities) {
+				if (triple.getSubject().getText().contains(entity.getText().replace(" ", "_"))) {
+					triple.getSubject().getEntity().add(entity);
 				}
-			} else {
-				int op = positions.get(i) - positions.get(0);
-				if (op > 1) {
-					delete.add(Math.min(positions.get(i), positions.get(0)));
+				if (triple.getArgument().getText().contains(entity.getText().replace(" ", "_"))) {
+					triple.getArgument().getEntity().add(entity);
 				}
 			}
-
 		}
-		for (Integer del : delete) {
-			positions.remove(del);
+	}
+	
+	public static boolean predicateRestrictions(String predicate){
+		boolean isAlpha = true;
+		char[] charSet = predicate.toCharArray();
+		
+		for(Character aChar : charSet){
+			if( !aChar.equals("_") && !Character.isLetter(aChar)){
+				isAlpha = false;
+				break;
+			}
 		}
+		
+		return isAlpha;
 	}
 	
 	public static void reCreateClTriples(List<ClausieTriple> clTriples, List<Word> listWords){
@@ -143,24 +231,46 @@ public class Utils {
 		}
 	}
 	
-	private static String joinNN(String so, List<Word> listWords ){
-		String[] splitString = so.split(" ");
-		String newString = "";
-		for(String splitS : splitString){
-			for(Word word : listWords){
-				if(word.getWord().equals(splitS)){
-					if(word.getPosTag().contains("NN")){
-						if(newString.length() > 0)
-							newString += "_" + word.getWord();
-						else
-							newString += word.getWord();
+	public static List<String> readLines(File inputFile){
+		List<String> sentences = new ArrayList<String>();
+		
+		try(BufferedReader br = new BufferedReader(new FileReader(inputFile))){
+			String line = "";
+			int counterLines = 0;
+			while((line = br.readLine()) != null){
+				if(line.split(" ").length > 3){
+					sentences.add(line.toLowerCase());
+					counterLines++;
+				}
+			}
+			System.out.println("\tNumber of sentences:\t" + counterLines);
+		}catch(IOException e){
+			logger.error("Error reading file - " + e);
+		}
+		return sentences;
+	}
+	
+	
+	
+	public static List<Integer> searchListPosition(String text, List<Word> words) {
+		String[] splitText = text.split(" ");
+		List<Integer> positions = new ArrayList<Integer>();
+		for (int i = 0 ; i <  words.size() ; i++) {
+			if (words.get(i).getWord().equalsIgnoreCase(splitText[0])) {
+				positions.add(i);
+				for(int j = 1; j < splitText.length ; j++){
+					i++;
+					if (words.get(i).getWord().equalsIgnoreCase(splitText[j])) {
+						positions.add(i);
+					}else{
+						positions.clear();
 						break;
 					}
 				}
 			}
 		}
-		
-		return newString;
+		//deleteDiscontinuousElements(positions);
+		return positions;
 	}
 	
 }

@@ -45,24 +45,30 @@ public class Utility {
 	final static Logger logger = Logger.getLogger(Utility.class);
 
 	Model jenaModel = ModelFactory.createDefaultModel();
-	String namespace = "http://tamps.cinvestav.com.mx/rdf/#";
-	String graphURI = "http://tamps.cinvestav.com.mx/rdf/graph/";
-	String wibiNamespace = "http://wibitaxonomy.org/";
-	String contextGraph = "http://tamps.cinvestav.com.mx/graph/";
-	String ontologyDesignPatterns = "http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#";
-	String ontoText = "http://www.ontotext.com/proton/protontop#";
-	// String dbr = "http://dbpedia.org/resource/";
-	String ownNameSpace = "http://tamps.cinvestav.com.mx/rdf/resources/";
-
+	
+	Property inDocprop;
+	Property inSntprop;
+	Property composedOf;
+	Property hasTopic;
+	
 	List<Quad> quads = new ArrayList<Quad>();
-
+	
 	public Utility() {
-		// jenaModel.setNsPrefix("cinvestav", namespace);
-		// jenaModel.setNsPrefix("dbr", dbr);
-		jenaModel.setNsPrefix("wibi", wibiNamespace);
-		jenaModel.setNsPrefix("cinves", "http://tamps.cinvestav.com.mx/rdf/#");
-		jenaModel.setNsPrefix("onto", ontologyDesignPatterns);
-		jenaModel.setNsPrefix("ontotext", ontoText);
+		inDocprop = jenaModel.createProperty(LocalProperties.LOCALPROPERTY.url() + "inDoc");
+		inSntprop = jenaModel.createProperty(LocalProperties.LOCALPROPERTY.url() + "inSentence");
+		composedOf = jenaModel.createProperty(LocalProperties.LOCALPROPERTY.url() + "composedOf");
+		hasTopic = jenaModel.createProperty(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic");
+		jenaModel.setNsPrefix("cnvsr", LocalProperties.LOCALRESOURCE.url());
+		jenaModel.setNsPrefix("cnvsp", LocalProperties.LOCALPROPERTY.url());
+		jenaModel.setNsPrefix("cnvsdcs", LocalProperties.GRAPHDOCURI.url());
+		jenaModel.setNsPrefix("cnvsctx", LocalProperties.GRAPHCTXURI.url());
+		jenaModel.setNsPrefix("wibi", LocalProperties.WIBIURI.url());
+		jenaModel.setNsPrefix("onto", LocalProperties.ONTOPDESIGNPATTERNS.url());
+		jenaModel.setNsPrefix("ontotext", LocalProperties.ONTOTEXT.url());
+		jenaModel.add(inDocprop,RDF.type,RDF.Property);
+		jenaModel.add(inSntprop,RDF.type,RDF.Property);
+		jenaModel.add(composedOf,RDF.type,RDF.Property);
+		jenaModel.add(hasTopic,RDF.type,RDF.Property);
 	}
 
 	public static void fuseSeeds(String seedFolder, Set<String> allSeeds) {
@@ -98,36 +104,6 @@ public class Utility {
 		}
 	}
 
-	// public void populateModel(ClausieTriple triple, String rdfModelFileName)
-	// {
-	// String graphURI = "http://tamps.cinvestav.com.mx/rdf/graph/";
-	// Property inDocprop =
-	// jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#inDoc");
-	// Property inSntprop =
-	// jenaModel.createProperty("http://tamps.cinvestav.com.mx/rdf/#inSentence");
-	// for (String sbjUri : triple.getTriple().getSubjectUris()) {
-	// if (sbjUri.length() > 0) {
-	// String sbj = triple.getSubject().getTextNE().replace(" ", "_");
-	// Resource subject = jenaModel.createResource(ownNameSpace+sbj);
-	// jenaModel.add(subject,inDocprop,(RDFNode)jenaModel.createResource(graphURI+rdfModelFileName));
-	// jenaModel.add(subject,sameAs,jenaModel.createResource(sbjUri));
-	// jenaModel.add(subject,inSntprop,jenaModel.createLiteral(triple.getOrgSentence()));
-	// for (String objUri : triple.getTriple().getArgumentUris()) {
-	// if (objUri.length() > 0) {
-	// String obj = triple.getArgument().getTextNE().replace(" ", "_");
-	// Resource object = jenaModel.createResource(ownNameSpace+obj);
-	// jenaModel.add(object,inDocprop,(RDFNode)jenaModel.createResource(graphURI+rdfModelFileName));
-	// jenaModel.add(object,inSntprop,jenaModel.createLiteral(triple.getOrgSentence()));
-	// jenaModel.add(object,sameAs,jenaModel.createResource(objUri));
-	// logger.info("Property: " + triple.getTriple().getRelationUri());
-	// Property property =
-	// jenaModel.createProperty(triple.getTriple().getRelationUri());
-	// jenaModel.add(subject, property, object);
-	// }
-	// }
-	// }
-	// }
-	// }
 	public void populateModel(ClausieTriple triple, String rdfModelFileName, List<String> topic) {
 		String sbj = triple.getSubject().getTextNE();
 		String obj = triple.getArgument().getTextNE();
@@ -135,50 +111,41 @@ public class Utility {
 		int topicSize = topic.size() - 1;
 
 		Property property = jenaModel.createProperty(prdt);
-		Property inDocprop = jenaModel.createProperty(namespace + "inDoc");
-		Property inSntprop = jenaModel.createProperty(namespace + "inSentence");
-		Property composedOf = jenaModel.createProperty(namespace + "composedOf");
-		Property mainTopic = jenaModel.createProperty(ontologyDesignPatterns + "hasTopic");
+		
 		Resource subject = null;
 		Resource object = null;
-
-		List<String> newSubjUris = checkEntitiesRep(triple.getTriple().getSubjectUris());
-		triple.getTriple().getSubjectUris().clear();
-		triple.getTriple().setSubjectUris(newSubjUris);
+		
+		jenaModel.add(property,RDF.type,RDF.Property);
 
 		if (triple.getTriple().getSubjectUris().size() > 1) {
-			subject = jenaModel.createResource(ownNameSpace + sbj);
+			subject = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + sbj);
 			for (String sbjUri : triple.getTriple().getSubjectUris())
 				jenaModel.add(subject, composedOf, jenaModel.createResource(sbjUri));
 		}
 
-		List<String> newObjUris = checkEntitiesRep(triple.getTriple().getArgumentUris());
-		triple.getTriple().getArgumentUris().clear();
-		triple.getTriple().setArgumentUris(newObjUris);
-
 		if (triple.getTriple().getArgumentUris().size() > 1) {
-			object = jenaModel.createResource(ownNameSpace + obj);
+			object = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + obj);
 			for (String objUri : triple.getTriple().getArgumentUris())
 				jenaModel.add(object, composedOf, jenaModel.createResource(objUri));
 		}
 
 		if (triple.getTriple().getSubjectUris().size() == 1) {
 			if (subject == null)
-				subject = jenaModel.createResource(ownNameSpace + sbj);
+				subject = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + sbj);
 			jenaModel.add(subject, OWL.sameAs, jenaModel.createResource(triple.getTriple().getSubjectUris().get(0)));
 		}
 		if (triple.getTriple().getArgumentUris().size() == 1) {
 			if (object == null)
-				object = jenaModel.createResource(ownNameSpace + obj);
+				object = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + obj);
 			jenaModel.add(object, OWL.sameAs, jenaModel.createResource(triple.getTriple().getArgumentUris().get(0)));
 		}
 
 		if (subject != null && object != null) {
-			jenaModel.add(subject, mainTopic, jenaModel.createResource(contextGraph + topic.get(topicSize)));
-			jenaModel.add(object, mainTopic, jenaModel.createResource(contextGraph + topic.get(topicSize)));
-			jenaModel.add(subject, inDocprop, (RDFNode) jenaModel.createResource(graphURI + rdfModelFileName));
+			jenaModel.add(subject, hasTopic, jenaModel.createResource(LocalProperties.GRAPHCTXURI.url() + topic.get(topicSize)));
+			jenaModel.add(object, hasTopic, jenaModel.createResource(LocalProperties.GRAPHCTXURI.url() + topic.get(topicSize)));
+			jenaModel.add(subject, inDocprop, (RDFNode) jenaModel.createResource(LocalProperties.GRAPHDOCURI.url() + rdfModelFileName));
 			jenaModel.add(subject, inSntprop, jenaModel.createLiteral(triple.getOrgSentence()));
-			jenaModel.add(object, inDocprop, (RDFNode) jenaModel.createResource(graphURI + rdfModelFileName));
+			jenaModel.add(object, inDocprop, (RDFNode) jenaModel.createResource(LocalProperties.GRAPHDOCURI.url() + rdfModelFileName));
 			jenaModel.add(object, inSntprop, jenaModel.createLiteral(triple.getOrgSentence()));
 			logger.info("Property: " + prdt);
 
@@ -189,9 +156,9 @@ public class Utility {
 	}
 
 	public void createQuad(List<String> topic, String subject, String object, String predicate) {
-		Node graph = NodeFactory.createURI(contextGraph + topic.get(topic.size() - 1));
-		Node nSubject = NodeFactory.createURI(ownNameSpace + subject);
-		Node nObject = NodeFactory.createURI(ownNameSpace + object);
+		Node graph = NodeFactory.createURI(LocalProperties.GRAPHCTXURI.url()+ topic.get(topic.size() - 1));
+		Node nSubject = NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + subject);
+		Node nObject = NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + object);
 		Node nProperty = NodeFactory.createURI(predicate);
 		Node thing = NodeFactory.createURI(OWL.Thing.getURI());
 		Node type = NodeFactory.createURI(RDF.type.getURI());
@@ -205,19 +172,24 @@ public class Utility {
 
 	public void createQuadTopics(List<String> topic) {
 		int topicSize = topic.size() - 1;
-		Node graph = NodeFactory.createURI(contextGraph + topic.get(topicSize));
-		Node hasSubTopic = NodeFactory.createURI(ontologyDesignPatterns + "hasSubTopic");
-		Node hasTopic = NodeFactory.createURI(ontologyDesignPatterns + "hasTopic");
-		BlankNodeId ctx = BlankNodeId.create("ctx");
+		Node graph = NodeFactory.createURI(LocalProperties.GRAPHCTXURI.url() + topic.get(topicSize));
+		Node hasSubTopic = NodeFactory.createURI(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasSubTopic");
+		Node hasTopic = NodeFactory.createURI(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic");
+//		BlankNodeId ctx = BlankNodeId.create("ctx");
+		
 		Quad quad = null;
-		quad = new Quad(graph, NodeFactory.createBlankNode(ctx),hasTopic,
-				NodeFactory.createURI(ownNameSpace + topic.get(topicSize)));
+//		quad = new Quad(graph, NodeFactory.createBlankNode(ctx),hasTopic,
+//				NodeFactory.createURI(ownNameSpace + topic.get(topicSize)));
+		quad = new Quad(graph, NodeFactory.createURI(topic.get(topicSize)),hasTopic,
+				NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(topicSize)));
 		quads.add(quad);
 		logger.info("topicSize = " + topicSize);
 		for (int i = topicSize - 1; i >= 0; i--) {
 			logger.info("adding subtopic: " + topic.get(i));
-			quad = new Quad(graph, NodeFactory.createBlankNode(ctx), hasSubTopic,
-					NodeFactory.createURI(ownNameSpace + topic.get(i)));
+//			quad = new Quad(graph, NodeFactory.createBlankNode(ctx), hasSubTopic,
+//					NodeFactory.createURI(ownNameSpace + topic.get(i)));
+			quad = new Quad(graph, graph, hasSubTopic,
+					NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(i)));
 			quads.add(quad);
 		}
 
@@ -226,54 +198,28 @@ public class Utility {
 	public void createQuadClasses(List<String> topic) {
 		int topicSize = topic.size() - 1;
 		// Node subClassOf = NodeFactory.createURI(RDFS.subClassOf.getURI());
-		Node subTopicOf = NodeFactory.createURI(ontoText + "subTopicOf");
+		Node subTopicOf = NodeFactory.createURI(LocalProperties.ONTOTEXT.url() + "subTopicOf");
 		// Node clss = NodeFactory.createURI(RDFS.Class.getURI());
 		Node type = NodeFactory.createURI(RDF.type.getURI());
-		Node ontoTopic = NodeFactory.createURI(ontoText + "Topic");
-		Node graph = NodeFactory.createURI(contextGraph + topic.get(topicSize));
+		Node ontoTopic = NodeFactory.createURI(LocalProperties.ONTOTEXT.url() + "Topic");
+		Node graph = NodeFactory.createURI(LocalProperties.GRAPHCTXURI.url() + topic.get(topicSize));
 		Quad quad = null;
 
-		quad = new Quad(graph, NodeFactory.createURI(ownNameSpace + topic.get(topicSize)), type, ontoTopic);
+		quad = new Quad(graph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url()+topic.get(topicSize)), type, ontoTopic);
 		quads.add(quad);
 		for (int i = topicSize, j = topicSize - 1; j >= 0; j--, i--) {
-			quad = new Quad(graph, NodeFactory.createURI(ownNameSpace + topic.get(i)), subTopicOf,
-					NodeFactory.createURI(ownNameSpace + topic.get(j)));
+			quad = new Quad(graph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(i)), subTopicOf,
+					NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(j)));
 			quads.add(quad);
-			quad = new Quad(graph, NodeFactory.createURI(ownNameSpace + topic.get(j)), type, ontoTopic);
+			quad = new Quad(graph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(j)), type, ontoTopic);
 			quads.add(quad);
 		}
-	}
-
-	public List<String> checkEntitiesRep(List<String> uris) {
-		List<String> newUris = new ArrayList<String>();
-		Set<String> setUris = new HashSet<String>();
-		for (String uriOne : uris) {
-			String splitUriOne[] = uriOne.split("/");
-			String compareOne = splitUriOne[splitUriOne.length - 1].toLowerCase();
-			boolean contained = false;
-			for (String uriTwo : uris) {
-				if (uris.indexOf(uriTwo) != uris.indexOf(uriOne)) {
-					String splitUriTwo[] = uriTwo.split("/");
-					String compareTwo = splitUriTwo[splitUriTwo.length - 1].toLowerCase();
-					if (compareTwo.contains(compareOne) && compareTwo.length() > compareOne.length()) {
-						contained = true;
-						break;
-					}
-				}
-			}
-			if (!contained) {
-				setUris.add(uriOne);
-			}
-		}
-		newUris.addAll(setUris);
-		return newUris;
-
 	}
 
 	public void populateTopic(Entity entity, String topic) {
 		for (String uri : entity.getUris()) {
 			Resource subject = jenaModel.createResource(uri);
-			Property mainTopic = jenaModel.createProperty(ontologyDesignPatterns + "hasTopic");
+			Property mainTopic = jenaModel.createProperty(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic");
 			jenaModel.add(subject, mainTopic, jenaModel.createLiteral(topic));
 		}
 
@@ -292,7 +238,7 @@ public class Utility {
 		}
 	}
 
-	public static void printTriples(List<String> triples, String output) {
+	public void printTriples(List<String> triples, String output) {
 		try (PrintWriter pw = new PrintWriter(new FileWriter(output))) {
 			for (String triple : triples) {
 				pw.write(triple + "\n");
@@ -304,25 +250,30 @@ public class Utility {
 	}
 
 	public void addRdfsComment(String comment) {
-		jenaModel.add(jenaModel.createResource(namespace + "OrgSentence"),
+		jenaModel.add(jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + "OrgSentence"),
 				jenaModel.createProperty("http://www.w3.org/2000/01/rdf-schema#comment"),
 				jenaModel.createLiteral(comment));
 	}
 
-	public void writeTriple(String path) {
+	public void writeRDFTriples(String path) {
 		try {
 			FileWriter fos = new FileWriter(path);
 			jenaModel.write(fos, "RDF/XML");
 			fos.close();
-			OutputStream fos2 = new FileOutputStream("Quad" + path.replace(".txt.rdf", ".nq"));
-
-			RDFDataMgr.writeQuads(fos2, quads.iterator());
-			fos2.close();
 			// jenaModel.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public void writeRDFQuad(String path){
+		try(OutputStream fos = new FileOutputStream(path.replace(".txt", ".nq"))){
+			RDFDataMgr.writeQuads(fos, quads.iterator());
+			fos.close();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
 	}
 
 	public static void writeProblematicSentences(String problematicSentencesOuput,
@@ -348,7 +299,7 @@ public class Utility {
 						|| !s.getPredicate().toString().contains("http://www.w3.org/2002/07/owl#sameAs")
 						|| !s.getPredicate().toString().contains("http://tamps.cinvestav.com.mx/rdf/#inDoc")
 						|| !s.getPredicate().toString().contains("http://tamps.cinvestav.com.mx/rdf/#inSentence")
-						|| !s.getPredicate().toString().contains(ontologyDesignPatterns + "hasTopic"));
+						|| !s.getPredicate().toString().contains(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic"));
 			}
 		});
 		while (iter.hasNext()) {
