@@ -139,7 +139,8 @@ public class Main {
 //		String outputTxtTriples = outputText.getAbsolutePath() +  inputFileName + ".txt";
 		//only for test
 		String outputRDFTriples = inputFileName  + ".rdf";
-		String outputRDFQuads =  inputFileName + ".nq";
+		String outputTopicQuads =  inputFileName + "-topic.nq";
+		String outputDocQuads =  inputFileName + "-doc.nq";
 		String outputTxtTriples = inputFileName + ".txt";
 
 		Utility utility = new Utility();
@@ -214,6 +215,16 @@ public class Main {
 			// removeBabelfyEntites(MT.getBabelfyEntities());
 			// lookEntities(MT.clausieTriples, MT.alchemyEntities,
 			// MT.babelfyEntities);
+			
+			logger.info("=============Search and create type triples =======================");
+			for (Entity entity : entities) {
+				List<String> wibiTypes = UtilsWS.queryWiBi(entity.getText());
+				if (wibiTypes != null && !wibiTypes.isEmpty()) {
+					WiBiTypes wibi = new WiBiTypes();
+					wibi.getUris().addAll(wibiTypes);
+					entity.getWikiUris().addAll(wibiTypes);
+				}
+			}
 			logger.info("=============look for named entities=======================");
 			Utils.mapTxtToNE(MT.clausieTriples, entities);
 			logger.info("=============Create triples=======================");
@@ -240,15 +251,15 @@ public class Main {
 				}
 
 			}
-			logger.info("=============Search and create type triples =======================");
-			for (Entity entity : entities) {
-				List<String> wibiTypes = UtilsWS.queryWiBi(entity.getText());
-				if (wibiTypes != null && !wibiTypes.isEmpty()) {
-					WiBiTypes wibi = new WiBiTypes();
-					wibi.getUris().addAll(wibiTypes);
-					entity.getWikiUris().addAll(wibiTypes);
-				}
-			}
+//			logger.info("=============Search and create type triples =======================");
+//			for (Entity entity : entities) {
+//				List<String> wibiTypes = UtilsWS.queryWiBi(entity.getText());
+//				if (wibiTypes != null && !wibiTypes.isEmpty()) {
+//					WiBiTypes wibi = new WiBiTypes();
+//					wibi.getUris().addAll(wibiTypes);
+//					entity.getWikiUris().addAll(wibiTypes);
+//				}
+//			}
 			// for (ClausieTriple triple : MT.clausieTriples) {
 			// if (triple.getSubject().getTextNE().length() > 0) {
 			// List<String> wibiSubjectTypes =
@@ -285,19 +296,21 @@ public class Main {
 
 			TopicWS topicWs = new TopicWS();
 			List<String> topic = topicWs.queryAlchemy(sentence);
+			utility.InitializeQuadTopics(topic);
 			utility.createQuadClasses(topic);
-			utility.createQuadTopics(topic);
+			
 
 			logger.info("=============Create and write model=======================");
 			// Utility utility = new Utility();
 
-			for (Entity entity : entities) {
-				utility.populateTypes(entity);
-			}
+//			for (Entity entity : entities) {
+//				utility.populateTypes(entity);
+//			}
 			for (ClausieTriple triple : MT.getClausieTriples()) {
 				// utility.publicLovNameSpace(lovUris);
 				// utility.addRdfsComment(sentence);
 				utility.populateModel(triple, inputFileName, topic);
+				utility.populateQuadModel(triple, inputFileName, topic);
 				// utility.populateTypes(triple);
 				// utility.writeTriple(outputTriple);
 			}
@@ -318,7 +331,8 @@ public class Main {
 		logger.info("Saving information in: " + outputRDFTriples);
 		utility.printTriples(triples, outputTxtTriples);
 		utility.writeRDFTriples(outputRDFTriples);
-		utility.writeRDFQuad(outputRDFQuads);
+		utility.writeTopicQuad(outputTopicQuads);
+		utility.writeDocQuad(outputDocQuads);
 		utility.extractSeeds(seeds);
 		return triples;
 	}

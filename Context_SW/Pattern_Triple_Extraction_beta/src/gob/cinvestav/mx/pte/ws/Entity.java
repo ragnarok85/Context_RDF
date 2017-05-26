@@ -1,18 +1,22 @@
 package gob.cinvestav.mx.pte.ws;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Entity {
+	//TODO inserted by lti [May 26, 2017,5:58:17 PM] change Set for Map
 	String text;
 	Set<String> uris;
 	Set<String> wikiUris;
+//	Map<String,String> uri;
+//	Map<String,String> wikiUri;
 	
 	public Entity(){
 		this.uris = new HashSet<String>();
 		this.text = "";
 		this.wikiUris = new HashSet<String>();
+//		this.uri = new HashMap<String,String>();
+//		this.wikiUri = new HashMap<String,String>();
 	}
 	
 	@Override
@@ -37,6 +41,22 @@ public class Entity {
 	public void setText(String text) {
 		this.text = text;
 	}
+
+//	public Map<String, String> getUri() {
+//		return uri;
+//	}
+//
+//	public void setUri(Map<String, String> uri) {
+//		this.uri.putAll(uri);
+//	}
+//
+//	public Map<String, String> getWikiUri() {
+//		return wikiUri;
+//	}
+//
+//	public void setWikiUri(Map<String, String> wikiUri) {
+//		this.wikiUri.putAll(wikiUri);
+//	}
 
 	public Set<String> getUris() {
 		return uris;

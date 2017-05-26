@@ -66,20 +66,24 @@ public class Utils {
 	
 	public static void createTriple(List<ClausieTriple> clTriple) {
 		for (ClausieTriple trip : clTriple) {
+			//TODO inserted by lti [May 26, 2017,5:58:34 PM] It is necessary to keep all subjects and arguments
+			//even if they don't have a dbpedia URI.
 			Triple triple = new Triple();
 			if (!trip.getSubject().getEntity().isEmpty()) {
 				trip.getSubject().setTextNE(trip.getSubject().getText());
 				triple.setSubjectUris(Utils.collectUris(trip.getSubject().getEntity()));
+//				triple.getSubjectUris().put(trip.getSubject().getTextNE(), trip.getSubject().getEntity().get(0));
 			}
 			if (!trip.getArgument().getEntity().isEmpty()) {
 				trip.getArgument().setTextNE(trip.getArgument().getText());
 				triple.setArgumentUris(Utils.collectUris(trip.getArgument().getEntity()));
 			}
 			triple.setRelation(trip.getRelation().getText());
-			if (!triple.getArgumentUris().isEmpty() && !triple.getSubjectUris().isEmpty()) {
-				logger.info("Triple: " + triple);
-				trip.setTriple(triple);
-			}
+//			if (!triple.getArgumentUris().isEmpty() && !triple.getSubjectUris().isEmpty()) {
+//				logger.info("Triple: " + triple);
+//				trip.setTriple(triple);
+//			}
+			trip.setTriple(triple);
 		}
 	}
 	

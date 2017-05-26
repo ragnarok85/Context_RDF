@@ -1,81 +1,60 @@
-assembly language
+#create
 dialect
 software
-computer programming
-#part linux system
+#indoc
+#has
 impediment
-computer programmers
-language
-procedure (computing)
+#part linux system
+ontopic.owl#hastopic
 #programmer
-interpreter (computing)
+#bedebugging
 problem
-process (science)
-one (number)
-tux
+#composedof
+#use
 #program source code
-programming language
 #computer
-software engineering
+programming language
 obstacle
 #software tool text editor ides
-algorithm
 profession
 #computer world
 #computer program
-source code
 programmer
+source code
 #job
-linux kernel
 tool
-hello world program
-instruction (computer science)
 sequence
-system
+instruction (computer science)
 person
 name
+22-rdf-syntax-ns#property
 computer program
-character (arts)
-company (law)
 programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work 
 program (computing)
-software application
 job
-software developer
 champion
-internet
 computer programming be a profession that can be do from a computer anywhere in the world 
-code
-mascot
 a computer programmer be a person who make computer program use a programming language
 text editor
+lemmatizeprogrammer
+#canbedo
 computer
 world
-unix-like
 a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .
 linux
-compiler
-kernel (computing)
 c and c++
-freedom of information
-operating system
-extension (semantics)
+#insentence
 torvalds
-computer software
-lemmatizeprogrammer.txt.rdf
-#programming language
 peripheral device
-free software
-entrepreneur
-#torvalds
+#programming language
 vocation
+#torvalds
 #programmer job
-integrated development environment
-application (software)
 challenge (tv channel)
 rules of chess
-one example be linus torvalds , who create a important part of the linux operating system . 
 computer operating system
+one example be linus torvalds , who create a important part of the linux operating system . 
 #profession
 #program problem
+#bewrite
 formal language
