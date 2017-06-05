@@ -1,60 +1,22 @@
-#create
-dialect
-software
-#indoc
-#has
-impediment
-#part linux system
-ontopic.owl#hastopic
-#programmer
-#bedebugging
-problem
-#composedof
-#use
-#program source code
-#computer
-programming language
-obstacle
-#software tool text editor ides
 profession
-#computer world
-#computer program
+code
+software
+world program
+use people
 programmer
 source code
-#job
-tool
-sequence
-instruction (computer science)
-person
-name
-22-rdf-syntax-ns#property
-computer program
-programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work 
-program (computing)
-job
-champion
-computer programming be a profession that can be do from a computer anywhere in the world 
-a computer programmer be a person who make computer program use a programming language
-text editor
-lemmatizeprogrammer
-#canbedo
-computer
-world
-a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem .
-linux
-c and c++
-#insentence
 torvalds
-peripheral device
-#programming language
-vocation
-#torvalds
-#programmer job
-challenge (tv channel)
-rules of chess
-computer operating system
-one example be linus torvalds , who create a important part of the linux operating system . 
-#profession
-#program problem
-#bewrite
-formal language
+language
+text editor
+program
+tool
+development environment
+computer
+problem
+world
+linux
+ides
+computer program
+programming language
+part system
+job

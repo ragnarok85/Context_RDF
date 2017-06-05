@@ -134,11 +134,13 @@ public class Utility {
 		if (triple.getTriple().getSubjectUris().size() == 1) {
 			if (subject == null)
 				subject = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + sbj);
+			logger.info("sameAs (subject) = " + sbj);
 			jenaModel.add(subject, OWL.sameAs, jenaModel.createResource(triple.getTriple().getSubjectUris().get(0)));
 		}
 		if (triple.getTriple().getArgumentUris().size() == 1) {
 			if (object == null)
 				object = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + obj);
+			logger.info("sameAs (argument) = " + obj);
 			jenaModel.add(object, OWL.sameAs, jenaModel.createResource(triple.getTriple().getArgumentUris().get(0)));
 		}
 
@@ -212,7 +214,7 @@ public class Utility {
 			localQuad.add(new Quad(docGraph,subject, NodeFactory.createURI(inSntprop.getURI()), NodeFactory.createLiteral(triple.getOrgSentence())));
 			localQuad.add(new Quad(docGraph,object, NodeFactory.createURI(inDocprop.getURI()),
 					NodeFactory.createURI(LocalProperties.GRAPHDOCURI.url() + rdfModelFileName)));
-			localQuad.add(new Quad(docGraph,object, NodeFactory.createURI(inSntprop.getURI()), NodeFactory.createURI(triple.getOrgSentence())));
+			localQuad.add(new Quad(docGraph,object, NodeFactory.createURI(inSntprop.getURI()), NodeFactory.createLiteral(triple.getOrgSentence())));
 			logger.info("(docQuad) Property: " + prdt);
 			
 			localQuad.addAll(populateQuadTypes(triple.getSubject().getTextNE(),triple.getSubject().getEntity(), docGraph));
@@ -253,7 +255,7 @@ public class Utility {
 		Quad quad = null;
 		// quad = new Quad(graph, NodeFactory.createBlankNode(ctx),hasTopic,
 		// NodeFactory.createURI(ownNameSpace + topic.get(topicSize)));
-		quad = new Quad(topicGraph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE+topic.get(topicSize)), hasTopic,
+		quad = new Quad(topicGraph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url()+topic.get(topicSize)), hasTopic,
 				NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(topicSize)));
 		ctxQuads.add(quad);
 		logger.info("topicSize = " + topicSize);
@@ -313,19 +315,38 @@ public class Utility {
 		}
 	}
 
-	public void populateTypes(String textNE, List<Entity> entities) {
-		for (Entity entity : entities) {
-			for (String wibiUri : entity.getWikiUris()) {
+//	public void populateTypes(String textNE, List<Entity> entities) {
+//		for (Entity entity : entities) {
+//			for (String wibiUri : entity.getWikiUris()) {
+//				jenaModel.add(jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + textNE), RDF.type,
+//						jenaModel.createResource(wibiUri));
+//			}
+//		}
+//	}
+	
+	public void populateTypes(String textNE, Map<String,Entity> entities) {
+		for (String entity : entities.keySet()) {
+			for (String wibiUri : entities.get(entity).getWikiUris()) {
 				jenaModel.add(jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + textNE), RDF.type,
 						jenaModel.createResource(wibiUri));
 			}
 		}
 	}
 
-	public List<Quad> populateQuadTypes(String textNE, List<Entity> entities, Node docGraph) {
+//	public List<Quad> populateQuadTypes(String textNE, List<Entity> entities, Node docGraph) {
+//		List<Quad> typeQuads = new ArrayList<Quad>();
+//		for (Entity entity : entities) {
+//			for (String wibiUri : entity.getWikiUris()) {
+//				typeQuads.add(new Quad(docGraph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + textNE),
+//						NodeFactory.createURI(RDF.type.getURI()), NodeFactory.createURI(wibiUri)));
+//			}
+//		}
+//		return typeQuads;
+//	}
+	public List<Quad> populateQuadTypes(String textNE, Map<String,Entity> entities, Node docGraph) {
 		List<Quad> typeQuads = new ArrayList<Quad>();
-		for (Entity entity : entities) {
-			for (String wibiUri : entity.getWikiUris()) {
+		for (String entity : entities.keySet()) {
+			for (String wibiUri : entities.get(entity).getWikiUris()) {
 				typeQuads.add(new Quad(docGraph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + textNE),
 						NodeFactory.createURI(RDF.type.getURI()), NodeFactory.createURI(wibiUri)));
 			}
@@ -395,16 +416,30 @@ public class Utility {
 			e.printStackTrace();
 		}
 	}
-
+	public void extractSeedsTwo(List<ClausieTriple> triples, Set<String> seeds){
+		for(ClausieTriple triple : triples){
+			for(String entity : triple.getSubject().getEntity().keySet()){
+				seeds.add(entity.replace("_", " "));
+			}
+			for(String entity : triple.getArgument().getEntity().keySet()){
+				seeds.add(entity.replace("_", " "));
+			}
+//			seeds.add(triple.getSubject().getTextNE().replace("_", ""));
+//			seeds.add(triple.getArgument().getTextNE().replace("_", ""));
+		}
+	}
 	public void extractSeeds(Set<String> seeds) {
 		StmtIterator iter = jenaModel.listStatements(new SimpleSelector(null, null, (RDFNode) null) {
 			public boolean selects(Statement s) {
-				return (!s.getPredicate().toString().contains("http://www.w3.org/2000/01/rdf-schema#comment")
-						|| !s.getPredicate().toString().contains("http://www.w3.org/2002/07/owl#sameAs")
-						|| !s.getPredicate().toString().contains("http://tamps.cinvestav.com.mx/rdf/#inDoc")
-						|| !s.getPredicate().toString().contains("http://tamps.cinvestav.com.mx/rdf/#inSentence")
+				return (!s.getPredicate().toString().contains(RDFS.comment.getURI())
+						|| !s.getPredicate().toString().contains(OWL.sameAs.getURI())
+						|| !s.getPredicate().toString().contains(inDocprop.getURI())
+						|| !s.getPredicate().toString().contains(inSntprop.getURI())
 						|| !s.getPredicate().toString()
-								.contains(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic"));
+								.contains(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic")
+						|| !s.getPredicate().toString().contains(topicGraph.getURI())
+						|| !s.getPredicate().toString().contains(docGraph.getURI())
+						|| !s.getPredicate().toString().contains(LocalProperties.ONTOTEXT.url() + ""));
 			}
 		});
 		while (iter.hasNext()) {
@@ -412,13 +447,13 @@ public class Utility {
 			String[] subject = stmt.getSubject().toString().split("/");
 			String[] object = stmt.getObject().toString().split("/");
 
-			String sbj = subject[subject.length - 1].toLowerCase();
-			String obj = object[object.length - 1].toLowerCase();
+			String sbj = subject[subject.length - 1].toLowerCase().replace("#", "");
+			String obj = object[object.length - 1].toLowerCase().replace("#", "");
 
 			seeds.add(sbj.replace("_", " "));
 			seeds.add(obj.replace("_", " "));
 
-			logger.info("seeds : [" + sbj + "," + obj + "]" + " was added....\n\n");
+			logger.info("seeds : [" + sbj.replace("_", " ") + "," + obj.replace("_", " ") + "]" + " was added....\n\n");
 			jenaModel.close();
 		}
 	}

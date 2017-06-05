@@ -132,13 +132,19 @@ public class Main {
 		}
 	}
 
+	/**
+	 * @param inputFileName
+	 * @param sentences
+	 * @param seeds
+	 * @return
+	 */
 	public List<String> extractTriples(String inputFileName, List<String> sentences, Set<String> seeds) {
 		//for more than one file
 //		String outputRDFTriples = outputRDF.getAbsolutePath() + inputFileName  + ".rdf";
 //		String outputRDFQuads = outputQuad.getAbsolutePath() + inputFileName + ".nq";
 //		String outputTxtTriples = outputText.getAbsolutePath() +  inputFileName + ".txt";
 		//only for test
-		String outputRDFTriples = inputFileName  + ".rdf";
+		String outputRDFTriples = inputFileName  + ".ttl";
 		String outputTopicQuads =  inputFileName + "-topic.nq";
 		String outputDocQuads =  inputFileName + "-doc.nq";
 		String outputTxtTriples = inputFileName + ".txt";
@@ -168,8 +174,13 @@ public class Main {
 			triples.addAll(stringClTriples);
 			List<Word> wordsInf = Utils.extractWords(clausIE, sentence);
 			MT.setSntsWrds(wordsInf);
-
+			//join nouns and replace original subject with the joined nouns
 			Utils.reCreateClTriples(clsTriples, wordsInf);
+			if(clsTriples.size() == 0){
+				logger.info("There are no elements in clsTriples varibale");
+				continue;
+			}
+//			Utils.initializeUris(clsTriples);
 
 			// ***************** NE/concept processing
 			// ***********************************//
@@ -245,7 +256,7 @@ public class Main {
 			for (ClausieTriple triple : MT.clausieTriples) {
 				String uri = "";
 				if (triple.getSubject().getTextNE().length() > 0 && triple.getArgument().getTextNE().length() > 0) {
-					uri = LocalProperties.LOCALRESOURCE.url() + triple.getRelation().getText().replace(" ", "");
+					uri = LocalProperties.LOCALPROPERTY.url() + triple.getRelation().getText().replace(" ", "");
 					triple.getRelation().setUri(uri);
 					triple.getTriple().setRelationUri(uri);
 				}
@@ -324,6 +335,7 @@ public class Main {
 			// MT.printClausieTriples();
 			// MT.printAlchemyEntities();
 			// MT.printBabelfyEntities();
+			utility.extractSeedsTwo(MT.getClausieTriples(),seeds);
 		}
 		if (listProblematicSentences.size() > 0) {
 			problematicSentences.put(inputFileName, listProblematicSentences);
@@ -333,7 +345,7 @@ public class Main {
 		utility.writeRDFTriples(outputRDFTriples);
 		utility.writeTopicQuad(outputTopicQuads);
 		utility.writeDocQuad(outputDocQuads);
-		utility.extractSeeds(seeds);
+//		utility.extractSeeds(seeds);
 		return triples;
 	}
 

@@ -1,0 +1,130 @@
+@prefix ontotext: <http://www.ontotext.com/proton/protontop#> .
+@prefix dbr:   <http://dbpedia.org/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cnvsr: <http://tamps.cinvestav.com.mx/resource/#> .
+@prefix cnvsctx: <http://tamps.cinvestav.com.mx/graph/ctx/> .
+@prefix onto:  <http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#> .
+@prefix wibi:  <http://wibitaxonomy.org/> .
+@prefix cnvsdcs: <http://tamps.cinvestav.com.mx/graph/doc/> .
+@prefix cnvsp: <http://tamps.cinvestav.com.mx/property/#> .
+
+cnvsr:profession  a       wibi:Vocation ;
+        cnvsp:canbedo     cnvsr:computer , cnvsr:computer_world ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "computer programming be a profession that can be do from a computer anywhere in the world " ;
+        onto:hasTopic     cnvsctx:computer ;
+        owl:sameAs        dbr:Profession .
+
+cnvsr:job  cnvsp:inDoc    cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem ." ;
+        onto:hasTopic     <http://tamps.cinvestav.com.mx/graph/ctx/c_and_c++> ;
+        owl:sameAs        dbr:Job .
+
+cnvsr:programmer_job  a    wibi:Person ;
+        cnvsp:bedebugging  cnvsr:program_problem ;
+        cnvsp:bewrite      cnvsr:program_source_code ;
+        cnvsp:composedOf   dbr:Job , dbr:Programmer ;
+        cnvsp:inDoc        cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence   "a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem ." ;
+        onto:hasTopic      <http://tamps.cinvestav.com.mx/graph/ctx/c_and_c++> .
+
+cnvsr:program_problem
+        a                 <http://wibitaxonomy.org/Challenge_(TV_channel)> , wibi:Impediment , wibi:Obstacle ;
+        cnvsp:composedOf  dbr:Problem , cnvsr:program ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem ." ;
+        onto:hasTopic     <http://tamps.cinvestav.com.mx/graph/ctx/c_and_c++> .
+
+cnvsr:part_linux_system
+        a                 wibi:Computer_operating_system ;
+        cnvsp:composedOf  dbr:Linux , cnvsr:part_system ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "one example be linus torvalds , who create a important part of the linux operating system . " ;
+        onto:hasTopic     cnvsctx:linux .
+
+cnvsp:use  a    rdf:Property .
+
+cnvsp:bedebugging  a  rdf:Property .
+
+cnvsr:development_environment
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work " ;
+        onto:hasTopic     cnvsctx:software ;
+        owl:sameAs        cnvsr:development_environment .
+
+cnvsr:programmer  a       wibi:Person ;
+        cnvsp:has         cnvsr:job ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work " , "a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem ." ;
+        cnvsp:use         cnvsr:software_tool_text_editor_ides ;
+        onto:hasTopic     cnvsctx:software , <http://tamps.cinvestav.com.mx/graph/ctx/c_and_c++> ;
+        owl:sameAs        dbr:Programmer .
+
+cnvsp:bewrite  a  rdf:Property .
+
+cnvsp:has  a    rdf:Property .
+
+cnvsr:computer_world  a   wibi:Champion , wibi:Peripheral_device ;
+        cnvsp:composedOf  dbr:World , dbr:Computer ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "computer programming be a profession that can be do from a computer anywhere in the world " ;
+        onto:hasTopic     cnvsctx:computer .
+
+cnvsr:computer  a         wibi:Peripheral_device ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "computer programming be a profession that can be do from a computer anywhere in the world " ;
+        onto:hasTopic     cnvsctx:computer ;
+        owl:sameAs        dbr:Computer .
+
+cnvsp:inDoc  a  rdf:Property .
+
+cnvsp:inSentence  a  rdf:Property .
+
+onto:hasTopic  a  rdf:Property .
+
+cnvsr:computer_program
+        a                 wibi:Peripheral_device , wibi:Sequence ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "a computer programmer be a person who make computer program use a programming language" ;
+        cnvsp:use         cnvsr:programming_language ;
+        onto:hasTopic     cnvsctx:computer ;
+        owl:sameAs        dbr:Computer_program .
+
+cnvsr:software_tool_text_editor_ides
+        a                 wibi:Computer , <http://wibitaxonomy.org/Program_(computing)> ;
+        cnvsp:composedOf  dbr:Tool , cnvsr:ides , dbr:Software , dbr:Text_editor ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "programmer often use software tool such as text editor and ides ( integrated development environment ) to help they work " ;
+        cnvsp:is          cnvsr:development_environment ;
+        onto:hasTopic     cnvsctx:software .
+
+cnvsr:program_source_code
+        a                 <http://wibitaxonomy.org/Instruction_(computer_science)> , wibi:Rules_of_chess ;
+        cnvsp:composedOf  cnvsr:program , dbr:Source_code ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "a programmer's main job be write program source code , testing if it work , and debugging (fix) the program if there be problem ." ;
+        onto:hasTopic     <http://tamps.cinvestav.com.mx/graph/ctx/c_and_c++> .
+
+cnvsp:create  a  rdf:Property .
+
+cnvsp:canbedo  a  rdf:Property .
+
+cnvsp:composedOf  a  rdf:Property .
+
+cnvsp:is  a     rdf:Property .
+
+cnvsr:torvalds  a         wibi:Name ;
+        cnvsp:create      cnvsr:part_linux_system ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "one example be linus torvalds , who create a important part of the linux operating system . " ;
+        onto:hasTopic     cnvsctx:linux ;
+        owl:sameAs        dbr:Torvalds .
+
+cnvsr:programming_language
+        a                 wibi:Dialect , wibi:Formal_language ;
+        cnvsp:inDoc       cnvsdcs:lemmatizeProgrammer ;
+        cnvsp:inSentence  "a computer programmer be a person who make computer program use a programming language" ;
+        onto:hasTopic     cnvsctx:computer ;
+        owl:sameAs        dbr:Programming_language .

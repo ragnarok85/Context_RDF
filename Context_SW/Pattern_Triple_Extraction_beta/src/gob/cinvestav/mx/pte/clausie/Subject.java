@@ -1,7 +1,9 @@
 package gob.cinvestav.mx.pte.clausie;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import gob.cinvestav.mx.pte.type.WiBiTypes;
 import gob.cinvestav.mx.pte.ws.AlchemyEntities;
@@ -9,11 +11,14 @@ import gob.cinvestav.mx.pte.ws.BabelfyEntities;
 import gob.cinvestav.mx.pte.ws.Entity;
 
 public class Subject implements TripleElement{
+	int numNounsText = 0;
 	String text = "";
 	String textNE = "";
 	List<AlchemyEntities> alchemy;
 	List<BabelfyEntities> babelfy;
-	List<Entity> entity;
+	List<String> words;
+//	List<Entity> entity;
+	Map<String, Entity> entity;
 	WiBiTypes wibi;
 	List<Integer> listPosition;
 	int start;
@@ -24,7 +29,9 @@ public class Subject implements TripleElement{
 		this.alchemy = new ArrayList<AlchemyEntities>();
 		this.babelfy = new ArrayList<BabelfyEntities>();
 		this.wibi = new WiBiTypes();
-		this.entity = new ArrayList<Entity>();
+//		this.entity = new ArrayList<Entity>();
+		this.entity = new HashMap<String, Entity>();
+		this.words = new ArrayList<String>();
 	}
 	
 	//***********Getter // Setter **************************//
@@ -93,12 +100,35 @@ public class Subject implements TripleElement{
 		this.wibi = wibi;
 	}
 
-	public List<Entity> getEntity() {
+//	public List<Entity> getEntity() {
+//		return entity;
+//	}
+//
+//	public void setEntity(List<Entity> entity) {
+//		this.entity.addAll(entity);
+//	}
+	public Map<String,Entity> getEntity() {
 		return entity;
 	}
 
-	public void setEntity(List<Entity> entity) {
-		this.entity.addAll(entity);
+	public void setEntity(Map<String,Entity> entity) {
+		this.entity.putAll(entity);
+	}
+
+	public int getNumNounsText() {
+		return numNounsText;
+	}
+
+	public void setNumNounsText(int numNounsText) {
+		this.numNounsText = numNounsText;
+	}
+
+	public List<String> getWords() {
+		return words;
+	}
+
+	public void setWords(List<String> words) {
+		this.words = words;
 	}
 	
 
