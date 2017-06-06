@@ -64,8 +64,9 @@ public class Main {
 				
 				List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 				Integer wordsDoc = 0;
-				String lemmaSentence = "";
+				
 				for(CoreMap sentence: sentences){
+					String lemmaSentence = "";
 					for(CoreLabel token : sentence.get(TokensAnnotation.class)){
 						lemmaSentence += token.get(LemmaAnnotation.class) + " ";
 					}
