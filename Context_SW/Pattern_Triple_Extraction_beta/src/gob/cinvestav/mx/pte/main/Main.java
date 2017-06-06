@@ -36,12 +36,12 @@ public class Main {
 	public static Map<String, List<String>> problematicSentences = new HashMap<String, List<String>>();
 	final static Logger logger = Logger.getLogger(Main.class);
 	
-	File file = null;
-	File output = null;
-	File outputRDF = null;
-	File outputQuad = null;
-	File outputText = null;
-	File outputSeed = null;
+	public static File file = null;
+	public static File output = null;
+	public static File outputRDF = null;
+	public static File outputQuad = null;
+	public static File outputText = null;
+	public static File outputSeed = null;
 
 	/*
 	 * args[0] - input folder args[1] - output folder args[2] - output seeds
@@ -52,12 +52,12 @@ public class Main {
 
 		Main main = new Main();
 
-		// if(args == null){
-		// main.testProcessing();
-		// }else{
-		// main.batchProcessing(args);
-		// }
-		main.testProcessing();
+		 if(args == null){
+		 main.testProcessing();
+		 }else{
+		 main.batchProcessing(args);
+		 }
+//		main.testProcessing();
 	}
 
 	public void testProcessing() {
@@ -80,18 +80,19 @@ public class Main {
 		String problematicSentencesOuput = "problematicSnts.txt";
 		logger.info("Input path: " + args[0]);
 		logger.info("Output path: " + args[1]);
-		logger.info("Output seeds directory: " + args[2]);
-		logger.info("Output text triples: " + args[3]);
+//		logger.info("Output seeds directory: " + args[2]);
+//		logger.info("Output text triples: " + args[3]);
 		logger.info("Problematic Sentences file: " + problematicSentencesOuput);
 
 		initialRestrictions(args);
+		
 
 		File inputDirectory = new File(args[0]);
 		File outputDirectory = new File(args[1]);
 
 		List<File> inputFiles = Utils.getFiles(inputDirectory);
 		List<String> processedFiles = Utils.getFilesNames(outputDirectory);
-
+		
 		Main main = new Main();
 		Utility utility = new Utility();
 		if (inputFiles.size() > 0) {
@@ -140,14 +141,15 @@ public class Main {
 	 */
 	public List<String> extractTriples(String inputFileName, List<String> sentences, Set<String> seeds) {
 		//for more than one file
-//		String outputRDFTriples = outputRDF.getAbsolutePath() + inputFileName  + ".rdf";
-//		String outputRDFQuads = outputQuad.getAbsolutePath() + inputFileName + ".nq";
-//		String outputTxtTriples = outputText.getAbsolutePath() +  inputFileName + ".txt";
+		String outputRDFTriples = outputRDF.getAbsolutePath() + inputFileName  + ".rdf";
+		String outputTopicQuads =  outputQuad.getAbsolutePath() + inputFileName + "-topic.nq";
+		String outputDocQuads = outputQuad.getAbsolutePath() + inputFileName + "-doc.nq";
+		String outputTxtTriples = outputText.getAbsolutePath() +  inputFileName + ".txt";
 		//only for test
-		String outputRDFTriples = inputFileName  + ".ttl";
-		String outputTopicQuads =  inputFileName + "-topic.nq";
-		String outputDocQuads =  inputFileName + "-doc.nq";
-		String outputTxtTriples = inputFileName + ".txt";
+//		String outputRDFTriples = inputFileName  + ".ttl";
+//		String outputTopicQuads =  inputFileName + "-topic.nq";
+//		String outputDocQuads =  inputFileName + "-doc.nq";
+//		String outputTxtTriples = inputFileName + ".txt";
 
 		Utility utility = new Utility();
 		List<String> triples = new ArrayList<String>();
@@ -239,7 +241,10 @@ public class Main {
 			logger.info("=============look for named entities=======================");
 			Utils.mapTxtToNE(MT.clausieTriples, entities);
 			logger.info("=============Create triples=======================");
-			Utils.createTriple(MT.clausieTriples);
+			int numTrip = 0;
+			numTrip = Utils.createTriple(MT.clausieTriples);
+			if(numTrip == 0)
+				continue;
 			logger.info("=============Search/create relation=======================");
 			// for (ClausieTriple triple : MT.clausieTriples) {
 			// String uri = "";

@@ -216,6 +216,7 @@ public class Utility {
 					NodeFactory.createURI(LocalProperties.GRAPHDOCURI.url() + rdfModelFileName)));
 			localQuad.add(new Quad(docGraph,object, NodeFactory.createURI(inSntprop.getURI()), NodeFactory.createLiteral(triple.getOrgSentence())));
 			logger.info("(docQuad) Property: " + prdt);
+			localQuad.add(new Quad(docGraph, subject, property, object));
 			
 			localQuad.addAll(populateQuadTypes(triple.getSubject().getTextNE(),triple.getSubject().getEntity(), docGraph));
 			localQuad.addAll(populateQuadTypes(triple.getArgument().getTextNE(),triple.getArgument().getEntity(), docGraph));
@@ -247,28 +248,29 @@ public class Utility {
 
 	public void InitializeQuadTopics(List<String> topic) {
 		int topicSize = topic.size() - 1;
-		topicGraph = NodeFactory.createURI(LocalProperties.GRAPHCTXURI.url() + topic.get(topicSize));
-		Node hasSubTopic = NodeFactory.createURI(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasSubTopic");
-		Node hasTopic = NodeFactory.createURI(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic");
-		// BlankNodeId ctx = BlankNodeId.create("ctx");
+		if(topicSize > 0){
+			topicGraph = NodeFactory.createURI(LocalProperties.GRAPHCTXURI.url() + topic.get(topicSize));
+			Node hasSubTopic = NodeFactory.createURI(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasSubTopic");
+			Node hasTopic = NodeFactory.createURI(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic");
+			// BlankNodeId ctx = BlankNodeId.create("ctx");
 
-		Quad quad = null;
-		// quad = new Quad(graph, NodeFactory.createBlankNode(ctx),hasTopic,
-		// NodeFactory.createURI(ownNameSpace + topic.get(topicSize)));
-		quad = new Quad(topicGraph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url()+topic.get(topicSize)), hasTopic,
-				NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(topicSize)));
-		ctxQuads.add(quad);
-		logger.info("topicSize = " + topicSize);
-		for (int i = topicSize - 1; i >= 0; i--) {
-			logger.info("adding subtopic: " + topic.get(i));
-			// quad = new Quad(graph, NodeFactory.createBlankNode(ctx),
-			// hasSubTopic,
-			// NodeFactory.createURI(ownNameSpace + topic.get(i)));
-			quad = new Quad(topicGraph, topicGraph, hasSubTopic,
-					NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(i)));
+			Quad quad = null;
+			// quad = new Quad(graph, NodeFactory.createBlankNode(ctx),hasTopic,
+			// NodeFactory.createURI(ownNameSpace + topic.get(topicSize)));
+			quad = new Quad(topicGraph, NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url()+topic.get(topicSize)), hasTopic,
+					NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(topicSize)));
 			ctxQuads.add(quad);
+			logger.info("topicSize = " + topicSize);
+			for (int i = topicSize - 1; i >= 0; i--) {
+				logger.info("adding subtopic: " + topic.get(i));
+				// quad = new Quad(graph, NodeFactory.createBlankNode(ctx),
+				// hasSubTopic,
+				// NodeFactory.createURI(ownNameSpace + topic.get(i)));
+				quad = new Quad(topicGraph, topicGraph, hasSubTopic,
+						NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + topic.get(i)));
+				ctxQuads.add(quad);
+			}
 		}
-
 	}
 
 	public void createQuadClasses(List<String> topic) {

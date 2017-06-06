@@ -79,7 +79,8 @@ public class Utils {
 	}
 	
 	
-	public static void createTriple(List<ClausieTriple> clTriple) {
+	public static int createTriple(List<ClausieTriple> clTriple) {
+		int numTrip = 0;
 		for (ClausieTriple trip : clTriple) {
 			//TODO inserted by lti [May 26, 2017,5:58:34 PM] It is necessary to keep all subjects and arguments
 			//even if they don't have a dbpedia URI.
@@ -107,9 +108,11 @@ public class Utils {
 			if (!triple.getArgumentUris().isEmpty() && !triple.getSubjectUris().isEmpty()) {
 				logger.info("Triple: " + triple);
 				trip.setTriple(triple);
+				numTrip++;
 			}
 //			trip.setTriple(triple);
 		}
+		return numTrip;
 	}
 	
 	public static List<Word> extractWords(ClausIE clausIE, String sentence) {
