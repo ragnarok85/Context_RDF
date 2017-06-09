@@ -141,10 +141,12 @@ public class Main {
 	 */
 	public List<String> extractTriples(String inputFileName, List<String> sentences, Set<String> seeds) {
 		//for more than one file
-		String outputRDFTriples = outputRDF.getAbsolutePath() + inputFileName  + ".rdf";
-		String outputTopicQuads =  outputQuad.getAbsolutePath() + inputFileName + "-topic.nq";
-		String outputDocQuads = outputQuad.getAbsolutePath() + inputFileName + "-doc.nq";
-		String outputTxtTriples = outputText.getAbsolutePath() +  inputFileName + ".txt";
+		//avoid spaces in names
+		inputFileName = inputFileName.replace(" ", "_");
+		String outputRDFTriples = outputRDF.getAbsolutePath() + "/" + inputFileName  + ".ttl";
+		String outputTopicQuads =  outputQuad.getAbsolutePath() + "/" +  inputFileName + "-topic.nq";
+		String outputDocQuads = outputQuad.getAbsolutePath() + "/" +  inputFileName + "-doc.nq";
+		String outputTxtTriples = outputText.getAbsolutePath() + "/" +  inputFileName + ".txt";
 		//only for test
 //		String outputRDFTriples = inputFileName  + ".ttl";
 //		String outputTopicQuads =  inputFileName + "-topic.nq";
@@ -261,7 +263,7 @@ public class Main {
 			for (ClausieTriple triple : MT.clausieTriples) {
 				String uri = "";
 				if (triple.getSubject().getTextNE().length() > 0 && triple.getArgument().getTextNE().length() > 0) {
-					uri = LocalProperties.LOCALPROPERTY.url() + triple.getRelation().getText().replace(" ", "");
+					uri = LocalProperties.LOCALDOCPROPERTY.url() + triple.getRelation().getText().replace(" ", "");
 					triple.getRelation().setUri(uri);
 					triple.getTriple().setRelationUri(uri);
 				}

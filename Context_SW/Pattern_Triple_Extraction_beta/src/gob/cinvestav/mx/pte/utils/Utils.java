@@ -150,8 +150,9 @@ public class Utils {
 		for(ClausieTriple triple : clTriple){
 			if (triple.getSubject().getText().length() > 0 && triple.getArgument().getText().length() > 0){
 				String trip = "";
-				trip = triple.getSubject().getText() + "\t" + triple.getRelation().getText() + "\t" + triple.getArgument().getText();
+				trip = "(" + triple.getSubject().getText()+ "," + triple.getRelation().getText() + "," + triple.getArgument().getText() + ")";
 //				logger.info("\t" + trip);
+				triple.setClsTriple(trip);
 				triples.add(trip);
 			}
 			

@@ -47,6 +47,7 @@ public class Utility {
 
 	Property inDocprop = jenaModel.createProperty(LocalProperties.LOCALPROPERTY.url() + "inDoc");
 	Property inSntprop = jenaModel.createProperty(LocalProperties.LOCALPROPERTY.url() + "inSentence");
+	Property inTripleprop = jenaModel.createProperty(LocalProperties.LOCALPROPERTY.url() + "inTriple");
 	Property composedOf = jenaModel.createProperty(LocalProperties.LOCALPROPERTY.url() + "composedOf");
 	Property hasTopic = jenaModel.createProperty(LocalProperties.ONTOPDESIGNPATTERNS.url() + "hasTopic");
 
@@ -59,10 +60,12 @@ public class Utility {
 	public Utility() {
 		jenaModel.add(inDocprop, RDF.type, RDF.Property);
 		jenaModel.add(inSntprop, RDF.type, RDF.Property);
+		jenaModel.add(inTripleprop, RDF.type, RDF.Property);
 		jenaModel.add(composedOf, RDF.type, RDF.Property);
 		jenaModel.add(hasTopic, RDF.type, RDF.Property);
 		jenaModel.setNsPrefix("cnvsr", LocalProperties.LOCALRESOURCE.url());
 		jenaModel.setNsPrefix("cnvsp", LocalProperties.LOCALPROPERTY.url());
+		jenaModel.setNsPrefix("cnvspd", LocalProperties.LOCALDOCPROPERTY.url());
 		jenaModel.setNsPrefix("cnvsdcs", LocalProperties.GRAPHDOCURI.url());
 		jenaModel.setNsPrefix("cnvsctx", LocalProperties.GRAPHCTXURI.url());
 		jenaModel.setNsPrefix("wibi", LocalProperties.WIBIURI.url());
@@ -157,6 +160,7 @@ public class Utility {
 			jenaModel.add(object, inDocprop,
 					(RDFNode) jenaModel.createResource(LocalProperties.GRAPHDOCURI.url() + rdfModelFileName));
 			jenaModel.add(object, inSntprop, jenaModel.createLiteral(triple.getOrgSentence()));
+			jenaModel.add(subject, inTripleprop, jenaModel.createLiteral(triple.getClsTriple()));
 			logger.info("Property: " + prdt);
 
 			populateTypes(triple.getSubject().getTextNE(), triple.getSubject().getEntity());

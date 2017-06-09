@@ -62,7 +62,7 @@ public class TopicWS {
 						topic = divideTopics(label);
 						first = false;
 					}
-					// I consider only the first result because it is the best
+					// I consider only the first result because it is the best scored
 					// break;
 				}
 			}

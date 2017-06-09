@@ -9,12 +9,14 @@ public class ClausieTriple {
 	Argument argument;
 	Triple triple; 
 	String orgSentence;
+	String clsTriple;
 	
 	public ClausieTriple(){
 		this.subject = new Subject();
 		this.relation = new Relation();
 		this.argument = new Argument();
 		this.triple = new Triple();
+		this.clsTriple = "";
 	}
 	
 	public String toString(){
@@ -92,6 +94,14 @@ public class ClausieTriple {
 
 	public void setOrgSentence(String orgSentence) {
 		this.orgSentence = orgSentence;
+	}
+
+	public String getClsTriple() {
+		return clsTriple;
+	}
+
+	public void setClsTriple(String clsTriple) {
+		this.clsTriple = clsTriple;
 	}
 	
 	

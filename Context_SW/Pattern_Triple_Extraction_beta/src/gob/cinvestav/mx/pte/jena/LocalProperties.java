@@ -3,6 +3,7 @@ package gob.cinvestav.mx.pte.jena;
 public enum LocalProperties {
 	LOCALRESOURCE("http://tamps.cinvestav.com.mx/resource/#"),
 	LOCALPROPERTY("http://tamps.cinvestav.com.mx/property/#"),
+	LOCALDOCPROPERTY("http://tamps.cinvestav.com.mx/property/doc/#"),
 	GRAPHDOCURI("http://tamps.cinvestav.com.mx/graph/doc/"),
 	GRAPHCTXURI("http://tamps.cinvestav.com.mx/graph/ctx/"),
 	WIBIURI("http://wibitaxonomy.org/"),
