@@ -111,8 +111,8 @@ public class Utility {
 	}
 
 	public void populateModel(ClausieTriple triple, String rdfModelFileName, List<String> topic) {
-		String sbj = triple.getSubject().getTextNE();
-		String obj = triple.getArgument().getTextNE();
+		String sbj = triple.getSubject().getTextNE().replace(" ", "_");
+		String obj = triple.getArgument().getTextNE().replace(" ","_");
 		String prdt = triple.getTriple().getRelationUri();
 		int topicSize = topic.size() - 1;
 		Property property = jenaModel.createProperty(prdt);
@@ -134,13 +134,13 @@ public class Utility {
 				jenaModel.add(object, composedOf, jenaModel.createResource(objUri));
 		}
 
-		if (triple.getTriple().getSubjectUris().size() == 1) {
+		if (triple.getTriple().getSubjectUris().size() == 1 && triple.getTriple().getSubjectUris().get(0).contains("dbpedia.org")) {
 			if (subject == null)
 				subject = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + sbj);
 			logger.info("sameAs (subject) = " + sbj);
 			jenaModel.add(subject, OWL.sameAs, jenaModel.createResource(triple.getTriple().getSubjectUris().get(0)));
 		}
-		if (triple.getTriple().getArgumentUris().size() == 1) {
+		if (triple.getTriple().getArgumentUris().size() == 1 && triple.getTriple().getArgumentUris().get(0).contains("dbpedia.org")) {
 			if (object == null)
 				object = jenaModel.createResource(LocalProperties.LOCALRESOURCE.url() + obj);
 			logger.info("sameAs (argument) = " + obj);
@@ -173,8 +173,8 @@ public class Utility {
 	}
 
 	public void populateQuadModel(ClausieTriple triple, String rdfModelFileName, List<String> topic) {
-		String sbj = triple.getSubject().getTextNE();
-		String obj = triple.getArgument().getTextNE();
+		String sbj = triple.getSubject().getTextNE().replace(" ", "_");
+		String obj = triple.getArgument().getTextNE().replace(" ", "_");
 		String prdt = triple.getTriple().getRelationUri();
 		int topicSize = topic.size() - 1;
 		Node property = NodeFactory.createURI(prdt);
@@ -196,12 +196,12 @@ public class Utility {
 				localQuad.add(new Quad(docGraph,object,NodeFactory.createURI(composedOf.getURI()),NodeFactory.createURI(objUri)));
 		}
 
-		if (triple.getTriple().getSubjectUris().size() == 1) {
+		if (triple.getTriple().getSubjectUris().size() == 1 && triple.getTriple().getSubjectUris().get(0).contains("dbpedia.org")) {
 			if (subject == null)
 				subject = NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + sbj);
 			localQuad.add(new Quad(docGraph,subject,NodeFactory.createURI(OWL.sameAs.getURI()),NodeFactory.createURI(triple.getTriple().getSubjectUris().get(0))));
 		}
-		if (triple.getTriple().getArgumentUris().size() == 1) {
+		if (triple.getTriple().getArgumentUris().size() == 1 && triple.getTriple().getArgumentUris().get(0).contains("dbpedia.org")) {
 			if (object == null)
 				object = NodeFactory.createURI(LocalProperties.LOCALRESOURCE.url() + obj);
 			localQuad.add(new Quad(docGraph,object,NodeFactory.createURI(OWL.sameAs.getURI()),NodeFactory.createURI(triple.getTriple().getArgumentUris().get(0))));

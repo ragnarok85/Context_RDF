@@ -1,19 +1,19 @@
-a person	make	computer program use a programming language
-computer program	use	a programming language
-a programmer	has	main job
-a programmer 's main job	be write	program source code
-a programmer 's main job	be debugging	the program if there be problem
-a programmer 's main job	be testing	if it work
-programmer	use	software tool such as text editor and ides to help they work often
-programmer	use	software tool such as text editor and ides to help they work
-software tool such as text editor and ides	is	integrated development environment
-a profession	can be do	from a computer anywhere in the world
-a profession	can be do	from a computer
-this	be	call telecommuting do work on the internet instead of in a office
-some programmer	be	famous because they software be use by many people
-one example	be	linus torvalds
-linus torvalds	create	a important part of the linux operating system
-programming	can be do	in many different language
-programming	can look	very different
-programming	do	the same thing
-a example of this	be	the hello world program
+(a person,make,computer program use a programming language)
+(computer program,use,a programming language)
+(a programmer,has,main job)
+(a programmer 's main job,be write,program source code)
+(a programmer 's main job,be debugging,the program if there be problem)
+(a programmer 's main job,be testing,if it work)
+(programmer,use,software tool such as text editor and ides to help they work often)
+(programmer,use,software tool such as text editor and ides to help they work)
+(software tool such as text editor and ides,is,integrated development environment)
+(a profession,can be do,from a computer anywhere in the world)
+(a profession,can be do,from a computer)
+(this,be,call telecommuting do work on the internet instead of in a office)
+(some programmer,be,famous because they software be use by many people)
+(one example,be,linus torvalds)
+(linus torvalds,create,a important part of the linux operating system)
+(programming,can be do,in many different language)
+(programming,can look,very different)
+(programming,do,the same thing)
+(a example of this,be,the hello world program)

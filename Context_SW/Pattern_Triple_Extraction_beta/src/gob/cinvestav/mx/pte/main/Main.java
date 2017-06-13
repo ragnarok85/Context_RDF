@@ -69,9 +69,9 @@ public class Main {
 		Main main = new Main();
 		Utility utility = new Utility();
 		sentences = Utils.readLines(inputFile);
-
+		List<String> topic = Utils.extractDocumentTopic(sentences);
 		triples.addAll(main.extractTriples(inputFile.getName().replace(".txt", ""), sentences,
-				seeds));
+				seeds, topic));
 		main.writeSeeds(seeds, "Seeds-" + inputFile.getName());
 		utility.printTriples(triples, "AllTriples.txt");
 	}
@@ -115,12 +115,17 @@ public class Main {
 				logger.info("Processing file: " + inputFile);
 
 				sentences = Utils.readLines(inputFile);
-
+				
 				if (sentences.size() > 0) {
 					logger.info("Staring the triple extraction process\n");
+					List<String> topic = Utils.extractDocumentTopic(sentences);
+					for(String top : topic){
+						logger.info(top + "/");
+					}
+//					continue;
 					triples.addAll(
 							main.extractTriples(inputFile.getName().replace(".txt", ""), sentences,
-									seeds));
+									seeds, topic));
 				}
 
 				main.writeSeeds(seeds, outputSeed.getAbsoluteFile() + "/Seeds-" + inputFile.getName());
@@ -139,7 +144,7 @@ public class Main {
 	 * @param seeds
 	 * @return
 	 */
-	public List<String> extractTriples(String inputFileName, List<String> sentences, Set<String> seeds) {
+	public List<String> extractTriples(String inputFileName, List<String> sentences, Set<String> seeds, List<String> topic) {
 		//for more than one file
 		//avoid spaces in names
 		inputFileName = inputFileName.replace(" ", "_");
@@ -312,8 +317,8 @@ public class Main {
 
 			logger.info("============look for a topic==============================");
 
-			TopicWS topicWs = new TopicWS();
-			List<String> topic = topicWs.queryAlchemy(sentence);
+//			TopicWS topicWs = new TopicWS();
+//			List<String> topic = topicWs.queryAlchemy(sentence);
 			utility.InitializeQuadTopics(topic);
 			utility.createQuadClasses(topic);
 			

@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -26,6 +27,7 @@ import gob.cinvestav.mx.pte.main.Main;
 import gob.cinvestav.mx.pte.main.Triple;
 import gob.cinvestav.mx.pte.sentence.Word;
 import gob.cinvestav.mx.pte.ws.Entity;
+import gob.cinvestav.mx.pte.ws.TopicWS;
 
 public class Utils {
 
@@ -65,6 +67,20 @@ public class Utils {
 //		checkEntitiesRep(listUris);
 //		return listUris;
 //	}
+	
+	private static String countTopicRepetitions(Map<String,Integer> topics){
+		String topic = "";
+		
+		int counter = 0;
+		for(String key :topics.keySet()){
+			//System.out.println(key + " - " +alchemyTopics.get(key));
+			if(counter < topics.get(key)){
+				counter = topics.get(key);
+				topic = key;
+			}
+		}
+		return topic;
+	}
 	
 	public static List<String> collectUris(Map<String,Entity> entities) {
 		List<String> listUris = new ArrayList<String>();
@@ -115,6 +131,41 @@ public class Utils {
 		return numTrip;
 	}
 	
+	private static List<String> divideTopics(String topic){
+		String[] splitTopic = topic.split("/");
+		List<String> topics = new ArrayList<String>();
+		for(String tpc : splitTopic){
+			if(!tpc.isEmpty()){
+				logger.info("topic - "  +tpc);
+				topics.add(tpc.replace(" ", "_"));
+			}
+			
+		}
+		return topics;
+	}
+	
+	public static List<String> extractDocumentTopic(List<String> listSentences){
+		List<String> documentTopic = new ArrayList<String>();
+		String topic = "";
+		TopicWS topicWS = new TopicWS();
+		List<String> listTopicsPerSnt = new ArrayList<String>();
+		for(String sentence : listSentences){
+			String sntTopic = topicWS.queryAlchemy(sentence);
+			if(sntTopic.length() > 0){
+				logger.info("topic = " + sntTopic + " - for sentence " + sentence);
+				listTopicsPerSnt.add(sntTopic);
+			}
+			
+		}
+		Collections.sort(listTopicsPerSnt);
+		Map<String,Integer> mapTopics = findTopicRepetitions(listTopicsPerSnt);
+		topic = countTopicRepetitions(mapTopics);
+		logger.info("The topic of document is: " + topic);
+		documentTopic = divideTopics(topic);
+		return documentTopic;
+	}
+	
+	
 	public static List<Word> extractWords(ClausIE clausIE, String sentence) {
 		List<Word> words = new ArrayList<Word>();
 
@@ -142,6 +193,21 @@ public class Utils {
 
 		}
 		return words;
+	}
+	
+	private static Map<String,Integer> findTopicRepetitions(List<String> listTopics){
+		Map<String,Integer> mapTopics = new HashMap<String,Integer>();
+		
+		for(String topics : listTopics){
+			if(!mapTopics.containsKey(topics)){
+				mapTopics.put(topics, new Integer(1));
+			}else{
+				Integer counter = mapTopics.get(topics);
+				mapTopics.replace(topics, counter, ++counter);
+			}
+		}
+		
+		return mapTopics;
 	}
 	
 	public static List<String> getClTriples(List<ClausieTriple> clTriple){

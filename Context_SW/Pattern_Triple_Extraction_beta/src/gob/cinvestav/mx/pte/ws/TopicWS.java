@@ -29,8 +29,10 @@ public class TopicWS {
 	
 	static final Logger logger = Logger.getLogger(TopicWS.class);
 	
-	public List<String> queryAlchemy(String sentence) {
-		List<String> topic = new ArrayList<String>();
+//	public List<String> queryAlchemy(String sentence) {
+	public String queryAlchemy(String sentence) {
+//		List<String> topic = new ArrayList<String>();
+		String topic = "";
 		HttpPost post = new HttpPost("http://gateway-a.watsonplatform.net/calls/text/TextGetRankedTaxonomy");
 		@SuppressWarnings("resource")
 		HttpClient cliente = new DefaultHttpClient();
@@ -59,7 +61,8 @@ public class TopicWS {
 					String label = tax.getString("label");
 					double score = Double.parseDouble(tax.getString("score"));
 					if (first) {
-						topic = divideTopics(label);
+//						topic = divideTopics(label);
+						topic  = label;
 						first = false;
 					}
 					// I consider only the first result because it is the best scored
@@ -73,18 +76,18 @@ public class TopicWS {
 		return topic;
 	}
 	
-	private static List<String> divideTopics(String topic){
-		String[] splitTopic = topic.split("/");
-		List<String> topics = new ArrayList<String>();
-		for(String tpc : splitTopic){
-			if(!tpc.isEmpty()){
-				logger.info("topic - "  +tpc);
-				topics.add(tpc.replace(" ", "_"));
-			}
-			
-		}
-		return topics;
-	}
+//	private static List<String> divideTopics(String topic){
+//		String[] splitTopic = topic.split("/");
+//		List<String> topics = new ArrayList<String>();
+//		for(String tpc : splitTopic){
+//			if(!tpc.isEmpty()){
+//				logger.info("topic - "  +tpc);
+//				topics.add(tpc.replace(" ", "_"));
+//			}
+//			
+//		}
+//		return topics;
+//	}
 
 	public String queryOpenCalais(String sentence) {
 		String topic = "";

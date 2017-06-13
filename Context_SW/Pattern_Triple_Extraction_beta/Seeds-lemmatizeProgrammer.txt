@@ -1,8 +1,6 @@
 profession
 code
 software
-world program
-use people
 programmer
 source code
 torvalds
