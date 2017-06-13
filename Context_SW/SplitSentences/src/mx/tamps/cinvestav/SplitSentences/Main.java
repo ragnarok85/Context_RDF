@@ -162,7 +162,7 @@ public class Main {
 	
 	public void initialRestrictions(String args[]){
 		if(args == null){
-			System.out.println("The input and outjput paths must be set!");
+			System.out.println("The input and output paths must be set!");
 		}
 		if(args[0] != null){
 			File file = new File(args[0]);
