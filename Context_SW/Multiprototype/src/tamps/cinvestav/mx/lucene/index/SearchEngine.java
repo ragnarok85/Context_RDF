@@ -32,6 +32,7 @@ public class SearchEngine {
 		try {
 			List<String> docs = new ArrayList<String>();
 			SearchEngine searcher = new SearchEngine(luceneIndexPath);
+			
 			TopDocs hits;
 			List<Word> tokens2Delete = new ArrayList<Word>();
 

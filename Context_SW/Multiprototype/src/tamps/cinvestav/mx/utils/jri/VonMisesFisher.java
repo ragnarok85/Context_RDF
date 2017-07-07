@@ -36,7 +36,7 @@ public class VonMisesFisher {
 				continue;
 			}
 			loadLibraries();
-			//System.out.println("file absolute Path = " + absolutePath.getAbsolutePath());
+			System.out.println("file absolute Path = " + absolutePath.getAbsolutePath());
 			loadData(absolutePath.getAbsolutePath());
 			applyMovMF(numberClusters);
 			List<Integer> movMFClusters = getClusters();
@@ -85,30 +85,49 @@ public class VonMisesFisher {
 	//step 1: Load libraries
 		public void loadLibraries(){
 			re.eval("library('NLP')");
+			System.out.println(re.eval("library('NLP')").toString());
 			re.eval("library('tm')");
+			System.out.println(re.eval("library('tm')").toString());
 			re.eval("library('slam')");
+			System.out.println(re.eval("library('slam')").toString());
 		}
 		
 		//step 2: Load table data
 		//file must be content the full path of file.
 		public void loadData(String file){
 			File path = new File(file);
-			//System.out.println(path.getAbsolutePath().replace("\\", "\\\\"));
+			System.out.println(re.eval("library(tools)").toString());
+			System.out.println(path.getAbsolutePath().replace("\\", "\\\\"));
 			re.eval("windows <- read.table('"+path.getAbsolutePath().replace("\\", "\\\\")+"')");
+			REXP windows = re.eval("windows");
+			System.out.println(re.eval("windows"));
 			re.eval("windows_matrix <- data.matrix(windows)");
+			System.out.println(re.eval("ls()"));
+			REXP windows_matrix = re.eval("windows_matrix");
 		}
 		
 		//step 3: apply movMF function
 		public void applyMovMF(int numberClusters){
-			re.eval("library(\"movMF\")");
+			re.eval("library('movMF',.libPaths()[1])");
+			//re.eval("library('cluster')");
+			
+			
+			System.out.println(re.eval(".libPaths()[1]"));
 			//re.eval("windows_movMF <- movMF(windows_matrix, k=nrow(windows_matrix)-1, nruns=20, kappa=list(common=TRUE))");
+			System.out.println(re.eval("library('movMF',.libPaths()[1])"));
+			System.out.println("windows_movMF <- movMF(windows_matrix, k="+ numberClusters +", nruns=20, kappa=list(common=TRUE, 'Banerjee_et_al_2005'))");
+			System.out.println(re.eval("windows"));
+			System.out.println(re.eval("R.Version()"));
+			System.out.println(re.eval("movMF(windows_matrix, k=3, nruns=20, kappa=list(common=TRUE, 'Banerjee_et_al_2005'))"));
 			re.eval("windows_movMF <- movMF(windows_matrix, k="+ numberClusters +", nruns=20, kappa=list(common=TRUE, 'Banerjee_et_al_2005'))");
-			//System.out.println(re.eval("ls()"));
+			REXP windows_movMF = re.eval("windows_movMF");
+			System.out.println(re.eval("ls()"));
 		}
 		
 		//step 4: get clusters
 		public List<Integer> getClusters(){
 			List<Integer> movMFClusters = new ArrayList<Integer>();
+			System.out.println(re.eval("ls()"));
 			re.eval("clusters <- predict(windows_movMF)");
 			REXP clusters = re.eval("clusters");
 			if(clusters!= null){
