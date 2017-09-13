@@ -108,11 +108,11 @@ public class VonMisesFisher {
 		
 		//step 3: apply movMF function
 		public void applyMovMF(int numberClusters){
-			re.eval("library('movMF',.libPaths()[1])");
+			re.eval("library('movMF')");
 			//re.eval("library('cluster')");
 			
 			
-			System.out.println(re.eval(".libPaths()[1]"));
+			System.out.println(re.eval(".libPaths()"));
 			//re.eval("windows_movMF <- movMF(windows_matrix, k=nrow(windows_matrix)-1, nruns=20, kappa=list(common=TRUE))");
 			System.out.println(re.eval("library('movMF',.libPaths()[1])"));
 			System.out.println("windows_movMF <- movMF(windows_matrix, k="+ numberClusters +", nruns=20, kappa=list(common=TRUE, 'Banerjee_et_al_2005'))");
