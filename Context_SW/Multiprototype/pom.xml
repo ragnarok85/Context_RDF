@@ -16,6 +16,13 @@
 
   <dependencies>
   
+  <!-- https://mvnrepository.com/artifact/de.julielab/aliasi-lingpipe -->
+<dependency>
+    <groupId>de.julielab</groupId>
+    <artifactId>aliasi-lingpipe</artifactId>
+    <version>4.1.0</version>
+</dependency>
+  
   <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp -->
 	<dependency>
 		<groupId>edu.stanford.nlp</groupId>
