@@ -74,7 +74,8 @@ public class Main {
 	static List<String> swPunctualSigns = null;
 	
 	public static void main(String... args) {
-		
+		//----INICIO 
+		//			-- unicamente establece algunos parametros de entrada y salida
 		logger.trace("============Multiprototype module=============");
 		//TODO inserted by lti [May 11, 2017,1:22:35 PM] Check why all seed's variables are comment
 		
@@ -126,12 +127,14 @@ public class Main {
 		Utils.folderManagement(outputFolder,directories);
 		//********************************
 		
-		
+		//---FIN------
 		long startTime = System.currentTimeMillis();
 		
 		List<String> filesPath = Utils.getFilesPathAsString(OrigCorpusPath);
 		Map<String, List<Word>> corpus = new HashMap<String, List<Word>>();
-		
+		// INICIO 
+		//			--- Preprocesamiento: eliminación de stop words, lematización. 
+		// 		  	--- Creacion de indice de palabras
 		PreProcessing prep = new PreProcessing();
 		
 		Corpus corp = new Corpus();
@@ -172,6 +175,7 @@ public class Main {
 		
 		// The index is created only one time
 		Indexer.createIndexCorpus(outputFolder+luceneIndexPath, outputFolder+outputCorpus);
+		// FIN
 		
 //		if(seedWords.size() > 0){
 //			corp.setGeneralIndex(Utils.createSeedsIndex(corp,seedWords));
@@ -202,6 +206,12 @@ public class Main {
 
 		//Utils.createMatrixTermDoc(corp);
 		//Utils.printMatrixTermDoc(corp, outputFolder+termMatrixOutput);
+		
+		// INICIO 
+		//			-- Búsqueda de vecinos por palabra en el corpus
+		//		  	-- Definir los vecinos más comunes para utilizarlos como el conjunto de características
+		//		  	-- Creación de la matriz de coocurrencia
+		
 		Utils.findNeighboursPerWord(corp, numberNeighbours, outputFolder+neighboursOutputFile);
 		Utils.findMostFrequentNeighbours(corp, maxNumberFeatures);
 		Utils.calculateWordFrequency(corp);
@@ -224,18 +234,26 @@ public class Main {
 		Utils.printNormalizedCoOccurrenceMatrix(corp, outputFolder+normalizedCoOcurrenceMatrixOutput);
 		Utils.printCorpusWindows(corp, outputFolder+corpusWindowsOutput);
 		Utils.printCorpusVector(corp,outputFolder+externalCorpusPath);
+		// FIN 
 		
-		
+		// INICIO 
+		//			-- Creación de cluster utilizando R
+
 		// Apply movMF Function
  		System.out.println("Applying VonMisesFisher");
 		VonMisesFisher vmf = new VonMisesFisher(); 
 		List<MovMF> movMFs = new ArrayList<MovMF>();
 		movMFs = vmf.applyVonMisesFisherDistribution(outputFolder+externalCorpusPath, numberClusters);
 		
+		//FIN
+		
 		System.out.println("Setting values");
 		Utils.setValuesToMovMFs(movMFs, corp);
 		Utils.printClusters(movMFs, outputFolder+clustersOutput);
-
+		// INICIO
+		//			-- Extracción de centroides
+		//			-- Cálculo de similaridad entre palabras utilizando:
+		//				-- medidas de similaridad estándar y de contexto. 
 		Utils.calculateCentroidValue(movMFs);
 		Utils.printMovMFWordsCentroids(movMFs, outputFolder+movMfWordsCentroidsOutput);
 		Utils.printMovMFWords(movMFs, outputFolder+movMfWordsOutput); // The method prints word-values information
@@ -250,7 +268,7 @@ public class Main {
 		Utils.printResults(movMFs, outputFolder+resultsOutputFile);
 		Utils.printSimpleResults(movMFs, outputFolder+resultsSimpleOutputFile);
 		long endTime = System.currentTimeMillis();
-
+		// FIN
 		System.out.println(
 				"End of the complete process. Time elapse = " + (((endTime - startTime) / 1000l) / 60l) + " Minutos");
 		System.exit(0);
